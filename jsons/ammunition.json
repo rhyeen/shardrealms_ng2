@@ -1,0 +1,89 @@
+{
+  "class": "ammunition",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "hidden properties": null,
+    "quantity for value": 0,
+    "type of ammunition": [
+      "arrow", "bolt", "bullet", "dart", "other"
+    ],
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Arrow",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "quantity for value": 20,
+      "type of ammunition": "arrow",
+      "properties": "Ammunition for a bow.",
+      "description": "Long wooden shaft with an iron head and feathers in the back.",
+      "image-links": ["/images/items/arrow.png"]
+    },
+    {
+      "name": "Bolt",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "quantity for value": 20,
+      "type of ammunition": "bolt",
+      "properties": "Ammunition for a crossbow.",
+      "description": "Short iron shaft tipped with feathers.",
+      "image-links": ["/images/items/bolt.png"]
+    },
+    {
+      "name": "Bullet",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "quantity for value": 20,
+      "type of ammunition": "bullet",
+      "properties": "Ammunition for a sling or gun.",
+      "description": "Small iron ball.",
+      "image-links": ["/images/items/bullet.png"]
+    },
+    {
+      "name": "Cartridge",
+      "weight (lbs)": 0,
+      "value (gold)": 15,
+      "rarity": "rare",
+      "hidden properties": "[ALCHEMY P3 | Gunsmith] Can be crafted if Alchemy skill >= 3 or with Gunsmith ability.<br>Components required are: bullet, gunpowder, and iron flakes (or iron cartridge premade).",
+      "quantity for value": 1,
+      "type of ammunition": "other",
+      "properties": "Ammunition for a complex gun.",
+      "description": "Bullet in a casing with gunpowder.",
+      "image-links": ["/images/items/cartridge.png"]
+    },
+    {
+      "name": "Dart",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "quantity for value": 20,
+      "type of ammunition": "dart",
+      "properties": "Ammunition for a blowgun.",
+      "description": "Short wooden feathered dart.",
+      "image-links": ["/images/items/blowgun.png"]
+    },
+    {
+      "name": "Numbing dart",
+      "weight (lbs)": 0,
+      "value (gold)": 2,
+      "rarity": "uncommon",
+      "quantity for value": 1,
+      "type of ammunition": "dart",
+      "properties": "Hit target takes damage, but must succeed in a STR ST of 15 to notice they've been struck.",
+      "description": "Short wooden feathered dart tipped with a poison.",
+      "image-links": ["/images/items/blowgun.png"]
+    }
+  ]
+}

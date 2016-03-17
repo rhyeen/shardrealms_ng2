@@ -1,0 +1,145 @@
+{
+  "class": "arcane",
+  "possibles": {
+    "name": null,
+    "classification": [
+      "gem", "component", "devices"
+    ],
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "hidden properties": null,
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Bloodstone",
+      "classification": "gem",
+      "weight (lbs)": 0,
+      "value (gold)": 600,
+      "rarity": "rare",
+      "hidden properties": "[ARCANA 12] Can sense blood flowing in stone, the stone will also collect blood spilt on it.<br>[ARCANA 18] The gem can augment a weapon to restore 1-4 health for each successful hit. Maximum health is permanently reduced by 10-40 while wielding the weapon.",
+      "description": "A tear-drop stone with deep blood-red cracks.  The cracks pulse occasionally.",
+      "image-links": ["images/items/bloodstone.png"]
+    },
+    {
+      "name": "Moonstone",
+      "classification": "gem",
+      "weight (lbs)": 0,
+      "value (gold)": 1800,
+      "rarity": "rare",
+      "hidden properties": "[WHILE MOON IS OUT] The stone glows a blueish white.<br>[ARCANA 20] The holder has -5 perception during the day, and +5 during the night.",
+      "description": "Deep brown glassy stone. Atop lays a naturally formed crator that seems to dip into a space itself.",
+      "image-links": ["images/items/moonstone.jpg"]
+    },
+    {
+      "name": "Crystal ball",
+      "classification": "component",
+      "weight (lbs)": 1,
+      "value (gold)": 20,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10] Certain magic can be gathered into the ball.<br>[ARCANA 12] The ball can be shattered to release magic, or with the right discipline the magic can be harnessed.<br>[ARCANA 14] Certain types of magic are amplified within the crystal.  This is taken advantage of by cosmic readers and fortune tellers who attempt to read the tones of magical energy in body and universe.<br>[ARCANA 18] The ball will naturally gather magic from an area radiated in magical energy.",
+      "description": "A clear hollow sphere about 8 inches in diameter.",
+      "image-links": ["images/items/crystal_orb.jpg", "images/items/magic_crystal_orb.jpg"]
+    },
+    {
+      "name": "Crystal",
+      "classification": "component",
+      "weight (lbs)": 0,
+      "value (gold)": 15,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10] Can cast Light and other weak touch spells on the Crystal.",
+      "description": "A glassy crystal shard usually made of quartz.",
+      "image-links": ["images/items/crystal.jpg"]
+    },
+    {
+      "name": "Rod",
+      "classification": "component",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10] Rods can hold unique spells.<br>[ARCANA 14] Rods do not contain well-known spells, rather some magical effect that is unique to that rod.<br>[ARCANA 16] Rods typically have charges that regenerate each day.",
+      "properties": "For melee, treat as a club. Performs a magical attack.",
+      "description": "A short shaft made from wood or iron.",
+      "image-links": ["images/items/rods.jpg", "images/items/rods2.jpg", "images/items/rods3.jpg"]
+    },
+    {
+      "name": "Rod of Push",
+      "classification": "device",
+      "weight (lbs)": 2,
+      "value (gold)": 300,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 18 | Identify 15] Once per day, may cast Push. Concentration must remain on rod for spell to remain active.",
+      "properties": "For melee, treat as a club. Performs a magical attack.",
+      "description": "A short iron shaft with a twirled handle containing a small gem, and a heavy grey crystal at either end.",
+      "image-links": ["images/items/rod_of_push.jpg"]
+    },
+    {
+      "name": "Wand",
+      "classification": "component",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10] Wands can hold a spell.<br>[ARCANA 16] Wands typically have a particular spell that can be cast from the wand that typically regenerates each day.  Without a high enough AR when used, the wand may backfire.",
+      "properties": "For melee, treat as a club. Performs a magical attack.",
+      "description": "A short shaft made from wood or iron.",
+      "image-links": ["images/items/wands.jpg"]
+    },
+    {
+      "name": "Staff",
+      "classification": "component",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10] Staves can hold spells.<br>[ARCANA 16] Staves typically have particular spells that can be cast from the staff once without regenerating.",
+      "properties": "For melee, treat as a club. Performs a magical attack.",
+      "description": "A short shaft made from wood or iron, usually with some intricate detail towards one end.",
+      "image-links": ["images/items/staffs.jpg"]
+    },
+    {
+      "name": "Scroll",
+      "classification": "component",
+      "weight (lbs)": 1,
+      "value (gold)": 2,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 8] Spells can be written on scrolls<br>[ARCANA 15] Sometimes, simply unrolling a scroll can unleash the spell.",
+      "description": "A sheet of parchment rolled around a stick into a pouch or wrapped with leather.",
+      "image-links": ["images/items/scroll.jpg"]
+    },
+    {
+      "name": "Spellbook",
+      "classification": "component",
+      "weight (lbs)": 4,
+      "value (gold)": 35,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 8] Spells can be written within the book. [ARCANA P6] May learn one spell from a found spellbook.",
+      "description": "A leatherbound book sealed with magic and written by the hand of mages or wizards.",
+      "image-links": ["images/items/spellbook.jpg"]
+    },
+    {
+      "name": "Vial (5)",
+      "classification": "component",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold a small dose of liquid.",
+      "description": "A small glass container with a cork.",
+      "image-links": ["images/items/vial.jpg"]
+    },
+    {
+      "name": "Potion bottle (2)",
+      "classification": "component",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1/4 liter of liquid.",
+      "description": "A rounded glass container with a cork.",
+      "image-links": ["images/items/potion_bottle.jpg"]
+    }
+  ]
+}

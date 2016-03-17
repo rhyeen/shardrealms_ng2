@@ -1,0 +1,1225 @@
+{
+  "class": "race",
+  "possibles": {
+    "name": null,
+    "languages": [
+      [
+        "Common", "Dwarven", "Elven", "Draconic", "Scron", "Ancient", "Demonic", "Angelic", "Druidic", "Sylvan", "Aquan", "Avian", "Undercommon"
+      ]
+    ],
+    "avg height (in)": 0,
+    "avg weight (lbs)": 0,
+    "size": [
+      "tiny", "small", "medium", "large", "huge", "gargantuan", "colossal"
+    ],
+    "age": {
+      "young adult": 0,
+      "middle aged": 0,
+      "old": 0,
+      "max age": 0
+    },
+    "eye colors": [],
+    "skin colors": [],
+    "hair colors": [],
+    "level modifiers": [
+      {
+        "level": 1,
+        "passive list": [
+          {
+            "type": [
+              "attribute", "ability", "skill", "spell", "resistance", "immunity"
+            ],
+            "name": null,
+            "value": 0
+          }
+        ],
+        "pick lists": [
+          {
+            "allowed": 0,
+            "list": [
+              {
+                "type": [
+                  "attribute", "ability", "skill", "spell", "resistance", "immunity"
+                ],
+                "name": null,
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cultural tendencies": null,
+    "background": null,
+    "associations": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Terran",
+      "languages": ["Common"],
+      "avg height (in)": 68,
+      "avg weight (lbs)": 150,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 40,
+        "old": 60,
+        "max age": 100
+      },
+      "eye colors": ["brown", "blue", "hazel", "green"],
+      "skin colors": ["pale", "tan", "brown", "dark-brown"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "attribute",
+                  "name": "STR",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "INF",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "attribute",
+                  "name": "DEX",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "WIS",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "attribute",
+                  "name": "STR",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "DEX",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "INF",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "WIS",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/terran.jpg", "images/races/terran2.jpg", "images/races/terran3.jpg"]
+    },
+    {
+      "name": "High elf",
+      "languages": ["Common", "Elven"],
+      "avg height (in)": 60,
+      "avg weight (lbs)": 110,
+      "size": "medium",
+      "age": {
+        "young adult": 50,
+        "middle aged": 110,
+        "old": 350,
+        "max age": 550
+      },
+      "eye colors": ["amber", "grey", "blue", "green"],
+      "skin colors": ["pale"],
+      "hair colors": ["white", "grey", "blonde", "black"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": -2
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Perception",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Nature",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Arcana",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/high_elf.jpg", "images/races/high_elf2.jpg", "images/races/high_elf3.jpg", "images/races/high_elf4.jpg", "images/races/high_elf5.jpg", "images/races/high_elf6.jpg", "images/races/high_elf7.jpg", "images/races/high_elf8.jpg", "images/races/high_elf9.jpg", "images/races/high_elf10.jpg"]
+    },
+    {
+      "name": "Wood elf",
+      "languages": ["Common", "Elven"],
+      "avg height (in)": 56,
+      "avg weight (lbs)": 100,
+      "size": "medium",
+      "age": {
+        "young adult": 30,
+        "middle aged": 100,
+        "old": 300,
+        "max age": 450
+      },
+      "eye colors": ["amber", "black", "gold", "green"],
+      "skin colors": ["pale"],
+      "hair colors": ["red (amber)", "black", "brown"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": -2
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 2
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "ability",
+              "name": "Extra move"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Perception",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Nature",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Stealth",
+                  "value": 1
+                },
+                {
+                  "type": "ability",
+                  "name": "Parry"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/wood_elf.jpg", "images/races/wood_elf2.jpg", "images/races/wood_elf3.jpg", "images/races/wood_elf4.jpg", "images/races/wood_elf5.jpg", "images/races/wood_elf6.jpg", "images/races/wood_elf7.jpg", "images/races/wood_elf8.jpg"]
+    },
+    {
+      "name": "Drow",
+      "languages": ["Common", "Elven", "Undercommon"],
+      "avg height (in)": 60,
+      "avg weight (lbs)": 120,
+      "size": "medium",
+      "age": {
+        "young adult": 30,
+        "middle aged": 100,
+        "old": 300,
+        "max age": 400
+      },
+      "eye colors": ["red", "white", "black"],
+      "skin colors": ["dark-grey"],
+      "hair colors": ["white", "black"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 2
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -2
+            },
+            {
+              "type": "ability",
+              "name": "Darkvision"
+            },
+            {
+              "type": "ability",
+              "name": "Blinding light"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Arcana",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Stealth",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/drow.jpg", "images/races/drow2.jpg", "images/races/drow3.jpg", "images/races/drow4.jpg", "images/races/drow5.jpg", "images/races/drow6.jpg", "images/races/drow7.jpg", "images/races/drow8.jpg"]
+    },
+    {
+      "name": "Half elf",
+      "languages": ["Common", "Elven"],
+      "avg height (in)": 64,
+      "avg weight (lbs)": 130,
+      "size": "medium",
+      "age": {
+        "young adult": 25,
+        "middle aged": 70,
+        "old": 140,
+        "max age": 250
+      },
+      "eye colors": ["amber", "grey", "brown", "blue", "hazel", "green"],
+      "skin colors": ["pale", "tan"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/half_elf.jpg", "images/races/half_elf2.jpg", "images/races/half_elf3.jpg", "images/races/half_elf4.jpg"]
+    },
+    {
+      "name": "Mountain dwarf",
+      "languages": ["Common", "Dwarven"],
+      "avg height (in)": 48,
+      "avg weight (lbs)": 160,
+      "size": "medium",
+      "age": {
+        "young adult": 30,
+        "middle aged": 100,
+        "old": 150,
+        "max age": 250
+      },
+      "eye colors": ["amber", "grey", "brown", "blue", "hazel", "green"],
+      "skin colors": ["pale", "tan", "brown", "dark-brown"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 2
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": -2
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 3,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Appraise",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Smithing",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Mechanic",
+                  "value": 1
+                },
+                {
+                  "type": "money",
+                  "name": "gold",
+                  "value": 75
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "two-handed melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "ranged"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "medium"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "heavy"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/mountain_dwarf.jpg", "images/races/mountain_dwarf2.jpg", "images/races/mountain_dwarf3.jpg", "images/races/mountain_dwarf4.jpg", "images/races/mountain_dwarf5.jpg", "images/races/mountain_dwarf6.jpg", "images/races/mountain_dwarf7.jpg", "images/races/mountain_dwarf8.jpg", "images/races/mountain_dwarf9.jpg", "images/races/mountain_dwarf10.jpg", "images/races/mountain_dwarf11.png"]
+    },
+    {
+      "name": "Hill dwarf",
+      "languages": ["Common", "Dwarven"],
+      "avg height (in)": 51,
+      "avg weight (lbs)": 150,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 70,
+        "old": 100,
+        "max age": 150
+      },
+      "eye colors": ["amber", "grey", "brown", "blue", "hazel", "green"],
+      "skin colors": ["pale", "tan", "brown", "dark-brown"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 1
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Appraise",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Smithing",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Mechanic",
+                  "value": 1
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "two-handed melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "ranged"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "medium"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "heavy"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/hill_dwarf.jpg", "images/races/hill_dwarf2.jpg", "images/races/hill_dwarf3.jpg", "images/races/hill_dwarf4.jpg", "images/races/hill_dwarf5.jpg", "images/races/hill_dwarf6.jpg"]
+    },
+    {
+      "name": "Duergar",
+      "languages": ["Common", "Dwarven", "Undercommon"],
+      "avg height (in)": 48,
+      "avg weight (lbs)": 160,
+      "size": "medium",
+      "age": {
+        "young adult": 30,
+        "middle aged": 100,
+        "old": 150,
+        "max age": 250
+      },
+      "eye colors": ["red", "white", "black"],
+      "skin colors": ["dark-grey"],
+      "hair colors": ["white", "black"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": -2
+            },
+            {
+              "type": "ability",
+              "name": "Nightvision"
+            },
+            {
+              "type": "ability",
+              "name": "Blinding light"
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 5,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Appraise",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Smithing",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Mechanic",
+                  "value": 1
+                },
+                {
+                  "type": "money",
+                  "name": "gold",
+                  "value": 75
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "two-handed melee"
+                },
+                {
+                  "type": "weapon proficiency",
+                  "name": "ranged"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "medium"
+                },
+                {
+                  "type": "armor proficiency",
+                  "name": "heavy"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/duergar.jpg", "images/races/duergar2.jpg", "images/races/duergar3.jpg", "images/races/duergar4.jpg", "images/races/duergar5.jpg"]
+    },
+    {
+      "name": "Halfling",
+      "languages": ["Common"],
+      "avg height (in)": 34,
+      "avg weight (lbs)": 40,
+      "size": "small",
+      "age": {
+        "young adult": 20,
+        "middle aged": 100,
+        "old": 150,
+        "max age": 175
+      },
+      "eye colors": ["amber", "grey", "brown", "blue", "hazel", "green"],
+      "skin colors": ["pale", "tan", "brown", "dark-brown"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": -2
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 2
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Stealth",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Persuasion",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Perform",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/halfling.jpg", "images/races/halfling2.jpg", "images/races/halfling3.jpg", "images/races/halfling4.jpg", "images/races/halfling5.jpg", "images/races/halfling6.jpg", "images/races/halfling7.jpg", "images/races/halfling8.jpg", "images/races/halfling9.jpg", "images/races/halfling10.jpg", "images/races/halfling11.jpg", "images/races/halfling12.jpg", "images/races/halfling13.jpg"]
+    },
+    {
+      "name": "Gnome",
+      "languages": ["Common", "Dwarven"],
+      "avg height (in)": 36,
+      "avg weight (lbs)": 45,
+      "size": "small",
+      "age": {
+        "young adult": 30,
+        "middle aged": 60,
+        "old": 150,
+        "max age": 300
+      },
+      "eye colors": ["amber", "grey", "brown", "blue", "hazel", "green", "yellow"],
+      "skin colors": ["pale", "tan", "brown", "dark-brown"],
+      "hair colors": ["blonde", "brown", "red (amber)", "red", "blue", "black", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": 2
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "skill",
+                  "name": "Nature",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Lore",
+                  "value": 1
+                },
+                {
+                  "type": "skill",
+                  "name": "Inspection",
+                  "value": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/gnome.jpg", "images/races/gnome2.jpg", "images/races/gnome3.jpg", "images/races/gnome4.jpg", "images/races/gnome5.jpg", "images/races/gnome6.jpg", "images/races/gnome7.jpg", "images/races/gnome8.jpg", "images/races/gnome9.png", "images/races/gnome10.jpg", "images/races/gnome11.jpg", "images/races/gnome12.jpg", "images/races/gnome13.jpg", "images/races/gnome14.jpg", "images/races/gnome15.jpg", "images/races/gnome16.jpg", "images/races/gnome17.jpg", "images/races/gnome18.jpg", "images/races/gnome19.jpg", "images/races/gnome20.jpg", "images/races/gnome21.jpg", "images/races/gnome22.jpg", "images/races/gnome23.jpg", "images/races/gnome24.jpg", "images/races/gnome25.jpg", "images/races/gnome26.jpg"]
+    },
+    {
+      "name": "Tielfling",
+      "languages": ["Common", "Demonic"],
+      "avg height (in)": 70,
+      "avg weight (lbs)": 160,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 45,
+        "old": 70,
+        "max age": 90
+      },
+      "eye colors": ["amber", "black", "yellow", "red"],
+      "skin colors": ["dark-grey", "red", "earth-red", "brown", "light-grey"],
+      "hair colors": ["black", "brown", "red (amber)", "red", "white", "grey"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "resistance",
+              "name": "fire"
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "spell",
+              "name": "Thaumaturgy"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Smoke form"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Nightvision"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/tiefling.jpg", "images/races/tiefling2.jpg", "images/races/tiefling3.jpg", "images/races/tiefling4.jpg", "images/races/tiefling5.jpg", "images/races/tiefling6.jpg", "images/races/tiefling7.jpg", "images/races/tiefling8.jpg", "images/races/tiefling9.jpg"]
+    },
+    {
+      "name": "Nephilim",
+      "languages": ["Common", "Angelic"],
+      "avg height (in)": 88,
+      "avg weight (lbs)": 250,
+      "size": "large",
+      "age": {
+        "young adult": 18,
+        "middle aged": 40,
+        "old": 80,
+        "max age": 120
+      },
+      "eye colors": ["white", "blue", "yellow"],
+      "skin colors": ["pale with grey stripes", "pale with blue stripes", "pale with gold stripes"],
+      "hair colors": ["male - bald", "female - black", " female - brown", "female - white"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 4
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": -2
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Winged fall"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/nephilim.jpg", "images/races/nephilim2.jpg", "images/races/nephilim3.jpg", "images/races/nephilim4.jpg", "images/races/nephilim5.jpg", "images/races/nephilim6.jpg", "images/races/nephilim7.jpg", "images/races/nephilim8.jpg", "images/races/nephilim9.jpg", "images/races/nephilim10.png", "images/races/nephilim11.png"]
+    },
+    {
+      "name": "Free orc",
+      "languages": ["Common", "Scron"],
+      "avg height (in)": 70,
+      "avg weight (lbs)": 170,
+      "size": "medium",
+      "age": {
+        "young adult": 15,
+        "middle aged": 25,
+        "old": 40,
+        "max age": 50
+      },
+      "eye colors": ["grey", "yellow", "red", "brown"],
+      "skin colors": ["pale-green", "dark-green", "olive", "pale-orange", "grey"],
+      "hair colors": ["black", "grey", "red (amber)"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 3
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": -2
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "skill",
+              "name": "Intimidation",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/orc.jpg", "images/races/orc2.jpg", "images/races/orc3.jpg", "images/races/orc4.jpg", "images/races/orc5.jpg", "images/races/orc6.jpg", "images/races/orc7.jpg", "images/races/orc8.jpg", "images/races/orc9.jpg", "images/races/orc10.jpg", "images/races/orc11.jpg"]
+    },
+    {
+      "name": "Half orc",
+      "languages": ["Common", "Scron"],
+      "avg height (in)": 68,
+      "avg weight (lbs)": 160,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 35,
+        "old": 50,
+        "max age": 80
+      },
+      "eye colors": ["grey", "yellow", "red", "brown"],
+      "skin colors": ["tan", "pale-green", "dark-green", "olive", "pale-orange", "grey"],
+      "hair colors": ["black", "grey", "red (amber)", "brown"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 2
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": -1
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "skill",
+              "name": "Intimidation",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/half_orc.jpg", "images/races/half_orc2.jpg", "images/races/half_orc3.jpg", "images/races/half_orc4.jpg", "images/races/half_orc5.jpg", "images/races/half_orc6.jpg", "images/races/half_orc7.jpg", "images/races/half_orc8.jpg"]
+    },
+    {
+      "name": "Fey goblin",
+      "languages": ["Common", "Sylvan"],
+      "avg height (in)": 38,
+      "avg weight (lbs)": 40,
+      "size": "small",
+      "age": {
+        "young adult": 10,
+        "middle aged": 20,
+        "old": 35,
+        "max age": 50
+      },
+      "eye colors": ["red", "grey", "black", "blue", "green", "yellow"],
+      "skin colors": ["pale", "pale-green", "olive", "pale-orange", "grey"],
+      "hair colors": ["black", "grey", "red (amber)", "brown"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": 4
+            },
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": -2
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            },
+            {
+              "type": "ability",
+              "name": "Undying luck"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/fey_goblin.jpg", "images/races/fey_goblin2.jpg", "images/races/fey_goblin3.jpg", "images/races/fey_goblin4.jpg", "images/races/fey_goblin5.jpg", "images/races/fey_goblin6.jpg", "images/races/fey_goblin7.jpg", "images/races/fey_goblin8.jpg", "images/races/fey_goblin9.jpg"]
+    },
+    {
+      "name": "Argonian",
+      "languages": ["Common", "Draconic"],
+      "avg height (in)": 72,
+      "avg weight (lbs)": 200,
+      "size": "medium",
+      "age": {
+        "young adult": 15,
+        "middle aged": 35,
+        "old": 60,
+        "max age": 80
+      },
+      "eye colors": ["grey", "red", "orange", "yellow", "green", "blue", "purple", "brown"],
+      "skin colors": ["earth-red", "pale-green", "dark-green", "olive", "pale-orange", "grey"],
+      "hair colors": null,
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": -1
+            },
+            {
+              "type": "ability",
+              "name": "Dimvision"
+            },
+            {
+              "type": "ability",
+              "name": "Natural swimmer"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/argonian.jpg", "images/races/argonian2.jpg", "images/races/argonian3.jpg", "images/races/argonian4.jpg", "images/races/argonian5.jpg", "images/races/argonian6.jpg", "images/races/argonian7.jpg", "images/races/argonian8.jpg"]
+    },
+    {
+      "name": "Merfolk",
+      "languages": ["Common", "Aquan"],
+      "avg height (in)": 68,
+      "avg weight (lbs)": 150,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 40,
+        "old": 60,
+        "max age": 100
+      },
+      "eye colors": ["grey", "yellow", "green", "blue", "purple", "black"],
+      "skin colors": ["coral-red", "pale-green", "pale-blue", "pale-purple", "turquoise", "grey"],
+      "hair colors": ["blonde", "brown", "red (amber)", "black", "white", "grey", "coral-red", "turquoise", "dark-blue", "dark-green"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "STR",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -1
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": 1
+            },
+            {
+              "type": "ability",
+              "name": "Natural swimmer"
+            },
+            {
+              "type": "ability",
+              "name": "Breathe water"
+            },
+            {
+              "type": "ability",
+              "name": "Water yin and air yang"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/merfolk.jpg", "images/races/merfolk2.jpg", "images/races/merfolk3.png", "images/races/merfolk4.jpg", "images/races/merfolk5.jpg", "images/races/merfolk6.jpg", "images/races/merfolk7.jpg", "images/races/merfolk8.jpg"]
+    },
+    {
+      "name": "Tatsu",
+      "languages": ["Common", "Aquan"],
+      "avg height (in)": 72,
+      "avg weight (lbs)": 150,
+      "size": "medium",
+      "age": {
+        "young adult": 20,
+        "middle aged": 40,
+        "old": 60,
+        "max age": 100
+      },
+      "eye colors": ["grey", "yellow", "green", "blue", "purple", "black"],
+      "skin colors": ["coral-red", "pale-green", "pale-blue", "pale-purple", "turquoise", "grey"],
+      "hair colors": null,
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "attribute",
+              "name": "DEX",
+              "value": 1
+            },
+            {
+              "type": "attribute",
+              "name": "WIS",
+              "value": -3
+            },
+            {
+              "type": "attribute",
+              "name": "INF",
+              "value": -3
+            },
+            {
+              "type": "ability",
+              "name": "Natural swimmer"
+            },
+            {
+              "type": "ability",
+              "name": "Breathe water"
+            },
+            {
+              "type": "ability",
+              "name": "Sufficating air"
+            },
+            {
+              "type": "ability",
+              "name": "Half move"
+            },
+            {
+              "type": "ability",
+              "name": "Half run"
+            }
+          ]
+        }
+      ],
+      "cultural tendencies": null,
+      "background": null,
+      "associations": null,
+      "image-links": ["images/races/tatsu.jpg"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<section class="table-container">
+  <section class="table-list" *ngIf="!selectedTable">
+    <h1>Tables</h1>
+    <div *ngFor="#table of tables" (click)="selectTable(table.name)">
+    	<a *ngIf="!table.subtables">{{table.name}}</a>
+      <div *ngIf="table.subtables">
+        <div><b>{{table.name}}</b></div>
+        <div *ngFor="#subtable of table.subtables" (click)="selectTable(subtable.name)">
+          <a>{{subtable.name}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="selected-table" *ngIf="selectedTable">
+    <button (click)="backToSelection()">Back</button>
+    <sr-table-selection [table]="selectedTable"></sr-table-selection>
+  </section>
+</section>

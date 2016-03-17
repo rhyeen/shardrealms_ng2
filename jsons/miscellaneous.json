@@ -1,0 +1,188 @@
+{
+  "class": "miscellaneous",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "hidden properties": null,
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Abacus",
+      "weight (lbs)": 2,
+      "value (gold)": 3,
+      "rarity": "uncommon",
+      "properties": "Used for tallying.",
+      "description": "A wooden frame with beads that slide on rods.",
+      "image-links": ["/images/items/abacus.jpg"]
+    },
+    {
+      "name": "Ball of yard",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Used for weaving.",
+      "description": "Balled yard that can be in a variety of colors.",
+      "image-links": ["/images/items/balled_yarn.jpg"]
+    },
+    {
+      "name": "Barrel",
+      "weight (lbs)": 5,
+      "value (gold)": 1,
+      "rarity": "common",
+      "hidden properties": "[STEALTH 12] Small creature can hide in a barrel easily.  Medium creature can squat in a barrel, but the lid could not close entirely.",
+      "properties": "Can usually hold 120 liters (30 gallons) of liquid.",
+      "description": "Sealed wooden container made of curved staves and metal rings.  Sealed with a lid or cork.",
+      "image-links": ["/images/items/barrel.png"]
+    },
+    {
+      "name": "Basket",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can usually carry 20 lbs.",
+      "description": "Woven cane or wood shaped to carry small objects.",
+      "image-links": ["/images/items/baskets.png"]
+    },
+    {
+      "name": "Book",
+      "weight (lbs)": 3,
+      "value (gold)": 5,
+      "rarity": "common",
+      "description": "Simple leather book with any possible record written inside.",
+      "image-links": ["/images/items/book.jpg"]
+    },
+    {
+      "name": "Broom",
+      "weight (lbs)": 2,
+      "value (gold)": 1,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 15] Brooms are easier to enchant with a fly spell than other common items.",
+      "description": "Simple broom used for dusting.",
+      "image-links": ["/images/items/broom.jpg"]
+    },
+    {
+      "name": "Bucket",
+      "weight (lbs)": 2,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold a 4 liters (1 gallon) of liquid.",
+      "description": "Wooden bucket wrapped in iron bands with a wooden handle.",
+      "image-links": ["/images/items/bucket.jpg"]
+    },
+    {
+      "name": "Chest",
+      "weight (lbs)": 5,
+      "value (gold)": 7,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 12] Can be burst with a melee weapon and 15 STR check.",
+      "properties": "Can hold 1 ft by 3 ft worth of supplies.",
+      "description": "Wooden chest with an iron lock and frames.",
+      "image-links": ["/images/items/chest.jpg"]
+    },
+    {
+      "name": "Clothes (common)",
+      "weight (lbs)": 3,
+      "value (gold)": 1,
+      "rarity": "common",
+      "description": "Cloth and hemp full-body clothing.",
+      "image-links": ["/images/items/clothes_common.jpg", "/images/items/clothes_common2.jpg"]
+    }, 
+    {
+      "name": "Clothes (fine)",
+      "weight (lbs)": 3,
+      "value (gold)": 10,
+      "rarity": "common",
+      "description": "Finely sewn colorful cloth full-body clothing.",
+      "image-links": ["/images/items/clothes_fine.jpg", "/images/items/clothes_fine2.jpg"]
+    }, 
+    {
+      "name": "Clothes (extravagant)",
+      "weight (lbs)": 3,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "description": "Masterfully sewn intricate silk and cloth full-body clothing.",
+      "image-links": ["/images/items/clothes_extravagant.jpg", "/images/items/clothes_extravagant2.jpg"]
+    }, 
+    {
+      "name": "Iron chest",
+      "weight (lbs)": 20,
+      "value (gold)": 30,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] Can be burst with a melee weapon and 25 STR check.",
+      "properties": "Can hold 1 ft by 3 ft worth of supplies.",
+      "description": "Iron chest with a lock.",
+      "image-links": ["/images/items/iron_chest.jpg"]
+    },
+    {
+      "name": "Glass bottle",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold a liter of liquid.",
+      "description": "A glass bottle, usually stopped with a cork.",
+      "image-links": ["/images/items/glass_bottle.jpg"]
+    }, 
+    {
+      "name": "Hourglass",
+      "weight (lbs)": 1,
+      "value (gold)": 25,
+      "rarity": "common",
+      "properties": "Keeps an accurate measurement of an hour.",
+      "description": "A wooden frame that holds two glass vials half full of fine sand.",
+      "image-links": ["/images/items/hourglass.jpg"]
+    }, 
+    {
+      "name": "Jug",
+      "weight (lbs)": 2,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1 liter of liquid.",
+      "description": "A wooden container with a pouring spout and handle.",
+      "image-links": ["/images/items/jug.jpg"]
+    }, 
+    {
+      "name": "Ladder",
+      "weight (lbs)": 10,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can be placed against a wall to reach an extra 10 ft.",
+      "description": "A wooden ladder that stands 10 ft tall.",
+      "image-links": ["/images/items/ladder.jpg"]
+    },
+    {
+      "name": "Lamp",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can be lit and produce 30 ft radius of light for 1 hour.",
+      "description": "A clay lamp that is filled with oil and has a hempen wick.",
+      "image-links": ["/images/items/lamp.jpg"]
+    },
+    {
+      "name": "Pitcher",
+      "weight (lbs)": 2,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1 liter of liquid.",
+      "description": "A brass container with a pouring spout and handle.",
+      "image-links": ["/images/items/pitcher.jpg"]
+    }, 
+    {
+      "name": "Tankard",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1/2 liter (pint) of liquid.",
+      "description": "A brass cup with a curved handle.",
+      "image-links": ["/images/items/tankard.jpg"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<section class="player-selection"  *ngIf="players && players.selectedPlayer && mainView && mainView.subView">
+  <section *ngIf="mainView.subView.subView.view === 'leveling'">
+    <sr-level-container></sr-level-container>
+  </section>
+  <section *ngIf="!mainView.subView.subView">
+    <h1>{{players.selectedPlayer['name']}}</h1>
+    <section class="player-details">
+      <section class="player-core-details">
+        <h4>{{players.selectedPlayer['player name']}}</h4>
+      </section>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,123 @@
+{
+  "class": "consumable",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": null,
+    "saving throw": null,
+    "hidden properties": null,
+    "type of consumable": [
+      "ingredient", "potion", "scroll", "component"
+    ],
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Candles (5)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 12] Used as a component of some rituals.",
+      "type of consumable": "component",
+      "properties": "Can be lit and produce 20 ft radius of light for 1 hour.",
+      "description": "Wax candles with a threaded wick.",
+      "image-links": ["/images/items/candles.png"]
+    },
+    {
+      "name": "Gunpowder",
+      "weight (lbs)": 1,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "hidden properties": "[ALCHEMY P3 | NATURE 12] If gunpowder comes in contact with fire, it explodes. Anything within 5 ft takes 1d8 force damage and 2 fire damage.",
+      "type of consumable": "component",
+      "description": "Black dusty powder.",
+      "image-links": ["/images/items/gunpowder.jpg"]
+    },
+    {
+      "name": "Healing potion",
+      "weight (lbs)": 0,
+      "value (gold)": 40,
+      "rarity": "uncommon",
+      "hidden properties": "[INSPECTION 15] Smells earthy with a hint of bitterness.<br>[ARCANA 15 | ALCHEMY P2] Heals 10 health",
+      "type of consumable": "potion",
+      "description": "Deep red liquid, much like blood, yet has the consistency of water.",
+      "image-links": []
+    },
+    {
+      "name": "Malt",
+      "weight (lbs)": 5,
+      "value (gold)": 1,
+      "rarity": "common",
+      "hidden properties": "[ALCHEMY P1 | LORE 10] Used for brewing beers and ales.",
+      "type of consumable": "ingredient",
+      "description": "Grains of barley or wheat.",
+      "image-links": ["/images/items/malt.jpg"]
+    },
+    {
+      "name": "Ale (5 pints)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "saving throw": "Willpower ST >= 8 + (number of pints drank in 12 hours): not drunk.",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a pint, unless ST (knows what ST is).",
+      "type of consumable": "potion",
+      "description": "Common barely-based alcoholic beverage found in almost every tavern.",
+      "image-links": ["/images/items/ale.jpg"]
+    },
+    {
+      "name": "Axe beak egg",
+      "weight (lbs)": 5,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "hidden properties": "[NATURE 12] Rarely unfertilized, if the egg is cared for and kept warm, it will hatch within 2 weeks. [APPRAISE 10] The right person could pay upwards of 500 gold for a ready-to-hatch egg; axe beak hatchlings are worthless if already hatched.",
+      "description": "A large white egg with a thick shell.",
+      "image-links": ["/images/items/axe_beak_egg.jpg"]
+    },
+    {
+      "name": "Wine (1 glass)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "saving throw": "Willpower ST >= 6 + (number of glasses drank in 12 hours): not drunk.",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows what ST is).",
+      "type of consumable": "potion",
+      "description": "Common grape-based alcoholic beverage found in nicer taverns.",
+      "image-links": ["/images/items/wine.jpg"]
+    },
+    {
+      "name": "Fine wine (1 glass)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "uncommon",
+      "saving throw": "Willpower ST >= 8 + (number of glasses drank in 12 hours): not drunk.",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows what ST is).",
+      "type of consumable": "potion",
+      "description": "A delicate alcoholic beverage.",
+      "image-links": ["/images/items/fine_wine.jpg"]
+    },
+    {
+      "name": "Rations (1 day)",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can feed one person for one day. Lasts one week.",
+      "description": "A hemp sack full of dry tasteless food.",
+      "image-links": ["/images/items/rations.jpg"]
+    },
+    {
+      "name": "Animal feed (1 day)",
+      "weight (lbs)": 5,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can feed one large herbivore animal for one day. Lasts one month.",
+      "description": "A large hemp sack full of grains.",
+      "image-links": ["/images/items/feed.jpg"]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<section class="player-list-container">
+  <section class="player-list" *ngIf="!mainView.subView">
+    <section class="new-player">
+      <button (click)="createNewPlayer()">New Player</button>
+    </section>
+    <h1>Players</h1>
+    <div *ngFor="#singlePlayer of playerList" (click)="selectPlayer(singlePlayer.id)">
+    	<a>{{singlePlayer.name}}</a>
+    </div>
+  </section>
+  <section class="selected-player" *ngIf="mainView.subView && mainView.subView.view === 'edit'">
+    <button (click)="backToSelection()">Back</button>
+    <sr-player-selection></sr-player-selection>
+  </section>
+  <section class="new-player" *ngIf="mainView.subView && mainView.subView.view === 'new'">
+    <button (click)="backToSelection()">Back</button>
+    <sr-new-player-container></sr-new-player-container>
+  </section>
+</section>

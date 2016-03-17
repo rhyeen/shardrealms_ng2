@@ -1,0 +1,180 @@
+{
+  "class": "skill",
+  "possibles": {
+    "name": null,
+    "type of skill": [
+      "core", "special"
+    ],
+    "attribute": [
+      "STR", "DEX", "INF", "WIS"
+    ],
+    "enabling tools": [],
+    "properties": null
+  },
+  "entries": [
+    {
+      "name": "Athletics",
+      "type of skill": "core",
+      "attribute": "STR",
+      "properties": "Ability to run, jump, climb, or perform other athletic feats."
+    },
+    {
+      "name": "Intimidation",
+      "type of skill": "core",
+      "attribute": "STR",
+      "properties": "Ability to coerce (i.e. persuade by fear or force)."
+    },
+    {
+      "name": "Willpower",
+      "type of skill": "core",
+      "attribute": "STR",
+      "properties": "Ability to withstand physical pain, resist poison, or endure acts of excertion."
+    },
+    {
+      "name": "Balance",
+      "type of skill": "core",
+      "attribute": "DEX",
+      "properties": "Ability to perform, traverse unsteady terrain, or perform other acrobatic feats."
+    },
+    {
+      "name": "Stealth",
+      "type of skill": "core",
+      "attribute": "DEX",
+      "properties": "Ability to move unnoticed and to perceive surrounding for stealth possibilities. A stealth check is contested against the Perception of those in immediate view. Stealth is broken at the end of your turn if you fail the stealth check.<br>A stealth attack causes the target to be Surprised.<br>A stealth check can be made everytime one is completely out of view, but the check cannot be rerolled until going in and out of viewable area of anyone other than allies.<br>You may only move at [Half move] while stealthed.<br>Modifiers to stealth check:<ul><li>-5 in bright light</li><li>-5 if moving within line of sight of anyone other than allies.</li><li>-5 if moving fater than [Half move]</li><li>-2 if within 10 ft of target making a perception check</li><li>-5 if within 5 ft of target making a perception check</li><li>-5 if anyone other than allies is alerted to danger</li><li>-10 if anyone is looking for you specifically</li></ul>"
+    },
+    {
+      "name": "Sleight of hand",
+      "type of skill": "core",
+      "attribute": "DEX",
+      "properties": "Ability to pick locks, steal objects, or perform hand tricks."
+    },
+    {
+      "name": "Persuasion",
+      "type of skill": "core",
+      "attribute": "INF",
+      "properties": "Ability to persuade intelligent beings by reason, truth, or bribery."
+    },
+    {
+      "name": "Deception",
+      "type of skill": "core",
+      "attribute": "INF",
+      "properties": "Ability to persuade intelligent beings by lieing, withholding information, or other forms of deception."
+    },
+    {
+      "name": "Arcana",
+      "type of skill": "core",
+      "attribute": "INF",
+      "properties": "Knowledge of magic, magical lore, magical creatures, and magical items. Also the ability to discover weaknesses, resistances, and immunities."
+    },
+    {
+      "name": "Nature",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Knowledge of natural plants, creatures, and habitats. Also the ability the handle animals or gain insight into their intentions."
+    },
+    {
+      "name": "Perception",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Ability to notice creatures, traps, and other features in an environment using all or specified senses."
+    },
+    {
+      "name": "Inspection",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Ability to discover clues or hidden items in a defined area.  Unlike investigation in other RPGs, searching for non-hidden loot does not require this check."
+    },
+    {
+      "name": "Insight",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Ability to read intelligent beings body language to detect internalized thoughts and truths."
+    },
+    {
+      "name": "Lore",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Knowledge of anything made or recorded by civilizations: non-magical properties of objects, history, current politics and news, local customs, city layouts, and important landmarks."
+    },
+    {
+      "name": "Survival",
+      "type of skill": "core",
+      "attribute": "WIS",
+      "properties": "Ability to survive in harsh environments by obtaining food and shelter, and the ability to track creatures."
+    },
+    {
+      "name": "Appraise",
+      "type of skill": "special",
+      "attribute": "WIS",
+      "properties": "Tries to determine value of item. It is almost impossible to accurately appraise unidentified items."
+    },
+    {
+      "name": "Identify",
+      "type of skill": "special",
+      "attribute": "WIS",
+      "properties": "Tries to determine properties of an item.<br>At least 4 points in Identify are needed before attempting to identify magical items."
+    },
+    {
+      "name": "Scrollcraft",
+      "type of skill": "special",
+      "attribute": "INF",
+      "properties": "Attempt to create a spell that can read from a scroll.<br>Requires a known spell, a blank scroll, pen and ink. Only masterwork scrolls can cast spells similar in power to the typical spell. For example, most scrolls' spells will inflict half damage, or require 5 less from the ST.<br>Scrolls take (level of spell) hours to complete.  A scroll can be written of a spell with a level <= the character's Scrollcraft points."
+    },
+    {
+      "name": "Alchemy",
+      "type of skill": "special",
+      "attribute": "INF",
+      "enabling tools": ["Alchemy kit", "Alchemy supplies", "Brewing supplies", "Cooking tools"],
+      "properties": "Knowledge of plant, mineral, and animal part usage and the ability to combine these elements to create potions, beverages, and meals."
+    },
+    {
+      "name": "Calligraphy",
+      "type of skill": "special",
+      "attribute": "DEX",
+      "enabling tools": ["Calligraphy kit", "Cartography tools", "Painting kit"],
+      "properties": "Able to write and sketch clearly and beautifully.  Can be useful for forging documents, reading challenging handwriting, or making maps."
+    },
+    {
+      "name": "Woodworking",
+      "type of skill": "special",
+      "attribute": "DEX",
+      "enabling tools": ["Carpenter tools"],
+      "properties": "Able to work with wood to make wooden items and furnishings."
+    },
+    {
+      "name": "Handicraft",
+      "type of skill": "special",
+      "attribute": "DEX",
+      "enabling tools": ["Jewelry making tools", "Painting kit", "Pottery tools", "Weaving supplies"],
+      "properties": "Able to work with glass, wood, metal, and gems to create or repair intricate jewelry, engravings, and embeddings."
+    },
+    {
+      "name": "Leatherworking",
+      "type of skill": "special",
+      "attribute": "DEX",
+      "enabling tools": ["Leatherwork tools"],
+      "properties": "Able to work with leather hides to create or repair clothes, armor, bags, and footwear."
+    },
+    {
+      "name": "Smithing",
+      "type of skill": "special",
+      "attribute": "STR",
+      "enabling tools": ["Smithing supplies", "Smithing wagon"],
+      "properties": "Able to work with metal to create or repair weapons and armor."
+    },
+    {
+      "name": "Perform",
+      "type of skill": "special",
+      "attribute": "WIS",
+      "enabling tools": ["any instrument", "Makeup kit"],
+      "properties": "Each point in Perform allows the character to do one of the following:<br><ul><li>Play a new musical instrument</li><li>Learn to sing</li><li>Learn to dance</li><li>Learn to act</li><li>Learn magic tricks</li></ul>"
+    },
+    {
+      "name": "Mechanic",
+      "type of skill": "special",
+      "attribute": "WIS",
+      "enabling tools": ["Mechanic supplies", "Mechanic kit"],
+      "properties": "Able to tinker with mechanisms to create or repair mechanical objects."
+    }
+  ]
+}

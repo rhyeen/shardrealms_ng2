@@ -1,0 +1,35 @@
+<!-- pick list -->
+<section class="level-modifier-item" *ngIf="item && pickList && player">
+  <section *ngIf="item.type === 'attribute'">
+    <span>{{item.type}}: {{item.name}} ({{player['attributes'][item.name]}})</span>
+    <div>
+      <button (click)="editStat(false)" [disabled]="!points">-</button>
+      <span>{{points}}</span>
+      <button (click)="editStat(true)" [disabled]="pickList.allowed <= pickList.chosen">+</button>
+    </div>
+  </section>
+  <section *ngIf="item.type === 'skill'">
+    <span>{{item.type}}: {{item.name}} ({{player['core skills'][item.name]}})</span>
+    <div>
+      <button (click)="editStat(false)" [disabled]="!points">-</button>
+      <span>{{points}}</span>
+      <button (click)="editStat(true)" [disabled]="pickList.allowed <= pickList.chosen">+</button>
+    </div>
+  </section>
+  <section *ngIf="item.type === 'ability' || item.type === 'spell' || item.type === 'armor proficiency' || item.type === 'weapon proficiency'">
+    <span>{{item.type}}:</span>
+    <div>
+    	<button (click)="gainStat()" [disabled]="isGainedElsewhere || (pickList.allowed <= pickList.chosen && !isGained)">{{gainedSymbol}}</button>
+      <span>{{item.name}}</span>
+    </div>
+  </section>
+</section>
+<!-- passive -->
+<section class="level-modifier-item" *ngIf="item && !pickList && player">
+  <section *ngIf="item.type === 'attribute' || item.type === 'spell'">
+    <span>{{item.type}}: {{item.name}} <span *ngIf="item.value > 0">+</span>{{item.value}}</span>
+  </section>
+  <section *ngIf="item.type === 'ability' || item.type === 'spell' || item.type === 'armor proficiency' || item.type === 'weapon proficiency'">
+    <span>{{item.type}}: {{item.name}}</span>
+  </section>
+</section>

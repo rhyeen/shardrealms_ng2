@@ -1,0 +1,21 @@
+<!-- <select [(ngModel)]="value" [disabled]="disabled">
+  <option *ngFor="#option of list" [value]="option">{{option}}</option>
+</select> -->
+<section class="dynamic-list" *ngIf="!config || !config.multiple">
+  <input *ngIf="!config || !config.textarea" type="text" [ngModel]="value" (ngModelChange)="checkInput($event)" (blur)="confirmInput()" (focus)="checkInput(value)" [disabled]="disabled">
+  <textarea *ngIf="config && config.textarea" [ngModel]="singleValue" [disabled]="disabled"></textarea>
+  <ul *ngIf="showList && showList.length">
+    <li *ngFor="#option of showList" (mousedown)="setValue(option)">{{option}}</li>
+  </ul>
+</section>
+<section class="dynamic-list" *ngIf="config && config.multiple" >
+  <div *ngFor="#singleValue of value; #i=index; trackBy:trackByIndex" class="dynamic-list-multiple">
+    <input *ngIf="!config.textarea" type="text" [ngModel]="singleValue" (ngModelChange)="checkInput($event, i)" (blur)="confirmInput()" (focus)="checkInput(singleValue, i)" [disabled]="disabled">
+    <textarea *ngIf="config.textarea" [ngModel]="singleValue" [disabled]="disabled"></textarea>
+    <ul *ngIf="showList && showList.length && showListIndex == i">
+      <li *ngFor="#option of showList" (mousedown)="setValue(option, i)">{{option}}</li>
+    </ul>
+    <button class="add-input circle-btn" tabindex="-1" *ngIf="i === 0" (click)="addInput()"></button>
+    <button class="delete-input circle-btn" tabindex="-1" *ngIf="i !== 0" (click)="deleteInput(i)"></button>
+  </div>
+</section>

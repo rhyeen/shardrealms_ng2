@@ -1,0 +1,1267 @@
+{
+  "class": "class",
+  "possibles": {
+    "name": null,
+    "starting gold": null,
+    "starting health": 0,
+    "health per level": 0,
+    "level modifiers": [
+      {
+        "level": 0,
+        "passive list": [
+          {
+            "type": [
+              "attribute", "ability", "skill", "spell", "resistance", "immunity"
+            ],
+            "name": null,
+            "value": 0
+          }
+        ],
+        "pick lists": [
+          {
+            "allowed": 0,
+            "list": [
+              {
+                "type": [
+                  "attribute", "ability", "skill", "spell", "resistance", "immunity", "weapon proficiency", "armor proficiency", "action points", "shard points", "language"
+                ],
+                "name": null,
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "description": null,
+    "image-links": null
+  },
+  "entries": [
+    {
+      "name": "Fighter",
+      "starting gold": 100,
+      "starting health": 5,
+      "health per level": 5,
+      "description": null,
+      "image-links": ["/images/classes/fighter.jpg", "/images/classes/fighter2.jpg", "/images/classes/fighter3.jpg", "/images/classes/fighter4.jpg", "/images/classes/fighter5.jpg", "/images/classes/fighter6.jpg", "/images/classes/fighter7.jpg", "/images/classes/fighter8.jpg", "/images/classes/fighter9.jpg", "/images/classes/fighter10.jpg", "/images/classes/fighter11.jpg", "/images/classes/fighter12.jpg", "/images/classes/fighter13.jpg", "/images/classes/fighter14.jpg"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 5
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "light melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "two-handed melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "one-handed ranged"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "ranged"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "cloth"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "light"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "medium"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "shield"
+            },
+            {
+              "type": "ability",
+              "name": "Quick attack"
+            },
+            {
+              "type": "ability",
+              "name": "Heavy attack"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Advance lunge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                },
+                {
+                  "type": "ability",
+                  "name": "Sharpshooter"
+                },
+                {
+                  "type": "ability",
+                  "name": "Shield adept"
+                },
+                {
+                  "type": "ability",
+                  "name": "Parry"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Restoring blood"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 6
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Reactive movement"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move"
+                },
+                {
+                  "type": "ability",
+                  "name": "Oportunist"
+                },
+                {
+                  "type": "ability",
+                  "name": "Hold rank"
+                },
+                {
+                  "type": "ability",
+                  "name": "Side step"
+                },
+                {
+                  "type": "ability",
+                  "name": "Moving dodge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Provoke attack"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Advance lunge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                },
+                {
+                  "type": "ability",
+                  "name": "Sharpshooter"
+                },
+                {
+                  "type": "ability",
+                  "name": "Shield adept"
+                },
+                {
+                  "type": "ability",
+                  "name": "Parry"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Honed critical"
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 7
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Adrenaline rush"
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Thick skin"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Reactive movement"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move II"
+                },
+                {
+                  "type": "ability",
+                  "name": "Oportunist"
+                },
+                {
+                  "type": "ability",
+                  "name": "Hold rank"
+                },
+                {
+                  "type": "ability",
+                  "name": "Side step"
+                },
+                {
+                  "type": "ability",
+                  "name": "Moving dodge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 8
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Rapid attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Advance lunge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                },
+                {
+                  "type": "ability",
+                  "name": "Sharpshooter"
+                },
+                {
+                  "type": "ability",
+                  "name": "Shield adept"
+                },
+                {
+                  "type": "ability",
+                  "name": "Parry"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Melee weapon specialist"
+            },
+            {
+              "type": "ability",
+              "name": "Ranged weapon specialist"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Provoke cluster"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 9
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Reactive movement"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move II"
+                },
+                {
+                  "type": "ability",
+                  "name": "Oportunist"
+                },
+                {
+                  "type": "ability",
+                  "name": "Hold rank"
+                },
+                {
+                  "type": "ability",
+                  "name": "Side step"
+                },
+                {
+                  "type": "ability",
+                  "name": "Moving dodge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Mastered critical"
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 10
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Rapid attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Advance lunge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                },
+                {
+                  "type": "ability",
+                  "name": "Sharpshooter"
+                },
+                {
+                  "type": "ability",
+                  "name": "Shield adept"
+                },
+                {
+                  "type": "ability",
+                  "name": "Parry"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Hard skin"
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 11
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Melee weapon master"
+            },
+            {
+              "type": "ability",
+              "name": "Ranged weapon master"
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 13
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Reactive movement"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move II"
+                },
+                {
+                  "type": "ability",
+                  "name": "Oportunist"
+                },
+                {
+                  "type": "ability",
+                  "name": "Hold rank"
+                },
+                {
+                  "type": "ability",
+                  "name": "Side step"
+                },
+                {
+                  "type": "ability",
+                  "name": "Moving dodge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Chronoshift"
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 15
+            },
+            {
+              "type": "ability",
+              "name": "Undying luck"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Barbarian",
+      "starting gold": 80,
+      "starting health": 7,
+      "health per level": 7,
+      "description": null,
+      "image-links": ["/images/classes/barbarian.jpg", "/images/classes/barbarian2.jpg", "/images/classes/barbarian3.png", "/images/classes/barbarian4.jpg", "/images/classes/barbarian5.jpg", "/images/classes/barbarian6.jpg", "/images/classes/barbarian7.jpg", "/images/classes/barbarian8.jpg", "/images/classes/barbarian9.jpg", "/images/classes/barbarian10.jpg", "/images/classes/barbarian11.jpg", "/images/classes/barbarian12.jpg", "/images/classes/barbarian13.jpg", "/images/classes/barbarian14.jpg", "/images/classes/barbarian15.jpg", "/images/classes/barbarian16.jpg", "/images/classes/barbarian17.jpg", "/images/classes/barbarian18.jpg", "/images/classes/barbarian19.jpg", "/images/classes/barbarian20.jpg", "/images/classes/barbarian21.jpg", "/images/classes/barbarian22.jpg"],
+      "level modifiers": [
+        {
+          "level": 1,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 5
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "light melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "two-handed melee"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "one-handed ranged"
+            },
+            {
+              "type": "weapon proficiency",
+              "name": "ranged"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "cloth"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "light"
+            },
+            {
+              "type": "armor proficiency",
+              "name": "medium"
+            },
+            {
+              "type": "ability",
+              "name": "Heavy attack"
+            },
+            {
+              "type": "ability",
+              "name": "Rage"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Raging fury"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging guard"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging haste"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Restoring blood"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "armor proficiency",
+                  "name": "shield"
+                },
+                {
+                  "type": "ability",
+                  "name": "Quick attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Blood boil"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 6
+            },
+            {
+              "type": "ability",
+              "name": "Enraged swing"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Raging fury"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging guard"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging haste"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Unstoppable fever"
+                },
+                {
+                  "type": "ability",
+                  "name": "Murderous fever"
+                },
+                {
+                  "type": "ability",
+                  "name": "Beserker fever"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 7
+            },
+            {
+              "type": "ability",
+              "name": "Thick skin"
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "passive list": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Raging fury"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging guard"
+                },
+                {
+                  "type": "ability",
+                  "name": "Raging haste"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Melee weapon specialist"
+            },
+            {
+              "type": "action points",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Provoke cluster"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Heated blood boil"
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "armor proficiency",
+                  "name": "shield"
+                },
+                {
+                  "type": "ability",
+                  "name": "Quick attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Charge attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Duel weapons"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Unstoppable fever"
+                },
+                {
+                  "type": "ability",
+                  "name": "Murderous fever"
+                },
+                {
+                  "type": "ability",
+                  "name": "Beserker fever"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "passive list": [
+            {
+              "type": "action points",
+              "value": 9
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Hard skin"
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Double rage"
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Melee weapon master"
+            },
+            {
+              "type": "action points",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hard shove"
+                },
+                {
+                  "type": "ability",
+                  "name": "Stubborn blood"
+                },
+                {
+                  "type": "ability",
+                  "name": "Guided attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Perfect attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Whirlwind swing"
+                },
+                {
+                  "type": "ability",
+                  "name": "Intimdating attack"
+                },
+                {
+                  "type": "ability",
+                  "name": "Disarming strike"
+                },
+                {
+                  "type": "ability",
+                  "name": "Trip attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Reactive movement"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move"
+                },
+                {
+                  "type": "ability",
+                  "name": "Extra move II"
+                },
+                {
+                  "type": "ability",
+                  "name": "Oportunist"
+                },
+                {
+                  "type": "ability",
+                  "name": "Hold rank"
+                },
+                {
+                  "type": "ability",
+                  "name": "Side step"
+                },
+                {
+                  "type": "ability",
+                  "name": "Moving dodge"
+                },
+                {
+                  "type": "ability",
+                  "name": "Counter attack"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "passive list": [
+            {
+              "type": "ability",
+              "name": "Triple rage"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

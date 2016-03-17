@@ -1,0 +1,481 @@
+{
+  "class": "valuable",
+  "possibles": {
+    "name": null,
+    "classification": [
+      "gemstone", "ore", "treasure", "artifact"
+    ],
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": null,
+    "hidden properties": null,
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Azurite",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 10,
+      "rarity": "uncommon",
+      "description": "Deep blue opaque stone with teal clusters.",
+      "image-links": ["/images/items/azurite.jpg"]
+    },
+    {
+      "name": "Agate",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "description": "Banded smoothed stone of many colors",
+      "image-links": ["/images/items/agate.jpg"]
+    },
+    {
+      "name": "Quartz",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "description": "Translucent crystal shard of white.  Sometimes found with purple tips.",
+      "image-links": ["/images/items/quartz.jpg", "/images/items/quartz2.jpg"]
+    },
+    {
+      "name": "Lapis Lazuli",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 30,
+      "rarity": "uncommon",
+      "description": "Bright blue smoothed stone with yellow flecks.",
+      "image-links": ["/images/items/lapis_lazuli.jpg"]
+    },
+    {
+      "name": "Malachite",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 20,
+      "rarity": "uncommon",
+      "description": "Smoothed stone with ribbins of shades of green.",
+      "image-links": ["/images/items/malachite.jpg"]
+    },
+    {
+      "name": "Tigers Eye",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 10,
+      "rarity": "uncommon",
+      "description": "Smoothed stone with ribbins of shades of brown.",
+      "image-links": ["/images/items/tigers_eye.jpg"]
+    },
+    {
+      "name": "Turquoise",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 10,
+      "rarity": "uncommon",
+      "description": "Smoothed teal stone with flecks of gray or gold.",
+      "image-links": ["/images/items/turquoise.jpg"]
+    },
+    {
+      "name": "Carnelian",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "description": "Smoothed red-orange stone.",
+      "image-links": ["/images/items/carnelian.jpg"]
+    },
+    {
+      "name": "Citrine",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 75,
+      "rarity": "uncommon",
+      "description": "Glassy translucent deep yellow gem.",
+      "image-links": ["/images/items/citrine.jpg"]
+    },
+    {
+      "name": "Jasper",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "description": "Smoothed stone of earth reds.",
+      "image-links": ["/images/items/jasper.jpg"]
+    },
+    {
+      "name": "Onyx",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "description": "Smoothed black stone.",
+      "image-links": ["/images/items/jasper.jpg"]
+    },
+    {
+      "name": "Zircon",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "description": "Glassy translucent aquamarine gem.",
+      "image-links": ["/images/items/zircon.jpg"]
+    },
+    {
+      "name": "Amethyst",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "description": "Glassy translucent purple gem.",
+      "image-links": ["/images/items/amethyst.jpg"]
+    },
+    {
+      "name": "Chrysoberyl",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "description": "Glassy translucent yellow gem.",
+      "image-links": ["/images/items/chrysoberyl.jpg"]
+    },
+    {
+      "name": "Garnet",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "description": "Glassy translucent red gem.",
+      "image-links": ["/images/items/chrysoberyl.jpg"]
+    },
+    {
+      "name": "Blue spinel",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 200,
+      "rarity": "uncommon",
+      "description": "Glassy translucent deep-blue gem.",
+      "image-links": ["/images/items/blue_spinel.jpg"]
+    },
+    {
+      "name": "Peridot",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 150,
+      "rarity": "uncommon",
+      "description": "Glassy translucent lime-green gem.",
+      "image-links": ["/images/items/peridot.jpg"]
+    },
+    {
+      "name": "Topaz",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 200,
+      "rarity": "uncommon",
+      "description": "Glassy translucent orange gem.",
+      "image-links": ["/images/items/topaz.jpg"]
+    },
+    {
+      "name": "Tourmaline",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 150,
+      "rarity": "uncommon",
+      "description": "Glassy crystal with a red tip towards a green gradient.",
+      "image-links": ["/images/items/tourmaline.jpg"]
+    },
+    {
+      "name": "Alexandrite",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 300,
+      "rarity": "uncommon",
+      "locality": null,
+      "hidden properties": "[INSPECTION 15] Changes to a deep green in natural daylight.",
+      "description": "Glassy translucent pink gem (in candle light).",
+      "image-links": ["/images/items/alexandrite.png"]
+    },
+    {
+      "name": "Black opal",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 500,
+      "rarity": "rare",
+      "description": "Smooth stone of wild colors.",
+      "image-links": ["/images/items/black_opal.png"]
+    },
+    {
+      "name": "Sapphire",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 500,
+      "rarity": "rare",
+      "description": "Glassy deep-blue gem.",
+      "image-links": ["/images/items/sapphire.png"]
+    },
+    {
+      "name": "Emerald",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 500,
+      "rarity": "rare",
+      "description": "Glassy deep-green gem usually cut square.",
+      "image-links": ["/images/items/emerald.png"]
+    },
+    {
+      "name": "Ruby",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 500,
+      "rarity": "rare",
+      "description": "Glassy deep-red gem.",
+      "image-links": ["/images/items/ruby.png"]
+    },
+    {
+      "name": "Diamond",
+      "classification": "gemstone",
+      "weight (lbs)": 0,
+      "value (gold)": 750,
+      "rarity": "rare",
+      "description": "Glassy reflective gem.",
+      "image-links": ["/images/items/diamond.png"]
+    },
+    {
+      "name": "Obsidian",
+      "classification": "ore",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "common",
+      "locality": ["volcanic", "regions"],
+      "hidden properties": "[NATURE 12 | LORE 12] Commonly used to make primitive blades and tips.",
+      "description": "Black glasslike rock.",
+      "image-links": ["/images/items/obsidian.jpg"]
+    },
+    {
+      "name": "Hematite",
+      "classification": "ore",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "locality": ["underground", "dungeon"],
+      "hidden properties": "[ALCHEMY 15 | METALWORK BACKGROUND] Hematite is commonly used to make iron.",
+      "description": "Shiney black bubbled stone.",
+      "image-links": ["/images/items/hematite.jpg"]
+    },
+    {
+      "name": "Gold nugget",
+      "classification": "ore",
+      "weight (lbs)": 1,
+      "value (gold)": 100,
+      "rarity": "common",
+      "locality": ["river", "underground", "dungeon"],
+      "description": "A small nugget of gold.",
+      "image-links": ["/images/items/gold_nugget.jpg"]
+    },
+    {
+      "name": "Jade pendant",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 180,
+      "rarity": "uncommon",
+      "description": "Translucent green pendant carved of pure jade.",
+      "image-links": ["/images/items/jade_pendant.jpg"]
+    },
+    {
+      "name": "Pearl",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 75,
+      "rarity": "uncommon",
+      "description": "White small opaque sphere.",
+      "image-links": ["/images/items/jade_pendant.jpg"]
+    },
+    {
+      "name": "Black pearl",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 150,
+      "rarity": "uncommon",
+      "description": "Black small opaque sphere.",
+      "image-links": ["/images/items/black_pearl.jpg"]
+    },
+    {
+      "name": "Silver goblet",
+      "classification": "treasure",
+      "weight (lbs)": 1,
+      "value (gold)": 50,
+      "rarity": "common",
+      "locality": ["indoors (fancy)"],
+      "description": "A shiney goblet with a few small embedded gems interlayed on the rim.",
+      "image-links": ["/images/items/silver_goblet.jpg"]
+    },
+    {
+      "name": "Silver ewer",
+      "classification": "treasure",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "locality": ["indoors (fancy)"],
+      "description": "A shiney ewer (wine pitcher) with remarkable detail.",
+      "image-links": ["/images/items/silver_ewer.jpg"]
+    },
+    {
+      "name": "Silver lamp",
+      "weight (lbs)": 1,
+      "value (gold)": 20,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 10 | LORE 10] Jinn can inhabit such a lamp.<br>[ARCANA 18] Jinn will never willingly inhabit a lamp: this is a common misconception. There is, however, a very powerful and influential jinn that was trapped in a magical lamp.",
+      "properties": "Can be lit and produce 30 ft radius of light for 1 hour.",
+      "description": "A silver lamp that is filled with oil and has a hempen wick.",
+      "image-links": ["/images/items/silver_lamp.jpg"]
+    },
+    {
+      "name": "Gold bracelet",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 30,
+      "rarity": "common",
+      "locality": ["on-person (fancy)"],
+      "description": "A golden bracelet of intricate detail.",
+      "image-links": ["/images/items/gold_bracelet.jpg"]
+    },
+    {
+      "name": "Copper chalice",
+      "classification": "treasure",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "locality": ["indoors"],
+      "description": "A simple bronze colored chalice.",
+      "image-links": ["/images/items/copper_chalice.jpg"]
+    },
+    {
+      "name": "Wall mirror",
+      "classification": "treasure",
+      "weight (lbs)": 5,
+      "value (gold)": 15,
+      "rarity": "common",
+      "locality": ["indoors"],
+      "hidden properties": "[LORE 17 | ARCANA 17] Vampires have no reflection in a mirror.",
+      "description": "A small mirror set in a wooden frame.",
+      "image-links": ["/images/items/mirror.jpg"]
+    },
+    {
+      "name": "Locket",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 15,
+      "rarity": "common",
+      "locality": ["on-person"],
+      "hidden properties": "[INSPECTION] Can try to determine person in the portrait.",
+      "description": "A small locket that can be opened to reveal a portrait.",
+      "image-links": ["/images/items/locket.jpg"]
+    },
+    {
+      "name": "Gold ring",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "locality": ["on-person (fancy)"],
+      "description": "A golden ring with intricate detail.",
+      "image-links": ["/images/items/gold_ring.jpg"]
+    },
+    {
+      "name": "Silver necklace",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "locality": ["on-person (fancy)"],
+      "description": "A necklace with intricate detail and a set gem.",
+      "image-links": ["/images/items/silver_necklace.jpg"]
+    },
+    {
+      "name": "Gold brooch",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 75,
+      "rarity": "uncommon",
+      "locality": ["on-person (fancy)"],
+      "description": "A golden brooch with intricate detail and set gems.",
+      "image-links": ["/images/items/gold_brooch.jpg"]
+    },
+    {
+      "name": "Gold crown",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 500,
+      "rarity": "uncommon",
+      "locality": ["on-person (fancy)"],
+      "description": "A golden crown set with gems.",
+      "image-links": ["/images/items/crown.png"]
+    },
+    {
+      "name": "Tapestry",
+      "classification": "treasure",
+      "weight (lbs)": 5,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "locality": ["indoors (fancy)"],
+      "hidden properties": "[INSPECTION | LORE] Can try to determine scene in tapestry.",
+      "description": "A woven tapestry that hangs upon a wall.",
+      "image-links": ["/images/items/tapestry.jpg"]
+    },
+    {
+      "name": "Masterpiece painting",
+      "classification": "treasure",
+      "weight (lbs)": 5,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "locality": ["indoors (fancy)"],
+      "description": "A detailed painting requring great craft set in an intricate frame.",
+      "image-links": null
+    },
+    {
+      "name": "Music box",
+      "classification": "treasure",
+      "weight (lbs)": 5,
+      "value (gold)": 50,
+      "rarity": "uncommon",
+      "locality": ["indoors (fancy)"],
+      "hidden properties": "[ARCANA 15] Some music boxes play magically, they are worth double the value.",
+      "description": "A wooden box that when opened plays music.",
+      "image-links": ["/images/items/music_box.jpg"]
+    },
+    {
+      "name": "Idol",
+      "classification": "treasure",
+      "weight (lbs)": 1,
+      "value (gold)": 25,
+      "rarity": "common",
+      "locality": ["dungeon", "den", "hideout"],
+      "description": "An idol of an evil god or powerful being.",
+      "image-links": ["/images/items/idol.jpg"]
+    },
+    {
+      "name": "War mask",
+      "classification": "treasure",
+      "weight (lbs)": 0,
+      "value (gold)": 10,
+      "rarity": "common",
+      "locality": ["dungeon", "den", "hideout"],
+      "description": "A mask worn by tribal humanoids for ceremony or war.",
+      "image-links": ["/images/items/war_mask.jpg"]
+    },
+    {
+      "name": "Bone statuette",
+      "classification": "treasure",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "locality": ["dungeon", "den", "hideout"],
+      "description": "A small statue carved or assembled by bone.",
+      "image-links": ["/images/items/bone_statuette.jpg"]
+    }
+  ]
+}

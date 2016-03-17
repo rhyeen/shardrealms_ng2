@@ -1,0 +1,266 @@
+{
+  "class": "tool",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "hidden properties": null,
+    "required skills": [],
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Lockpick",
+      "weight (lbs)": 0,
+      "value (gold)": 5,
+      "rarity": "uncommon",
+      "locality": ["rarely found outside of the theives guild."],
+      "required skills": ["Sleight of hand"],
+      "properties": "Lockpicks are required to open locked objects or lock an unlocked object.<br>Sleight of hand check is made on lock.<br>If fail, the lockpick is destroyed and any trap is triggered.",
+      "description": "An thin iron instrument bent to match a lock's pins.",
+      "image-links": ["/images/items/lockpick.jpg"]
+    },
+    {
+      "name": "Alchemy kit",
+      "weight (lbs)": 10,
+      "value (gold)": 200,
+      "rarity": "common",
+      "required skills": ["Alchemy"],
+      "properties": "Every tool needed to perform alchemy.",
+      "description": "Contains mortar and pestle, flasks, and tubes in a portable leather case.",
+      "image-links": ["/images/items/alchemy_kit.jpg"]
+    },
+    {
+      "name": "Alchemy supplies",
+      "weight (lbs)": 40,
+      "value (gold)": 80,
+      "rarity": "common",
+      "required skills": ["Alchemy"],
+      "properties": "Every tool needed to perform alchemy.",
+      "description": "Mortar and pestle, flasks, and tubes.",
+      "image-links": ["/images/items/alchemy_supplies.jpg"]
+    },
+    {
+      "name": "Brewing supplies",
+      "weight (lbs)": 80,
+      "value (gold)": 100,
+      "rarity": "common",
+      "required skills": ["Alchemy"],
+      "properties": "All things needed for brewing ale and Aleberry (ale and spice) except malt and water.<br>To make 5 pints (5 lbs) of ale: 5 lbs of water and 1 lbs of malt are required to cook then ferment for 2-5 weeks.",
+      "description": "Fermenting pot, brewers pot, wooden barrel, and common spices.",
+      "image-links": ["/images/items/brewing_supplies.jpg"]
+    },
+    {
+      "name": "Calligraphy kit",
+      "weight (lbs)": 10,
+      "value (gold)": 20,
+      "rarity": "common",
+      "required skills": ["Calligraphy"],
+      "properties": "All things needed for writing letters, creating documents, and forging.",
+      "description": "A wooden box with pen, brush, fine paper, ink, stamps, and wax.",
+      "image-links": ["/images/items/calligraphy_set.jpg"]
+    },
+    {
+      "name": "Carpenter tools",
+      "weight (lbs)": 80,
+      "value (gold)": 120,
+      "rarity": "common",
+      "required skills": ["Woodworking"],
+      "properties": "All tools needed to create wooden items or furniture.",
+      "description": "A mallet, assorted chizels, small saw, ruler, auger, plane, and iron nails.",
+      "image-links": ["/images/items/carpenter_tools.jpg"]
+    },
+    {
+      "name": "Cartography tools",
+      "weight (lbs)": 10,
+      "value (gold)": 250,
+      "rarity": "uncommon",
+      "required skills": ["Calligraphy"],
+      "properties": "All things needed for navigation and map making except a blank canvas.",
+      "description": "A compass, triangle, pen and ink, nautical divider, astrolabe, and sextant instrument.",
+      "image-links": ["/images/items/cartography_tools.jpg"]
+    },
+    {
+      "name": "Cooking tools",
+      "weight (lbs)": 30,
+      "value (gold)": 30,
+      "rarity": "common",
+      "required skills": ["Alchemy"],
+      "properties": "All tools needed to cook a good meal.",
+      "description": "A brass pan, cast iron pot, assorted bowls, spoons, knifes, forks, and serving plates.",
+      "image-links": ["/images/items/cooking_supplies.jpg"]
+    },
+    {
+      "name": "Jewelry making tools",
+      "weight (lbs)": 5,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "required skills": ["Handicraft"],
+      "properties": "All tools needed to make jewelry or engravings.",
+      "description": "A bow drill, gravers and burins of different sizes, a hammer, needle and thread.",
+      "image-links": ["/images/items/jewelry_supplies.jpg"]
+    },
+    {
+      "name": "Leatherwork tools",
+      "weight (lbs)": 15,
+      "value (gold)": 120,
+      "rarity": "common",
+      "required skills": ["Leatherworking"],
+      "properties": "All tools needed to make leather items.",
+      "description": "A cobbler's last, knife, shaving and stitch-marking tool, pliers, and gravers.",
+      "image-links": ["/images/items/leather_tools.jpg"]
+    },
+    {
+      "name": "Painting kit",
+      "weight (lbs)": 5,
+      "value (gold)": 150,
+      "rarity": "common",
+      "required skills": ["Handicraft", "Calligraphy"],
+      "properties": "All things needed for painting.",
+      "description": "Paint brushes, colors, a pencil, water basin, small fine paper, and a palette.",
+      "image-links": ["/images/items/painting_kit.jpg"]
+    },
+    {
+      "name": "Pottery tools",
+      "weight (lbs)": 5,
+      "value (gold)": 50,
+      "rarity": "common",
+      "required skills": ["Handicraft"],
+      "properties": "All tools needed for making clay pots and sculpters.",
+      "description": "A sponge, wire clay cutter, rib, ribbons, and boxwood tools.",
+      "image-links": ["/images/items/pottery_tools.jpg"]
+    },
+    {
+      "name": "Smithing supplies",
+      "weight (lbs)": 120,
+      "value (gold)": 150,
+      "rarity": "common",
+      "required skills": ["Smithing"],
+      "properties": "All tools needed for making weapons and armor except for a forge and metal.",
+      "description": "Assorted hammers, stakes, prongs, an avil, bellow, and a bucket of coal.",
+      "image-links": ["/images/items/smithing_supplies.jpg"]
+    },
+    {
+      "name": "Weaving supplies",
+      "weight (lbs)": 15,
+      "value (gold)": 50,
+      "rarity": "common",
+      "required skills": ["Handicraft"],
+      "properties": "All tools needed for making clothes, blankets, or tapestries except balls of yarn.",
+      "description": "Assorted hammers needles, hooks, combs, spools, and a loom.",
+      "image-links": ["/images/items/smithing_wagon.jpg"]
+    },
+    {
+      "name": "Mechanic supplies",
+      "weight (lbs)": 50,
+      "value (gold)": 150,
+      "rarity": "common",
+      "required skills": ["Mechanic"],
+      "properties": "All tools needed for tinkering with and repairing mechanisms.",
+      "description": "An incredible variety of tools packed in a large chest.",
+      "image-links": ["/images/items/mechanics_supplies.jpg"]
+    },
+    {
+      "name": "Mechanic kit",
+      "weight (lbs)": 15,
+      "value (gold)": 300,
+      "rarity": "common",
+      "required skills": ["Mechanic"],
+      "properties": "All tools needed for tinkering with and repairing mechanisms.",
+      "description": "A variety of tools neatly fitted in a briefcase.",
+      "image-links": ["/images/items/mechanics_kit.jpg"]
+    },
+    {
+      "name": "Makeup kit",
+      "weight (lbs)": 2,
+      "value (gold)": 40,
+      "rarity": "common",
+      "required skills": ["Deception"],
+      "properties": "Useful for altering appearance to influence through beauty or deceive through disguise.",
+      "description": "Brushes, cotton swaps, cosmetics, hair dye, and simple perfumes.",
+      "image-links": ["/images/items/disguise_kit.jpg"]
+    },
+    {
+      "name": "Game set",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "required skills": null,
+      "properties": "Played for gambling or for fun. For a list of games, see: goo.gl/gVhkO4",
+      "description": "A small box of dice, cards, and chips.",
+      "image-links": ["/images/items/gaming_set.jpg"]
+    },
+    {
+      "name": "Bagpipe",
+      "weight (lbs)": 5,
+      "value (gold)": 20,
+      "rarity": "common",
+      "locality": ["among dwarves", "among halflings", "among humans", "among gnomes"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "A musical instrument made of a pressurized leather bag that is squeezed to release air into reed pipes.",
+      "image-links": ["/images/items/bagpipes.jpg"]
+    },
+    {
+      "name": "Drum",
+      "weight (lbs)": 2,
+      "value (gold)": 5,
+      "rarity": "common",
+      "locality": ["among scro", "among dwarves", "among humans"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "Leather skin wrapped tightly over a bucket-like cylinder. Hit with a mallet or stick as rhythmic music.",
+      "image-links": ["/images/items/war_drum.jpg", "/images/items/drum2.jpg"]
+    },
+    {
+      "name": "Flute",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "locality": ["among halflings", "among tieflings", "among humans", "among gnomes"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "A wind pipe carved with holes along the shaft that is blown into.",
+      "image-links": ["/images/items/war_drum.jpg"]
+    },
+    {
+      "name": "Lute",
+      "weight (lbs)": 5,
+      "value (gold)": 30,
+      "rarity": "common",
+      "locality": ["among halflings", "among tieflings", "among humans", "among dwarves", "among elves", "among nephlim", "among gnomes", "among argonian"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "A string instrument with a rounded body and short neck that is plucked.",
+      "image-links": ["/images/items/lute.jpg"]
+    },
+    {
+      "name": "Lyre",
+      "weight (lbs)": 5,
+      "value (gold)": 30,
+      "rarity": "common",
+      "locality": ["among halflings", "among tieflings", "among humans", "among elves", "among nephlim", "among gnomes", "among argonian", "among avia", "among merfolk"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "A u-shaped string instrument with a crossbar holding verticle strings tight that is plucked.",
+      "image-links": ["/images/items/lyre.jpg"]
+    },
+    {
+      "name": "Viol",
+      "weight (lbs)": 5,
+      "value (gold)": 30,
+      "rarity": "common",
+      "locality": ["among halflings", "among tieflings", "among humans", "among elves", "among nephlim", "among gnomes"],
+      "required skills": ["Perform"],
+      "properties": "Can be played as a musical instrument",
+      "description": "A short string instrument with a curved body and thin neck that is played with a bow.",
+      "image-links": ["/images/items/viol.jpg"]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "class": "service",
+  "possibles": {
+    "name": null,
+    "value (gold)": 0,
+    "rarity": null,
+    "locality": [],
+    "components": null,
+    "hidden properties": null,
+    "properties": null
+  },
+  "entries": [
+    {
+      "name": "Round of ale",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Each member of the group (up to 5) receive a pint of ale."
+    },
+    {
+      "name": "Round of wine",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Each member of the group (up to 5) receive a glass of wine."
+    },
+    {
+      "name": "Glass of fine wine",
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Receive a glass of fine wine."
+    },
+    {
+      "name": "Round of food",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Each member of the group (up to 5) receive a small meal (tasteless)."
+    },
+    {
+      "name": "Meal",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Receive a large meal (tasteful)."
+    },
+    {
+      "name": "Inn room (poor)",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "5 members of a group may sleep in a community room with sackcloth bedding (no benefit to sleep checks)."
+    },
+    {
+      "name": "Inn room (common)",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "2 members of a group may sleep in a community room with poor bedding.<br>+3 to a quality of sleep check."
+    },
+    {
+      "name": "Inn room (modest)",
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Key to a private tight room with modest bed.<br>+10 to a quality of sleep check."
+    },
+    {
+      "name": "Inn room (fine)",
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Key to a private room with comfortable bed and a lockable chest.<br>+15 to a quality of sleep check."
+    },
+    {
+      "name": "Inn room (luxury)",
+      "value (gold)": 25,
+      "rarity": "common",
+      "properties": "Key to a private large room with a large comfortable bed, a lockable chest, cabinet, and water basin.<br>+20 to a quality of sleep check."
+    },
+    {
+      "name": "Inn room (grand)",
+      "value (gold)": 100,
+      "rarity": "common",
+      "properties": "Key to a private large room with a large comfortable bed, a lockable chest, cabinet, mirror, water basin, and beautiful decorations.<br>+20 to a quality of sleep check."
+    },
+    {
+      "name": "Traveling by wagon.",
+      "value (gold)": "1 per 2 days",
+      "rarity": "common",
+      "properties": "Traders often allow travelers to hitch a ride on the way to a trader's destination."
+    },
+    {
+      "name": "Traveling by carriage.",
+      "value (gold)": "2 per day",
+      "rarity": "common",
+      "properties": "Taxi service to travel upon safe roads."
+    },
+    {
+      "name": "Traveling by ship.",
+      "value (gold)": "1 per 2 days",
+      "rarity": "common",
+      "properties": "Travel to given destination across a body of water, essentially as ship cargo."
+    },
+    {
+      "name": "Hiring a guide.",
+      "value (gold)": "10 per day",
+      "rarity": "common",
+      "properties": "Mounted or walking guide through difficult terrain or unknown areas. Ready to resist slight danger."
+    },
+    {
+      "name": "Hiring a mercenary.",
+      "value (gold)": "50 per day",
+      "rarity": "common",
+      "properties": "Gain a Mercenary companion in the party for each day hired."
+    },
+    {
+      "name": "Identify magic item",
+      "value (gold)": 250,
+      "rarity": "uncommon",
+      "components": "unknown magical item",
+      "properties": null
+    },
+    {
+      "name": "Examine item",
+      "value (gold)": 30,
+      "rarity": "common",
+      "components": "item",
+      "properties": "Determines if an item is magical, and has roll of 18 on all hidden properties checks for that item.  Can sometimes determine history of this particular item."
+    },
+    {
+      "name": "Appraise item",
+      "value (gold)": 50,
+      "rarity": "common",
+      "components": "item",
+      "properties": "Provides appraisal roll of 18 on value of item (note that sell price is rarely value, although buy price should usually be value)."
+    },
+    {
+      "name": "Remove disease",
+      "value (gold)": 75,
+      "rarity": "common",
+      "components": null,
+      "properties": "Removes any disease on a target."
+    },
+    {
+      "name": "Remove curse bond",
+      "value (gold)": 250,
+      "rarity": "uncommon",
+      "components": "cursed item",
+      "properties": "Removes any cursed item from target.  This does not remove the curse."
+    },
+    {
+      "name": "Remove curse",
+      "value (gold)": 400,
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Removes any curse on a target."
+    },
+    {
+      "name": "Remove curse from item",
+      "value (gold)": 400,
+      "rarity": "uncommon",
+      "components": "cursed item",
+      "properties": "Removes any curse on a target item.  This may alter the effects of the item (both good and bad)."
+    },
+    {
+      "name": "Make custom armor",
+      "value (gold)": "5x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a custom armor, fitted to your body: +1 dodge modifier if armor is customized to your body. Cannot make an already forged armor custom."
+    },
+    {
+      "name": "Make superior weapon",
+      "value (gold)": "300 + 10x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a superior weapon: +2 DMG. Cannot make an already forged weapon superior."
+    },
+    {
+      "name": "Make superior armor",
+      "value (gold)": "300 + 5x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a superior armor: +1 armor modifier, +1 dodge modifier. Cannot make an already forged armor superior."
+    },
+    {
+      "name": "Make superior ammunition",
+      "value (gold)": "15",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a single superior ammunition that adds +2 DMG when fired. Cannot make already created ammunition superior."
+    },
+    {
+      "name": "Make crude weapon",
+      "value (gold)": "1/2 price of original item",
+      "rarity": "common",
+      "components": null,
+      "properties": "Creates a crude weapon: -2 DMG. Cannot make an already forged weapon crude."
+    },
+    {
+      "name": "Make crude ammunition",
+      "value (gold)": "0",
+      "rarity": "common",
+      "components": null,
+      "properties": "Creates a single crude ammunition that adds -2 DMG when fired. Cannot make already created ammunition crude."
+    },
+    {
+      "name": "Make true strike weapon",
+      "value (gold)": "300 + 10x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a true strike weapon: +5 AR. Cannot make an already forged weapon true strike."
+    },
+    {
+      "name": "Make true strike ammunition",
+      "value (gold)": "15",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a single superior ammunition that adds +5 AR when fired. Cannot make already created ammunition superior."
+    },
+    {
+      "name": "Make razor sharp melee weapon",
+      "value (gold)": "400",
+      "rarity": "uncommon",
+      "components": "melee weapon",
+      "properties": "Adds razor sharp attribute to a weapon: +1d4 DMG."
+    },
+    {
+      "name": "Make razor sharp ammunition",
+      "value (gold)": "10",
+      "rarity": "uncommon",
+      "components": "ammunition",
+      "properties": "Adds razor sharp attribute to a single ammunition: +1d4 DMG when fired."
+    },
+    {
+      "name": "Make silver weapon",
+      "value (gold)": "10x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a silver weapon: ignore weapon resistance and immunity. Cannot make an already forged weapon silver."
+    },
+    {
+      "name": "Make silver ammunition",
+      "value (gold)": "15",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a single superior ammunition that ignores weapon resistance and immunity when fired. Cannot make already created ammunition superior."
+    },
+    {
+      "name": "Make pure silver weapon",
+      "value (gold)": "20x price of original item",
+      "rarity": "rare",
+      "components": null,
+      "properties": "Creates a pure silver weapon: if target has weapon resistance or immunity, instead deal double damage. Cannot make an already forged weapon pure silver."
+    },
+    {
+      "name": "Make pure silver ammunition",
+      "value (gold)": "30",
+      "rarity": "rare",
+      "components": null,
+      "properties": "Creates a single superior ammunition that if target has weapon resistance or immunity, instead deal double damage when fired. Cannot make already created ammunition superior."
+    }
+  ]
+}

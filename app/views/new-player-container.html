@@ -1,0 +1,98 @@
+<section class="new-player-container" *ngIf="players && players.selectedPlayer">
+  <section class="player-form-input">
+  	<label>
+      <span>Player name</span>
+      <input type="text" [(ngModel)]="players.selectedPlayer['player name']">
+    </label>
+    <label>
+      <span>Character name</span>
+      <input type="text" [(ngModel)]="players.selectedPlayer['name']">
+    </label>
+    <label>
+      <span>Race</span>
+      <select [ngModel]="players.selectedPlayer['race']" (ngModelChange)="playerRaceChange($event)">
+        <option *ngFor="#race of newPlayerConfig.races" [value]="race.name">{{race.name}}</option>
+      </select>
+    </label>
+    <label>
+      <span>Class</span>
+      <select [ngModel]="players.selectedPlayer['class']" (ngModelChange)="playerClassChange($event)">
+        <option *ngFor="#class of newPlayerConfig.classes" [value]="class.name">{{class.name}}</option>
+      </select>
+    </label>
+    <label>
+      <span>Starting level</span>
+      <input type="number" min="1" max="20" [ngModel]="players.selectedPlayer['level']" (ngModelChange)="playerLevelChange($event)">
+    </label>
+    <label>
+      <span>Starting experience</span>
+      <input class="input-note" type="number" min="0" disabled [(ngModel)]="players.selectedPlayer['experience']">
+    </label>
+
+    <h3>Appearance</h3>
+    <label>
+      <span>Size</span>
+      <select [(ngModel)]="players.selectedPlayer['size']">
+        <option *ngFor="#size of newPlayerConfig.sizes" [value]="size">{{size}}</option>
+      </select>
+    </label>
+    <!-- using players.selectedPlayer['size'] since players.selectedPlayer['race'] does not seem to update the [disabled].  Size always changes when race changes. -->
+    <label>
+      <span>Eye color</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['eye color']" [list]="newPlayerUniqueConfig['eye colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Skin color</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['skin color']" [list]="newPlayerUniqueConfig['skin colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Hair color</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['hair color']" [list]="newPlayerUniqueConfig['hair colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Height (in)</span>
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['height (in)']" placeholder="Average: {{newPlayerUniqueConfig['avg height (in)']}}">
+    </label>
+    <label>
+      <span>Weight (lbs)</span>
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['weight (lbs)']" placeholder="Average: {{newPlayerUniqueConfig['avg weight (lbs)']}}">
+    </label>
+    <label>
+      <span>Age</span>
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['age']">
+    </label>
+    <section class="player-form-input-age">
+      <div>Young adult: {{newPlayerUniqueConfig['age']['young adult']}}</div>
+      <div>Middle aged: {{newPlayerUniqueConfig['age']['middle aged']}}</div>
+      <div>Old: {{newPlayerUniqueConfig['age']['old']}}</div>
+      <div>Max age: {{newPlayerUniqueConfig['age']['max age']}}</div>
+    </section>
+
+    <h3>Background</h3>
+    <label>
+      <span>Starting gold</span>
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['gold']">
+    </label>
+    <label>
+      <span>Languages</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['languages']" [list]="newPlayerConfig['languages']" [config]="{'multiple': true}"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Background</span>
+      <textarea [(ngModel)]="players.selectedPlayer['background']"></textarea>
+    </label>
+    <label>
+      <span>Ideals</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['character ideals']" [config]="{'multiple': true, 'textarea': true}"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Flaws</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['character flaws']" [config]="{'multiple': true, 'textarea': true}"></sr-dynamic-list>
+    </label>
+    <label>
+      <span>Previous accomplishments</span>
+      <sr-dynamic-list [value]="players.selectedPlayer['character previous accomplishments']" [config]="{'multiple': true, 'textarea': true}"></sr-dynamic-list>
+    </label>
+  </section>
+  <button type="submit" (click)="makeNewPlayer()">Next</button>
+</section>

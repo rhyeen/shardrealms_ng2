@@ -1,0 +1,611 @@
+{
+  "class": "gear",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "hidden properties": null,
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Backpack",
+      "weight (lbs)": 5,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can hold 50 lbs and is worn on the back.",
+      "description": "A leather backpack with one large opening.",
+      "image-links": ["/images/items/backpack.jpg"]
+    },
+    {
+      "name": "Bedroll",
+      "weight (lbs)": 4,
+      "value (gold)": 4,
+      "rarity": "common",
+      "properties": "+3 to a quality of sleep check.<br>+2 to a cold resist check.",
+      "description": "A wool blanket wrapped and tied with leather straps.",
+      "image-links": ["/images/items/bedroll.png"]
+    },
+    {
+      "name": "Quality bedroll",
+      "weight (lbs)": 5,
+      "value (gold)": 50,
+      "rarity": "common",
+      "properties": "+10 to a quality of sleep check.<br>+8 to a cold resist check.",
+      "description": "A hide sleeping bag and stuffed fur pillow wrapped and tied in a leather bag.",
+      "image-links": ["/images/items/quality_bedroll.png"]
+    },
+    {
+      "name": "Blanket",
+      "weight (lbs)": 3,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "+2 to a quality of sleep check.<br>+2 to a cold resist check.",
+      "description": "A wool blanket.",
+      "image-links": ["/images/items/blanket.png"]
+    },
+    {
+      "name": "Quality blanket",
+      "weight (lbs)": 4,
+      "value (gold)": 15,
+      "rarity": "common",
+      "properties": "+5 to a quality of sleep check.<br>+6 to a cold resist check.",
+      "description": "A fur blanket wrapped and tied with leather straps.",
+      "image-links": ["/images/items/quality_blanket.png"]
+    },
+    {
+      "name": "Bit and bridle",
+      "weight (lbs)": 1,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "+3 to any checks about riding an animal when used.",
+      "description": "Leather straps and an iron bit that wraps around an animal's head.",
+      "image-links": ["/images/items/bit_and_bridle.jpg"]
+    },
+    {
+      "name": "Block and tackle",
+      "weight (lbs)": 5,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can hoist 4x typical strength.<br>Must be able to hook onto rope or chain connected to the ceiling.",
+      "description": "A pair of pulleys with hooks and an included hempen rope.",
+      "image-links": ["/images/items/block_and_tackle.jpg", "/images/items/block_and_tackle_concept.jpg"]
+    },
+    {
+      "name": "Chain",
+      "weight (lbs)": 10,
+      "value (gold)": 5,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] Can burst with 25 STR check if bound and 20 STR check with a melee weapon.",
+      "description": "A 10 ft iron chain.",
+      "image-links": ["/images/items/chain.jpg"]
+    },
+    {
+      "name": "Chalk",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "hidden properties": "[ARCANA 12] Can draw magic circles as part of a ritual using chalk.",
+      "properties": "Can write on most rough surfaces.",
+      "description": "A white stick of chalk.",
+      "image-links": ["/images/items/chalk.jpg", "/images/other/magic_circle.png", "/images/other/magic_circle2.jpg", "/images/other/magic_circle3.jpg", "/images/other/magic_circle4.jpg"]
+    },
+    {
+      "name": "Collar and leash",
+      "weight (lbs)": 0,
+      "value (gold)": 2,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 13] Can burst with 18 STR check if bound.",
+      "properties": "+5 to any checks about handling an animal when used.",
+      "description": "Leather strap with a belt buckle attached to a 5 ft long leather leash.",
+      "image-links": ["/images/items/collar.jpg", "/images/items/chain_collar.jpg"]
+    },
+    {
+      "name": "Chain collar and leash",
+      "weight (lbs)": 0,
+      "value (gold)": 15,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 13] Can burst with 25 STR check if bound.",
+      "properties": "+7 to any checks about handling an animal when used.",
+      "description": "Iron chain wrapped through a ring and attached to a 5 ft long chain leash.",
+      "image-links": ["/images/items/collar.jpg"]
+    },
+    {
+      "name": "Component pouch",
+      "weight (lbs)": 5,
+      "value (gold)": 20,
+      "rarity": "common",
+      "properties": "For holding all needed ingredients for alchemy or spells.",
+      "description": "A leather belt pouch.",
+      "image-links": ["/images/items/component_pouch.jpg"]
+    },
+    {
+      "name": "Caltrops (25)",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "For 5 action points, spread 25 caltrops in a 5 ft area. Any creature entering the area must make a 15 DEX ST or suffer 1 piercing DMG and be slowed for 1 minute.",
+      "description": "Small iron tacks that form a tetrahedron allowing one tip to always be pointing upward.",
+      "image-links": ["/images/items/caltrops.jpg"]
+    },
+    {
+      "name": "Canvas (paper)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Used for creating scrolls or maps.",
+      "description": "Thick paper sheets.",
+      "image-links": ["/images/items/canvas.jpg"]
+    },
+    {
+      "name": "Climbing gear",
+      "weight (lbs)": 3,
+      "value (gold)": 25,
+      "rarity": "common",
+      "hidden properties": "[BALANCE 16] Can attempt more difficult climbing techniques, such as lead climbing, or repelling, and climbinb above the anchor.",
+      "properties": "With a proper top anchor, a person with climbing gear can climb to the anchor safely with a belayer and long enough rope (2x as long as climb).",
+      "description": "Iron clipping hooks and a leather harness.",
+      "image-links": ["/images/items/climbing_gear.jpg", "/images/items/climbing_gear_concept.jpg"]
+    },
+    {
+      "name": "Cooking pot",
+      "weight (lbs)": 5,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "Used for heating food.",
+      "description": "An iron pot with a handle and lid.",
+      "image-links": ["/images/items/pot.jpg"]
+    },
+    {
+      "name": "Crowbar",
+      "weight (lbs)": 3,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Adds +7 to STR when prying an object open.<br>For melee, treat as a club.",
+      "description": "Iron rod bent at one end.",
+      "image-links": ["/images/items/crowbar.jpg"]
+    },
+    {
+      "name": "Handbell",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Sounds an alert to all within 100 ft. This is not deemed an instrument.",
+      "description": "A signaling bell made of brass with a leather handle.",
+      "image-links": ["/images/items/handbell.jpg"]
+    },
+    {
+      "name": "Fishing tackle",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Make a survival check near a body of water to potentially catch fish.",
+      "description": "A wooden fishing pole, silk line, bobbers, hooks, sinkers, lures, and a small net.",
+      "image-links": ["/images/items/fishing_tackle.jpg"]
+    },
+    {
+      "name": "Flask",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1/2 liter (pint) of liquid.",
+      "description": "A brass flask with a metal cap for holding strong drink.",
+      "image-links": ["/images/items/flask.jpg"]
+    },
+    {
+      "name": "Flint and steel",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can create sparks to start a fire or light a torch.",
+      "description": "A dark quartz that sparks when struck with the steel tool.",
+      "image-links": ["/images/items/flint_and_steel.jpg"]
+    },
+    {
+      "name": "Grappling hook",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can throw to a ledge with 30 ft of rope.  DEX check to determine success.",
+      "description": "Iron claws attached to a 30 ft rope.",
+      "image-links": ["/images/items/grappling_hook.jpg"]
+    },
+    {
+      "name": "Hookshot",
+      "weight (lbs)": 5,
+      "value (gold)": 1500,
+      "rarity": "uncommon",
+      "properties": "Can fire a hook up to 100 ft that can penetrate soft wall or hook onto an edge. Holding the trigger quickly draws in the line and can carry up to 200 lbs.",
+      "description": "Steel claws attached to a 100 ft durable line that fires from a pistol.",
+      "image-links": ["/images/items/hookshot.jpg"]
+    },
+    {
+      "name": "Hammer",
+      "weight (lbs)": 3,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "For melee, treat as a club.",
+      "description": "Iron hammer head with a wooden handle.",
+      "image-links": ["/images/items/hammer.jpg"]
+    },
+    {
+      "name": "Hand mirror",
+      "weight (lbs)": 1,
+      "value (gold)": 25,
+      "rarity": "uncommon",
+      "properties": "Can see reflection on surface.",
+      "description": "Steel handled silver mirror.",
+      "image-links": ["/images/items/hand_mirror.jpg"]
+    },
+    {
+      "name": "Hunting trap",
+      "weight (lbs)": 3,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "+3 to survival checks for small or medium game.  Creature caught can perform 18 STR check to release, then slowed for 1 minute.",
+      "description": "Iron grips mechanically sprung tightly together.",
+      "image-links": ["/images/items/small_hunting_trap.jpg"]
+    },
+    {
+      "name": "Large hunting trap",
+      "weight (lbs)": 8,
+      "value (gold)": 10,
+      "rarity": "common",
+      "properties": "+3 to survival checks for medium or large game.  Creature caught takes 4 piercing DMG and can perform 25 STR check to release, then slowed for 1 hour.",
+      "description": "Iron grips with teeth mechanically sprung tightly together.",
+      "image-links": ["/images/items/large_hunting_trap.jpg"]
+    },
+    {
+      "name": "Lantern",
+      "weight (lbs)": 2,
+      "value (gold)": 15,
+      "rarity": "common",
+      "properties": "Wick can be lit and produce 40 ft radius of light for 1 hour.",
+      "description": "Iron container housing a flask of oil and wick that shines light through small glass windows.",
+      "image-links": ["/images/items/lantern.jpg"]
+    },
+    {
+      "name": "Bullseye lantern",
+      "weight (lbs)": 2,
+      "value (gold)": 40,
+      "rarity": "common",
+      "properties": "Wick can be lit and produce 80 ft cone of light for 1 hour.",
+      "description": "Iron container housing a flask of oil and wick that shines light through a glass lens.",
+      "image-links": ["/images/items/bullseye_lantern.jpg"]
+    },
+    {
+      "name": "Crystal lantern",
+      "weight (lbs)": 2,
+      "value (gold)": 80,
+      "rarity": "uncommon",
+      "properties": "Produces 30 ft radius of light that cannot be extinguished unless crystal is broken.",
+      "description": "Iron container housing a luminescent crystal that shines light through small glass windows.",
+      "image-links": ["/images/items/crystal_lantern.jpg"]
+    },
+    {
+      "name": "Lock",
+      "weight (lbs)": 0,
+      "value (gold)": 10,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] A lockpick and Sleight of hand check of 12 is needed to pick the lock.",
+      "properties": "Can lock a chest or other hinged container.",
+      "description": "Iron lock with a pair of matching keys.",
+      "image-links": ["/images/items/lock.jpg"]
+    },
+    {
+      "name": "Quality lock",
+      "weight (lbs)": 0,
+      "value (gold)": 50,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] A lockpick and Sleight of hand check of 16 is needed to pick the lock.",
+      "properties": "Can lock a chest or other hinged container.",
+      "description": "Brass lock with a pair of matching keys.",
+      "image-links": ["/images/items/quality_lock.jpg"]
+    },
+    {
+      "name": "Master lock",
+      "weight (lbs)": 0,
+      "value (gold)": 300,
+      "rarity": "uncommon",
+      "hidden properties": "[INSPECTION 15] A lockpick and Sleight of hand check of 22 is needed to pick the lock.",
+      "properties": "Can lock a chest or other hinged container.",
+      "description": "Steel sophisticated lock with a pair of matching keys.",
+      "image-links": ["/images/items/master_lock.jpg"]
+    },
+    {
+      "name": "Magnifying glass",
+      "weight (lbs)": 0,
+      "value (gold)": 100,
+      "rarity": "uncommon",
+      "properties": "+1 Inspection when used.",
+      "description": "A silver handled glass lens.",
+      "image-links": ["/images/items/magnifying_glass.jpg"]
+    },
+    {
+      "name": "Mess kit",
+      "weight (lbs)": 0,
+      "value (gold)": 2,
+      "rarity": "common",
+      "description": "An iron spoon, fork, and bowl wrapped tightly together.",
+      "image-links": ["/images/items/mess_kit.jpg"]
+    },
+    {
+      "name": "Oil flask",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Refills a flask of oil.",
+      "description": "A clay container containing a flask's worth of oil.",
+      "image-links": ["/images/items/oil_flask.jpg"]
+    },
+    {
+      "name": "Perfume",
+      "weight (lbs)": 0,
+      "value (gold)": 25,
+      "rarity": "uncommon",
+      "properties": "+2 Persuasion towards opposite sex or a noble when used.<br>Has 5 uses.",
+      "description": "A silver vial of delicate perfume.",
+      "image-links": ["/images/items/perfume.jpg"]
+    },
+    {
+      "name": "Pickaxe",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can be used to mine out a rock wall.<br>For melee, treat as a pickaxe.",
+      "description": "An iron double headed pick on a wooden handle.",
+      "image-links": ["/images/items/pickaxe.jpg"]
+    },
+    {
+      "name": "Pen and ink",
+      "weight (lbs)": 1,
+      "value (gold)": 10,
+      "rarity": "common",
+      "properties": "Can write up to 5 scrolls or maps, or 10 documents with the amount of ink given.",
+      "description": "A feather quill and glass container of black ink.",
+      "image-links": ["/images/items/pen_and_ink.jpg"]
+    },
+    {
+      "name": "Pouch",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can carry 5 lbs worth of small objects (such as 20 bullets, 15 darts, or coins).",
+      "description": "A soft leather pouch with a drawstring that can be strapped across the waist.",
+      "image-links": ["/images/items/pouch.jpg"]
+    },
+    {
+      "name": "Quiver for bolts",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can hold 20 crossbow bolts.",
+      "description": "A hard leather pouch for holding crossbow bolts.",
+      "image-links": ["/images/items/bolt_quiver.jpg"]
+    },
+    {
+      "name": "Superior quiver for bolts",
+      "weight (lbs)": 5,
+      "value (gold)": 200,
+      "rarity": "uncommon",
+      "properties": "Can hold 40 special crossbow bolts, and a player no longer needs to keep track of standard crossbow bolts.",
+      "description": "A high quality hard leather pouch with intricate designs for holding crossbow bolts.",
+      "image-links": ["/images/items/superior_quiver_bolts.jpg"]
+    },
+    {
+      "name": "Quiver for arrows",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can hold 20 arrows.",
+      "description": "A hard leather pouch for holding arrows.",
+      "image-links": ["/images/items/arrow_quiver.jpg"]
+    },
+    {
+      "name": "Superior quiver for arrows",
+      "weight (lbs)": 5,
+      "value (gold)": 200,
+      "rarity": "uncommon",
+      "properties": "Can hold 40 special arrows, and a player no longer needs to keep track of standard arrows.",
+      "description": "A high quality hard leather pouch with intricate designs for holding arrows.",
+      "image-links": ["/images/items/superior_quiver_arrows.jpg"]
+    },
+    {
+      "name": "Rope",
+      "weight (lbs)": 5,
+      "value (gold)": 5,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] Can be burst with a slashing weapon or a 20 STR check.",
+      "properties": "50 ft long.",
+      "description": "A hemp wound rope.",
+      "image-links": ["/images/items/rope.jpg"]
+    },
+    {
+      "name": "Fine rope",
+      "weight (lbs)": 3,
+      "value (gold)": 30,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] Can be burst with a slashing weapon or a 22 STR check.",
+      "properties": "60 ft long.",
+      "description": "A silk wound rope.",
+      "image-links": ["/images/items/fine_rope.jpg"]
+    },
+    {
+      "name": "Sack (5)",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 15 lbs worth of small objects.",
+      "description": "5 hemp cloth sacks.",
+      "image-links": ["/images/items/sack.jpg"]
+    },
+    {
+      "name": "Saddle",
+      "weight (lbs)": 20,
+      "value (gold)": 10,
+      "rarity": "common",
+      "properties": "Required for riding a typical pack animal long distances.<br>+2 to any checks about riding an animal when used.",
+      "description": "A leather saddle able to strap to an animal across the belly.",
+      "image-links": ["/images/items/saddle.jpg"]
+    },
+    {
+      "name": "War saddle",
+      "weight (lbs)": 25,
+      "value (gold)": 20,
+      "rarity": "common",
+      "properties": "Required for riding a typical pack animal long distances.<br>+3 to any checks about riding an animal when used.",
+      "description": "A hard leather saddle able to strap to an animal.",
+      "image-links": ["/images/items/saddle_war.jpg"]
+    },
+    {
+      "name": "Exotic saddle",
+      "weight (lbs)": 40,
+      "value (gold)": 80,
+      "rarity": "uncommon",
+      "properties": "Required for riding an animal, other than a typical pack animal, long distances.<br>+3 to any checks about riding an animal when used.",
+      "description": "A customized hard leather saddle able to strap to an animal.",
+      "image-links": ["/images/items/exotic_saddle.jpg", "/images/items/exotic_saddle2.jpg", "/images/items/exotic_saddle3.jpg"]
+    },
+    {
+      "name": "Saddlebags",
+      "weight (lbs)": 5,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can hold 25 lbs on either side.",
+      "description": "Large hide bags held together by rope and bound to an animal with leather straps.",
+      "image-links": ["/images/items/saddlebags.png", "/images/items/saddlebags2.png"]
+    },
+    {
+      "name": "Scale",
+      "weight (lbs)": 1,
+      "value (gold)": 5,
+      "rarity": "common",
+      "properties": "Can compare the weight of two objects each under 5 lbs.",
+      "description": "A wooden scale balanced by two open discs tied to the scale by string.",
+      "image-links": ["/images/items/scale.jpg"]
+    },
+    {
+      "name": "Scroll case",
+      "weight (lbs)": 1,
+      "value (gold)": 10,
+      "rarity": "common",
+      "properties": "Can hold 10 scrolls or maps.",
+      "description": "A hard leather case with a removable lid.",
+      "image-links": ["/images/items/scroll_case2.jpg", "/images/items/scroll_case.jpg"]
+    },
+    {
+      "name": "Sealing wax and stamp",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can seal an envelope with some authentication.",
+      "description": "A custom wooden headed stamp with a stick of wax.",
+      "image-links": ["/images/items/sealing_stamp.jpg", "/images/items/sealing_wax.jpg"]
+    },
+    {
+      "name": "Shackles",
+      "weight (lbs)": 1,
+      "value (gold)": 10,
+      "rarity": "common",
+      "hidden properties": "[INSPECTION 15] Chain can burst with 25 STR check if bound and 20 STR check with a melee weapon.<br>A lockpick and Sleight of hand check of 14 is needed to pick each hand's lock.",
+      "description": "Iron bands chained together that can be tightly locked to hands or feet.",
+      "image-links": ["/images/items/shackles.jpg"]
+    },
+    {
+      "name": "Shovel",
+      "weight (lbs)": 5,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "Can be used to dig a hole in soft ground.<br>For melee, treat as a club.",
+      "description": "Iron spade head on a wooden pole.",
+      "image-links": ["/images/items/shovel.jpg"]
+    },
+    {
+      "name": "Soap",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "+1 Persuasion after use when talking to nobles.",
+      "description": "A bar of fat, wood ash, and soda.",
+      "image-links": ["/images/items/shovel.jpg"]
+    },
+    {
+      "name": "Spyglass",
+      "weight (lbs)": 1,
+      "value (gold)": 100,
+      "rarity": "common",
+      "properties": "+3 Perception on area more than 120 ft away.",
+      "description": "A collapsable tube with a lens at either end.",
+      "image-links": ["/images/items/spyglass.jpg"]
+    },
+    {
+      "name": "Tent",
+      "weight (lbs)": 15,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "Can hold two people.<br>+3 to a quality of sleep check.<br>+2 to a cold resist check.",
+      "description": "A portable cloth tent with stakes, rods, and rope lining.",
+      "image-links": ["/images/items/spyglass.jpg"]
+    },
+    {
+      "name": "Tinderbox",
+      "weight (lbs)": 0,
+      "value (gold)": 3,
+      "rarity": "common",
+      "properties": "Can create sparks to start a fire or light a torch.",
+      "description": "A tin box containing a dark quartz that sparks when struck with the steel tool and tinder.",
+      "image-links": ["/images/items/tinderbox.jpg"]
+    },
+    {
+      "name": "Torch (5)",
+      "weight (lbs)": 5,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can be lit and produce 40 ft radius of light for 30 minutes.<br>For melee, treat as a club that deals an extra 1 fire DMG.",
+      "description": "An oil soaked cloth wrapped around a large stick.",
+      "image-links": ["/images/items/torch.jpg"]
+    },
+    {
+      "name": "War horn",
+      "weight (lbs)": 1,
+      "value (gold)": 15,
+      "rarity": "common",
+      "properties": "Sounds an alert to all within 300 ft. This is not deemed an instrument.",
+      "description": "A signaling horn made from ivory.",
+      "image-links": ["/images/items/war_horn.jpg"]
+    },
+    {
+      "name": "Waterskin",
+      "weight (lbs)": 5,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can hold 1 liter of liquid.",
+      "description": "A hide container with a cork stopper and a leather sling.",
+      "image-links": ["/images/items/waterskin.jpg"]
+    },
+    {
+      "name": "Whistle",
+      "weight (lbs)": 0,
+      "value (gold)": 2,
+      "rarity": "common",
+      "properties": "Sounds an alert to all within 200 ft. This is not deemed an instrument.",
+      "description": "A signaling horn made of brass.",
+      "image-links": ["/images/items/whistle.jpg"]
+    },
+    {
+      "name": "Whetstone",
+      "weight (lbs)": 1,
+      "value (gold)": 1,
+      "rarity": "common",
+      "properties": "Can sharpen a blade.",
+      "description": "A smooth hard rock.",
+      "image-links": ["/images/items/whetstone.jpg"]
+    }
+  ]
+}

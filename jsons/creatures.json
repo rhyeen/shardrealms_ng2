@@ -1,0 +1,3965 @@
+{
+  "class": "creature",
+  "possibles": {
+    "name": null,
+    "size": {
+      "value": ["tiny", "small", "medium", "large", "huge", "gargantuan", "colossal"],
+      "description": null
+    },
+    "level": 0,
+    "hit points": 0,
+    "raw armor": 0,
+    "raw dodge": 0,
+    "raw magic resist": 0,
+    "attributes": {
+      "STR": 0,
+      "DEX": 0,
+      "INF": 0,
+      "WIS": 0
+    },
+    "action points": 0,
+    "possible weapons": [],
+    "possible armor": [],
+    "possible items": [],
+    "abilities": [],
+    "skills": [
+      {
+        "name": null,
+        "value": 0
+      }
+    ],
+    "spells": [
+      {
+        "name": null,
+        "recharge": 0
+      }
+    ],
+    "weaknesses": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "resistances": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "immunities": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "locality": [],
+    "languages": [
+      [
+        "Common", "Dwarven", "Elven", "Draconic", "Scron", "Ancient", "Demonic", "Angelic", "Druidic", "Sylvan", "Aquan", "Avian", "Undercommon"
+      ]
+    ],
+    "combat": null,
+    "background": null,
+    "associations": null,
+    "value (gold)": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Awakened vines",
+      "size": {
+        "value": "medium",
+        "description": "Since the vines grow rapidly from a rooted point, the size varies based on how far they've stretched."
+      },
+      "level": 0,
+      "hit points": 10,
+      "raw armor": 6,
+      "raw dodge": 0,
+      "raw magic resist": 1,
+      "attributes": {
+        "STR": 3,
+        "DEX": 2,
+        "INF": 0,
+        "WIS": -5
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Blind", "Deaf", "Tremorsense", "Camouflage", "Half move", "Grapple", {"name": "Sting", "damage": 0, "damage type": "piercing", "damage 2": 1, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 4
+        }
+      ],
+      "spells": [
+        {
+          "name": "Entangling roots",
+          "recharge": 10
+        }
+      ],
+      "weaknesses": ["fire"],
+      "resistances": ["bludgeoning", "piercing", "poison"],
+      "immunities": ["psychic"],
+      "rarity": "common",
+      "locality": ["forests", "mountains", "jungle", "swamps"],
+      "languages": "Druidic",
+      "combat": "Awakened vines are always awakened for a reason and will always attack threats on site.  They do not coordinate nor strategize.",
+      "background": "A poisonous vine that has been awakened and granted the ability to quickly grow (Half move) and attack.<br>[NATURE 12] Usually awakened by an Ent herder or Druid.<br>[ARCANA 14] Dispel magic can turn an awakened vine back to a normal tree (treat as level 0 spell).",
+      "associations": "Usually does not attack a druid, forest animals, or an ent herder.",
+      "image-links": ["/images/creatures/awakened_vines.png"]
+    },
+    {
+      "name": "Baboon",
+      "size": {
+        "value": "small",
+        "description": "2.5 ft height, weighing 50 lbs."
+      },
+      "level": 0,
+      "hit points": 5,
+      "raw armor": 6,
+      "raw dodge": 2,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -1,
+        "DEX": 5,
+        "INF": -5,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": ["Hard object"],
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": null,
+      "abilities": ["Move", "Run", "Climb", "Pounce", "Melee attack", "Throw", {"name": "Bite", "damage": 3}, {"name": "Slam", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Intimidation",
+          "value": 1
+        },
+        {
+          "name": "Balance",
+          "value": 6
+        },
+        {
+          "name": "Survival",
+          "value": 1
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "mountains", "jungle", "forest"],
+      "languages": null,
+      "combat": "[NATURE 10] Very aggressive and territorial, they will often attack from a vantage point to avoid melee combat.",
+      "background": "[NATURE 10] An somewhat intelligent animal that lives in trees or grassy fields. Works together with other baboons to create bedding and shelter.<br>[NATURE 14] Baboons are curious by nature and my raid a camp or approach a caravan to see what they could bring back to their nesting grounds.",
+      "associations": "Tend to avoid the company of other animals, although they will work with other baboons and sometimes other primates.",
+      "value (gold)": 30,
+      "image-links": ["/images/creatures/baboon.jpg"]
+    },
+    {
+      "name": "Badger",
+      "size": {
+        "value": "small",
+        "description": "2 ft height and length, weighing 25 lbs."
+      },
+      "level": 0,
+      "hit points": 4,
+      "raw armor": 10,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": -2,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Dig", "Locked grapple", {"name": "Bite", "damage": 4}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 8
+        },
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 7
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "resistances": ["poison"],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 12] Badgers are scavengers and grub hunters, avoiding combat unless feeling threatened. They occasionally attack animals much larger than themselves by working together in a small pack.",
+      "background": "Mostly living underground in dug out tunnels, the badger is a nocturnal creature that enjoys its privacy.",
+      "associations": "[NATURE 12] Badgers work well with dog-like animals and will sometimes hunt with them. They avoid human contact, but can be trained.",
+      "value (gold)": 3,
+      "image-links": ["/images/creatures/badger.jpg", "/images/creatures/badger2.jpg"]
+    },
+    {
+      "name": "Bat",
+      "size": {
+        "value": "tiny",
+        "description": "5 in height and 8 in wing length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 5,
+      "raw dodge": 9,
+      "raw magic resist": 14,
+      "attributes": {
+        "STR": -5,
+        "DEX": 3,
+        "INF": -9,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Fly", "Climb", {"name": "Bite", "damage": 6}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (hearing)",
+          "value": 7
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "forests", "jungle", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "combat": "[NATURE 11] Bats are typically spooked while resting and swarm as they flee the area; many adventurers would confuse this as an attack.<br>[NATURE 13] Bats will typically avoid combat, unless led by a dire bat or other alpha creature.",
+      "background": "Bats are nocturnal creatures that typically settle in caves or other cool dark areas where they can sleep hanging upside down.",
+      "associations": "[NATURE 13] Bats will swarm together in great numbers, and in rare occasions are led by a dire bat, vampire, or other alpha creature.",
+      "value (gold)": 2,
+      "image-links": ["/images/creatures/bat.jpg", "/images/creatures/bat2.jpg"]
+    },
+    {
+      "name": "Black bear",
+      "size": {
+        "value": "medium",
+        "description": "3 ft height and 5 ft length, weighing around 200 lbs."
+      },
+      "level": 0,
+      "hit points": 18,
+      "raw armor": 11,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 3,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Locked grapple", {"name": "Bite", "damage": 3}, {"name": "Claw", "damage": 4}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 5
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 11] Black bears rarely attack in groups; instead, the bear will charge its target and attempt to knock it to the ground.  A bear will always chase a fleeing target, even if it wasn't originally interested in the target.<br>[NATURE 13] Black bears typically attack if provoked, hungry, or protecting their young.",
+      "background": "Bears live in the cover of the forest, rocks, or meadows. [NATURE 12] They will hibernate during the cold season in cracks or caves, but could be easily alerted if intruded upon.",
+      "associations": "Bears usually avoid other creatures excluding their own young.",
+      "value (gold)": 40,
+      "image-links": ["/images/creatures/black_bear.jpg", "/images/creatures/black_bear2.jpg"]
+    },
+    {
+      "name": "Black crawler",
+      "size": {
+        "value": "tiny",
+        "description": "2 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 2,
+      "raw dodge": 0,
+      "raw magic resist": 18,
+      "attributes": {
+        "STR": -8,
+        "DEX": -8,
+        "INF": -10,
+        "WIS": -8
+      },
+      "action points": 1,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half Move", "Tremorsense", "Infect with death"],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "background": "[NATURE 16] Black crawlers are parasitic worms that spread larva through a terrible disease that turns its victims into terrible creatures or zombies. Although chancing across a black crawler is rare, there mark is in almost every habitat in all corners or the world. Most often the spread of the disease is contained; however, sometimes cataclysmic outbreaks can wipe out entire regions turning all undead.",
+      "image-links": ["/images/creatures/black_crawler.jpg"]
+    },
+    {
+      "name": "Blink dog",
+      "size": {
+        "value": "medium",
+        "description": "2.5 ft height and 3 ft length, weighing around 150 lbs."
+      },
+      "level": 0,
+      "hit points": 14,
+      "raw armor": 11,
+      "raw dodge": 0,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 1,
+        "DEX": 5,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": [],
+      "possible items": ["Collar and leash", "Chain collar and leash"],
+      "abilities": ["Pack tactics", "Double move", "Fast run", "Locked grapple", {"name": "Bite", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 2
+        },
+        {
+          "name": "Insight",
+          "value": 1
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "spells": [
+        {
+          "name": "Blink",
+          "recharge": 6
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 13] Blink dogs will hunt in packs and will often attack unsuspecting or confused foes. The pack will harmonously blink into and out of danger to make it difficult to pin down a single blink dog target.",
+      "background": "",
+      "associations": "[NATURE 12] Blink dogs are very social and very intelligent animals.  They usually work together in a pack, and are known to work with humans, although generally they avoid contact.<br>[NATURE 14] Blink dogs and displacer beasts are natural enemies, and will attack eachother on site. Blink dogs also hunt phase spiders.<br>[NATURE 16] Dispite communiction that sounds like barks, howls, and yaps, blink dogs actually have a fairly complex language for an animal. They can reason, empathize, and persuade much like most humanoid races.",
+      "value (gold)": 75,
+      "image-links": ["/images/creatures/blink_dog.png", "/images/creatures/blink_dog2.jpg"]
+    },
+    {
+      "name": "Boa constrictor",
+      "size": {
+        "value": "medium",
+        "description": "5-13 ft length, weighing 30-60 lbs."
+      },
+      "level": 0,
+      "hit points": 13,
+      "raw armor": 12,
+      "raw dodge": 1,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 4,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Move", "Run", "Climb", "Swim", "Locked grapple", {"name": "Bite", "damage": 1}],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        }
+      ],
+      "rarity": "common",
+      "locality": ["swamps", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 10] Boa constrictors are ambushers: they wait for prey to come to them, and they reach out in a surprise attack, although they are also known to seek out prey when hungry.",
+      "background": "Boa constrictors typically live in cover-heavy habitats to avoid predators.",
+      "associations": "Boa constrictors avoid associating with almost every animal excluding its prey.",
+      "value (gold)": 10,
+      "image-links": ["/images/creatures/boa_constrictor.jpg", "/images/creatures/boa_constrictor2.jpg"]
+    },
+    {
+      "name": "Boar",
+      "size": {
+        "value": "medium",
+        "description": "2 ft height and 3 ft length, weighing around 150 lbs."
+      },
+      "level": 0,
+      "hit points": 9,
+      "raw armor": 9,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": 1,
+        "DEX": 2,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Run", "Bull rush", {"name": "Bite", "damage": 1}, {"name": "Kick", "damage": 0}, {"name": "Gore", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 13] Boars will typically avoid combat, unless led by a dire boar, or it is mating season.",
+      "background": "[NATURE 13] Boars live in diverse habitats with the only requirements being water, heavy brush, and little snow. They will create nests of branches and grass to raise young sow. Boars tend to migrate in search of food and mating opportunities.",
+      "associations": "[NATURE 14] Boar males typically travel alone, searching for sounders (boar packs of females, sows, and perhaps an old matriarch boar) during the mating season; females will always try to form a sounder.",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/boar.png", "/images/creatures/boar2.png"]
+    },
+    {
+      "name": "Camel",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and length, weighing over 1,200 lbs."
+      },
+      "level": 0,
+      "hit points": 13,
+      "raw armor": 12,
+      "raw dodge": -1,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": 3,
+        "DEX": 1,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle", "Waterskin"],
+      "abilities": ["Double move", "Fast run", "Spit", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts"],
+      "languages": null,
+      "combat": "Camels typically avoid combat.",
+      "background": "[NATURE 10] Camels live in the desert sand dunes and can survive without water for weeks, storing it in their humps.<br>[NATURE 15] Camels don't actually store water in their humps: it's a common misconception. Instead camels have a very evolved metabolism for dry climates.",
+      "associations": null,
+      "value (gold)": 50,
+      "image-links": ["/images/creatures/camel.jpg"]
+    },
+    {
+      "name": "Cat",
+      "size": {
+        "value": "small",
+        "description": "9 in height and 1 ft length, weighing 8 lbs."
+      },
+      "level": 0,
+      "hit points": 3,
+      "raw armor": 6,
+      "raw dodge": 3,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -3,
+        "DEX": 4,
+        "INF": -5,
+        "WIS": 2
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": ["Collar and leash", "Chain collar and leash"],
+      "abilities": ["Nightvision", "Double move", "Fast run", "Climb", {"name": "Bite", "damage": 4}, {"name": "Claw", "damage": -2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 8
+        },
+        {
+          "name": "Balance",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 5
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 2
+        },
+        {
+          "name": "Insight",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 5
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Cats avoid combat unless they are hunting small prey.",
+      "background": "Cats are wandering hunters and scavengers that live anywhere they can find small rodent prey. However, cats are mostly domesticated and rarely live far from humans.",
+      "associations": "Cats enjoy the company of humans and sometimes other cats, although they tend to fight over territory.",
+      "value (gold)": 1,
+      "image-links": ["/images/creatures/cat.jpg", "/images/creatures/cat2.jpg"]
+    },
+    {
+      "name": "Centipede",
+      "size": {
+        "value": "tiny",
+        "description": "5 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 1,
+      "raw dodge": 1,
+      "raw magic resist": 1,
+      "attributes": {
+        "STR": -8,
+        "DEX": -3,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Climb", {"name": "Venomous strike",  "damage": 0, "damage type": "piercing", "damage 2": 1, "damage type 2": "poison"}],
+      "rarity": "common",
+      "locality": ["forests", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "Centipedes will usually avoid combat unless to defend themselves.",
+      "background": "Centipedes live almost anywhere they can find sufficiant moisture food: bugs.",
+      "associations": "Centipedes are usually solitary animals, unless they are in swarms of other centipedes.",
+      "image-links": ["/images/creatures/centipede.jpg", "/images/creatures/centipede2.jpg"]
+    },
+    {
+      "name": "Crab",
+      "size": {
+        "value": "tiny",
+        "description": "5 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 10,
+      "raw dodge": 1,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -3,
+        "DEX": 0,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Breathe water", "Half move", "Dig", {"name": "Claw", "damage": 4}],
+      "rarity": "common",
+      "locality": ["underwater", "swamps"],
+      "languages": null,
+      "combat": "Crabs will avoid combat and only ever defend themselves.",
+      "background": "Crabs live in shallow water (typically salt water) where they can feast off of algae.",
+      "associations": "Crabs are solitary animals.",
+      "value (gold)": 1,
+      "image-links": ["/images/creatures/crab.jpg", "/images/creatures/crab2.jpg"]
+    },
+    {
+      "name": "Deer",
+      "size": {
+        "value": "medium",
+        "description": "4 ft height and length, weighing around 200 lbs."
+      },
+      "level": 0,
+      "hit points": 6,
+      "raw armor": 8,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 0,
+        "DEX": 3,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Double move", "Fast run", {"name": "Bite", "damage": 1}, {"name": "Kick", "damage": -1}, {"name": "Gore", "damage": 0}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/deer.jpg"]
+    },
+    {
+      "name": "Dog",
+      "size": {
+        "value": "medium",
+        "description": "2-3 ft length, weighing 150-200 lbs."
+      },
+      "level": 0,
+      "hit points": 8,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 1,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 2
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": ["Collar and leash", "Chain collar and leash"],
+      "abilities": ["Pack tactics", "Double move", "Fast run", {"name": "Bite", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Willpower",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        },
+        {
+          "name": "Insight",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Although dogs will typically avoid combat, if threatened, hungry, or trepassed they will jump into combat when they see an opportunity to attack with advantage or if one of their pack member's is attacked. They are pack hunters and will swarm a target.",
+      "background": "Dogs are domesticated animals and live among humans.",
+      "associations": "Dogs enjoy the company of humans and sometimes other dogs.",
+      "value (gold)": 1,
+      "image-links": ["/images/creatures/dog.jpg", "/images/creatures/dog2.png"]
+    },
+    {
+      "name": "Donkey (mule)",
+      "size": {
+        "value": "medium",
+        "description": "4 ft height and 5 ft length, weighing around 1,000 lbs."
+      },
+      "level": 0,
+      "hit points": 11,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 3,
+        "DEX": 1,
+        "INF": 0,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Double move", "Fast run", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 1
+        }
+      ],
+      "rarity": "common",
+      "locality": ["dungeons", "underground", "mountains", "plains"],
+      "languages": null,
+      "combat": "Donkeys typically avoid combat.",
+      "background": "[NATURE 15 | ARCANA 15] Donkeys have an unusually high magic resist, making them great great pack animals for magical areas, like deep mines.",
+      "associations": "Tend to enjoy the company of other donkey-like animals.",
+      "value (gold)": 15,
+      "image-links": ["/images/creatures/donkey.jpg"]
+    },
+    {
+      "name": "Draft horse",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 7 ft length, weighing around 2,000 lbs."
+      },
+      "level": 0,
+      "hit points": 15,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 5,
+        "DEX": 0,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Double move", "Fast run", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Draft horses typically avoid combat.",
+      "background": "[NATURE 10 | LORE 10] Used for hauling very heavy vehicles.",
+      "associations": "Tend to enjoy the company of other horse-like animals.",
+      "value (gold)": 50,
+      "image-links": ["/images/creatures/draft_horse.jpg"]
+    },
+    {
+      "name": "Eagle",
+      "size": {
+        "value": "small",
+        "description": "3 ft height and 6 ft wing length, weighing 12 lbs."
+      },
+      "level": 0,
+      "hit points": 5,
+      "raw armor": 7,
+      "raw dodge": 5,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -2,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Fly", {"name": "Bite", "damage": 4}, {"name": "Claw", "damage": 1}],
+      "skills": [
+        {
+          "name": "Perception (vision)",
+          "value": 10
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "forests"],
+      "languages": null,
+      "combat": "Eagles avoid combat unless they are hunting small prey.<br>[NATURE 13] Eagles need adequate light to hunt or track effectively.",
+      "background": "Eagles are predators of the sky and will rarely touch earth except to snatch up prey. They nest in trees, cliffs, or towers: anywhere out of harms reach.",
+      "associations": "Eagles live alone, except when trained by humans.",
+      "value (gold)": 25,
+      "image-links": ["/images/creatures/eagle.jpg", "/images/creatures/eagle2.jpg"]
+    },
+    {
+      "name": "Elk",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and length, weighing around 700 lbs."
+      },
+      "level": 0,
+      "hit points": 12,
+      "raw armor": 9,
+      "raw dodge": 0,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Double move", "Fast run", {"name": "Bite", "damage": 1}, {"name": "Kick", "damage": 0}, {"name": "Gore", "damage": 1}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/elk.jpg", "/images/creatures/elk2.jpg"]
+    },
+    {
+      "name": "Frog",
+      "size": {
+        "value": "tiny",
+        "description": "5 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 4,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -8,
+        "DEX": 3,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Half move"],
+      "rarity": "common",
+      "locality": ["swamps", "forests", "jungle"],
+      "languages": null,
+      "combat": "Frogs avoid combat.",
+      "background": "",
+      "associations": "Frogs are solitary animals that will sometimes group with other frogs.",
+      "image-links": ["/images/creatures/frog.jpg", "/images/creatures/frog2.jpg"]
+    },
+    {
+      "name": "Giant frog",
+      "size": {
+        "value": "medium",
+        "description": "4 ft height, weighing 200 lbs."
+      },
+      "level": 0,
+      "hit points": 18,
+      "raw armor": 12,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": 1,
+        "DEX": 3,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Half move", "Standing leap", {"name": "Swallow (small)", "damage": 5}, {"name": "Bite", "damage": 3}],
+      "rarity": "common",
+      "locality": ["swamps", "forests", "jungle"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 100,
+      "image-links": ["/images/creatures/giant_frog.jpg"]
+    },
+    {
+      "name": "Giant seahorse",
+      "size": {
+        "value": "large",
+        "description": "9 ft height and length, weighing around 700 lbs."
+      },
+      "level": 0,
+      "hit points": 10,
+      "raw armor": 11,
+      "raw dodge": 2,
+      "raw magic resist": 14,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Exotic plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Breathe water", "Sufficating air", "Natural swimmer", "Swim", {"name": "Slam", "damage": 0}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["underwater"],
+      "languages": null,
+      "combat": "Giant seahorses typically avoid combat.",
+      "background": "[NATURE 10 | LORE 10] Used for long distance travel on back.",
+      "associations": "Tend to enjoy the company of other docile sea animals.",
+      "value (gold)": 75,
+      "image-links": ["/images/creatures/giant_seahorse.jpg"]
+    },
+    {
+      "name": "Giant tarantula",
+      "size": {
+        "value": "medium",
+        "description": "4 ft length and 1 ft height, weighing 30 lbs."
+      },
+      "level": 0,
+      "hit points": 8,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 11,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": -6,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightivsion", "Web walker", "Move", "Spider climb", {"name": "Venomous strike",  "damage": 0, "damage type": "piercing", "damage 2": 2, "damage type 2": "poison"}],
+      "rarity": "common",
+      "locality": ["forests", "deserts", "plains", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "Giant tarantula are ambushers and wait for prey to come within range for them to make a suprise attack.",
+      "background": "Giant tarantula live almost anywhere they can find sufficiant food: bugs and small animals.",
+      "associations": "Giant tarantula usually group within a hive of other spiders.",
+      "value (gold)": 20,
+      "image-links": ["/images/creatures/giant_tarantula.jpg", "/images/creatures/giant_tarantula2.jpg"]
+    },
+    {
+      "name": "Giant wasp",
+      "size": {
+        "value": "medium",
+        "description": "5 ft height and 4 ft wing span, weighing 100 lbs."
+      },
+      "level": 0,
+      "hit points": 10,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 1,
+        "DEX": 4,
+        "INF": -3,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Fly", "Hover", "Spider climb", {"name": "Bite", "damage": 5}, {"name": "Venomous strike",  "damage": 2, "damage type": "piercing", "damage 2": 4, "damage type 2": "poison"}],
+      "rarity": "uncommon",
+      "locality": ["mountains", "deserts", "plains", "forests", "jungle", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 15,
+      "image-links": ["/images/creatures/giant_wasp.jpg"]
+    },
+    {
+      "name": "Goat",
+      "size": {
+        "value": "medium",
+        "description": "2 ft height and 3 ft length, weighing around 100 lbs."
+      },
+      "level": 0,
+      "hit points": 7,
+      "raw armor": 9,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": 2,
+        "DEX": 2,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Run", "Bull rush", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 0}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 1,
+      "image-links": ["/images/creatures/goat.jpg", "/images/creatures/goat2.jpg", "/images/creatures/goat3.jpg"]
+    },
+    {
+      "name": "Hawk",
+      "size": {
+        "value": "small",
+        "description": "1 ft height and 2 ft wing length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 3,
+      "raw armor": 5,
+      "raw dodge": 7,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -3,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Fly", {"name": "Bite", "damage": 4}, {"name": "Claw", "damage": -1}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 10
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "forests"],
+      "languages": null,
+      "combat": "Hawks avoid combat unless they are hunting small prey.<br>[NATURE 13] Hawks need adequate light to hunt or track effectively.",
+      "background": "Hawks are predators of the sky and will rarely touch earth except to snatch up prey. They nest in trees, cliffs, or towers: anywhere out of harms reach.",
+      "associations": "Hawks live alone, except when trained by humans.",
+      "value (gold)": 15,
+      "image-links": ["/images/creatures/hawk.jpg", "/images/creatures/hawk2.jpg", "/images/creatures/hawk3.jpg"]
+    },
+    {
+      "name": "Hyena",
+      "size": {
+        "value": "medium",
+        "description": "2 ft height and 3 ft length, weighing 110 lbs."
+      },
+      "level": 0,
+      "hit points": 10,
+      "raw armor": 9,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 1,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 1
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Feign inanimated", "Pack tactics", "Double move", "Fast run", "Pounce", {"name": "Bite", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "plains"],
+      "languages": null,
+      "combat": "[NATURE 15] Hyenas will feign death (play dead) to avoid combat with a predator.",
+      "background": "",
+      "value (gold)": 2,
+      "image-links": ["/images/creatures/hyena.jpg", "/images/creatures/hyena2.jpg"]
+    },
+    {
+      "name": "Jackal",
+      "size": {
+        "value": "small",
+        "description": "1 ft height and 2 ft length, weighing 25 lbs."
+      },
+      "level": 0,
+      "hit points": 10,
+      "raw armor": 9,
+      "raw dodge": 0,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 0,
+        "DEX": 2,
+        "INF": -6,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Fast run", "Pounce", {"name": "Bite", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "plains"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "value (gold)": 2,
+      "image-links": ["/images/creatures/jackal.jpg", "/images/creatures/jackal2.jpg"]
+    },
+    {
+      "name": "Lizard",
+      "size": {
+        "value": "tiny",
+        "description": "5 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 3,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -8,
+        "DEX": 4,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", {"name": "Bite", "damage": 9}],
+      "rarity": "common",
+      "locality": ["mountains", "deserts", "plains", "swamps", "forests", "jungle"],
+      "languages": null,
+      "combat": "Lizards avoid combat.",
+      "background": "",
+      "associations": "Lizards are solitary animals that will sometimes group with other lizards.",
+      "image-links": ["/images/creatures/lizard.jpg", "/images/creatures/lizard2.jpg", "/images/creatures/lizard3.jpg"]
+    },
+    {
+      "name": "Mastiff",
+      "size": {
+        "value": "medium",
+        "description": "2.5 ft height and 3 ft length, weighing around 200 lbs."
+      },
+      "level": 0,
+      "hit points": 12,
+      "raw armor": 11,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 2,
+        "DEX": 4,
+        "INF": -5,
+        "WIS": 3
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Saddlebags", "Saddle", "Collar and leash", "Chain collar and leash"],
+      "abilities": ["Double move", "Fast run", "Locked grapple", {"name": "Bite", "damage": 2}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 7
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        },
+        {
+          "name": "Insight",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 5
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Mastiffs will jump into combat when they see an opportunity to attack with advantage or if one of their pack member's is attacked. They are pack hunters and will swarm a target.<br>[NATURE 12 | LORE 12] A mastiff will refuse to enter into combat while being riden unless it is trained to do so.",
+      "background": "Mastiff are bred dogs for hunting and riding.",
+      "associations": "Enjoys the company of other dogs or any other creature it deems to be family.",
+      "value (gold)": 30,
+      "image-links": ["/images/creatures/mastiff.png", "/images/creatures/mastiff2.jpg"]
+    },
+    {
+      "name": "Octopus",
+      "size": {
+        "value": "small",
+        "description": "1-4 ft length, weighing 10-20 lbs."
+      },
+      "level": 0,
+      "hit points": 3,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": -2,
+        "DEX": 2,
+        "INF": 3,
+        "WIS": 2
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Camouflage", "Breathe water", "Sufficating air", "Hold breath", "Natural swimmer", "Swim", "Grapple",  {"name": "Bite", "damage": 3}],
+      "skills": [
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "spells": [
+        {
+          "name": "Grease",
+          "recharge": 3
+        },
+        {
+          "name": "Liquid body",
+          "recharge": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["underwater"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 60,
+      "image-links": ["/images/creatures/octopus.jpg", "/images/creatures/octopus2.jpg"]
+    },
+    {
+      "name": "Owl",
+      "size": {
+        "value": "small",
+        "description": "1 ft height and 2 ft wing length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 3,
+      "raw armor": 5,
+      "raw dodge": 7,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -3,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Half move", "Fly", {"name": "Bite", "damage": 4}, {"name": "Claw", "damage": -1}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 5
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 10
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "forests", "swamps"],
+      "languages": null,
+      "combat": "Owls avoid combat unless they are hunting small prey.<br>[NATURE 13] Owls rely on darkness to hunt or track effectively.",
+      "background": "Owls are predators of the sky and will rarely touch earth except to snatch up prey. They nest in trees, cliffs, or towers: anywhere out of harms reach. They are nocturnal.",
+      "associations": "Owls live alone, except when trained by humans.",
+      "value (gold)": 15,
+      "image-links": ["/images/creatures/owl.jpg", "/images/creatures/owl2.jpg", "/images/creatures/owl3.jpg"]
+    },
+    {
+      "name": "Panther",
+      "size": {
+        "value": "medium",
+        "description": "2 ft height and 4 ft length, weighing around 60 lbs."
+      },
+      "level": 0,
+      "hit points": 12,
+      "raw armor": 11,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 1,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Fast run", "Locked grapple", "Pounce", {"name": "Bite", "damage": 6}, {"name": "Claw", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "deserts", "jungle"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/panther.jpg", "/images/creatures/panther2.jpg"]
+    },
+    {
+      "name": "Pig",
+      "size": {
+        "value": "small",
+        "description": "1.5 ft height and 2 ft length, weighing around 100 lbs."
+      },
+      "level": 0,
+      "hit points": 5,
+      "raw armor": 8,
+      "raw dodge": 0,
+      "raw magic resist": 9,
+      "attributes": {
+        "STR": 0,
+        "DEX": 1,
+        "INF": -9,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Run", {"name": "Bite", "damage": 1}, {"name": "Kick", "damage": 1}],
+      "skills": [
+        {
+          "name": "Perception (smell)",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Pigs avoid combat.",
+      "background": "Domesticated boars that have been bred to be fatter and slower. A pig would have a hard time living without human nourishment.",
+      "associations": "Pigs enjoy the company of any passive animal or human.",
+      "value (gold)": 1,
+      "image-links": ["/images/creatures/pig.png"]
+    },
+    {
+      "name": "Piranha",
+      "size": {
+        "value": "tiny",
+        "description": "8 in length, weighing 5 lbs."
+      },
+      "level": 0,
+      "hit points": 2,
+      "raw armor": 10,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 0,
+        "DEX": 3,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Pack tactics", "Nightvision", "Breathe water", "Sufficating air", "Natural swimmer", "Swim", {"name": "Bite", "damage": 2}],
+      "skills": [
+        {
+          "name": "Perception",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["underwater", "swamps", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 12] A piranha will charge a bleeding creature.",
+      "background": "",
+      "associations": "",
+      "image-links": ["/images/creatures/piranha.jpg", "/images/creatures/piranha2.jpg"]
+    },
+    {
+      "name": "Plague rat",
+      "size": {
+        "value": "small",
+        "description": "8 in length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 8,
+      "raw dodge": 2,
+      "raw magic resist": 12,
+      "attributes": {
+        "STR": -5,
+        "DEX": 3,
+        "INF": 0,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Climb", {"name": "Bite of death", "damage": 6}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "resistances": null,
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests", "swamps", "underground", "dungeons", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 10] Rats are scavengers and grub hunters, avoiding combat unless feeling threatened. They occasionally attack animals much larger than themselves by working together in a small pack.<br>[NATURE 14] A plague rat, however, through its diseased rage will attack almost any creature except its own kind on site.",
+      "background": "Mostly living underground in dug out tunnels or under well covered shelter, the rat is a nocturnal creature that enjoys its privacy.",
+      "associations": "[NATURE 12] Rats work well with rat-like animals and will sometimes hunt with them. They avoid human contact, but live among them as pests.<br>[NATURE 14] Plague rats will bite other rats to turn them plague ridden as well.",
+      "image-links": ["/images/creatures/plague_rat.jpg", "/images/creatures/plague_rat2.jpg"]
+    },
+    {
+      "name": "Pony",
+      "size": {
+        "value": "medium",
+        "description": "5 ft height and 6 ft length, weighing around 1,200 lbs."
+      },
+      "level": 0,
+      "hit points": 11,
+      "raw armor": 10,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 2,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Double move", "Fast run", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Willpower",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 1
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Ponies typically avoid combat.",
+      "background": "[NATURE 10 | LORE 10] Used for long distance travel on back or for carrying packs.<br>[NATURE 12 | LORE 12] Tend to enjoy city life and tight confinement better than other riding/hauling animals.",
+      "associations": "Tend to enjoy the company of other pony-like animals.",
+      "value (gold)": 30,
+      "image-links": ["/images/creatures/pony.jpg"]
+    },
+    {
+      "name": "Rat",
+      "size": {
+        "value": "small",
+        "description": "8 in length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 8,
+      "raw dodge": 2,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -4,
+        "DEX": 3,
+        "INF": 0,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Climb", {"name": "Bite", "damage": 5}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 7
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "resistances": null,
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests", "swamps", "underground", "dungeons", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 10] Rats are scavengers and grub hunters, avoiding combat unless feeling threatened. They occasionally attack animals much larger than themselves by working together in a small pack.",
+      "background": "Mostly living underground in dug out tunnels or under well covered shelter, the rat is a nocturnal creature that enjoys its privacy.",
+      "associations": "[NATURE 12] Rats work well with rat-like animals and will sometimes hunt with them. They avoid human contact, but live among them as pests.",
+      "image-links": ["/images/creatures/rat.jpg", "/images/creatures/rat2.jpg"]
+    },
+    {
+      "name": "Raven",
+      "size": {
+        "value": "small",
+        "description": "1 ft height and 2 ft wing length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 2,
+      "raw armor": 5,
+      "raw dodge": 5,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -4,
+        "DEX": 2,
+        "INF": 0,
+        "WIS": 3
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Fly", "Mimicry", {"name": "Bite", "damage": 5}, {"name": "Claw", "damage": -1}],
+      "skills": [
+        {
+          "name": "Stealth",
+          "value": 5
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 7
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "forests", "plains"],
+      "languages": null,
+      "combat": "Ravens, being scavengers and grub hunters, avoid combat.<br>[NATURE 13] Ravens need adequate light to hunt or track effectively.",
+      "background": "Ravens nest in trees, cliffs, or towers: anywhere out of harms reach.",
+      "associations": "Ravens lives in a small flock (congress), except when trained by humans.",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/raven.jpg", "/images/creatures/raven2.png", "/images/creatures/raven3.jpg"]
+    },
+    {
+      "name": "Riding horse",
+      "size": {
+        "value": "medium",
+        "description": "6 ft height and length, weighing around 1,300 lbs."
+      },
+      "level": 0,
+      "hit points": 13,
+      "raw armor": 11,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 3,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Double move", "Double run", {"name": "Bite", "damage": 0}, {"name": "Kick", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "Riding horses typically avoid combat.",
+      "background": "[NATURE 10 | LORE 10] Used for long distance travel on back.",
+      "associations": "Tend to enjoy the company of other horse-like animals.",
+      "value (gold)": 75,
+      "image-links": ["/images/creatures/riding_horse.png"]
+    },
+    {
+      "name": "Scorpion",
+      "size": {
+        "value": "tiny",
+        "description": "2 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 1,
+      "raw dodge": 1,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -8,
+        "DEX": 1,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Dig", "Climb", {"name": "Venomous strike",  "damage": 0, "damage type": "piercing", "damage 2": 2, "damage type 2": "poison"}],
+      "rarity": "common",
+      "locality": ["deserts", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "Scorpions will usually avoid combat unless to defend themselves.",
+      "background": "Scorpions live almost anywhere they can find sufficiant food: bugs.",
+      "associations": "Scorpions are usually solitary animals, unless they are in swarms of other scorpions.",
+      "image-links": ["/images/creatures/scorpion.jpg", "/images/creatures/scorpion2.jpg"]
+    },
+    {
+      "name": "Spider",
+      "size": {
+        "value": "tiny",
+        "description": "1 in length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 1,
+      "raw dodge": 2,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -10,
+        "DEX": 1,
+        "INF": -8,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightivsion", "Web walker", "Half move", "Spider climb", {"name": "Venomous strike",  "damage": 0, "damage type": "piercing", "damage 2": 2, "damage type 2": "poison"}],
+      "rarity": "common",
+      "locality": ["forests", "deserts", "plains", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "Spiders will usually avoid combat unless to defend themselves.",
+      "background": "Spiders live almost anywhere they can find sufficiant food: bugs.",
+      "associations": "Spiders are usually solitary animals, unless they are in swarms of other spiders.",
+      "image-links": ["/images/creatures/spider.jpg", "/images/creatures/spider2.jpg"]
+    },
+    {
+      "name": "Viper",
+      "size": {
+        "value": "small",
+        "description": "1-2 ft length, weighing 5-10 lbs."
+      },
+      "level": 0,
+      "hit points": 5,
+      "raw armor": 8,
+      "raw dodge": 1,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": -4,
+        "DEX": 4,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Move", "Run", "Climb", "Swim", {"name": "Venomous strike",  "damage": -2, "damage type": "piercing", "damage 2": 3, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        }
+      ],
+      "rarity": "common",
+      "locality": ["swamps", "jungle", "forest", "dungeon", "underground", "desert", "plains"],
+      "languages": null,
+      "combat": "[NATURE 10] Vipers are ambushers: they wait for prey to come to them, and they reach out in a surprise attack, although they are also known to seek out prey when hungry.",
+      "background": "Vipers typically live in cover-heavy habitats to avoid predators.",
+      "associations": "Vipers avoid associating with almost every animal excluding its prey.",
+      "value (gold)": 10,
+      "image-links": ["/images/creatures/viper.jpg", "/images/creatures/viper2.jpg", "/images/creatures/viper3.jpg"]
+    },
+    {
+      "name": "Vulture",
+      "size": {
+        "value": "small",
+        "description": "2 ft height and 5 ft wing length, weighing 5 lbs."
+      },
+      "level": 0,
+      "hit points": 3,
+      "raw armor": 7,
+      "raw dodge": 3,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": -2,
+        "DEX": 3,
+        "INF": -5,
+        "WIS": 0
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Fly", {"name": "Bite", "damage": 4}, {"name": "Claw", "damage": 0}],
+      "skills": [
+        {
+          "name": "Perception (vision)",
+          "value": 7
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "deserts"],
+      "languages": null,
+      "combat": "Vultures are scavengers and avoid combat, instead they circle around weak prey waiting for it to die.",
+      "background": "Vultures are scavengers of the sky and will rarely touch earth except to feed on prey. They nest in trees, cliffs, or towers: anywhere out of harms reach.",
+      "associations": "Vultures live in small flocks, but tend to swarm on dead bodies.",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/vulture.jpg", "/images/creatures/vulture2.jpg", "/images/creatures/vulture3.jpg"]
+    },
+    {
+      "name": "War horse",
+      "size": {
+        "value": "medium",
+        "description": "6 ft height and length, weighing around 1,500 lbs."
+      },
+      "level": 0,
+      "hit points": 16,
+      "raw armor": 11,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 4,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": ["Leather barding", "Plate barding"],
+      "possible items": ["Bit and bridle", "Saddlebags", "Saddle"],
+      "abilities": ["Double move", "Double run", {"name": "Bite", "damage": 1}, {"name": "Kick", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Intimidation",
+          "value": 2
+        },
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 8
+        },
+        {
+          "name": "Survival",
+          "value": 1
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "War horses long for combat and are willing to charge head-first into danger.",
+      "background": "[NATURE 10 | LORE 10] Used for long distance travel on back.",
+      "associations": "Tend to enjoy the company of other horse-like animals.",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/warhorse.jpg"]
+    },
+    {
+      "name": "Wasp",
+      "size": {
+        "value": "tiny",
+        "description": "1 in height and length, weighing < 1 lbs."
+      },
+      "level": 0,
+      "hit points": 1,
+      "raw armor": 0,
+      "raw dodge": 0,
+      "raw magic resist": 9,
+      "attributes": {
+        "STR": -10,
+        "DEX": 3,
+        "INF": -9,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Fly", "Hover", "Spider climb", {"name": "Bite", "damage": 11}, {"name": "Venomous strike",  "damage": 10, "damage type": "piercing", "damage 2": 1, "damage type 2": "poison"}],
+      "rarity": "common",
+      "locality": ["mountains", "deserts", "plains", "forests", "jungle", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "image-links": ["/images/creatures/wasp.jpg"]
+    },
+    {
+      "name": "Weasel",
+      "size": {
+        "value": "small",
+        "description": "1 ft height and length, weighing 2 lbs."
+      },
+      "level": 0,
+      "hit points": 2,
+      "raw armor": 8,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": -4,
+        "DEX": 3,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Dig", "Locked grapple", {"name": "Bite", "damage": 5}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 8
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 12] Weasels are scavengers and grub hunters, avoiding combat unless feeling aggressive. They occasionally attack animals much larger than themselves by working together in a small pack.",
+      "background": "Mostly living underground in dug out tunnels, the weasel is a nocturnal creature that enjoys its privacy.",
+      "associations": "[NATURE 12] Weasels work well with dog-like animals and will sometimes hunt with them. They avoid human contact, but can be trained.",
+      "value (gold)": 3,
+      "image-links": ["/images/creatures/weasel.jpg", "/images/creatures/weasel2.jpg"]
+    },
+    {
+      "name": "Wolf",
+      "size": {
+        "value": "medium",
+        "description": "3 ft height and 4 ft length, weighing 160 lbs."
+      },
+      "level": 0,
+      "hit points": 14,
+      "raw armor": 11,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 2,
+        "DEX": 4,
+        "INF": -5,
+        "WIS": 2
+      },
+      "action points": 4,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Pack tactics", "Double move", "Fast run", "Pounce", {"name": "Bite", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 10] Wolves are territorial.<br>[NATURE 11] Wolves will jump into combat when they see an opportunity to attack with advantage or if one of their pack member's is attacked. They are pack hunters and will swarm a target.",
+      "background": "Wolves are pack hunters living near their prey.<br>[NATURE 10] They have large territories, and travel great distances within and out of their terrtory.",
+      "associations": "Enjoys the company of other wolves or any other creature it deems to be family.",
+      "value (gold)": 5,
+      "image-links": ["/images/creatures/wolf.jpg", "/images/creatures/wolf2.jpg"]
+    },
+    {
+      "name": "Awakened tree",
+      "size": {
+        "value": "huge",
+        "description": "Between 8 ft and 15 ft height, weighing between 2,000 and 10,000 lbs."
+      },
+      "level": 1,
+      "hit points": 75,
+      "raw armor": 8,
+      "raw dodge": 5,
+      "raw magic resist": 2,
+      "attributes": {
+        "STR": 7,
+        "DEX": -5,
+        "INF": 0,
+        "WIS": -5
+      },
+      "action points": 3,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Blind", "Deaf", "Tremorsense", "Camouflage", "Half move", "Grapple", {"name": "Slam", "damage": 3}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 10
+        }
+      ],
+      "spells": [
+        {
+          "name": "Entangling roots",
+          "recharge": 3
+        }
+      ],
+      "weaknesses": ["fire"],
+      "resistances": ["bludgeoning", "piercing", "poison"],
+      "immunities": ["psychic"],
+      "rarity": "common",
+      "locality": ["forests", "mountains", "jungle", "swamps"],
+      "languages": "Druidic",
+      "combat": "Awakened trees are always awakened for a reason and will always attack threats on site.  They do not coordinate nor strategize.",
+      "background": "A tree that has been awakened and granted the ability to uproot and attack.<br>[NATURE 12] Usually awakened by an Ent herder or Druid.<br>[ARCANA 14] Dispel magic can turn an awakened tree back to a normal tree (treat as level 1 spell).",
+      "associations": "Usually does not attack a druid, forest animals, or an ent herder.",
+      "image-links": ["/images/creatures/awakened_tree.png"]
+    },
+    {
+      "name": "Crocodile",
+      "size": {
+        "value": "large",
+        "description": "10 ft length, weighing 1200 lbs."
+      },
+      "level": 1,
+      "hit points": 24,
+      "raw armor": 14,
+      "raw dodge": 0,
+      "raw magic resist": 14,
+      "attributes": {
+        "STR": 4,
+        "DEX": 0,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Swim", "Nightvision", "Move", "Locked grapple", {"name": "Claw", "damage": 2}, {"name": "Bite", "damage": 5}, {"name": "Slam", "damage": 1}],
+      "skills": [
+        {
+          "name": "Perception",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["underwater", "swamps", "desert", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 10] Crocodiles are ambushers: they wait for prey to come to them, and they reach out in a surprise attack. [NATURE 12] Crocodiles will often live together in a group; however, they do not hunt as a pack.",
+      "background": "Crocodiles require a body of water and ample sunlight. They usually form social groups and occupy territory tempting to prey.",
+      "associations": "Crocodiles solcialize among their own kind, but do not easily form friendships with other creatures.",
+      "value (gold)": 150,
+      "image-links": ["/images/creatures/crocodile.jpg", "/images/creatures/crocodile2.jpg", "/images/creatures/crocodile3.jpg"]
+    },
+    {
+      "name": "Death dog",
+      "size": {
+        "value": "medium",
+        "description": "3 ft height and 4 ft length, weighing around 300 lbs."
+      },
+      "level": 1,
+      "hit points": 22,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 11,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": 2,
+        "WIS": 2
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Pack tactics", "Two-headed", "Nightvision", "Fast run", "Double move", "Locked grapple", {"name": "Bite of death", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 8
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "resistances": ["poison", "psychic"],
+      "locality": ["deserts", "mountains", "plains", "forests", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "combat": "[NATURE 12] They rarely hunt in packs.<br>[NATURE 14] Death dogs are walking death: they attack all they see. Knowing that a killing blow only requires a single bite, they will often attack once then flee and watch from a distance as their prey slowly dies.",
+      "background": "[NATURE 16] Although death dogs can produce offspring, death dogs usually derive from a less natural birth. A certain parasitic worm, known as a black crawler, infects a female dog, wolf, or other canine. When the dog has pups, the mother will die and the pups carry worm larva. The pups are death dogs.  They mature quickly, and maddened by the disease, they attempt to spread it by attacking all on site.",
+      "associations": "[NATURE 12] Although death dogs do not attack their own kind, they wander alone.",
+      "value (gold)": 35,
+      "image-links": ["/images/creatures/death_dog.jpg", "/images/creatures/death_dog2.jpg"]
+    },
+    {
+      "name": "Giant centipede",
+      "size": {
+        "value": "large",
+        "description": "10 ft length, weighing 300 lbs."
+      },
+      "level": 1,
+      "hit points": 15,
+      "raw armor": 15,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 3,
+        "DEX": 2,
+        "INF": -3,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Tremorsense", "Move", "Natural climber", {"name": "Venomous strike",  "damage": 5, "damage type": "piercing", "damage 2": 3, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["forests", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 350,
+      "image-links": ["/images/creatures/giant_centipede.jpg", "/images/creatures/giant_centipede2.jpg"]
+    },
+    {
+      "name": "Giant eagle",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 28 ft wing length, weighing 300 lbs."
+      },
+      "level": 1,
+      "hit points": 20,
+      "raw armor": 12,
+      "raw dodge": 5,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 2,
+        "DEX": 4,
+        "INF": -5,
+        "WIS": 2
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Half move", "Fly", {"name": "Bite", "damage": 6}, {"name": "Claw", "damage": 3}],
+      "skills": [
+        {
+          "name": "Perception (vision)",
+          "value": 10
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "forests"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 1800,
+      "image-links": ["/images/creatures/giant_eagle.jpg", "/images/creatures/giant_eagle2.jpg"]
+    },
+    {
+      "name": "Gorilla",
+      "size": {
+        "value": "medium",
+        "description": "5.5 ft height, weighing around 350 lbs."
+      },
+      "level": 1,
+      "hit points": 26,
+      "raw armor": 12,
+      "raw dodge": 1,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 7,
+        "DEX": 2,
+        "INF": -3,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": ["Club", "Greatclub", "Heavy object"],
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Run", "Climb", "Grapple", "Melee attack", "Throw", "Heavy attack", {"name": "Bite", "damage": 0}, {"name": "Slam", "damage": 0}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 7
+        },
+        {
+          "name": "Intimidation",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 2
+        },
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "mountains", "jungle"],
+      "languages": null,
+      "combat": "Gorillas will fight in a group, often surrounding a target or attacking from an upperground.<br>[NATURE 12] Gorillas are territorial and will engage on intruders.",
+      "background": "[NATURE 10] An intelligent animal that lives in trees or grassy fields. Works together with other gorillas to create bedding and shelter.<br>[NATURE 14] Gorillas are curious by nature and my raid a camp or approach a caravan to see what they could bring back to their nesting grounds.",
+      "associations": "Tend to enjoy the company of other gorillas and sometimes other primates.",
+      "value (gold)": 200,
+      "image-links": ["/images/creatures/gorilla.jpg", "/images/creatures/gorilla2.jpg"]
+    },
+    {
+      "name": "Grizzly bear",
+      "size": {
+        "value": "large",
+        "description": "3.5 ft height and 6 ft length, weighing around 500 lbs."
+      },
+      "level": 1,
+      "hit points": 30,
+      "raw armor": 13,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 4,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Locked grapple", {"name": "Bite", "damage": 6}, {"name": "Claw", "damage": 8}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Willpower",
+          "value": 6
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 11] Grizzly bears rarely attack in groups; instead, the bear will charge its target and attempt to knock it to the ground.  A bear will always chase a fleeing target, even if it wasn't originally interested in the target.<br>[NATURE 13] Grizzly bears typically attack if provoked, hungry, or protecting their young.",
+      "background": "Bears live in the cover of the forest, rocks, or meadows. [NATURE 12] They will hibernate during the cold season in cracks or caves, but could be easily alerted if intruded upon.",
+      "associations": "Bears usually avoid other creatures excluding their own young.",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/grizzly_bear.jpg", "/images/creatures/grizzly_bear2.jpg", "/images/creatures/grizzly_bear3.jpg"]
+    },
+    {
+      "name": "Lion",
+      "size": {
+        "value": "medium",
+        "description": "4 ft height and 5 ft length, weighing around 400 lbs."
+      },
+      "level": 1,
+      "hit points": 22,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 3,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Pack tactics", "Move", "Fast run", "Locked grapple", "Pounce", {"name": "Bite", "damage": 6}, {"name": "Claw", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "deserts"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/lion.jpg", "/images/creatures/lion2.png", "/images/creatures/lion3.jpg"]
+    },
+    {
+      "name": "Phase spider",
+      "size": {
+        "value": "medium",
+        "description": "4 ft length and 1 ft height, weighing 25 lbs."
+      },
+      "level": 1,
+      "hit points": 20,
+      "raw armor": 10,
+      "raw dodge": 2,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": 4,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightivsion", "Web walker", "Move", "Spider climb", {"name": "Venomous strike",  "damage": 3, "damage type": "piercing", "damage 2": 3, "damage type 2": "poison"}],
+       "skills": [
+        {
+          "name": "Perception",
+          "value": 3
+        },
+        {
+          "name": "Stealth",
+          "value": 6
+        }
+      ],
+      "spells": [
+        {
+          "name": "Web",
+          "recharge": 5
+        },
+        {
+          "name": "Phase",
+          "recharge": 1
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["forests", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "[NATURE 12] Phase spiders are ambushers and wait for prey to come within range for them to make a suprise attack. [NATURE 15] They prevent attacks against them by phasing into the ethereal plane after attacking.",
+      "background": "[NATURE 16] Phase spiders congregate near areas of high spiritual or magical activity, as they feed off of the energy sources of the undead or magical.",
+      "associations": "Phase spiders usually group with other phase spiders.<br>Their natural enemy is the blink dog.",
+      "value (gold)": 150,
+      "image-links": ["/images/creatures/phase_spider.png", "/images/creatures/phase_spider2.jpg", "/images/creatures/phase_spider3.jpg", "/images/creatures/phase_spider4.jpg"]
+    },
+    {
+      "name": "Shark",
+      "size": {
+        "value": "medium",
+        "description": "8-12 ft length, weighing around 700 lbs."
+      },
+      "level": 1,
+      "hit points": 22,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 3,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Pack tactics", "Nightvision", "Breathe water", "Sufficating air", "Natural swimmer", "Swim", "Locked grapple", {"name": "Bite", "damage": 8}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["underwater"],
+      "languages": null,
+      "combat": "[NATURE 12] A shark will charge a bleeding creature.",
+      "background": "",
+      "associations": "",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/shark.jpg", "/images/creatures/shark2.jpg"]
+    },
+    {
+      "name": "Tiger",
+      "size": {
+        "value": "medium",
+        "description": "3 ft height and 5 ft length, weighing around 500 lbs."
+      },
+      "level": 1,
+      "hit points": 20,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 2,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Fast run", "Climb", "Locked grapple", "Pounce", {"name": "Bite", "damage": 6}, {"name": "Claw", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "deserts", "jungle"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 250,
+      "image-links": ["/images/creatures/tiger.jpg", "/images/creatures/tiger2.jpg"]
+    },
+    {
+      "name": "Worg",
+      "size": {
+        "value": "large",
+        "description": "5 ft height and 6 ft length, weighing 400 lbs."
+      },
+      "level": 1,
+      "hit points": 22,
+      "raw armor": 12,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 3,
+        "DEX": 4,
+        "INF": 3,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Pack tactics", "Move", "Fast run", "Pounce", {"name": "Bite", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "deserts", "swamps"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 50,
+      "image-links": ["/images/creatures/worg.jpg", "/images/creatures/worg2.jpg"]
+    },
+    {
+      "name": "Zombie",
+      "size": {
+        "value": "medium",
+        "description": "4-6 ft height, weighing 100-200 lbs."
+      },
+      "level": 1,
+      "hit points": 16,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 2,
+        "DEX": 1,
+        "INF": 0,
+        "WIS": -3
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": ["TBD"],
+      "possible items": ["TBD"],
+      "abilities": ["Run", "Half move", {"name": "Bite of death", "damage": 5}, {"name": "Stratch of death", "damage": 3}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 8
+        },
+        {
+          "name": "Perception (hearing)",
+          "value": 4
+        }
+      ],
+      "immunities": ["poison", "psychic"],
+      "rarity": "uncommon",
+      "locality": ["deserts", "mountains", "plains", "forests", "underground", "dungeons", "swamps"],
+      "languages": null,
+      "combat": "[ARCANA 12 | LORE 12] Zombies will attack at anything living. They are especially attracted to sound and will charge in huge swarms.",
+      "background": "[ARCANA 16 | NATURE 16] Zombies are the byproduct of the black death disease caused by a parasitic worm, known as the black crawler. If a human is not cured of the disease, he will eventually die and become a zombie.  Zombies are neither living nor dead, as the human's spirit has moved on, but the body remains controlled by the chemical release of black crawler larva. Although Zombies do not need to be nourished and remain dorment most of the time, sounds or smells will awaken their instinct to attack.",
+      "associations": "[LORE 12] Zombies prey on all living and ignore all dead.",
+      "image-links": ["/images/creatures/zombie.jpg", "/images/creatures/zombie2.jpg", "/images/creatures/zombie3.jpg"]
+    },
+    {
+      "name": "Axe beak (Diatryma)",
+      "size": {
+        "value": "large",
+        "description": "9 ft height standing tall, weighing over 500 lbs."
+      },
+      "level": 2,
+      "hit points": 24,
+      "raw armor": 10,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 2,
+        "DEX": 4,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": ["Axe beak egg"],
+      "abilities": ["Fast run", "Double move", "Pounce", {"name": "Bite", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 7
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 12] Territorial and predatorial, the axe beak flocks with a few other axe beaks and chase down prey. They are full fledged hunters and have very powerful jaws.",
+      "background": "Axe beaks live in great plains where they can easily run without obstruction.<br>[NATURE 12] They make nests, and females lay around 3 eggs a year (one for each season, excluding the cold season). Because they only hatch one egg at a time, they are very protective of their young.",
+      "associations": "Axe beaks enjoy the company of other axe beaks.<br>[NATURE 13] They can be trained if imprinted at birth to be valuable pets or mounts.",
+      "value (gold)": 400,
+      "image-links": ["/images/creatures/axe_beak.jpg", "/images/creatures/axe_beak2.jpg"]
+    },
+    {
+      "name": "Dire crab",
+      "size": {
+        "value": "medium",
+        "description": "5 ft length, weighing 800 lbs."
+      },
+      "level": 2,
+      "hit points": 30,
+      "raw armor": 20,
+      "raw dodge": 0,
+      "raw magic resist": 14,
+      "attributes": {
+        "STR": 5,
+        "DEX": 0,
+        "INF": 3,
+        "WIS": 0
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Breathe water", "Move", "Dig", {"name": "Claw", "damage": 15}],
+      "skills": [
+        {
+          "name": "Intimidation",
+          "value": 3
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["underwater", "swamps"],
+      "languages": null,
+      "combat": "[NATURE 13] Dire crabs are predators, and will hunt to kill.<br>[NATURE 13] Dire crabs long for combat. They often attack docks, ships, and shoreline settlements. They usually attack head first into the frey.",
+      "background": "[NATURE 13] Dire crabs live in shallow water (typically salt water).<br>[NATURE 16] Dire crabs, like all dire animals, were born of a crab radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, and incredible rage.",
+      "associations": "[NATURE 14] It is possible to find a group of dire crabs together, as they typically avoid associating with other animals.",
+      "value (gold)": 300,
+      "image-links": ["/images/creatures/dire_crab.jpg"]
+    },
+    {
+      "name": "Dire weasel",
+      "size": {
+        "value": "large",
+        "description": "5 ft height and 8 ft length, weighing 1,000 lbs."
+      },
+      "level": 2,
+      "hit points": 25,
+      "raw armor": 12,
+      "raw dodge": 0,
+      "raw magic resist": 5,
+      "attributes": {
+        "STR": 3,
+        "DEX": 5,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 5,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Double move", "Fast run", "Dig", "Locked grapple", {"name": "Bite", "damage": 10}],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 8
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire weasels are predators, and will hunt to kill.<br>[NATURE 13] Dire weasels long for combat. They gather a small select elite animal pack to aid them in battle, and will hunt fearlessly. They often raid villages and farmlands. They usually attack head strategically.",
+      "background": "[NATURE 12] It is rare to find a group of dire weasels together, although they do try to travel in pairs, which together lead a tribe of animals.<br>[NATURE 16] Dire weasels, like all dire animals, were born of a weasel radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire weasels have a very loyal following of powerful hunter animals in a tribe.<br>[NATURE 16] Humans can be raised in a dire tribe, under the leadership of the dire weasel. It is also possible for a human to prove himself to the a paired alpha with a dire weasel, in which the dire weasel counsels with the human.<br>[NATURE 18] In circumstances where dire animals live more harmonously with humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 1200,
+      "image-links": ["/images/creatures/dire_weasel.jpg", "/images/creatures/dire_weasel2.png"]
+    },
+    {
+      "name": "Giant scorpion",
+      "size": {
+        "value": "large",
+        "description": "8 ft length, weighing 500 lbs."
+      },
+      "level": 2,
+      "hit points": 24,
+      "raw armor": 18,
+      "raw dodge": 0,
+      "raw magic resist": 15,
+      "attributes": {
+        "STR": 2,
+        "DEX": 2,
+        "INF": -3,
+        "WIS": 0
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Climb", "Dig", "Locked grapple",  {"name": "Venomous strike",  "damage": 5, "damage type": "piercing", "damage 2": 5, "damage type 2": "poison"}, {"name": "Claw", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["deserts", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 150,
+      "image-links": ["/images/creatures/giant_scorpion.jpg", "/images/creatures/giant_scorpion2.jpg", "/images/creatures/giant_scorpion3.jpg"]
+    },
+    {
+      "name": "Giant spider",
+      "size": {
+        "value": "large",
+        "description": "4 ft height and 8 ft length, weighing 800 lbs."
+      },
+      "level": 2,
+      "hit points": 24,
+      "raw armor": 14,
+      "raw dodge": 0,
+      "raw magic resist": 12,
+      "attributes": {
+        "STR": 4,
+        "DEX": 4,
+        "INF": -3,
+        "WIS": 0
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Web walker", "Move", "Run", "Spider climb", {"name": "Venomous strike",  "damage": 15, "damage type": "piercing", "damage 2": 5, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        }
+      ],
+      "spells": [
+        {
+          "name": "Web",
+          "recharge": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["forests", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 300,
+      "image-links": ["/images/creatures/giant_spider.jpg", "/images/creatures/giant_spider2.jpg", "/images/creatures/giant_spider3.jpg", "/images/creatures/giant_spider4.jpg"]
+    },
+    {
+      "name": "Polar bear",
+      "size": {
+        "value": "large",
+        "description": "4.5 ft height and 6 ft length, weighing around 800 lbs."
+      },
+      "level": 2,
+      "hit points": 40,
+      "raw armor": 13,
+      "raw dodge": 1,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 5,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Fast run", "Locked grapple", "Natural swimmer", "Swim", {"name": "Bite", "damage": 10}, {"name": "Claw", "damage": 12}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Willpower",
+          "value": 6
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 5
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "resistances": ["cold"],
+      "rarity": "common",
+      "locality": ["mountains", "artic"],
+      "languages": null,
+      "combat": "[NATURE 11] Polar bears rarely attack in groups; instead, the bear will charge its target and attempt to knock it to the ground.  A bear will always chase a fleeing target, even if it wasn't originally interested in the target.<br>[NATURE 13] Polar bears typically attack if provoked, hungry, or protecting their young.<br>[NATURE 14] Polar bears a natural swimmers.",
+      "background": "Bears live in the cold climates of high tundras or the artic.",
+      "associations": "Bears usually avoid other creatures excluding their own young.",
+      "value (gold)": 350,
+      "image-links": ["/images/creatures/polar_bear.jpg", "/images/creatures/polar_bear2.jpg"]
+    },
+    {
+      "name": "Rhinoceros",
+      "size": {
+        "value": "large",
+        "description": "3 ft height and 6 ft length, weighing over 3,000 lbs."
+      },
+      "level": 2,
+      "hit points": 40,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 12,
+      "attributes": {
+        "STR": 5,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 0
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Double move", "Fast run", "Bull rush", {"name": "Gore", "damage": 7}, {"name": "Trample", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 2
+        },
+        {
+          "name": "Intimidation",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "deserts"],
+      "languages": null,
+      "combat": "Rhinoceros typically avoid combat, unless threatened or trained.  Rhinoceros will rampage in combat and a group of rhinoceros can easily start a deadly stampede.",
+      "background": "",
+      "associations": "Enjoys the company of other rhinoceros.",
+      "value (gold)": 300,
+      "image-links": ["/images/creatures/rhinoceros.jpg", "/images/creatures/rhinoceros2.jpg"]
+    },
+    {
+      "name": "Saber-tooth tiger",
+      "size": {
+        "value": "medium",
+        "description": "3 ft height and 5 ft length, weighing around 500 lbs."
+      },
+      "level": 2,
+      "hit points": 35,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 4,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 1
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Fast run", "Climb", "Locked grapple", "Pounce", {"name": "Bite", "damage": 15}, {"name": "Claw", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["plains", "deserts", "jungle"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 400,
+      "image-links": ["/images/creatures/saber_tooth_tiger.jpg", "/images/creatures/saber_tooth_tiger2.jpg", "/images/creatures/saber_tooth_tiger3.jpg"]
+    },
+    {
+      "name": "Dire lion",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 8 ft length, weighing around 1,000 lbs."
+      },
+      "level": 3,
+      "hit points": 32,
+      "raw armor": 13,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 4,
+        "DEX": 7,
+        "INF": 3,
+        "WIS": 1
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Camouflage", "Pack tactics", "Swift retreat", "Double move", "Double run", "Locked grapple", "Pounce", {"name": "Bite", "damage": 10}, {"name": "Claw", "damage": 8}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 6
+        },
+        {
+          "name": "Stealth",
+          "value": 8
+        },
+        {
+          "name": "Perception",
+          "value": 8
+        },
+        {
+          "name": "Survival",
+          "value": 7
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["plains", "deserts"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire lions are predators, and will hunt to kill.<br>[NATURE 13] Dire lions long for combat. They gather lions and other large cats to aid them in battle, and will hunt fearlessly. They often raid villages and farmlands.<br>[NATURE 15] Unlike most dire animals, dire lions are swift hunters that attack from any side and strike strategically: attacking once then retreating back to safety.",
+      "background": "Dire lions are kings of their land. [NATURE 12] It is rare to find a group of dire lions together, instead one lion seems to lead a tribe of animals, usually other lions.<br>[NATURE 16] Dire lions, like all dire animals, were born of a lion radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire lions surround themselves in a tribe of other animals, usually lions and other big cats.<br>[NATURE 18] In rare circumstances, dire lions can be trained as pets or mounts by humans; however, they cannot learn to speak human language.",
+      "value (gold)": 2000,
+      "image-links": ["/images/creatures/dire_lion.jpg"]
+    },
+    {
+      "name": "Dire bat",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 24 ft wing length, weighing 300 lbs."
+      },
+      "level": 3,
+      "hit points": 35,
+      "raw armor": 12,
+      "raw dodge": 1,
+      "raw magic resist": 9,
+      "attributes": {
+        "STR": 3,
+        "DEX": 4,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Fly", "Climb", {"name": "Bite", "damage": 15}, {"name": "Claw", "damage": 10}, "Flying grapple"],
+      "skills": [
+        {
+          "name": "Intimidation",
+          "value": 7
+        },
+        {
+          "name": "Persuation",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 9
+        }
+      ],
+      "spells": [
+        {
+          "name": "Thunderwave",
+          "recharge": 3
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "jungle", "underground", "dungeons"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire bats are predators, and will hunt to kill.<br>[NATURE 13] Dire bats long for combat. They gather bats and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages and farmlands. They usually attack head first into the frey.",
+      "background": "Dire bats are nocturnal creatures that typically settle in caves or other cool dark areas where they can sleep. [NATURE 12] It is rare to find a group of dire bats together, instead one bat seems to lead a tribe of animals, usually other bats.<br>[NATURE 16] Dire bats, like all dire animals, were born of a bat radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire bats surround themselves in a tribe of other animals, usually bats.<br>[NATURE 18] In circumstances where dire bats enslave humans, they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 2500,
+      "image-links": ["/images/creatures/dire_bat.jpg"]
+    },
+    {
+      "name": "Dire boar",
+      "size": {
+        "value": "large",
+        "description": "8 ft height and 10 ft length, weighing around 3,000 lbs."
+      },
+      "level": 3,
+      "hit points": 45,
+      "raw armor": 14,
+      "raw dodge": 0,
+      "raw magic resist": 7,
+      "attributes": {
+        "STR": 5,
+        "DEX": 1,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": ["Exotic plate barding"],
+      "possible items": ["Exotic saddle"],
+      "abilities": ["Move", "Fast run", "Bull rush", {"name": "Bite", "damage": 4}, {"name": "Kick", "damage": 0}, {"name": "Gore", "damage": 10}, {"name": "Trample", "damage": 3}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 5
+        },
+        {
+          "name": "Intimidation",
+          "value": 6
+        },
+        {
+          "name": "Persuation",
+          "value": 2
+        },
+        {
+          "name": "Perception (smell)",
+          "value": 7
+        },
+        {
+          "name": "Insight",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "plains", "forests", "jungle"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire boars are predators, and will hunt to kill.<br>[NATURE 13] Dire boars long for combat. They gather boars and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages and farmlands. They usually attack head first into the frey.",
+      "background": "[NATURE 12] It is rare to find a group of dire boars together, instead one boar seems to lead a tribe of animals.<br>[NATURE 16] Dire boars, like all dire animals, were born of a boar radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire boars surround themselves in a tribe of other animals, usually boars.<br>[NATURE 16] Humans can be raised in a dire tribe, under the leadership of the dire boar. It is also possible for a human to prove himself the alpha to the dire boar, in which the dire boar will follow under the human's leadership.<br>[NATURE 18] In circumstances where dire animals live more harmonously with humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 1000,
+      "image-links": ["/images/creatures/dire_boar.jpg", "/images/creatures/dire_boar2.jpg", "/images/creatures/dire_boar3.jpg"]
+    },
+    {
+      "name": "Dire wolf",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 10 ft length, weighing 1,500 lbs."
+      },
+      "level": 3,
+      "hit points": 40,
+      "raw armor": 13,
+      "raw dodge": 0,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 4,
+        "DEX": 5,
+        "INF": 4,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Pack tactics", "Double move", "Double run", "Pounce", {"name": "Bite", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 7
+        },
+        {
+          "name": "Intimidation",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Persuation",
+          "value": 2
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        },
+        {
+          "name": "Insight",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 4
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire wolves are predators, and will hunt to kill.<br>[NATURE 13] Dire wolves long for combat. They gather wolves and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages and farmlands. They usually attack head first into the frey.",
+      "background": "[NATURE 12] It is rare to find a group of dire wolves together, instead one wolf seems to lead a tribe of animals.<br>[NATURE 16] Dire wolves, like all dire animals, were born of a wolf radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire wolves surround themselves in a tribe of other animals, usually wolves.<br>[NATURE 16] Humans can be raised in a dire tribe, under the leadership of the dire wolf. It is also possible for a human to prove himself the alpha to the dire wolf, in which the dire wolf will follow under the human's leadership.<br>[NATURE 18] In circumstances where dire animals live more harmonously with humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 1200,
+      "image-links": ["/images/creatures/dire_wolf.jpg", "/images/creatures/dire_wolf2.jpg", "/images/creatures/dire_wolf3.jpg", "/images/creatures/dire_wolf4.jpg"]
+    },
+    {
+      "name": "Dire spider",
+      "size": {
+        "value": "large",
+        "description": "6 ft height and 10 ft length, weighing 1,000 lbs."
+      },
+      "level": 3,
+      "hit points": 32,
+      "raw armor": 14,
+      "raw dodge": 0,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 4,
+        "DEX": 4,
+        "INF": 4,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightivsion", "Web walker", "Move", "Run", "Spider climb", {"name": "Venomous strike",  "damage": 5, "damage type": "piercing", "damage 2": 10, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Intimidation",
+          "value": 6
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Persuation",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 3
+        },
+        {
+          "name": "Insight",
+          "value": 2
+        }
+      ],
+      "spells": [
+        {
+          "name": "Web",
+          "recharge": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["forests", "jungle", "swamps", "dungeons", "underground"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire spiders are predators, and will hunt to kill.<br>[NATURE 13] Dire spiders long for combat. They gather spiders and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages, farmlands, and dungeons: laying claim to all in sight. They usually attack head first into the frey.",
+      "background": "[NATURE 12] It is rare to find a group of dire spiders together, instead one spider seems to lead a tribe of animals.<br>[NATURE 16] Dire spiders, like all dire animals, were born of a spider radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire spiders surround themselves in a tribe of other animals, usually spiders.<br>[NATURE 16] Humans can be enslaved by the spider. [NATURE 18] In circumstances where dire animals enslave humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 1000,
+      "image-links": ["/images/creatures/dire_spider.jpg", "/images/creatures/dire_spider2.jpg"]
+    },
+    {
+      "name": "Elephant",
+      "size": {
+        "value": "huge",
+        "description": "10 ft height and length, weighing over 8,000 lbs."
+      },
+      "level": 3,
+      "hit points": 55,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 12,
+      "attributes": {
+        "STR": 7,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": ["Exotic plate barding"],
+      "possible items": ["Exotic saddle"],
+      "abilities": ["Double move", "Fast run", "Bull rush", {"name": "Gore", "damage": 10}, {"name": "Trample", "damage": 5}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Intimidation",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Insight",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["mountains", "plains", "deserts"],
+      "languages": null,
+      "combat": "Elephants typically avoid combat, unless threatened or trained.  Elephants will rampage in combat and a group of elephants can easily start a deadly stampede.",
+      "background": "[NATURE 13] Elephants are very social animals that are willing to sacrifice their own lives for kin. They often have long mourning period when a loved one dies.",
+      "associations": "Enjoys the company of other elephants or any other creature it deems to be family.",
+      "value (gold)": 600,
+      "image-links": ["/images/creatures/elephant.jpg", "/images/creatures/elephant2.jpg"]
+    },
+    {
+      "name": "Killer whale",
+      "size": {
+        "value": "huge",
+        "description": "28 ft length, weighing around 12000 lbs."
+      },
+      "level": 3,
+      "hit points": 85,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 14,
+      "attributes": {
+        "STR": 5,
+        "DEX": 2,
+        "INF": -7,
+        "WIS": 4
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Natural swimmer", "Swim", "Locked grapple", {"name": "Bite", "damage": 15}, {"name": "Slam", "damage": 18}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Perception (hearing)",
+          "value": 5
+        }
+      ],
+      "resistances": ["cold"],
+      "rarity": "common",
+      "locality": ["artic", "underwater"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 600,
+      "image-links": ["/images/creatures/killer_whale.jpg", "/images/creatures/killer_whale2.jpg"]
+    },
+    {
+      "name": "Dire shark",
+      "size": {
+        "value": "huge",
+        "description": "30 ft length, weighing around 20,000 lbs."
+      },
+      "level": 4,
+      "hit points": 48,
+      "raw armor": 13,
+      "raw dodge": 2,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 5,
+        "DEX": 3,
+        "INF": 3,
+        "WIS": 1
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Pack tactics", "Nightvision", "Breathe water", "Sufficating air", "Natural swimmer", "Swift retreat", "Swim", "Locked grapple", {"name": "Bite", "damage": 20}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 7
+        },
+        {
+          "name": "Willpower",
+          "value": 6
+        },
+        {
+          "name": "Perception (vision)",
+          "value": 6
+        },
+        {
+          "name": "Perception",
+          "value": 4
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["underwater"],
+      "languages": null,
+      "combat": "[NATURE 12] Dire sharks are predators, and will hunt to kill. A shark will charge a bleeding creature.<br>[NATURE 13] Dire sharks long for combat. They hunt fearlessly alone are will kill just for sport.<br>[NATURE 15] Unlike most dire animals, dire sharks are swift hunters that attack from any side and strike strategically.",
+      "background": "Dire sharks are kings of their land. [NATURE 12] It is almost impossible to find a group of dire sharks together.<br>[NATURE 16] Dire sharks, like all dire animals, were born of a shark radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, and unnatural rage.",
+      "associations": "[NATURE 18] In rare circumstances, dire sharks can be trained as pets or mounts by humans; however, they cannot learn to speak human language.",
+      "value (gold)": 7000,
+      "image-links": ["/images/creatures/dire_shark.jpg", "/images/creatures/dire_shark2.jpg", "/images/creatures/dire_shark3.jpg"]
+    },
+    {
+      "name": "Giant gorilla",
+      "size": {
+        "value": "huge",
+        "description": "10 ft height and length, weighing over 7,000 lbs."
+      },
+      "level": 4,
+      "hit points": 52,
+      "raw armor": 15,
+      "raw dodge": 0,
+      "raw magic resist": 6,
+      "attributes": {
+        "STR": 8,
+        "DEX": 3,
+        "INF": -1,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": ["Club", "Greatclub", "Heavy object"],
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Move", "Run", "Climb", "Grapple", "Melee attack", "Throw", "Heavy attack", {"name": "Bite", "damage": 10}, {"name": "Slam", "damage": 8}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 8
+        },
+        {
+          "name": "Intimidation",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 4
+        },
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 3
+        }
+      ],
+      "rarity": "common",
+      "locality": ["plains", "mountains", "jungle"],
+      "languages": null,
+      "combat": "Gorillas will fight in a group, often surrounding a target or attacking from an upperground.<br>[NATURE 12] Gorillas are territorial and will engage on intruders.[NATURE 14] One giant gorilla normally acts as the alpha gorilla, although a group of giant gorillas is also possible.",
+      "background": "[NATURE 10] An intelligent animal that lives in trees or grassy fields. Works together with other gorillas to create bedding and shelter.<br>[NATURE 14] Gorillas are curious by nature and my raid a camp or approach a caravan to see what they could bring back to their nesting grounds.",
+      "associations": "Tend to enjoy the company of other gorillas and sometimes other primates.",
+      "value (gold)": 1000,
+      "image-links": ["/images/creatures/giant_gorilla.jpg", "/images/creatures/giant_gorilla2.jpg"]
+    },
+    {
+      "name": "Dire bear",
+      "size": {
+        "value": "huge",
+        "description": "12 ft height and length, weighing over 10,000 lbs."
+      },
+      "level": 5,
+      "hit points": 60,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 11,
+      "attributes": {
+        "STR": 7,
+        "DEX": 2,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 7,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Move", "Run", "Locked grapple", "Pounce", {"name": "Bite", "damage": 13}, {"name": "Claw", "damage": 18}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 6
+        },
+        {
+          "name": "Intimidation",
+          "value": 5
+        },
+        {
+          "name": "Willpower",
+          "value": 10
+        },
+        {
+          "name": "Persuation",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 7
+        },
+        {
+          "name": "Insight",
+          "value": 4
+        },
+        {
+          "name": "Survival",
+          "value": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "plains", "forests"],
+      "languages": ["Common", "Elven", "Druidic"],
+      "combat": "[NATURE 10] Dire bears are predators, and will hunt to kill.<br>[NATURE 13] Dire bears long for combat, but are not as enraged as their other dire brethren. They gather bears and other wild animals to aid them in battle, and will hunt fearlessly. They usually attack head first into the frey.",
+      "background": "[NATURE 12] Dire bears will sometimes hibernate during the cold season in large caves, but could be easily alerted if intruded upon. It is rare to find a group of dire bears together, instead one bear seems to lead a tribe of animals.<br>[NATURE 15] They are guardians of forests and mountains they deem sacred, and defenders of the weak.<br>[NATURE 16] Dire bears, like all dire animals, were born of a bear radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire bears surround themselves in a tribe of other animals, usually bears.<br>[NATURE 16] Humans can be raised in a dire tribe, under the leadership of the dire bear. It is also possible for a human to prove the human's cause more worthy of the guardian's, in which the dire bear will follow under the human's leadership.<br>[NATURE 18] Dire bears almost always learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 10000,
+      "image-links": ["/images/creatures/dire_bear.jpg", "/images/creatures/dire_bear2.jpg"]
+    },
+    {
+      "name": "Dire crocodile",
+      "size": {
+        "value": "huge",
+        "description": "5 ft height 30 ft length, weighing 10,000 lbs."
+      },
+      "level": 5,
+      "hit points": 50,
+      "raw armor": 19,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 6,
+        "DEX": 0,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 7,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Swim", "Nightvision", "Move", "Run", "Locked grapple", {"name": "Claw", "damage": 10}, {"name": "Bite", "damage": 24}, {"name": "Slam", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 3
+        },
+        {
+          "name": "Intimidation",
+          "value": 8
+        },
+        {
+          "name": "Willpower",
+          "value": 6
+        },
+        {
+          "name": "Persuation",
+          "value": 2
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        },
+        {
+          "name": "Insight",
+          "value": 3
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["underwater", "swamps", "desert", "jungle", "dungeon"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire crocodiles are predators, and will hunt to kill.<br>[NATURE 13] Dire crocodiles long for combat. They gather crocodiles and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages, farmlands, and dungeons: laying claim to all in sight. They usually attack head first into the frey.",
+      "background": "[NATURE 12] It is rare to find a group of dire crocodiles together, instead one crocodile seems to lead a tribe of animals.<br>[NATURE 16] Dire crocodiles, like all dire animals, were born of a crocodile radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire crocodiles surround themselves in a tribe of other animals, usually crocodiles.<br>[NATURE 16] Humans can be enslaved by the crocodile. [NATURE 18] In circumstances where dire animals enslave humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 10000,
+      "image-links": ["/images/creatures/crocodile.jpg", "/images/creatures/crocodile2.jpg"]
+    },
+    {
+      "name": "Dire snake",
+      "size": {
+        "value": "huge",
+        "description": "30-60 ft length, weighing 1,000-2,000 lbs."
+      },
+      "level": 5,
+      "hit points": 40,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 13,
+      "attributes": {
+        "STR": 5,
+        "DEX": 2,
+        "INF": 3,
+        "WIS": 3
+      },
+      "action points": 7,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Hold breath", "Move", "Fast run", "Climb", "Swim", "Locked grapple", {"name": "Venomous strike",  "damage": 10, "damage type": "piercing", "damage 2": 30, "damage type 2": "poison"}],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 3
+        },
+        {
+          "name": "Stealth",
+          "value": 3
+        },
+        {
+          "name": "Perception",
+          "value": 6
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["swamps", "jungle", "forest", "dungeon", "underground", "desert", "plains"],
+      "languages": null,
+      "combat": "[NATURE 10] Dire snakes are predators, and will hunt to kill.<br>[NATURE 13] Dire snakes long for combat. They gather snakes and other wild animals to aid them in battle, and will hunt fearlessly. They often raid villages, farmlands, and dungeons: laying claim to all in sight. They usually attack head first into the frey.",
+      "background": "[NATURE 12] It is rare to find a group of dire snakes together, instead one snake seems to lead a tribe of animals.<br>[NATURE 16] Dire snakes, like all dire animals, were born of a snake radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, rage, and the ability to convert other animals to its cause.<br>[NATURE 18] Although dire animals are mostly infertile, they can occasionally reproduce and start a dire clan.",
+      "associations": "[NATURE 11] Dire snakes surround themselves in a tribe of other animals, usually snakes.<br>[NATURE 16] Humans can be enslaved by the snake. [NATURE 18] In circumstances where dire animals enslave humans they can learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 10,
+      "image-links": ["/images/creatures/dire_snake.jpg", "/images/creatures/dire_snake2.jpg", "/images/creatures/dire_snake3.jpg"]
+    },
+    {
+      "name": "Dire stag",
+      "size": {
+        "value": "large",
+        "description": "10 ft height and length, weighing around 1,400 lbs."
+      },
+      "level": 5,
+      "hit points": 32,
+      "raw armor": 11,
+      "raw dodge": 0,
+      "raw magic resist": 20,
+      "attributes": {
+        "STR": 3,
+        "DEX": 5,
+        "INF": 8,
+        "WIS": 7
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Double move", "Fast run", {"name": "Kick", "damage": 5}, {"name": "Gore", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 4
+        },
+        {
+          "name": "Persuation",
+          "value": 10
+        },
+        {
+          "name": "Perception",
+          "value": 5
+        },
+        {
+          "name": "Insight",
+          "value": 10
+        }
+      ],
+      "spells": [
+        {
+          "name": "Druidcraft",
+          "recharge": 0
+        },
+        {
+          "name": "Mending",
+          "recharge": 0
+        },
+        {
+          "name": "Animal friendship",
+          "recharge": 0
+        },
+        {
+          "name": "Charm human",
+          "recharge": 3
+        },
+        {
+          "name": "Detect magic",
+          "recharge": 0
+        },
+        {
+          "name": "Entangling roots",
+          "recharge": 5
+        },
+        {
+          "name": "Heal",
+          "recharge": 5
+        },
+        {
+          "name": "Fog cloud",
+          "recharge": 5
+        },
+        {
+          "name": "Jump",
+          "recharge": 2
+        },
+        {
+          "name": "Beast sense",
+          "recharge": 6
+        },
+        {
+          "name": "Cleanse",
+          "recharge": 3
+        },
+        {
+          "name": "Gust of wind",
+          "recharge": 6
+        },
+        {
+          "name": "Locate animal or plant",
+          "recharge": 0
+        },
+        {
+          "name": "Radient beam",
+          "recharge": 6
+        },
+        {
+          "name": "Spike growth",
+          "recharge": 6
+        },
+        {
+          "name": "Call lightning",
+          "recharge": 8
+        },
+        {
+          "name": "Dispel magic",
+          "recharge": 8
+        },
+        {
+          "name": "Plant growth",
+          "recharge": 0
+        },
+        {
+          "name": "Memories of plants",
+          "recharge": 0
+        },
+        {
+          "name": "Water walk",
+          "recharge": 0
+        },
+        {
+          "name": "Control water",
+          "recharge": 5
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["mountains", "forests"],
+      "languages": ["Common", "Elven", "Druidic", "Dwarven"],
+      "combat": "[NATURE 13] Dire stags are incredible magic users, and avoid direct conflict. They will not attack unless they feel their forest is threatened.",
+      "background": "[NATURE 10] Dire stags are thought to be forest spirits.<br>[NATURE 12] It is rare to find a group of dire stags together, instead one stag leads a tribe of animals, especially other deer, as dire stags are only ever male.<br>[NATURE 15] They are guardians of forests and mountains they deem sacred, and defenders of the weak.<br>[NATURE 16] Dire stags, like all dire animals, were born of a stag radiated by the effects of the shards. The mutation magically imbues the fetus with dire; side effects being increased size and strength, unnatural intelligence, and the ability to convert other animals to its cause.<br>[NATURE 18] Dire stags are usually over a herd of deer and will attempt to create a dire stag offspring to take his place. This is rather difficult, as the stag has trouble getting a doe pregnant.",
+      "associations": "[NATURE 11] Dire stags surround themselves in a tribe of other animals, usually stags.<br>[NATURE 16] Humans can be raised in a dire tribe, under the leadership of the dire stag. It is also possible for a human to prove the human's cause more worthy of the guardian's, in which the dire stag will follow under the human's leadership.<br>[NATURE 18] Dire stags almost always learn to speak a human language: partially through vocalization and partially through telepathic waves.",
+      "value (gold)": 12000,
+      "image-links": ["/images/creatures/dire_stag.jpg", "/images/creatures/dire_stag2.jpg", "/images/creatures/dire_stag3.png", "/images/creatures/dire_stag4.jpg"]
+    },
+    {
+      "name": "Mammoth",
+      "size": {
+        "value": "huge",
+        "description": "13 ft height and length, weighing over 16,000 lbs."
+      },
+      "level": 5,
+      "hit points": 100,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 16,
+      "attributes": {
+        "STR": 9,
+        "DEX": 1,
+        "INF": -7,
+        "WIS": 3
+      },
+      "action points": 6,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Double move", "Fast run", "Bull rush", {"name": "Gore", "damage": 20}, {"name": "Trample", "damage": 10}],
+      "skills": [
+        {
+          "name": "Athletics",
+          "value": 6
+        },
+        {
+          "name": "Intimidation",
+          "value": 4
+        },
+        {
+          "name": "Willpower",
+          "value": 3
+        },
+        {
+          "name": "Insight",
+          "value": 2
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["artic", "mountains", "plains"],
+      "languages": null,
+      "combat": "Mammoths typically avoid combat, unless threatened or trained.  Mammoths will rampage in combat and a group of mammoths can easily start a deadly stampede.",
+      "background": "[NATURE 13] Mammoths are very social animals that are willing to sacrifice their own lives for kin. They often have long mourning period when a loved one dies.",
+      "associations": "Enjoys the company of other mammoths or any other creature it deems to be family.",
+      "value (gold)": 2000,
+      "image-links": ["/images/creatures/mammoth.jpg", "/images/creatures/mammoth2.jpg", "/images/creatures/mammoth3.jpg"]
+    },
+    {
+      "name": "Giant octopus",
+      "size": {
+        "value": "gargantuan",
+        "description": "8 ft head and over 40 ft length with tentacle span, weighing 3,000 lbs."
+      },
+      "level": 8,
+      "hit points": 80,
+      "raw armor": 16,
+      "raw dodge": 0,
+      "raw magic resist": 11,
+      "attributes": {
+        "STR": 6,
+        "DEX": 2,
+        "INF": 5,
+        "WIS": 2
+      },
+      "action points": 7,
+      "possible weapons": null,
+      "possible armor": null,
+      "possible items": null,
+      "abilities": ["Nightvision", "Breathe water", "Sufficating air", "Hold breath", "Natural swimmer", "Swim", {"name": "Long reach", "abilities": ["Triple slam", "Grapple"]}, "Grapple",  {"name": "Bite", "damage": 30}, {"name": "Triple slam", "damage": 20}],
+      "skills": [
+        {
+          "name": "Perception",
+          "value": 6
+        }
+      ],
+      "spells": [
+        {
+          "name": "Grease",
+          "recharge": 1
+        }
+      ],
+      "rarity": "uncommon",
+      "locality": ["underwater"],
+      "languages": null,
+      "combat": "",
+      "background": "",
+      "associations": "",
+      "value (gold)": 10000,
+      "image-links": ["/images/creatures/giant_octopus.jpg", "/images/creatures/giant_octopus2.jpg", "/images/creatures/giant_octopus3.jpg"]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "class": "vehicles",
+  "possibles": {
+    "name": null,
+    "weight (lbs)": 0,
+    "value (gold)": 0,
+    "hit points": 0,
+    "raw armor": 0,
+    "raw magic resist": 0,
+    "weaknesses": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "resistances": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "immunities": [
+      [
+        "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+      ]
+    ],
+    "rarity": [
+      "common", "uncommon", "rare", "legendary"
+    ],
+    "speed (mph)": 0,
+    "properties": null,
+    "description": null,
+    "image-links": []
+  },
+  "entries": [
+    {
+      "name": "Galley",
+      "value (gold)": 40000,
+      "hit points": 2000,
+      "raw armor": 22,
+      "raw magic resist": 10,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "rare",
+      "speed (mph)": 4,
+      "properties": "Requires 50 workers to man the ship. Can hold 100 workers.",
+      "description": "",
+      "image-links": ["/images/items/galley.jpg"]
+    },
+    {
+      "name": "Keelboat",
+      "value (gold)": 3000,
+      "hit points": 200,
+      "raw armor": 14,
+      "raw magic resist": 6,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "uncommon",
+      "speed (mph)": 2,
+      "properties": "Requires 5 workers to man the ship. Can hold 20 workers.",
+      "description": "",
+      "image-links": ["/images/items/keelboat.jpg"]
+    },
+    {
+      "name": "Longship",
+      "value (gold)": 10000,
+      "hit points": 1000,
+      "raw armor": 17,
+      "raw magic resist": 8,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "uncommon",
+      "speed (mph)": 3,
+      "properties": "Requires 10 workers to man the ship. Can hold 25 workers.",
+      "description": "",
+      "image-links": ["/images/items/longship.jpg"]
+    },
+    {
+      "name": "Row boat",
+      "value (gold)": 50,
+      "hit points": 20,
+      "raw armor": 10,
+      "raw magic resist": 5,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "common",
+      "speed (mph)": 2,
+      "properties": "Can carry 4 people.",
+      "description": "",
+      "image-links": ["/images/items/rowboat.jpg"]
+    },
+    {
+      "name": "Sailing boat",
+      "value (gold)": 20000,
+      "hit points": 500,
+      "raw armor": 15,
+      "raw magic resist": 7,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "rare",
+      "speed (mph)": 6,
+      "properties": "Requires 7 workers to man the ship. Can hold 40 workers.",
+      "description": "",
+      "image-links": ["/images/items/sailing_boat.jpg"]
+    },
+    {
+      "name": "War ship",
+      "value (gold)": 30000,
+      "hit points": 1500,
+      "raw armor": 20,
+      "raw magic resist": 9,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "rare",
+      "speed (mph)": 3,
+      "properties": "Requires 15 workers to man the ship. Can hold 100 workers.",
+      "description": "",
+      "image-links": ["/images/items/war_ship.jpg", "/images/items/war_ship2.jpg"]
+    },
+    {
+      "name": "Carriage",
+      "weight (lbs)": 1000,
+      "value (gold)": 120,
+      "hit points": 80,
+      "raw armor": 15,
+      "raw magic resist": 5,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "common",
+      "speed (mph)": 4,
+      "properties": "Can be hauled behind two pack animals and can carry 1200 lbs. When hauled, animal typically moves 20 feet every turn.",
+      "description": "Wooden covered wagon with four wheels, a seat for two drivers and a door into the carriage containing two facing benches.",
+      "image-links": ["/images/items/carriage.jpg"]
+    },
+    {
+      "name": "Cart",
+      "weight (lbs)": 400,
+      "value (gold)": 30,
+      "hit points": 20,
+      "raw armor": 10,
+      "raw magic resist": 5,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "common",
+      "speed (mph)": 5,
+      "properties": "Can be hauled behind a pack animal and can carry 600 lbs. When hauled, animal typically moves 25 feet every turn.",
+      "description": "Wooden covered cart with two wheels.",
+      "image-links": ["/images/items/cart.jpg"]
+    },
+    {
+      "name": "Mobile home",
+      "weight (lbs)": 2000,
+      "value (gold)": 2000,
+      "hit points": 300,
+      "raw armor": 15,
+      "raw magic resist": 5,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "uncommon",
+      "hidden properties": "[INSPECTION 15] There is a secret small chamber under the floor boards.",
+      "speed (mph)": 3,
+      "properties": "Can be hauled behind four pack animals and can carry 800 lbs. When hauled, animal typically moves 15 feet every turn.",
+      "description": "Wooden home on a large four wheeled wagon.  The wagon has a driver's bench, and a storage plank in the back.  The wagon has a window on one side and a door on the other; it is covered by a hide stretched roof.  On the inside is a small bed, a cabinet, a wash basin, and shelves.",
+      "image-links": ["/images/items/mobile_home.jpg"]
+    },
+    {
+      "name": "Smithing wagon",
+      "weight (lbs)": 1200,
+      "value (gold)": 750,
+      "hit points": 200,
+      "raw armor": 18,
+      "raw magic resist": 7,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "uncommon",
+      "required skills": ["Smithing"],
+      "speed (mph)": 4,
+      "properties": "All tools needed for making weapons and armor except for metal.<br>Can be hauled behind a pack animal. When hauled, animal typically moves 20 feet every turn.",
+      "description": "Assorted hammers, stakes, prongs, an avil, bellow, a bucket of coal, and a portable forge, all fitting tightly within a custom wagon.",
+      "image-links": ["/images/items/smithing_wagon.jpg"]
+    },
+    {
+      "name": "Wagon",
+      "weight (lbs)": 600,
+      "value (gold)": 50,
+      "hit points": 80,
+      "raw armor": 15,
+      "raw magic resist": 5,
+      "weaknesses": ["fire"],
+      "resistances": ["cold", "lightning"],
+      "immunities": ["poison", "psychic"],
+      "rarity": "common",
+      "speed (mph)": 4,
+      "properties": "Can be hauled behind two pack animals and can carry 1500 lbs. When hauled, animal typically moves 20 feet every turn.",
+      "description": "Wooden uncovered wagon with four wheels.",
+      "image-links": ["/images/items/wagon.jpg"]
+    }
+  ]
+}
+
+     
