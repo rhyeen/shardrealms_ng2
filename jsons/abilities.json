@@ -179,7 +179,7 @@
       "range (ft)": 5,
       "properties": "If an enemy that was once within reach, performs a move action to be out of reach, you may make a free melee attack against that enemy, costing <= half (round up) of your action points (at least 3)."
     },
-        {
+    {
       "name": "Grapple",
       "type of ability": "action",
       "target": "target",

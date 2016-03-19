@@ -54,8 +54,15 @@ System.register(['angular2/core', '../services/player-entries.service', '../comp
                         _this.getMods(_this.players.selectedPlayer['race'], 'races');
                         _this.getMods(_this.players.selectedPlayer['class'], 'classes');
                         _this.getAttributePoints();
+                        _this.updateStatMapping();
                         _this.modifyHealth();
                     });
+                };
+                /**
+                 * Gets the stats already added to the player object and adds them to the .temp mappings property
+                 */
+                LevelContainerComponent.prototype.updateStatMapping = function () {
+                    this._playerEntriesService.getPredefinedStatMapping();
                 };
                 LevelContainerComponent.prototype.modifyHealth = function () {
                     var index, getClass, player = this.players.selectedPlayer;

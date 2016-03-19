@@ -1,16 +1,14 @@
 <section class="level-container" *ngIf="players">
+  <h1>Leveling from {{players.selectedPlayer['level up from']}} to {{players.selectedPlayer['level']}}</h1>
   <section class="level-form-input">
-  	<label>
-      <span>Player:</span>
-      <span>{{players.selectedPlayer['player name']}}</span>
-    </label>
-    <label>
-      <span>Character:</span>
-      <span>{{players.selectedPlayer['name']}}</span>
-    </label>
+  	<section class="level-identifiers">
+      <div class="level-title">{{players.selectedPlayer['name']}}</div>
+      <div class="level-note">Played by: {{players.selectedPlayer['player name']}}</div>
+      <hr>
+    </section>
     <section *ngIf="attribute">
       <h3>Attribute points</h3>
-      <h5>Picked <span class="level-modifier-pick-available">{{attribute.pickList.chosen}}/{{attribute.pickList.allowed}}</span></h5>
+      <h5 [ngClass]="{'level-pick-complete': attribute.pickList.chosen === attribute.pickList.allowed}">Picked <span class="level-modifier-pick-available">{{attribute.pickList.chosen}}/{{attribute.pickList.allowed}}</span></h5>
       <section>
         <!-- @TODO: change to a component -->
         <sr-level-modifier-item [item]="attribute['STR']" [pickList]="attribute.pickList" [player]="players.selectedPlayer"></sr-level-modifier-item>

@@ -49,8 +49,7 @@ System.register(['angular2/core', '../services/table-entries.service', './table-
                     core_1.Component({
                         selector: 'sr-table-container',
                         templateUrl: './app/views/table-container.html',
-                        directives: [table_selection_component_1.TableSelectionComponent],
-                        providers: [table_entries_service_1.TableEntriesService]
+                        directives: [table_selection_component_1.TableSelectionComponent]
                     }), 
                     __metadata('design:paramtypes', [table_entries_service_1.TableEntriesService])
                 ], TableContainerComponent);

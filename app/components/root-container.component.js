@@ -1,4 +1,4 @@
-System.register(['angular2/core', './table-container.component', '../services/global.service', './player-list-container.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './table-container.component', '../services/global.service', '../services/player-entries.service', '../services/table-entries.service', './player-list-container.component', './item-window.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './table-container.component', '../services/gl
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, table_container_component_1, global_service_1, player_list_container_component_1;
+    var core_1, table_container_component_1, global_service_1, player_entries_service_1, table_entries_service_1, player_list_container_component_1, item_window_component_1;
     var RootContainerComponent;
     return {
         setters:[
@@ -23,8 +23,17 @@ System.register(['angular2/core', './table-container.component', '../services/gl
             function (global_service_1_1) {
                 global_service_1 = global_service_1_1;
             },
+            function (player_entries_service_1_1) {
+                player_entries_service_1 = player_entries_service_1_1;
+            },
+            function (table_entries_service_1_1) {
+                table_entries_service_1 = table_entries_service_1_1;
+            },
             function (player_list_container_component_1_1) {
                 player_list_container_component_1 = player_list_container_component_1_1;
+            },
+            function (item_window_component_1_1) {
+                item_window_component_1 = item_window_component_1_1;
             }],
         execute: function() {
             RootContainerComponent = (function () {
@@ -49,8 +58,8 @@ System.register(['angular2/core', './table-container.component', '../services/gl
                     core_1.Component({
                         selector: 'sr-root-container',
                         templateUrl: './app/views/root-container.html',
-                        directives: [table_container_component_1.TableContainerComponent, player_list_container_component_1.PlayerListContainerComponent],
-                        providers: [global_service_1.GlobalService]
+                        directives: [table_container_component_1.TableContainerComponent, player_list_container_component_1.PlayerListContainerComponent, item_window_component_1.ItemWindowComponent],
+                        providers: [global_service_1.GlobalService, player_entries_service_1.PlayerEntriesService, table_entries_service_1.TableEntriesService]
                     }), 
                     __metadata('design:paramtypes', [global_service_1.GlobalService])
                 ], RootContainerComponent);

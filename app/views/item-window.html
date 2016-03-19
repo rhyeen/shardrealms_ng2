@@ -1,0 +1,12 @@
+<section class="item-window" *ngIf="config && config.show" [ngStyle]="{'top': config.y, 'left': config.x}">
+	<section class="item-window-title">
+		<header>
+			<h2>{{config.content.type}}:</h2>
+			<h1>{{config.content.title}}</h1>
+		</header>
+		<button class="hide-input" tabindex="-1" (click)="hideWindow()"></button>
+	</section>
+	<section>
+
+	</section>
+</section>

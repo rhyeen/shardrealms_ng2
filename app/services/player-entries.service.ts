@@ -62,7 +62,7 @@ export class PlayerEntriesService {
       "character previous accomplishments": [null],
       "weapon proficiencies": [null], // ngFor needs an extra, even if it is null
       "armor proficiencies": [null], // ngFor needs an extra, even if it is null
-      "spells": null,
+      "spells": [null],
       "abilities": [{"name": "Sharpshooter"}], // ngFor needs an extra, even if it is null
       "gold": null,
       "allowed weight": null,
@@ -86,7 +86,13 @@ export class PlayerEntriesService {
       "items on person": [null], // ngFor needs an extra, even if it is null
       "items off person": [null], // ngFor needs an extra, even if it is null
       "shards": ["soul shard"],
-      "notes": [null] // ngFor needs an extra, even if it is null
+      "notes": [null], // ngFor needs an extra, even if it is null
+      "temp": { // do not save this information, only used in view
+        "ability": {},
+        "spell": {},
+        "weapon proficiency": {},
+        "armor proficiency": {}
+      }
     },
     playerList: []
   };
@@ -161,7 +167,7 @@ export class PlayerEntriesService {
       "character previous accomplishments": [null],
       "weapon proficiencies": [null], // ngFor needs an extra, even if it is null
       "armor proficiencies": [null], // ngFor needs an extra, even if it is null
-      "spells": null,
+      "spells": [null],
       "abilities": [null], // ngFor needs an extra, even if it is null
       "gold": null,
       "allowed weight": null,
@@ -185,7 +191,13 @@ export class PlayerEntriesService {
       "items on person": [null], // ngFor needs an extra, even if it is null
       "items off person": [null], // ngFor needs an extra, even if it is null
       "shards": ["soul shard"],
-      "notes": [null] // ngFor needs an extra, even if it is null
+      "notes": [null], // ngFor needs an extra, even if it is null
+      "temp": { // do not save this information, only used in view
+        "ability": {},
+        "spell": {},
+        "weapon proficiency": {},
+        "armor proficiency": {}
+      }
     });
   }
 
@@ -251,66 +263,31 @@ export class PlayerEntriesService {
     return Promise.resolve(gainedAttributePoints);
   }
 
-  checkPlayerHasItem(statModifier) {
-    return new Promise((resolve, reject) => {
-      if (!statModifier || !statModifier.type || (!statModifier.name && statModifier.type !== 'action points')) {
-        console.error("PlayerEntriesService.checkPlayerHasItem: invalid param");
-        reject("Bad arguments");
-        return;
-      }
-      if (statModifier.type === 'weapon proficiency') {
-        resolve(this.hasProficiency('weapon', statModifier));
-      }
-      else if (statModifier.type === 'armor proficiency') {
-        resolve(this.hasProficiency('armor', statModifier));
-      }
-      // add abilities
-      else if (statModifier.type === 'ability') {
-        resolve(this.hasAbilitySpell('ability', statModifier));
-      }
-      // add spells
-      else if (statModifier.type === 'spell') {
-        resolve(this.hasAbilitySpell('spell', statModifier));
-      }
-      // doesn't matter for any value-based stat
-      else {
-        resolve(false);
-      }
-    });
-  }
+  getPredefinedStatMapping() {
+    var i, p;
 
-  hasProficiency(type, statModifier) {
-    var stat, i;
-    if (type === 'weapon') {
-      stat = this.players.selectedPlayer["weapon proficiencies"];
-    }
-    else if (type === 'armor') {
-      stat = this.players.selectedPlayer["armor proficiencies"];
-    }
-    // check if already in array
-    for (i = 0; i < stat.length; i++) {
-      if (stat[i] === statModifier.name) {
-        return true;
-      }
-    }
-    return false;
-  }
+    p = this.players.selectedPlayer;
 
-  hasAbilitySpell(type, statModifier) {
-    var stat, i;
-    if (type === 'ability') {
-      stat = this.players.selectedPlayer["abilities"];
-    }
-    else if (type === 'spell') {
-      stat = this.players.selectedPlayer["spells"];
-    }
-    // check if already in array
-    for (i = 0; i < stat.length; i++) {
-      if (stat[i].name === statModifier.name) {
-        return true;
+    for (i = 0; i < p['abilities'].length; i++) {
+      if (p['abilities'][i]) {
+        this.modifyPlayerStatsMapping('ability', p['abilities'][i].name, true);
       }
     }
-    return false;
+    for (i = 0; i < p['spells'].length; i++) {
+      if (p['spells'][i]) {
+        this.modifyPlayerStatsMapping('spell', p['spells'][i].name, true);
+      }
+    }
+    for (i = 0; i < p['armor proficiencies'].length; i++) {
+      if (p['armor proficiencies'][i]) {
+        this.modifyPlayerStatsMapping('armor proficiency', p['armor proficiencies'][i], true);
+      }
+    }
+    for (i = 0; i < p['weapon proficiencies'].length; i++) {
+      if (p['weapon proficiencies'][i]) {
+        this.modifyPlayerStatsMapping('weapon proficiency', p['weapon proficiencies'][i], true);
+      }
+    }
   }
 
   /**
@@ -345,19 +322,19 @@ export class PlayerEntriesService {
     }
     // add weapon proficiencies
     else if (statModifier.type === 'weapon proficiency') {
-      this.addProficiency('weapon', statModifier, isAdd);
+    this.addProficiency(statModifier.type, statModifier, isAdd);
     }
     // add armor proficiencies
     else if (statModifier.type === 'armor proficiency') {
-      this.addProficiency('armor', statModifier, isAdd);
+    this.addProficiency(statModifier.type, statModifier, isAdd);
     }
     // add abilities
     else if (statModifier.type === 'ability') {
-      this.addAbilitySpell('ability', statModifier, isAdd);
+    this.addAbilitySpell(statModifier.type, statModifier, isAdd);
     }
     // add spells
     else if (statModifier.type === 'spell') {
-      this.addAbilitySpell('spell', statModifier, isAdd);
+    this.addAbilitySpell(statModifier.type, statModifier, isAdd);
     }
     // add action points
     else if (statModifier.type === 'action points') {
@@ -372,16 +349,26 @@ export class PlayerEntriesService {
     this.players.selectedPlayer["action points"] = statModifier.value;
   }
 
+  modifyPlayerStatsMapping(type, name, isAdd) {
+    this.players.selectedPlayer.temp[type][name] = isAdd;
+  }
+
   addAbilitySpell(type, statModifier, isAdd) {
     var i,
-      stat;
+      stat,
+      playerType;
 
     if (type === 'ability') {
-      stat = this.players.selectedPlayer["abilities"];
+      playerType = "abilities";
     }
     else if (type === 'spell') {
-      stat = this.players.selectedPlayer["spells"];
+      playerType = "spells";
     }
+    stat = this.players.selectedPlayer[playerType];
+
+    // add to/remove from mapping, as needed
+    this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
+
     // remove the special no special condition where it's [null]
     if (isAdd && stat.length === 1 && stat[0] === null) {
       stat.splice(0, 1);
@@ -407,14 +394,21 @@ export class PlayerEntriesService {
 
   addProficiency(type, statModifier, isAdd) {
     var i,
-      stat;
+      stat,
+      playerType;
 
-    if (type === 'weapon') {
-      stat = this.players.selectedPlayer["weapon proficiencies"];
+    if (type === 'weapon proficiency') {
+      playerType = "weapon proficiencies";
     }
-    else if (type === 'armor') {
-      stat = this.players.selectedPlayer["armor proficiencies"];
+    else if (type === 'armor proficiency') {
+      playerType = "armor proficiencies";
     }
+
+    stat = this.players.selectedPlayer[playerType];
+
+    // add to/remove from mapping, as needed
+    this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
+
     // remove the special no special condition where it's [null]
     if (isAdd && stat.length === 1 && stat[0] === null) {
       stat.splice(0, 1);

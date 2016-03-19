@@ -64,8 +64,7 @@ System.register(['angular2/core', '../services/player-entries.service', '../serv
                     core_1.Component({
                         selector: 'sr-player-list-container',
                         templateUrl: './app/views/player-list-container.html',
-                        directives: [player_selection_component_1.PlayerSelectionComponent, new_player_container_component_1.NewPlayerContainerComponent],
-                        providers: [player_entries_service_1.PlayerEntriesService]
+                        directives: [player_selection_component_1.PlayerSelectionComponent, new_player_container_component_1.NewPlayerContainerComponent]
                     }), 
                     __metadata('design:paramtypes', [player_entries_service_1.PlayerEntriesService, global_service_1.GlobalService])
                 ], PlayerListContainerComponent);

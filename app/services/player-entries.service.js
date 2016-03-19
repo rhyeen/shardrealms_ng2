@@ -78,7 +78,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "character previous accomplishments": [null],
                             "weapon proficiencies": [null],
                             "armor proficiencies": [null],
-                            "spells": null,
+                            "spells": [null],
                             "abilities": [{ "name": "Sharpshooter" }],
                             "gold": null,
                             "allowed weight": null,
@@ -102,7 +102,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "items on person": [null],
                             "items off person": [null],
                             "shards": ["soul shard"],
-                            "notes": [null] // ngFor needs an extra, even if it is null
+                            "notes": [null],
+                            "temp": {
+                                "ability": {},
+                                "spell": {},
+                                "weapon proficiency": {},
+                                "armor proficiency": {}
+                            }
                         },
                         playerList: []
                     };
@@ -176,7 +182,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         "character previous accomplishments": [null],
                         "weapon proficiencies": [null],
                         "armor proficiencies": [null],
-                        "spells": null,
+                        "spells": [null],
                         "abilities": [null],
                         "gold": null,
                         "allowed weight": null,
@@ -200,7 +206,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         "items on person": [null],
                         "items off person": [null],
                         "shards": ["soul shard"],
-                        "notes": [null] // ngFor needs an extra, even if it is null
+                        "notes": [null],
+                        "temp": {
+                            "ability": {},
+                            "spell": {},
+                            "weapon proficiency": {},
+                            "armor proficiency": {}
+                        }
                     });
                 };
                 PlayerEntriesService.prototype.getExperience = function (level) {
@@ -262,62 +274,29 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     }
                     return Promise.resolve(gainedAttributePoints);
                 };
-                PlayerEntriesService.prototype.checkPlayerHasItem = function (statModifier) {
-                    var _this = this;
-                    return new Promise(function (resolve, reject) {
-                        if (!statModifier || !statModifier.type || (!statModifier.name && statModifier.type !== 'action points')) {
-                            console.error("PlayerEntriesService.checkPlayerHasItem: invalid param");
-                            reject("Bad arguments");
-                            return;
-                        }
-                        if (statModifier.type === 'weapon proficiency') {
-                            resolve(_this.hasProficiency('weapon', statModifier));
-                        }
-                        else if (statModifier.type === 'armor proficiency') {
-                            resolve(_this.hasProficiency('armor', statModifier));
-                        }
-                        else if (statModifier.type === 'ability') {
-                            resolve(_this.hasAbilitySpell('ability', statModifier));
-                        }
-                        else if (statModifier.type === 'spell') {
-                            resolve(_this.hasAbilitySpell('spell', statModifier));
-                        }
-                        else {
-                            resolve(false);
-                        }
-                    });
-                };
-                PlayerEntriesService.prototype.hasProficiency = function (type, statModifier) {
-                    var stat, i;
-                    if (type === 'weapon') {
-                        stat = this.players.selectedPlayer["weapon proficiencies"];
-                    }
-                    else if (type === 'armor') {
-                        stat = this.players.selectedPlayer["armor proficiencies"];
-                    }
-                    // check if already in array
-                    for (i = 0; i < stat.length; i++) {
-                        if (stat[i] === statModifier.name) {
-                            return true;
+                PlayerEntriesService.prototype.getPredefinedStatMapping = function () {
+                    var i, p;
+                    p = this.players.selectedPlayer;
+                    for (i = 0; i < p['abilities'].length; i++) {
+                        if (p['abilities'][i]) {
+                            this.modifyPlayerStatsMapping('ability', p['abilities'][i].name, true);
                         }
                     }
-                    return false;
-                };
-                PlayerEntriesService.prototype.hasAbilitySpell = function (type, statModifier) {
-                    var stat, i;
-                    if (type === 'ability') {
-                        stat = this.players.selectedPlayer["abilities"];
-                    }
-                    else if (type === 'spell') {
-                        stat = this.players.selectedPlayer["spells"];
-                    }
-                    // check if already in array
-                    for (i = 0; i < stat.length; i++) {
-                        if (stat[i].name === statModifier.name) {
-                            return true;
+                    for (i = 0; i < p['spells'].length; i++) {
+                        if (p['spells'][i]) {
+                            this.modifyPlayerStatsMapping('spell', p['spells'][i].name, true);
                         }
                     }
-                    return false;
+                    for (i = 0; i < p['armor proficiencies'].length; i++) {
+                        if (p['armor proficiencies'][i]) {
+                            this.modifyPlayerStatsMapping('armor proficiency', p['armor proficiencies'][i], true);
+                        }
+                    }
+                    for (i = 0; i < p['weapon proficiencies'].length; i++) {
+                        if (p['weapon proficiencies'][i]) {
+                            this.modifyPlayerStatsMapping('weapon proficiency', p['weapon proficiencies'][i], true);
+                        }
+                    }
                 };
                 /**
                  * Expects: {type:
@@ -349,16 +328,16 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         }
                     }
                     else if (statModifier.type === 'weapon proficiency') {
-                        this.addProficiency('weapon', statModifier, isAdd);
+                        this.addProficiency(statModifier.type, statModifier, isAdd);
                     }
                     else if (statModifier.type === 'armor proficiency') {
-                        this.addProficiency('armor', statModifier, isAdd);
+                        this.addProficiency(statModifier.type, statModifier, isAdd);
                     }
                     else if (statModifier.type === 'ability') {
-                        this.addAbilitySpell('ability', statModifier, isAdd);
+                        this.addAbilitySpell(statModifier.type, statModifier, isAdd);
                     }
                     else if (statModifier.type === 'spell') {
-                        this.addAbilitySpell('spell', statModifier, isAdd);
+                        this.addAbilitySpell(statModifier.type, statModifier, isAdd);
                     }
                     else if (statModifier.type === 'action points') {
                         this.addActionPoints(statModifier);
@@ -370,14 +349,20 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 PlayerEntriesService.prototype.addActionPoints = function (statModifier) {
                     this.players.selectedPlayer["action points"] = statModifier.value;
                 };
+                PlayerEntriesService.prototype.modifyPlayerStatsMapping = function (type, name, isAdd) {
+                    this.players.selectedPlayer.temp[type][name] = isAdd;
+                };
                 PlayerEntriesService.prototype.addAbilitySpell = function (type, statModifier, isAdd) {
-                    var i, stat;
+                    var i, stat, playerType;
                     if (type === 'ability') {
-                        stat = this.players.selectedPlayer["abilities"];
+                        playerType = "abilities";
                     }
                     else if (type === 'spell') {
-                        stat = this.players.selectedPlayer["spells"];
+                        playerType = "spells";
                     }
+                    stat = this.players.selectedPlayer[playerType];
+                    // add to/remove from mapping, as needed
+                    this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
                     // remove the special no special condition where it's [null]
                     if (isAdd && stat.length === 1 && stat[0] === null) {
                         stat.splice(0, 1);
@@ -401,13 +386,16 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     }
                 };
                 PlayerEntriesService.prototype.addProficiency = function (type, statModifier, isAdd) {
-                    var i, stat;
-                    if (type === 'weapon') {
-                        stat = this.players.selectedPlayer["weapon proficiencies"];
+                    var i, stat, playerType;
+                    if (type === 'weapon proficiency') {
+                        playerType = "weapon proficiencies";
                     }
-                    else if (type === 'armor') {
-                        stat = this.players.selectedPlayer["armor proficiencies"];
+                    else if (type === 'armor proficiency') {
+                        playerType = "armor proficiencies";
                     }
+                    stat = this.players.selectedPlayer[playerType];
+                    // add to/remove from mapping, as needed
+                    this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
                     // remove the special no special condition where it's [null]
                     if (isAdd && stat.length === 1 && stat[0] === null) {
                         stat.splice(0, 1);

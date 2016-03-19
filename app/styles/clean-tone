@@ -246,15 +246,6 @@ button:hover {
   border-left: 2px solid #999;
 }
 
-.level-form-input h5 {
-  font-weight: 400;
-}
-
-.level-form-input h5 span {
-  font-family: 'Viga', sans-serif;
-}
-
-
 .level-form-input .level-point-amount {
   width: 20px;
   display: inline-block;
@@ -272,23 +263,15 @@ button:hover {
   padding: 0;
 }
 
-.level-form-input .level-modifier-item-inactive {
-  border: 1px solid transparent;
-}
-
 .level-form-input .level-modifier-item {
-  width: 275;
-  padding: 5px;
-  margin: 0px 0 5px 14px;
+  margin: 0 0 15px 20px;
 }
 
 .level-form-input .level-modifier-item-active {
-  border: 1px solid #EBDC71;
-  background-color: #FFFCE3;
-}
-
-.level-form-input .level-pick-complete {
-  color: #54BA57;
+  border: 1px solid #373737;
+  width: 273;
+  padding: 5px;
+  margin: 0 0 9px 14px;
 }
 
 .level-form-input .level-modifier-item span {
@@ -393,52 +376,3 @@ sr-dynamic-list .delete-input {
   background-color: #F13E01;
   transform: rotate(45deg);
 }
-
-.item-window {
-  position: absolute;
-  width: 400px;
-  background-color: #FFF;
-  border: 4px solid #373737;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.item-window header {
-  float: left;
-  height: 0px;
-}
-
-.item-window .hide-input {
-  background-image: url("data:image/svg+xml;uft8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='18' height='18' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve' fill='#FFF'><polygon transform='rotate(45 9 9)' points='8 3 10 3 10 8 15 8 15 10 10 10 10 15 8 15 8 10 3 10 3 8 8 8 '/></svg>");
-  vertical-align: top;
-  width: 18px;
-  height: 18px;
-  padding: 0;
-  margin: 4px;
-  border: none;
-  float: right;
-  margin-top: 6px;
-}
-
-.item-window .item-window-title {
-  background-color: #373737;
-  height: 30px;
-}
-
-.item-window h1,
-.item-window h2 {
-  font-weight: 400;
-  display: inline;
-  line-height: 30px;
-}
-
-.item-window h1 {
-  color: #FFF;
-}
-
-.item-window h2 {
-  text-transform: uppercase;
-  color: #999;
-  font-size: 14px;
-  margin: 0 10px;
-}
-

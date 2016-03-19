@@ -39,8 +39,16 @@ export class LevelContainerComponent implements OnInit {
 			this.getMods(this.players.selectedPlayer['race'], 'races');
 			this.getMods(this.players.selectedPlayer['class'], 'classes');
 			this.getAttributePoints();
+			this.updateStatMapping();
 			this.modifyHealth();
 		});
+	}
+
+	/**
+	 * Gets the stats already added to the player object and adds them to the .temp mappings property
+	 */
+	updateStatMapping() {
+		this._playerEntriesService.getPredefinedStatMapping();
 	}
 
 	modifyHealth() {

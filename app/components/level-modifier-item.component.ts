@@ -1,5 +1,6 @@
-import {Component, OnInit, OnChanges} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
+import {TableEntriesService} from '../services/table-entries.service';
 
 
 @Component({
@@ -8,7 +9,7 @@ import {PlayerEntriesService} from '../services/player-entries.service';
 	// directives: [],
 	inputs: ['item', 'pickList', 'player']
 })
-export class LevelModifierItemComponent implements OnInit, OnChanges {
+export class LevelModifierItemComponent implements OnInit {
 
 	public item;
 	public points;
@@ -18,7 +19,7 @@ export class LevelModifierItemComponent implements OnInit, OnChanges {
 	public pickList;
 	public player;
 	
-	constructor(private _playerEntriesService: PlayerEntriesService) { }
+	constructor(private _playerEntriesService: PlayerEntriesService, private _tableEntriesService: TableEntriesService) { }
 
 	// on app load, do this:
 	ngOnInit() {
@@ -28,26 +29,12 @@ export class LevelModifierItemComponent implements OnInit, OnChanges {
 		this.updateGainedSymbol();
 	}
 
-	ngOnChanges(changes) {
-		// determine if item should be disabled if the player already has it
-		if (changes['item']) {
-			this.item = changes['item'].currentValue;			
-		}
-		// need to do it each time the player is changed, just in case a class & race both have the same pick list ability and a user picks one of them
-		if (changes['player']) {
-			this.player = changes['player'].currentValue;
-		}
-		if (this.player && this.item) {
-			this.checkPlayerHasItem();
-		}
-	}
-
-	checkPlayerHasItem() {
-		this._playerEntriesService.checkPlayerHasItem(this.item).then(isOwned => this.isGainedElsewhere = isOwned);
-	}
-
 	updateGainedSymbol() {
 		this.gainedSymbol = this.isGained ? '-' : '+';
+	}
+
+	itemNameClick(event) {
+		this._tableEntriesService.showItemWindow(event.pageX, event.pageY, this.item.type, this.item.name);
 	}
 
 	editStat(isAdd) {

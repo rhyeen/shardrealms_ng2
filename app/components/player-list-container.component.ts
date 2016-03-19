@@ -8,8 +8,7 @@ import {NewPlayerContainerComponent} from './new-player-container.component';
 @Component({
 	selector: 'sr-player-list-container',
 	templateUrl: './app/views/player-list-container.html',
-	directives: [PlayerSelectionComponent, NewPlayerContainerComponent],
-	providers: [PlayerEntriesService]
+	directives: [PlayerSelectionComponent, NewPlayerContainerComponent]
 })
 export class PlayerListContainerComponent implements OnInit {
 	public playerList = [];

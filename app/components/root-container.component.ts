@@ -1,13 +1,16 @@
 import {Component, OnInit} from 'angular2/core';
 import {TableContainerComponent} from './table-container.component';
 import {GlobalService} from '../services/global.service';
+import {PlayerEntriesService} from '../services/player-entries.service';
+import {TableEntriesService} from '../services/table-entries.service';
 import {PlayerListContainerComponent} from './player-list-container.component';
+import {ItemWindowComponent} from './item-window.component';
 
 @Component({
   selector: 'sr-root-container',
   templateUrl: './app/views/root-container.html',
-  directives: [TableContainerComponent, PlayerListContainerComponent],
-  providers: [GlobalService]
+  directives: [TableContainerComponent, PlayerListContainerComponent, ItemWindowComponent],
+  providers: [GlobalService, PlayerEntriesService, TableEntriesService]
 })
 export class RootContainerComponent implements OnInit {
   public mainView;
