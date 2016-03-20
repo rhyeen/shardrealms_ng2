@@ -92,7 +92,7 @@
       "type of ability": "action",
       "target": "self",
       "action points": 3,
-      "properties": "With a successful [Athletics] check, may climb 5 feet on reasonably climbable surfaces such as trees or cliffs."
+      "properties": "With a successful <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Athletics')\">Athletics</span> check, may climb 5 feet on reasonably climbable surfaces such as trees or cliffs."
     },
         {
       "name": "Jump",
@@ -106,7 +106,7 @@
       "type of ability": "action",
       "target": "self",
       "action points": 1,
-      "properties": "May shout up to four words as a command. Make a [Persuation] check as needed.<br>Response is only possible on target's turn."
+      "properties": "May shout up to four words as a command. Make a <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Persuasion')\">Persuasion</span> check as needed.<br>Response is only possible on target's turn."
     },
     {
       "name": "Ask question",
@@ -128,7 +128,7 @@
       "type of ability": "action",
       "target": "self",
       "action points": 2,
-      "properties": "Can drink or administer (to a willing target) a vial of liquid.<br>If target is unconscious, requires a [Sleight of hand] check > 13, otherwise the liquid is not swallowed."
+      "properties": "Can drink or administer (to a willing target) a vial of liquid.<br>If target is unconscious, requires a <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Sleight of hand')\">Sleight of hand</span> check > 13, otherwise the liquid is not swallowed."
     },
     {
       "name": "Stabilize",
@@ -147,14 +147,14 @@
       "type of ability": "action",
       "target": "self",
       "action points": 3,
-      "properties": "May move without enabling an [Opportunity attack].<br>No attack action can be made on the same turn."
+      "properties": "May move without enabling an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span>.<br>No attack action can be made on the same turn."
     },
     {
       "name": "Hide",
       "type of ability": "action",
       "target": "self",
       "action points": 3,
-      "properties": "Must be out of the line of sight of all opponents.<br>Allows a [Stealth] check to be made. See [Stealth] for more information."
+      "properties": "Must be out of the line of sight of all opponents.<br>Allows a <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Stealth')\">Stealth</span> check to be made. See <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Stealth')\">Stealth</span> for more information."
     },
     {
       "name": "Search",
@@ -162,7 +162,7 @@
       "target": "touch",
       "range (ft)": 5,
       "action points": 5,
-      "properties": "Requires you to be in range to the space being searched.<br>Search a space for one of the following:<ul><li>General items of interest.</li><li>Make an [Inspection] check to search for a hidden items.</li><li>Make an [Inspection] check to search for specified clues.</li><li>Make an [Inspection] check to search for hidden traps.</li><li>Make an [Inspection] check to search for hidden compartments or doors.</li></ul>"
+      "properties": "Requires you to be in range to the space being searched.<br>Search a space for one of the following:<ul><li>General items of interest.</li><li>Make an <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Inspection')\">Inspection</span> check to search for a hidden items.</li><li>Make an <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Inspection')\">Inspection</span> check to search for specified clues.</li><li>Make an <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Inspection')\">Inspection</span> check to search for hidden traps.</li><li>Make an <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Inspection')\">Inspection</span> check to search for hidden compartments or doors.</li></ul>"
     },
     {
       "name": "Ready",
@@ -219,7 +219,7 @@
       "type of ability": "reaction",
       "target": "self",
       "action points": 2,
-      "properties": "Gained if armor indicates [Block] is possible. If dodge is negative, before adding the block's dodge modifier, set the dodge to 0.  Add dodge to armor and magic resist during AD."
+      "properties": "Gained if armor indicates <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Block')\">Block</span> is possible. If dodge is negative, before adding the block's dodge modifier, set the dodge to 0.  Add dodge to armor and magic resist during AD."
     }, 
     {
       "name": "Shield slam",
@@ -227,33 +227,33 @@
       "target": "target",
       "action points": 3,
       "saving throw": "T: Willpower ST >= A: 5 + STR check: not dazed.",
-      "properties": "Gained if armor indicates [Shield slam] is possible. <br>On hit, inflict dazed."
+      "properties": "Gained if armor indicates <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Shield slam')\">Shield slam</span> is possible. <br>On hit, inflict dazed."
     },
     {
       "name": "Attuned strength",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Automatically gained when STR >= 5<br>The melee attack DMG modifier due to STR does not exceed 5, excluding a [Heavy attack]. [Heavy attack] only consumes 4 action points."
+      "properties": "Automatically gained when STR >= 5<br>The melee attack DMG modifier due to STR does not exceed 5, excluding a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Heavy attack')\">Heavy attack</span>. <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Heavy attack')\">Heavy attack</span> only consumes 4 action points."
     },
     {
       "name": "Maximum strength",
       "type of ability": "passive",
       "target": "self",
       "replaces": ["Attuned strength"],
-      "properties": "Automatically gained when STR = 10. You cannot gain more STR through leveling.<br>[Heavy attack] only consumes 3 action points."
+      "properties": "Automatically gained when STR = 10. You cannot gain more STR through leveling.<br><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Heavy attack')\">Heavy attack</span> only consumes 3 action points."
     },
     {
       "name": "Attuned dexterity",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Automatically gained when DEX >= 5<br>The melee and ranged attack DMG modifier due to DEX does not exceed 5. [Reload] consumes 1 less action point."
+      "properties": "Automatically gained when DEX >= 5<br>The melee and ranged attack DMG modifier due to DEX does not exceed 5. <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Reload')\">Reload</span> consumes 1 less action point."
     },
     {
       "name": "Maximum dexterity",
       "type of ability": "passive",
       "target": "self",
       "replaces": ["Attuned dexterity"],
-      "properties": "Automatically gained when DEX = 10. You cannot gain more DEX through leveling.<br>[Reload] consumes 2 less action points."
+      "properties": "Automatically gained when DEX = 10. You cannot gain more DEX through leveling.<br><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Reload')\">Reload</span> consumes 2 less action points."
     },
     {
       "name": "Attuned influence",
@@ -301,19 +301,19 @@
       "type of ability": "passive",
       "target": "self",
       "radius type": "sphere",
-      "properties": "Disadvantage on any [Perception] check and AR in bright light."
+      "properties": "Disadvantage on any <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Perception')\">Perception</span> check and AR in bright light."
     },
     {
       "name": "Blind",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Cannot see, and fails all vision-based [Perception] checks."
+      "properties": "Cannot see, and fails all vision-based <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Perception')\">Perception</span> checks."
     },
     {
       "name": "Deaf",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Cannot hear, and fails all vision-based [Perception] checks."
+      "properties": "Cannot hear, and fails all vision-based <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Perception')\">Perception</span> checks."
     },
     {
       "name": "Tremorsense",
@@ -369,7 +369,7 @@
       "type of ability": "action",
       "target": "self",
       "action points": 1,
-      "properties": "May climb 5 feet on reasonably climbable surfaces such as trees or cliffs. Otherwise, +4 [Athletics] when climbing.<br>If creature has [Half move] instead of [Move], 2 action points are required."
+      "properties": "May climb 5 feet on reasonably climbable surfaces such as trees or cliffs. Otherwise, +4 <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Athletics')\">Athletics</span> when climbing.<br>If creature has <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Half move')\">Half move</span> instead of <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Move')\">Move</span>, 2 action points are required."
     },
     {
       "name": "Spider climb",
@@ -462,7 +462,7 @@
       "damage type": "piercing",
       "action points": 3,
       "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
-      "properties": "Transfers disease. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with [Remove disease] or [Remove curse]."
+      "properties": "Transfers disease. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove disease')\">Remove disease</span> or <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove curse')\">Remove curse</span>."
     },
     {
       "name": "Bite of death",
@@ -473,7 +473,7 @@
       "damage type": "piercing",
       "action points": 3,
       "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
-      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with [Remove disease] or [Remove curse]."
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove disease')\">Remove disease</span> or <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove curse')\">Remove curse</span>."
     },
     {
       "name": "Scratch of death",
@@ -484,7 +484,7 @@
       "damage type": "piercing",
       "action points": 3,
       "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
-      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with [Remove disease] or [Remove curse]."
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove disease')\">Remove disease</span> or <span class=\"item\" (click)=\"itemClick($event, 'spell', 'Remove curse')\">Remove curse</span>."
     },
     {
       "name": "Kick",
@@ -587,7 +587,7 @@
       "number of targets": 1,
       "range (ft)": 15,
       "action points": 3,
-      "properties": "On hit, target is blinded until 10 [Willpower] check."
+      "properties": "On hit, target is blinded until 10 <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Willpower')\">Willpower</span> check."
     },
     {
       "name": "Gore",
@@ -613,13 +613,13 @@
       "range (ft)": 5,
       "action points": 5,
       "saving throw": "DEX 15 ST: half DMG and not knocked prone.",
-      "properties": "A melee unarmed attack which allows movement up to 20 feet without enabling an [Opportunity attack] and knocking all targets prone. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 3."
+      "properties": "A melee unarmed attack which allows movement up to 20 feet without enabling an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span> and knocking all targets prone. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 3."
     },
     {
       "name": "Mimicry",
       "type of ability": "passive",
       "target": "self",
-      "saving throw": "Perception 13 ST: Realize it is mimicry.<br>If mimicry is detected, target can perform an additional [Nature] or [Arcana] check to determine actual source of sound.",
+      "saving throw": "Perception 13 ST: Realize it is mimicry.<br>If mimicry is detected, target can perform an additional <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Nature')\">Nature</span> or <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Arcana')\">Arcana</span> check to determine actual source of sound.",
       "properties": "Can mimic simple sounds or common expressions."
     },
     {
@@ -632,13 +632,13 @@
       "name": "Camouflage",
       "type of ability": "passive",
       "target": "self",
-      "properties": "While not performing any action, requires +7 to a normal [Perception] check to be noticed."
+      "properties": "While not performing any action, requires +7 to a normal <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Perception')\">Perception</span> check to be noticed."
     },
     {
       "name": "Feign inanimated",
       "type of ability": "passive",
       "target": "self",
-      "properties": "While not performing any action, requires +7 to a normal [Perception] check to detect that creature is not dead or not inanimate."
+      "properties": "While not performing any action, requires +7 to a normal <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Perception')\">Perception</span> check to detect that creature is not dead or not inanimate."
     },
     {
       "name": "Pack tactics",
@@ -678,7 +678,7 @@
     {
       "name": "Swift retreat",
       "target": "self",
-      "properties": "Can move without provoking an [Opportunity attack]."
+      "properties": "Can move without provoking an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span>."
     },
     {
       "name": "Two-headed",
@@ -693,7 +693,7 @@
       "duration type": "turns",
       "duration time": 2,
       "recharge": "day",
-      "properties": "After falling >= 20 ft, gain [Fly].",
+      "properties": "After falling >= 20 ft, gain <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Fly')\">Fly</span>.",
       "description": "Ghost-like angelic wings sprout from your back."
     },
     {
@@ -727,7 +727,7 @@
       "name": "Water yin and air yang",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Must be submerged in water (entire body, excluding head) for at least 8 hours a week or you will permanently transform into a [Terran].<br>Must be entirely out of water for at least 8 hours a week or you will permanently transform into a [Tatsu].<br>In either case, all racial bonuses are replaced with the permanent race's."
+      "properties": "Must be submerged in water (entire body, excluding head) for at least 8 hours a week or you will permanently transform into a <span class=\"item\" (click)=\"itemClick($event, 'race', 'Terran')\">Terran</span>.<br>Must be entirely out of water for at least 8 hours a week or you will permanently transform into a <span class=\"item\" (click)=\"itemClick($event, 'race', 'Tatsu')\">Tatsu</span>.<br>In either case, all racial bonuses are replaced with the permanent race's."
     },
     {
       "name": "Enraged swing",
@@ -736,7 +736,7 @@
       "number of targets": 3,
       "range (ft)": 5,
       "requires": ["Heavy attack"],
-      "properties": "While performing a [Heavy attack], make attack against up to 3 targets all within 5 ft of you and 5 ft of eachother."
+      "properties": "While performing a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Heavy attack')\">Heavy attack</span>, make attack against up to 3 targets all within 5 ft of you and 5 ft of eachother."
     },
     {
       "name": "Whirlwind swing",
@@ -746,7 +746,7 @@
       "feat": true,
       "recharge": "shard",
       "requires": ["Heavy attack"],
-      "properties": "While performing a [Heavy attack], make attack against all creatures within 5 ft of you."
+      "properties": "While performing a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Heavy attack')\">Heavy attack</span>, make attack against all creatures within 5 ft of you."
     },
     {
       "name": "Hard skin",
@@ -815,7 +815,7 @@
       "action points": 3,
       "recharge": "encounter",
       "duration type": "encounter",
-      "properties": "Couple with any single acquired rage mood: [Raging fury], [Raging guard], or [Raging haste].<br>Cannot change rage mood once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+      "properties": "Couple with any single acquired rage mood: <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging fury')\">Raging fury</span>, <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging guard')\">Raging guard</span>, or <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging haste')\">Raging haste</span>.<br>Cannot change rage mood once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
     },
     {
       "name": "Double rage",
@@ -825,7 +825,7 @@
       "recharge": "encounter",
       "duration type": "encounter",
       "replaces": ["Rage"],
-      "properties": "Couple with any two acquired rage moods: [Raging fury], [Raging guard], or [Raging haste].<br>Cannot change rage moods once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+      "properties": "Couple with any two acquired rage moods: <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging fury')\">Raging fury</span>, <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging guard')\">Raging guard</span>, or <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging haste')\">Raging haste</span>.<br>Cannot change rage moods once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
     },
     {
       "name": "Triple rage",
@@ -835,7 +835,7 @@
       "recharge": "encounter",
       "duration type": "encounter",
       "replaces": ["Double rage"],
-      "properties": "Couple with all three rage moods: [Raging fury], [Raging guard], or [Raging haste].<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+      "properties": "Couple with all three rage moods: <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging fury')\">Raging fury</span>, <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging guard')\">Raging guard</span>, or <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging haste')\">Raging haste</span>.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
     },
     {
       "name": "Raging fury",
@@ -853,41 +853,41 @@
       "name": "Raging haste",
       "type of ability": "passive",
       "target": "self",
-      "properties": "+3 dodge, [Opportunity attacks] against you are have disadvantage. Have one extra action point each turn that can only be expended on movement."
+      "properties": "+3 dodge, <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span> against you are have disadvantage. Have one extra action point each turn that can only be expended on movement."
     },
     {
       "name": "Blood boil",
       "type of ability": "passive",
       "target": "self",
-      "properties": "Depending on the rage mood, gain a blood token if:<br><ul><li>[Raging fury]: you deal DMG with an attack</li><li>[Raging guard]: you take DMG</li><li>[Raging haste]: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and [Rage] ends."
+      "properties": "Depending on the rage mood, gain a blood token if:<br><ul><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging fury')\">Raging fury</span>: you deal DMG with an attack</li><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging guard')\">Raging guard</span>: you take DMG</li><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging haste')\">Raging haste</span>: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> ends."
     },
     {
       "name": "Heated blood boil",
       "type of ability": "passive",
       "target": "self",
       "replaces": ["Blood boil"],
-      "properties": "When [Rage] is activated, gain 3 blood tokens.<br>Depending on the rage mood, gain a blood token if:<br><ul><li>[Raging fury]: you deal DMG with an attack</li><li>[Raging guard]: you take DMG</li><li>[Raging haste]: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and [Rage] ends."
+      "properties": "When <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> is activated, gain 3 blood tokens.<br>Depending on the rage mood, gain a blood token if:<br><ul><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging fury')\">Raging fury</span>: you deal DMG with an attack</li><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging guard')\">Raging guard</span>: you take DMG</li><li><span class=\"item\" (click)=\"itemClick($event, 'ability', 'Raging haste')\">Raging haste</span>: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> ends."
     },
     {
       "name": "Unstoppable fever",
       "type of ability": "action",
       "target": "self",
       "action points": 3,
-      "properties": "You are immune to all DMG types and automatically succeed any ST.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and [Rage] ends.<br>Lasts for 2 turns if 8 blood tokens were consumed, 3 turns if 9 blood tokens were consumed, 5 turns if 10 blood tokens were consumed."
+      "properties": "You are immune to all DMG types and automatically succeed any ST.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> ends.<br>Lasts for 2 turns if 8 blood tokens were consumed, 3 turns if 9 blood tokens were consumed, 5 turns if 10 blood tokens were consumed."
     },
     {
       "name": "Murderous fever",
       "type of ability": "action",
       "target": "self",
       "action points": 3,
-      "properties": "Your next successful attack will deal extra DMG to a single target.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and [Rage] ends.<br>Deal +50 DMG if 8 blood tokens were consumed, deal +70 DMG if 8 blood tokens were consumed, deal +100 DMG if 8 blood tokens were consumed."
+      "properties": "Your next successful attack will deal extra DMG to a single target.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> ends.<br>Deal +50 DMG if 8 blood tokens were consumed, deal +70 DMG if 8 blood tokens were consumed, deal +100 DMG if 8 blood tokens were consumed."
     },
     {
       "name": "Beserker fever",
       "type of ability": "action",
       "target": "self",
       "action points": 1,
-      "properties": "Once activated, at the end of each turn remove a blood token.<br>You cannot gain additional blood tokens during this time.<br>Once all blood tokens are removed, [Rage] ends."
+      "properties": "Once activated, at the end of each turn remove a blood token.<br>You cannot gain additional blood tokens during this time.<br>Once all blood tokens are removed, <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Rage')\">Rage</span> ends."
     },
     {
       "name": "Restoring blood",
@@ -896,7 +896,7 @@
       "action points": 1,
       "feat": true,
       "recharge": "shard",
-      "properties": "Restore 5 + [Willpower] modifier HP."
+      "properties": "Restore 5 + <span class=\"item\" (click)=\"itemClick($event, 'skill', 'Willpower')\">Willpower</span> modifier HP."
     },
     {
       "name": "Stubborn blood",
@@ -968,7 +968,7 @@
       "target": "self",
       "feat": true,
       "requires": ["Quick attack"],
-      "properties": "While performing a movement action into reach of a target, may perform a [Quick attack] without using action points.<br>Cannot perform with a [Charge attack] action."
+      "properties": "While performing a movement action into reach of a target, may perform a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Quick attack')\">Quick attack</span> without using action points.<br>Cannot perform with a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Charge attack')\">Charge attack</span> action."
     },
     {
       "name": "Reactive movement",
@@ -982,7 +982,7 @@
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "Add 2 action points to the free melee attack action enabled by an [Opportunity attack]."
+      "properties": "Add 2 action points to the free melee attack action enabled by an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span>."
     },
     {
       "name": "Adrenaline rush",
@@ -1000,7 +1000,7 @@
       "range (ft)": 5,
       "feat": true,
       "saving throw": "T: Athletics ST >= A: STR check",
-      "properties": "When you could perform an [Opportunity attack], instead prevent the enemy from being able to move past you.<br>Enemy's move action would still expend his action points."
+      "properties": "When you could perform an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span>, instead prevent the enemy from being able to move past you.<br>Enemy's move action would still expend his action points."
     },
     {
       "name": "Intimdating attack",
@@ -1083,14 +1083,14 @@
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "Able to create gun [Cartridge]s and modify firearms with attachments. If checks are needed, perform as DEX check."
+      "properties": "Able to create gun <span class=\"item\" (click)=\"itemClick($event, 'ammunition', 'Cartridge')\">Cartridge</span>s and modify firearms with attachments. If checks are needed, perform as DEX check."
     },
     {
       "name": "Duel weapons",
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "Able to add DMG provided from the offhand weapon with a [Melee attack] or [Quick attack] of the dominant hand weapon.<br>Offhand weapon must be able to perform a [Quick attack]."
+      "properties": "Able to add DMG provided from the offhand weapon with a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Melee attack')\">Melee attack</span> or <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Quick attack')\">Quick attack</span> of the dominant hand weapon.<br>Offhand weapon must be able to perform a <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Quick attack')\">Quick attack</span>."
     },
     {
       "name": "Sharpshooter",
@@ -1104,7 +1104,7 @@
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "+1 to dodge given by [Block]."
+      "properties": "+1 to dodge given by <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Block')\">Block</span>."
     },
     {
       "name": "Quick attack",
@@ -1211,14 +1211,14 @@
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "When dodging results in a miss, may move 5 ft without cost to action points and without enabling an [Opportunity attack] from that attacker."
+      "properties": "When dodging results in a miss, may move 5 ft without cost to action points and without enabling an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span> from that attacker."
     },
     {
       "name": "Moving dodge",
       "type of ability": "passive",
       "target": "self",
       "feat": true,
-      "properties": "+5 dodge against an [Opportunity attack]."
+      "properties": "+5 dodge against an <span class=\"item\" (click)=\"itemClick($event, 'ability', 'Opportunity attack')\">Opportunity attack</span>."
     },
     {
       "name": "Parry",
