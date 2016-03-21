@@ -1,4 +1,4 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit, ElementRef} from 'angular2/core';
 import {TableEntriesService} from '../services/table-entries.service';
 
 @Component({
@@ -8,17 +8,21 @@ import {TableEntriesService} from '../services/table-entries.service';
 export class ItemWindowComponent implements OnInit {
   public config;
 
-  constructor(private _tableEntriesService: TableEntriesService) {
+  constructor(private _tableEntriesService: TableEntriesService, public elementRef: ElementRef) {
 
   }
 
   hideWindow() {
     this.config.show = false;
-    debugger;
+  }
+
+  previousItem() {
+    this._tableEntriesService.previousItem();
   }
 
   // on app load, do this:
   ngOnInit() {
+    this._tableEntriesService.setWindowElement(this.elementRef);
     this._tableEntriesService.getItemWindowConfig().then(config => {
       this.config = config;
     });

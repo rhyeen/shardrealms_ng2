@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         selectedPlayer: {
                             "player name": "Ryan",
                             "name": "Test dude",
-                            "class": "Fighter",
+                            "class": "Barbarian",
                             "level": 1,
                             "level up from": 0,
                             "experience": 0,

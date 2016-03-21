@@ -1,12 +1,82 @@
 <section class="item-window" *ngIf="config && config.show" [ngStyle]="{'top': config.y, 'left': config.x}">
 	<section class="item-window-title">
 		<header>
+			<button *ngIf="config.history.length" class="previous-input" tabindex="-1" (click)="previousItem()"><</button>
 			<h2>{{config.content.type}}:</h2>
-			<h1>{{config.content.title}}</h1>
+			{{config.content.title}}
 		</header>
 		<button class="hide-input" tabindex="-1" (click)="hideWindow()"></button>
 	</section>
-	<section>
-
+	<section class="selected-table">
+		<table>
+		  <tr *ngFor="#entryDetail of config.content.details.details">
+		    <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key !== 'properties'">
+		      <td class="row-key" >{{entryDetail.key}}:</td>
+		      <td class="row-value" [innerHTML]="entryDetail.value"></td>
+		    </section>
+		    <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key === 'properties'">
+		      <td rowspan="2" class="row-value row-value-properties" [innerHTML]="entryDetail.value"></td>
+		    </section>
+		    <section *ngIf="entryDetail.isObject && !entryDetail.isArray">
+		      <!-- if it's a skill table -->
+		      <td class="row-key" *ngIf="entryDetail.value.STR">{{entryDetail.key}}:</td>
+		      <td class="row-value skill-entries">
+		        <div>STR: {{entryDetail.value.STR}}</div>
+		        <div>DEX: {{entryDetail.value.DEX}}</div>
+		        <div>INF: {{entryDetail.value.INF}}</div>
+		        <div>WIS: {{entryDetail.value.WIS}}</div>
+		      </td>
+		    </section>
+		    <section *ngIf="entryDetail.isArray && !entryDetail.isArrayOfObjects">
+		      <td class="row-key">{{entryDetail.key}}:</td>
+		      <td class="row-value">
+		        <span *ngFor="#detailArray of entryDetail.value; #lastElement = last">
+		          <a href="{{detailArray}}" target="_blank" *ngIf="entryDetail.key === 'image-links'">{{detailArray}}</a>
+		          <span *ngIf="entryDetail.key !== 'image-links'">{{detailArray}}</span>
+		          <span *ngIf="!lastElement">, </span></span>
+		      </td>
+		    </section>
+		    <!-- skills or spells -->
+		    <section *ngIf="entryDetail.isArrayOfObjects">
+		      <td class="row-key">{{entryDetail.key}}:</td>
+		      <td class="row-value" *ngIf="entryDetail.key !== 'level modifiers'">
+		        <div [class.array-objects-entry]="!lastElement" *ngFor="#detailArray of entryDetail.value; #lastElement = last">
+		          <div *ngIf="detailArray.value">{{detailArray.name}} {{detailArray.value}}</div>
+		          <div *ngIf="detailArray.recharge">
+		            <div>{{detailArray.name}}</div>
+		            <div class="entry-note">recharge time: {{detailArray.recharge}}</div>
+		          </div>
+		        </div>
+		      </td>
+		      <td class="row-value" *ngIf="entryDetail.key === 'level modifiers'">
+		        <div [class.array-objects-entry]="!lastElement" *ngFor="#detailArray of entryDetail.value; #lastElement = last">
+		          <div class="entry-level-mod-title">Gained at level {{detailArray.level}}</div>
+		          <table class="entry-level-mod-table">
+		            <tr>
+		              <td>Gain all:</td>
+		              <td>
+		                <div class="entry-level-mod-list-item" *ngFor="#gainItem of detailArray['passive list']">
+		                  <div class="entry-note">{{gainItem.type}}:</div>
+		                  <div>{{gainItem.name}} <span *ngIf="gainItem.value">( {{gainItem.value}} )</span></div>
+		                </div>
+		              </td>
+		            </tr>
+		            <tr *ngFor="#pickList of detailArray['pick lists']">
+		              <td>Pick {{pickList.allowed}}:</td>
+		              <td>
+		                <div class="entry-level-mod-list-item" *ngFor="#chooseItem of pickList.list">
+		                  <div class="entry-note">{{chooseItem.type}}:</div>
+		                  <div>{{chooseItem.name}} <span *ngIf="chooseItem.value">( {{chooseItem.value}} )</span></div>
+		                </div>
+		              </td>
+		            </tr>
+		          </table>
+		        </div>
+		      </td>
+		    </section>
+		  </tr>
+		</table>
+		<hr *ngIf="config.content.details.description && config.content.details.details">
+		<p class="item-window-description" *ngIf="config.content.details.description">{{config.content.details.description}}</p>
 	</section>
 </section>

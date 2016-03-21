@@ -4,9 +4,12 @@
     <h4>{{entry.name}}</h4>
     <table>
       <tr *ngFor="#entryDetail of entry.details">
-        <section *ngIf="!entryDetail.isObject && !entryDetail.isArray">
+        <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key !== 'properties'">
           <td class="row-key" >{{entryDetail.key}}:</td>
           <td class="row-value" [innerHTML]="entryDetail.value"></td>
+        </section>
+        <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key === 'properties'">
+          <td rowspan="2" class="row-value row-value-properties" [innerHTML]="entryDetail.value"></td>
         </section>
         <section *ngIf="entryDetail.isObject && !entryDetail.isArray">
           <!-- if it's a skill table -->

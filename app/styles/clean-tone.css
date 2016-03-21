@@ -129,6 +129,18 @@ button:hover {
 }
 /* end defaults */
 
+.item {
+  cursor: pointer;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.item span {
+  display: none;
+}
+
 .table-container,
 .player-list-container {
   margin: 20px;
@@ -138,6 +150,10 @@ button:hover {
   width: 300px;
   text-align: justify;
   line-height: 25px;
+}
+
+.selected-table table .row-value-properties {
+  width: 454px;
 }
 
 .selected-table table .row-key {
@@ -402,9 +418,16 @@ sr-dynamic-list .delete-input {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
 }
 
-.item-window header {
+.item-window .previous-input {
+  /*background-image: url("data:image/svg+xml;uft8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='18' height='18' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve' fill='#FFF'><polygon transform='rotate(45 9 9)' points='8 3 10 3 10 8 15 8 15 10 10 10 10 15 8 15 8 10 3 10 3 8 8 8 '/></svg>");*/
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 4px 0 4px 4px;
+  border: none;
   float: left;
-  height: 0px;
+  line-height: 18px;
 }
 
 .item-window .hide-input {
@@ -416,7 +439,6 @@ sr-dynamic-list .delete-input {
   margin: 4px;
   border: none;
   float: right;
-  margin-top: 6px;
 }
 
 .item-window .item-window-title {
@@ -431,8 +453,24 @@ sr-dynamic-list .delete-input {
   line-height: 30px;
 }
 
+.item-window header {
+  float: left;
+  height: 30px;
+  width: 364px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Viga', sans-serif;
+  line-height: 30px;
+}
+
 .item-window h1 {
   color: #FFF;
+  font-size: 20px;
 }
 
 .item-window h2 {
@@ -440,5 +478,9 @@ sr-dynamic-list .delete-input {
   color: #999;
   font-size: 14px;
   margin: 0 10px;
+}
+
+.item-window .selected-table {
+  padding: 0 10px;
 }
 

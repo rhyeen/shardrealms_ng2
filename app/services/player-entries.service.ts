@@ -8,7 +8,7 @@ export class PlayerEntriesService {
     selectedPlayer: {
       "player name": "Ryan",
       "name": "Test dude",
-      "class": "Fighter",
+      "class": "Barbarian",
       "level": 1,
       "level up from": 0,
       "experience": 0,

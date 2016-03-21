@@ -11,7 +11,9 @@ export class TableEntriesService {
       title: null,
       type: null,
       details: null
-    }
+    },
+    element: null,
+    history: []
   };
 
   public tables = {
@@ -52,11 +54,38 @@ export class TableEntriesService {
     return Promise.resolve(this.itemWindow);
   }
 
-  showItemWindow(x, y, type, name) {
+  /**
+   * Sets the element so that we can catch the js events fired on that element
+   * @param {[type]} element should be elementRef of item-window template
+   */
+  setWindowElement(element) {
+    this.itemWindow.element = element;
+  }
+
+  previousItem() {
+    var previousItem;
+    if (!this.itemWindow.history.length) {
+      console.error("Attempted to go to previous item, but there is none.");
+      return;
+    }
+    previousItem = this.itemWindow.history.pop();
+    this.showItemWindow(null, null, previousItem.type, previousItem.name, true);
+  }
+
+  showItemWindow(x, y, type, name, previousItem) {
     var table;
 
-    this.itemWindow.x = x;
-    this.itemWindow.y = y;
+    if (x !== null) {
+      this.itemWindow.x = x;
+      this.itemWindow.y = y;
+    }
+    // add previous item to the history
+    else if (!previousItem) {
+      this.itemWindow.history.push({
+        "type": this.itemWindow.content.type,
+        "name": this.itemWindow.content.title
+      });
+    }
     this.itemWindow.show = true;
     this.itemWindow.content.title = name;
     this.itemWindow.content.type = type;
@@ -92,8 +121,32 @@ export class TableEntriesService {
     }
     this.getTableEntries(table).then(temp => {
       this.itemWindow.content.details = this.tables[table][this.tables.tableIndex[table][name]];
+      this.setItemClickListener(this);
     });
   }
+
+  /** Called when we have set the itemWindow.content.details object so that the item window will be filled with the information from the .json file entry
+   *  We must do a timeout to wait for the DOM to be populated, then we catch any click events on the specific "item" class selectors.
+   *  From here, we'll know which element was clicked on and we can refresh the item window to display the new item.
+   */
+  setItemClickListener(self) {
+    // timeout so it can be placed in the DOM
+    setTimeout(function() {
+      var allItems, i;
+      allItems = self.itemWindow.element.nativeElement.querySelectorAll(".item");
+
+      for (i = 0; i < allItems.length; i++) {
+        allItems[i].addEventListener("click", itemClick, false);
+      }
+
+      function itemClick(event) {
+        // x, y, are null because we want to preserve the location & this is how we know to keep history (back button)
+        self.showItemWindow(null, null, event.currentTarget.firstChild.innerText, event.currentTarget.innerText);
+      }
+    }, 200);
+  }
+
+  
 
   getPoficiencyTables() {
     var tableW = 'weapon proficiencies';
@@ -110,7 +163,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Is modified with DEX instead of STR.<br>Only requires one hand.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -120,7 +173,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Only requires one hand.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -130,7 +183,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Requires two hands.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -140,7 +193,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Requires one hand.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -150,7 +203,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Requires two hands.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -160,7 +213,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Requires two hands.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -210,7 +263,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Requires one hand.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -220,7 +273,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "Only one armor type can be assigned to each body slot.",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -247,7 +300,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "If attacking with a melee weapon, AR = AR + STR <br>If attacking with a melee weapon, DMG = DMG + STR (as long as [Attuned strength] isn’t active)<br>If STR > 0, then STR/2 (rounding up) is added to the maximum health gained per level",
-        "isObject": true
+        "isObject": false
       }]
     });
     this.tables[table].push({
@@ -256,7 +309,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "If attacking with a light melee weapon or ranged weapon, AR = AR + DEX<br>If attacking with a light melee weapon or ranged weapon, AR = AR + DEX(as long as Attuned dexterity isn’t active)<br>Dodge = Dodge + DEX",
-        "isObject": true
+        "isObject": false
       }]
     });
     this.tables[table].push({
@@ -264,8 +317,8 @@ export class TableEntriesService {
       "description": "Influence is the magic manipulation and charisma of a character. It provides magic hit, magic damage, and magic resist advantages.",
       "details": [{
         "key": "properties",
-        "value": "If attacking with a spell, AR = AR + INF<br>(maybe ?) If casting a spell with a ST requirement, then INF is added to the ST requirement<br>Magic resist = Magic resist + INF",
-        "isObject": true
+        "value": "If attacking with a spell, AR = AR + INF<br>If casting a spell with a ST requirement, then INF is added to the ST requirement<br>Magic resist = Magic resist + INF",
+        "isObject": false
       }]
     });
     this.tables[table].push({
@@ -274,7 +327,7 @@ export class TableEntriesService {
       "details": [{
         "key": "properties",
         "value": "When a point is added to WIS, gain a wise choice point",
-        "isObject": true
+        "isObject": false
       }]
     });
 
@@ -286,12 +339,26 @@ export class TableEntriesService {
     return Promise.resolve(this.tables[table]);
   }
 
+  convertToHtmlBoundValue(key, value, table) {
+    var convertedValue = value;
+
+    if (key === "replaces" || key === "requires") {
+      // @TODO:
+    }
+    else if (key === "type of ammunition") {
+      // @TODO:
+    }
+    // ignore all other cases
+    return convertedValue;
+  }
+
   getTableEntries(table: string) {
     var jsonFile,
         entries: Entry[],
         entryDetails,
         entry,
         keys,
+        htmlBoundValue,
         i, j;
 
     // CITE: search 'read data from json file typescript'
@@ -323,12 +390,15 @@ export class TableEntriesService {
       keys = Object.keys(entry);
       entryDetails = [];
       for (j = 0; j < keys.length; j++) {
+        // convert [something] into <span (click)="doSomething()">something</span>
+        htmlBoundValue = this.convertToHtmlBoundValue(keys[j], entry[keys[j]], table);
+
         // ignore name and description: they are separate parts of the entry interface
         // and ignore null details
         if (keys[j] !== "name" && keys[j] !== "description" && entry[keys[j]] !== null) {
           entryDetails.push({
             "key": keys[j],
-            "value": entry[keys[j]],
+            "value": htmlBoundValue,
             "isObject": entry[keys[j]] !== null && typeof entry[keys[j]] === 'object',
             "isArray": Array.isArray(entry[keys[j]]),
             "isArrayOfObjects": Array.isArray(entry[keys[j]]) && entry[keys[j]].length && entry[keys[j]][0] !== null && typeof entry[keys[j]][0] === 'object'
@@ -344,17 +414,6 @@ export class TableEntriesService {
       this.tables.tableIndex[table][entry.name] = i;
     }
 
-  	// var entries: Entry[] = [
-  	// 	{
-  	// 		"name": "Nightvision",
-   //      "description": "NA",
-   //      "details": [
-   //        {
-   //          "key": "range",
-   //          "value": 120
-   //        }
-   //      ]}
-  	// ];
   	return Promise.resolve(entries);
   }
 }

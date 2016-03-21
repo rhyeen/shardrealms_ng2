@@ -261,10 +261,6 @@
                   "type": "skill",
                   "name": "Stealth",
                   "value": 1
-                },
-                {
-                  "type": "ability",
-                  "name": "Parry"
                 }
               ]
             }

@@ -5,7 +5,7 @@
       <button (click)="editStat(false)" [disabled]="!points">-</button>
       <span class="level-point-amount">{{points}}</span>
       <button (click)="editStat(true)" [disabled]="pickList.allowed <= pickList.chosen">+</button>
-      <span class="level-point-title" (click)="itemNameClick($event)">{{item.name}} ( {{player['attributes'][item.name]}} )</span>
+      <span class="level-point-title item" (click)="itemNameClick($event)">{{item.name}} ( {{player['attributes'][item.name]}} )</span>
     </div>
   </section>
   <section *ngIf="item.type === 'skill'">
@@ -13,22 +13,22 @@
       <button (click)="editStat(false)" [disabled]="!points">-</button>
       <span class="level-point-amount">{{points}}</span>
       <button (click)="editStat(true)" [disabled]="pickList.allowed <= pickList.chosen">+</button>
-      <span class="level-point-title" (click)="itemNameClick($event)">{{item.name}} ( {{player['core skills'][item.name]}} )</span>
+      <span class="level-point-title item" (click)="itemNameClick($event)">{{item.name}} ( {{player['core skills'][item.name]}} )</span>
     </div>
   </section>
   <section *ngIf="item.type === 'ability' || item.type === 'spell' || item.type === 'armor proficiency' || item.type === 'weapon proficiency'">
     <div>
     	<button (click)="gainStat()" [disabled]="(player.temp[item.type][item.name] || pickList.allowed <= pickList.chosen) && !isGained">{{gainedSymbol}}</button>
-      <span class="level-point-title" (click)="itemNameClick($event)">{{item.name}}</span>
+      <span class="level-point-title item" (click)="itemNameClick($event)">{{item.name}}</span>
     </div>
   </section>
 </section>
 <!-- passive -->
 <section class="level-modifier-item" *ngIf="item && !pickList && player">
   <section *ngIf="item.type === 'attribute' || item.type === 'skill'">
-    <span (click)="itemNameClick($event)">{{item.name}} <span *ngIf="item.value > 0">+</span>{{item.value}}</span>
+    <span class="item" (click)="itemNameClick($event)">{{item.name}} <span *ngIf="item.value > 0">+</span>{{item.value}}</span>
   </section>
   <section *ngIf="item.type === 'ability' || item.type === 'spell' || item.type === 'armor proficiency' || item.type === 'weapon proficiency'">
-    <span (click)="itemNameClick($event)">{{item.name}}</span>
+    <span class="item" (click)="itemNameClick($event)">{{item.name}}</span>
   </section>
 </section>

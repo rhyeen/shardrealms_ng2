@@ -684,7 +684,7 @@
       "reload": 5,
       "damage": "8",
       "damage type": "piercing",
-      "properties": "Requires gunpowder.", 
+      "properties": "Requires [ammunition: Gunpowder].", 
       "description": "Pistol gun.",
       "image-links": ["/images/items/pistol.jpg"]
     },
@@ -699,7 +699,7 @@
       "reload": 6,
       "damage": "8",
       "damage type": "piercing",
-      "properties": "Can fire 2 times without needing to reload.<br>Requires gunpowder.", 
+      "properties": "Can fire 2 times without needing to reload.<br>Requires [ammunition: Gunpowder].", 
       "description": "Pistol gun with two barrels.",
       "image-links": ["/images/items/double_barrel_pistol.jpg", "/images/items/double_barrel_pistol2.jpg"]
     },
@@ -714,7 +714,7 @@
       "reload": 6,
       "damage": "7",
       "damage type": "piercing",
-      "properties": "Can fire 3 times without needing to reload.<br>Requires gunpowder.",
+      "properties": "Can fire 3 times without needing to reload.<br>Requires [ammunition: Gunpowder].",
       "description": "Pistol gun with three barrels.",
       "image-links": ["/images/items/pepperbox.jpg", "/images/items/pepperbox2.jpg"]
     },
@@ -729,7 +729,7 @@
       "reload": 3,
       "damage": "12",
       "damage type": "piercing",
-      "properties": "Can fire twice without needing to reload.<br>Requires cartridges as ammunition.",
+      "properties": "Can fire twice without needing to reload.<br>Requires [ammunition: Cartridge]s as ammunition.",
       "description": "Complex pistol gun.",
       "image-links": ["/images/items/fine_pistol.jpg"]
     },
@@ -744,7 +744,7 @@
       "reload": 5,
       "damage": "8",
       "damage type": "piercing",
-      "properties": "Can fire 6 times without needing to reload.<br>Requires cartridges as ammunition.",
+      "properties": "Can fire 6 times without needing to reload.<br>Requires [ammunition: Cartridge]s as ammunition.",
       "description": "Complex pistol gun.",
       "image-links": ["/images/items/revolver.jpg"]
     },
@@ -760,7 +760,7 @@
       "reload": 5,
       "damage": "5",
       "damage type": "piercing",
-      "properties": "Fires 5 bullets and gunpowder in a cone. Can fire within 5 feet without penalty.<br>Requires gunpowder.",
+      "properties": "Fires 5 bullets and [ammunition: Gunpowder] in a cone. Can fire within 5 feet without penalty.<br>Requires [ammunition: Gunpowder].",
       "description": "Poorly crafted shotgun.",
       "image-links": ["/images/items/blunderbuss.jpg"]
     },
@@ -776,7 +776,7 @@
       "reload": 3,
       "damage": "12",
       "damage type": "piercing",
-      "properties": "Fires 5 cartridges and gunpowder in a cone. Can fire within 5 feet without penalty.<br>Requires gunpowder and cartridges as ammunition.",
+      "properties": "Fires 5 [ammunition: Cartridge]s and [ammunition: Gunpowder] in a cone. Can fire within 5 feet without penalty.<br>Requires [ammunition: Gunpowder] and [ammunition: Cartridge]s as ammunition.",
       "description": "Shotgun.",
       "image-links": ["/images/items/shotgun.jpg"]
     },
@@ -792,7 +792,7 @@
       "reload": 3,
       "damage": "12",
       "damage type": "piercing",
-      "properties": "Fires 5 cartridges and gunpowder in a cone per shot and can fire twice without needing to reload. Can fire within 5 feet without penalty.<br>Requires gunpowder and cartridges as ammunition.",
+      "properties": "Fires 5 [ammunition: Cartridge]s and [ammunition: Gunpowder] in a cone per shot and can fire twice without needing to reload. Can fire within 5 feet without penalty.<br>Requires [ammunition: Gunpowder] and [ammunition: Cartridge]s as ammunition.",
       "description": "Shotgun with double barrels.",
       "image-links": ["/images/items/double_barrel_shotgun.jpg"]
     },
@@ -807,7 +807,7 @@
       "reload": 5,
       "damage": "10",
       "damage type": "piercing",
-      "properties": "Requires gunpowder.",
+      "properties": "Requires [ammunition: Gunpowder].",
       "description": "Rifle gun.",
       "image-links": ["/images/items/musket.jpg"]
     },
@@ -822,7 +822,7 @@
       "reload": 2,
       "damage": "15",
       "damage type": "piercing",
-      "properties": "Requires cartridges as ammunition.",
+      "properties": "Requires [ammunition: Cartridge]s as ammunition.",
       "description": "Complex rifle gun.",
       "image-links": ["/images/items/rifle.jpg"]
     }
