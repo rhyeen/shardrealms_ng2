@@ -1,0 +1,169 @@
+<section class="player-view" *ngIf="player">
+  <section class="player-details">
+    <section class="player-core-details">
+      <h1><sr-stat [player]="player" [key]="'name'" [config]="{hideTitle: true}"></sr-stat></h1>
+      <h3>
+        <sr-stat [player]="player" [key]="'class'" [config]="{hideTitle: true}"></sr-stat>
+        <span style="margin-left: 5px"></span>
+        <sr-stat [player]="player" [key]="'race'" [config]="{hideTitle: true}"></sr-stat>
+      </h3>
+      <h5><sr-stat [player]="player" [key]="'player name'" [config]="{altTitle: 'Played by:', titleFirst: true}"></sr-stat></h5>
+      <div>
+        <sr-stat [player]="player" [key]="'level up from'" [config]="{altTitle: 'Level', titleFirst: true}"></sr-stat>
+        <button class="level-up-btn" *ngIf="player['level up from'] < player['level']" (click)="levelUp()">+</button>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'experience'" [config]="{titleFirst: false}"></sr-stat>
+        <label>
+          <span class="add-experience-tip">+</span>
+          <input class="player-view-experience-input" type="number" min="0" [(ngModel)]="addedExperience">
+        </label>
+        <button class="level-up-btn" [disabled]="!addedExperience" (click)="addExperience()">+</button>
+      </div>
+      <section>
+        <div>
+          <sr-stat [player]="player" [key]="'wise choice points'" [config]="{titleFirst: false}"></sr-stat>
+          <button *ngIf="player['wise choice points']" class="level-up-btn" (click)="setWiseChoicePoints()">+</button>
+        </div>
+      </section>
+    </section>
+    <section class="stat-number">
+      <h5>Attributes</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'attributes'" [innerKey]="'STR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'attributes'" [innerKey]="'DEX'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'attributes'" [innerKey]="'INF'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'attributes'" [innerKey]="'WIS'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+    </section>
+    <section class="stat-number">
+      <h5>Skills</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Athletics'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Intimidation'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Willpower'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Balance'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Stealth'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Sleight of hand'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Persuasion'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Deception'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Arcana'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Nature'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Perception'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Inspection'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Insight'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Lore'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Survival'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+    </section>
+    <section class="stat-number">
+      <h5>Defense</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'max health'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'armor'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'dodge'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'magic resist'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+    </section>
+    <section class="stat-number">
+      <h5>Attack rolls</h5>
+      <div>  
+        <sr-stat [player]="player" [key]="'STR AR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'STR AR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'Spell AR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+    </section>
+    <section>
+      <h5>Appearance</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'size'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'eye color'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'hair color'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'skin color'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'height (in)'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'weight (lbs)'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'age'" [config]="{titleFirst: false, altTitle: 'years old'}"></sr-stat>
+      </div>
+    </section>
+    <section>
+      <h5>Personality</h5>
+      <div>
+        <sr-stat class="player-view-small-font" [player]="player" [key]="'background'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+    </section>
+    <section>
+      <h5>Items</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'gold'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'allowed weight'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'total weight'" [config]="{titleFirst: true}"></sr-stat>
+      </div>
+    </section>
+    <section>
+      <h5>Actions</h5>
+      <div>
+        <sr-stat [player]="player" [key]="'action points'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+    </section>
+  </section>
+</section>

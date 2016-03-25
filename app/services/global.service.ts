@@ -10,7 +10,9 @@ export class GlobalService {
    */
   public globalView = {
     view: "players",
-    subView: { view: "edit", subView: { view: "leveling" } }
+    subView: null
+    //subView: { view: "new", subView: null }
+    //subView: { view: "edit", subView: { view: "leveling" } }
   };
   // public globalView = {
   //   view: "main",
@@ -47,9 +49,9 @@ export class GlobalService {
     this.globalView.subView = { view: "edit", subView: null };
   }
 
-  gotoPlayerWisdomPoint() {
+  gotoPlayerSkillPoint() {
     this.globalView.view = "players";
-    this.globalView.subView = { view: "edit", subView: { view: "wisdom point" }};
+    this.globalView.subView = { view: "edit", subView: { view: "skill point" }};
   }
 
   gotoTableList() {

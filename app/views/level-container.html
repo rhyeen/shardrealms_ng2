@@ -2,11 +2,11 @@
   <h1>Leveling from {{players.selectedPlayer['level up from']}} to {{players.selectedPlayer['level']}}</h1>
   <section class="level-form-input">
   	<section class="level-identifiers">
-      <div class="level-title">{{players.selectedPlayer['name']}}</div>
+      <div class="level-title">{{players.selectedPlayer['name'].value}}</div>
       <div class="level-note">Played by: {{players.selectedPlayer['player name']}}</div>
       <hr>
     </section>
-    <section *ngIf="attribute">
+    <section class="level-section" *ngIf="attribute">
       <h3>Attribute points</h3>
       <h5 [ngClass]="{'level-pick-complete': attribute.pickList.chosen === attribute.pickList.allowed}">Picked <span class="level-modifier-pick-available">{{attribute.pickList.chosen}}/{{attribute.pickList.allowed}}</span></h5>
       <section>
@@ -17,14 +17,14 @@
         <sr-level-modifier-item [item]="attribute['WIS']" [pickList]="attribute.pickList" [player]="players.selectedPlayer"></sr-level-modifier-item>
       </section>
     </section>
-    <section *ngIf="modifiersInLevelingRange['races']">
+    <section class="level-section" *ngIf="modifiersInLevelingRange['races']">
       <h3>Race modifiers</h3>
       <sr-level-modifier [modifiers]="modifiers['races']" [player]="players.selectedPlayer"></sr-level-modifier>
     </section>
-    <section *ngIf="modifiersInLevelingRange['classes']">
+    <section class="level-section" *ngIf="modifiersInLevelingRange['classes']">
       <h3>Class modifiers</h3>
       <sr-level-modifier [modifiers]="modifiers['classes']" [player]="players.selectedPlayer"></sr-level-modifier>
     </section>
   </section>
-  <button type="submit" (click)="finishLeveling()">Finish</button>
+  <button type="submit" (click)="gotoSkillPoints()">Next</button>
 </section>

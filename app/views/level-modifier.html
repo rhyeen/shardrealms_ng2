@@ -1,7 +1,7 @@
 <section class="level-modifier" *ngIf="dependentModifiers">
   <section *ngFor="#levelGroup of dependentModifiers">
-    <h4>Level {{levelGroup.level}}</h4>
-    <section *ngIf="levelGroup['passive list']">
+    <h4 *ngIf="!levelGroup.isSkillPoints">Level {{levelGroup.level}}</h4>
+    <section class="passive-list-section" *ngIf="levelGroup['passive list']">
       <h5>Passively gained</h5>
       <sr-level-modifier-item *ngFor="#item of levelGroup['passive list']" [item]="item" [player]="player"></sr-level-modifier-item> 
     </section>

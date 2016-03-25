@@ -1,5 +1,6 @@
 import {Component, OnInit} from 'angular2/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
+import {GlobalService} from '../services/global.service';
 import {LevelModifierComponent} from '../components/level-modifier.component';
 import {LevelModifierItemComponent} from '../components/level-modifier-item.component';
 
@@ -23,7 +24,7 @@ export class LevelContainerComponent implements OnInit {
 		'classes': null
 	};
 
-	constructor(private _playerEntriesService: PlayerEntriesService) { }
+	constructor(private _playerEntriesService: PlayerEntriesService, private _globalService: GlobalService) { }
 
 	getPlayerConfig() {
 		this._playerEntriesService.getPlayerConfig().then(playerConfig => {
@@ -36,8 +37,8 @@ export class LevelContainerComponent implements OnInit {
 	getPlayers() {
 		this._playerEntriesService.getPlayers().then(players => {
 			this.players = players;
-			this.getMods(this.players.selectedPlayer['race'], 'races');
-			this.getMods(this.players.selectedPlayer['class'], 'classes');
+			this.getMods(this.players.selectedPlayer['race'].value, 'races');
+			this.getMods(this.players.selectedPlayer['class'].value, 'classes');
 			this.getAttributePoints();
 			this.updateStatMapping();
 			this.modifyHealth();
@@ -51,17 +52,26 @@ export class LevelContainerComponent implements OnInit {
 		this._playerEntriesService.getPredefinedStatMapping();
 	}
 
+	gotoSkillPoints() {
+		this._globalService.gotoPlayerSkillPoint();
+
+		// this._playerEntriesService.savePlayer().then(function (data) {
+		//     // jump to the level up container
+		// });
+	}
+
 	modifyHealth() {
 		var index,
 			getClass,
 			player = this.players.selectedPlayer;
 
-		index = this.playerConfig['index']['classes'][player.class];
+		index = this.playerConfig['index']['classes'][player.class.value];
 		getClass = this.playerConfig['classes'][index];
-		if (!player['max health']) {
-			player['max health'] = getClass['starting health'];
+		if (!player['max health'].history.experience) {
+			player['max health'].history.experience = getClass['starting health'];
 		}
-		player['max health'] += (player['level'] - player['level up from']) * getClass["health per level"];
+		player['max health'].history.experience += (player['level'] - player['level up from']) * getClass["health per level"];
+		this._playerEntriesService.updateStatByHistory(player['max health']);
 	}
 
 	addPassiveModifier(levelModifiers) {

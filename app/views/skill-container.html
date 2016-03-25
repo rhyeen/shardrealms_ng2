@@ -1,0 +1,33 @@
+<section class="skill-container" *ngIf="players">
+  <h1>Skills gained by attribute points</h1>
+  <section class="level-form-input">
+  	<section class="level-identifiers">
+      <div class="level-title">{{players.selectedPlayer['name'].value}}</div>
+      <div class="level-note">Played by: {{players.selectedPlayer['player name']}}</div>
+      <hr>
+    </section>
+    <h3>Skill points</h3>
+    <section class="level-section" *ngIf="players.selectedPlayer.temp['skill points']['STR']">
+      <h4>Strength skills</h4>
+      <sr-level-modifier [modifiers]="players.selectedPlayer.temp['skill points']['STR']" [player]="players.selectedPlayer"></sr-level-modifier>
+    </section>
+    <section class="level-section" *ngIf="players.selectedPlayer.temp['skill points']['DEX']">
+      <h4>Dexterity skills</h4>
+      <sr-level-modifier [modifiers]="players.selectedPlayer.temp['skill points']['DEX']" [player]="players.selectedPlayer"></sr-level-modifier>
+    </section>
+    <section class="level-section" *ngIf="players.selectedPlayer.temp['skill points']['INF']">
+      <h4>Influence skills</h4>
+      <sr-level-modifier [modifiers]="players.selectedPlayer.temp['skill points']['INF']" [player]="players.selectedPlayer"></sr-level-modifier>
+    </section>
+    <section class="level-section" *ngIf="players.selectedPlayer.temp['skill points']['WIS']">
+      <h4>Wisdom</h4>
+      <sr-level-modifier [modifiers]="players.selectedPlayer.temp['skill points']['WIS']" [player]="players.selectedPlayer"></sr-level-modifier>
+    </section>
+    <!-- <section class="level-section" *ngIf="players.selectedPlayer['wise choice points']">
+      <h3>Wise choice points</h3>
+      <p>You may choose these later.</p>
+      <sr-level-modifier [modifiers]="players.selectedPlayer['wise choice points']" [player]="players.selectedPlayer"></sr-level-modifier>
+    </section> -->
+  </section>
+  <button type="submit" (click)="finishLeveling()">Finish</button>
+</section>

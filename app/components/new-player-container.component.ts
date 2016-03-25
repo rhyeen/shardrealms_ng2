@@ -47,9 +47,11 @@ export class NewPlayerContainerComponent implements OnInit {
 		if (this.newPlayerConfig['index'] && this.newPlayerConfig['index']['races'] && (this.newPlayerConfig['index']['races'][newRace] || this.newPlayerConfig['index']['races'][newRace] === 0)) {
 			index = this.newPlayerConfig['index']['races'][newRace];
 			race = this.newPlayerConfig['races'][index]
-			this.players.selectedPlayer['size'] = race['size'];
+			this.players.selectedPlayer['size'].history.experience = race['size'];
+			this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['size']);
 			// this is because the view won't update without this
-			this.players.selectedPlayer['race'] = newRace;
+			this.players.selectedPlayer['race'].history.experience = newRace;
+			this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['race']);
 			// this.players.selectedPlayer['height (in)'] = race['avg height (in)'];
 			// this.players.selectedPlayer['weight (lbs)'] = race['avg weight (lbs)'];
 			this.players.selectedPlayer['languages'] = race['languages'];
@@ -69,10 +71,31 @@ export class NewPlayerContainerComponent implements OnInit {
 			cClass = this.newPlayerConfig['classes'][index]
 
 			// this is because the view won't update without this
-			this.players.selectedPlayer['cClass'] = cClass;
+			this.players.selectedPlayer['class'].history.experience = newClass;
+			this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['class']);
 
 			this.players.selectedPlayer['gold'] = cClass['starting gold'];
 		}
+	}
+
+	playerNameBlur() {
+		this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['name']);
+	}
+
+	playerSizeBlur() {
+		this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['size']);
+	}
+
+	playerAgeBlur() {
+		this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['age']);
+	}
+
+	playerWeightBlur() {
+		this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['weight (lbs)']);
+	}
+
+	playerHeightBlur() {
+		this._playerEntriesService.updateStatByHistory(this.players.selectedPlayer['height (in)']);
 	}
 
 	getNewPlayer() {

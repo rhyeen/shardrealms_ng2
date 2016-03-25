@@ -6,17 +6,17 @@
     </label>
     <label>
       <span>Character name</span>
-      <input type="text" [(ngModel)]="players.selectedPlayer['name']">
+      <input type="text" [(ngModel)]="players.selectedPlayer['name'].history.experience" (blur)="playerNameBlur()">
     </label>
     <label>
       <span>Race</span>
-      <select [ngModel]="players.selectedPlayer['race']" (ngModelChange)="playerRaceChange($event)">
+      <select [ngModel]="players.selectedPlayer['race'].history.experience" (ngModelChange)="playerRaceChange($event)">
         <option *ngFor="#race of newPlayerConfig.races" [value]="race.name">{{race.name}}</option>
       </select>
     </label>
     <label>
       <span>Class</span>
-      <select [ngModel]="players.selectedPlayer['class']" (ngModelChange)="playerClassChange($event)">
+      <select [ngModel]="players.selectedPlayer['class'].history.experience" (ngModelChange)="playerClassChange($event)">
         <option *ngFor="#class of newPlayerConfig.classes" [value]="class.name">{{class.name}}</option>
       </select>
     </label>
@@ -32,34 +32,34 @@
     <h3>Appearance</h3>
     <label>
       <span>Size</span>
-      <select [(ngModel)]="players.selectedPlayer['size']">
+      <select [(ngModel)]="players.selectedPlayer['size'].history.experience" (blur)="playerSizeBlur()">
         <option *ngFor="#size of newPlayerConfig.sizes" [value]="size">{{size}}</option>
       </select>
     </label>
     <!-- using players.selectedPlayer['size'] since players.selectedPlayer['race'] does not seem to update the [disabled].  Size always changes when race changes. -->
     <label>
       <span>Eye color</span>
-      <sr-dynamic-list [value]="players.selectedPlayer['eye color']" [list]="newPlayerUniqueConfig['eye colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+      <sr-dynamic-list [value]="players.selectedPlayer['eye color'].history.experience" [list]="newPlayerUniqueConfig['eye colors']" [disabled]="!players.selectedPlayer['race']" [config]="{'history': players.selectedPlayer['eye color']}"></sr-dynamic-list>
     </label>
     <label>
       <span>Skin color</span>
-      <sr-dynamic-list [value]="players.selectedPlayer['skin color']" [list]="newPlayerUniqueConfig['skin colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+      <sr-dynamic-list [value]="players.selectedPlayer['skin color'].history.experience" [list]="newPlayerUniqueConfig['skin colors']" [disabled]="!players.selectedPlayer['race']" [config]="{'history': players.selectedPlayer['skin color']}"></sr-dynamic-list>
     </label>
     <label>
       <span>Hair color</span>
-      <sr-dynamic-list [value]="players.selectedPlayer['hair color']" [list]="newPlayerUniqueConfig['hair colors']" [disabled]="!players.selectedPlayer['race']"></sr-dynamic-list>
+      <sr-dynamic-list [value]="players.selectedPlayer['hair color'].history.experience" [list]="newPlayerUniqueConfig['hair colors']" [disabled]="!players.selectedPlayer['race']" [config]="{'history': players.selectedPlayer['hair color']}"></sr-dynamic-list>
     </label>
     <label>
       <span>Height (in)</span>
-      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['height (in)']" placeholder="Average: {{newPlayerUniqueConfig['avg height (in)']}}">
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['height (in)'].history.experience" placeholder="Average: {{newPlayerUniqueConfig['avg height (in)']}}" (blur)="playerHeightBlur()">
     </label>
     <label>
       <span>Weight (lbs)</span>
-      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['weight (lbs)']" placeholder="Average: {{newPlayerUniqueConfig['avg weight (lbs)']}}">
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['weight (lbs)'].history.experience" placeholder="Average: {{newPlayerUniqueConfig['avg weight (lbs)']}}" (blur)="playerWeightBlur()">
     </label>
     <label>
       <span>Age</span>
-      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['age']">
+      <input type="number" min="0" [(ngModel)]="players.selectedPlayer['age'].history.experience" (blur)="playerAgeBlur()">
     </label>
     <section class="player-form-input-age">
       <div>Young adult: {{newPlayerUniqueConfig['age']['young adult']}}</div>

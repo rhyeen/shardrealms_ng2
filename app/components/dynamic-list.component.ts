@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-
+import {PlayerEntriesService} from '../services/player-entries.service';
 
 @Component({
 	selector: 'sr-dynamic-list',
@@ -15,6 +15,9 @@ export class DynamicListComponent implements OnInit {
 	public showList = [];
 	public showListIndex;
 	public tempShowList = [];
+
+	constructor(private _playerEntriesService: PlayerEntriesService) {
+	}
 
 	// on app load, do this:
 	ngOnInit() {
@@ -96,6 +99,12 @@ export class DynamicListComponent implements OnInit {
 
 	confirmInput() {
 		this.showList = null;
+
+		// if this is an object that keeps history, update that history
+		if (this.config.history) {
+			this.config.history.history.experience = this.value;
+			this._playerEntriesService.updateStatByHistory(this.config.history);
+		}
 	}
 
 	// ngOnChanges(changes) {

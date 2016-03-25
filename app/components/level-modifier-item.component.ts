@@ -34,7 +34,7 @@ export class LevelModifierItemComponent implements OnInit {
 	}
 
 	itemNameClick(event) {
-		this._tableEntriesService.showItemWindow(event.pageX, event.pageY, this.item.type, this.item.name);
+		this._tableEntriesService.showItemWindow(event.pageX, event.pageY, this.item.type, this.item.name, false);
 	}
 
 	editStat(isAdd) {

@@ -129,6 +129,22 @@ button:hover {
 }
 /* end defaults */
 
+.stat {
+  font-size: 0; /* this effectively removes the space after .stat span's elements */
+  padding: 0;
+  cursor: pointer;
+}
+
+.stat span {
+  /*  font-size: 14px; declare instead on individual components to preserve h1, h2, div, etc. sizes */  
+  margin-right: 5px;
+}
+
+.stat:hover span,
+.stat:hover {
+  text-decoration: underline;
+}
+
 .item {
   cursor: pointer;
 }
@@ -137,6 +153,7 @@ button:hover {
   text-decoration: underline;
 }
 
+/* container for table type, shouldn't be visible to the user */
 .item span {
   display: none;
 }
@@ -247,6 +264,14 @@ button:hover {
 .player-form-input label select {
   width: 200px;
   font-size: 12px; /* select option is not allowed to be configured so don't try to increase its font-size */
+}
+
+.level-section {
+  margin-bottom: 80px;
+}
+
+.level-container .passive-list-section {
+  margin-bottom: 40px;
 }
 
 .level-form-input h3 {
@@ -410,6 +435,83 @@ sr-dynamic-list .delete-input {
   transform: rotate(45deg);
 }
 
+.player-view h1 span,
+.player-view h2 span,
+.player-view h3 span,
+.player-view h4 span,
+.player-view h5 span {
+  font-family: 'Viga', sans-serif;
+}
+
+.player-view h1 {
+  margin-top: 20px;
+}
+
+.player-view h1 .stat span {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.player-view h3 .stat span {
+  font-size: 16px;
+}
+
+.player-view h5 .stat span {
+  font-size: 16px;
+}
+
+.player-view div .stat span {
+  font-size: 14px;
+}
+
+.player-view h2 .stat span,
+.player-view h4 .stat span {
+  font-size: 16px;
+}
+
+.player-view .player-details section {
+  margin-bottom: 40px;
+  width: 300px;
+}
+
+.player-view .stat-title {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.player-view div .stat-title {
+  color: #AAA;
+  font-size: 12px;
+}
+
+.player-view .player-view-small-font .stat-value {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.player-view .stat-number .stat-value {
+  width: 20px;
+  display: inline-block;
+  text-align: right;
+}
+
+.player-view .level-up-btn {
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.player-view-experience-input {
+  width: 50px;
+}
+
+.player-view section div {
+  margin-bottom: 5px;
+}
+
 .item-window {
   position: absolute;
   width: 400px;
@@ -483,4 +585,64 @@ sr-dynamic-list .delete-input {
 .item-window .selected-table {
   padding: 0 10px;
 }
+
+.stat-window {
+  position: absolute;
+  width: 400px;
+  background-color: #FFF;
+  border: 4px solid #373737;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-window .hide-input {
+  background-image: url("data:image/svg+xml;uft8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='18' height='18' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve' fill='#FFF'><polygon transform='rotate(45 9 9)' points='8 3 10 3 10 8 15 8 15 10 10 10 10 15 8 15 8 10 3 10 3 8 8 8 '/></svg>");
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 4px;
+  border: none;
+  float: right;
+}
+
+.stat-window .stat-window-title {
+  background-color: #373737;
+  height: 30px;
+}
+
+.stat-window h1,
+.stat-window h2 {
+  font-weight: 400;
+  display: inline;
+  line-height: 30px;
+}
+
+.stat-window header {
+  float: left;
+  height: 30px;
+  width: 364px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Viga', sans-serif;
+  line-height: 30px;
+}
+
+.stat-window h1 {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.stat-window h2 {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+
 

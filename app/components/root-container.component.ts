@@ -5,11 +5,12 @@ import {PlayerEntriesService} from '../services/player-entries.service';
 import {TableEntriesService} from '../services/table-entries.service';
 import {PlayerListContainerComponent} from './player-list-container.component';
 import {ItemWindowComponent} from './item-window.component';
+import {StatWindowComponent} from './stat-window.component';
 
 @Component({
   selector: 'sr-root-container',
   templateUrl: './app/views/root-container.html',
-  directives: [TableContainerComponent, PlayerListContainerComponent, ItemWindowComponent],
+  directives: [TableContainerComponent, PlayerListContainerComponent, ItemWindowComponent, StatWindowComponent],
   providers: [GlobalService, PlayerEntriesService, TableEntriesService]
 })
 export class RootContainerComponent implements OnInit {

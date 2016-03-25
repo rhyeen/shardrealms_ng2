@@ -4,96 +4,343 @@ import {Entry} from '../interfaces/entry';
 @Injectable()
 export class PlayerEntriesService {
 
+  public statWindow = {
+    x: 0,
+    y: 0,
+    show: false,
+    type: null,
+    content: {
+      
+    }
+  };
+
   public players = {
-    selectedPlayer: {
-      "player name": "Ryan",
-      "name": "Test dude",
-      "class": "Barbarian",
-      "level": 1,
-      "level up from": 0,
-      "experience": 0,
-      "race": "Wood elf",
-      "action points": 0,
-      "size": null,
-      "eye color": null,
-      "hair color": null,
-      "skin color": null,
-      "height (in)": null,
-      "weight (lbs)": null,
-      "age": null,
-      "attributes": {
-        "STR": 0,
-        "DEX": 0,
-        "INF": 0,
-        "WIS": 0
-      },
-      "core skills": {
-        "Athletics": 0,
-        "Intimidation": 0,
-        "Willpower": 0,
-        "Balance": 0,
-        "Stealth": 0,
-        "Sleight of hand": 0,
-        "Persuasion": 0,
-        "Deception": 0,
-        "Arcana": 0,
-        "Nature": 0,
-        "Perception": 0,
-        "Inspection": 0,
-        "Insight": 0,
-        "Lore": 0,
-        "Survival": 0
-      },
-      "special skills": [null], // ngFor needs an extra, even if it is null
-      "max health": null,
-      "armor": null,
-      "dodge": null,
-      "magic resist": null,
-      "weaknesses": [null], // ngFor needs an extra, even if it is null
-      "resistances": [null], // ngFor needs an extra, even if it is null
-      "immunities": [null], // ngFor needs an extra, even if it is null
-      "STR AR": null,
-      "DEX AR": null,
-      "Spell AR": null,
-      "languages": [null], // ngFor needs an extra, even if it is null
-      "background": null,
-      "character ideals": [null],
-      "character flaws": [null],
-      "character previous accomplishments": [null],
-      "weapon proficiencies": [null], // ngFor needs an extra, even if it is null
-      "armor proficiencies": [null], // ngFor needs an extra, even if it is null
-      "spells": [null],
-      "abilities": [{"name": "Sharpshooter"}], // ngFor needs an extra, even if it is null
-      "gold": null,
-      "allowed weight": null,
-      "total weight": null,
-      "equipped": {
-        "main": null,
-        "other": [null] // ngFor needs an extra, even if it is null
-      },
-      "unequipped": [null], // ngFor needs an extra, even if it is null
-      "weilded": {
-        "primary": {
-          "dominant hand": null,
-          "off hand": null
-        },
-        "secondary": {
-          "dominant hand": null,
-          "off hand": null
-        }
-      },
-      "unwielded": [null], // ngFor needs an extra, even if it is null
-      "items on person": [null], // ngFor needs an extra, even if it is null
-      "items off person": [null], // ngFor needs an extra, even if it is null
-      "shards": ["soul shard"],
-      "notes": [null], // ngFor needs an extra, even if it is null
-      "temp": { // do not save this information, only used in view
-        "ability": {},
-        "spell": {},
-        "weapon proficiency": {},
-        "armor proficiency": {}
-      }
-    },
+    selectedPlayer: null,
+    // selectedPlayer: {
+    //   "player name": "Ryan",
+    //   "name": {
+    //     "value": "Test char",
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": "Test char"
+    //     }
+    //   },
+    //   "class": {
+    //     "value": "Barbarian",
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": "Barbarian"
+    //     }
+    //   },
+    //   "level": 1,
+    //   "level up from": 0,
+    //   "experience": 0,
+    //   "race": {
+    //     "value": "Wood elf",
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": "Wood elf"
+    //     }
+    //   },
+    //   "size": {
+    //     "value": null,
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "action points": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "eye color": {
+    //     "value": null,
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "hair color": {
+    //     "value": null,
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "skin color": {
+    //     "value": null,
+    //     "stackingValue": false,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "height (in)": {
+    //     "value": null,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "weight (lbs)": {
+    //     "value": 150,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 150
+    //     }
+    //   },
+    //   "age": {
+    //     "value": null,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": null
+    //     }
+    //   },
+    //   "attributes": {
+    //     "STR": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "DEX": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "INF": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "WIS": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     }
+    //   },
+    //   "core skills": {
+    //     "Athletics": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Intimidation": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Willpower": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Balance": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Stealth": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Sleight of hand": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Persuasion": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Deception": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Arcana": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Nature": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Perception": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Inspection": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Insight": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Lore": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     },
+    //     "Survival": {
+    //       "value": 0,
+    //       "stackingValue": true,
+    //       "history": {
+    //         "experience": 0
+    //       }
+    //     }
+    //   },
+    //   "wise choice points": 0,
+    //   "special skills": [null], // ngFor needs an extra, even if it is null
+    //   "max health": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "armor": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "dodge": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "magic resist": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "weaknesses": [null], // ngFor needs an extra, even if it is null
+    //   "resistances": [null], // ngFor needs an extra, even if it is null
+    //   "immunities": [null], // ngFor needs an extra, even if it is null
+    //   "STR AR": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "DEX AR": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "Spell AR": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "languages": [null], // ngFor needs an extra, even if it is null
+    //   "background": null,
+    //   "character ideals": [null],
+    //   "character flaws": [null],
+    //   "character previous accomplishments": [null],
+    //   "weapon proficiencies": [null], // ngFor needs an extra, even if it is null
+    //   "armor proficiencies": [null], // ngFor needs an extra, even if it is null
+    //   "spells": [null],
+    //   "abilities": [null], // ngFor needs an extra, even if it is null
+    //   "gold": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "allowed weight": {
+    //     "value": 0,
+    //     "stackingValue": true,
+    //     "history": {
+    //       "experience": 0
+    //     }
+    //   },
+    //   "total weight": null,
+    //   "equipped": {
+    //     "main": null,
+    //     "other": [null] // ngFor needs an extra, even if it is null
+    //   },
+    //   "unequipped": [null], // ngFor needs an extra, even if it is null
+    //   "weilded": {
+    //     "primary": {
+    //       "dominant hand": null,
+    //       "off hand": null
+    //     },
+    //     "secondary": {
+    //       "dominant hand": null,
+    //       "off hand": null
+    //     }
+    //   },
+    //   "unwielded": [null], // ngFor needs an extra, even if it is null
+    //   "items on person": [null], // ngFor needs an extra, even if it is null
+    //   "items off person": [null], // ngFor needs an extra, even if it is null
+    //   "shards": ["soul shard"],
+    //   "notes": [null], // ngFor needs an extra, even if it is null
+    //   "temp": { // do not save this information, only used in view
+    //     "ability": {},
+    //     "spell": {},
+    //     "weapon proficiency": {},
+    //     "armor proficiency": {},
+    //     "skill points": {}
+    //   }
+    // },
     playerList: []
   };
   public playerConfig = {
@@ -108,58 +355,327 @@ export class PlayerEntriesService {
     "abilities": {}
   };
 
+  getStatWindowConfig() {
+    return Promise.resolve(this.statWindow);
+  }
 
+  showStatWindow(x, y, type, content) {
+    var table;
+
+    this.statWindow.x = x;
+    this.statWindow.y = y;
+    this.statWindow.type = type;
+    this.statWindow.show = true;
+    this.statWindow.content = content;
+  }
+
+  /** 
+   * Stats of the selected player to match what is given from stats, items, curses/blessings, other 
+   *
+   * Expect each stat to resemble:
+   * "name of stat": {
+   *   "value": // final calculated value, will be the string: experience + bound[i].value  + " (" + conditional[x1] + ", " + conditional[x2] + ")"
+   *   "stackingValue": true | false // is value a number or a string?
+   *   "history": {
+   *     "experience": // value given from class/race leveling
+   *     "conditional": [ // such as unequiped items or in certain circumstances
+   *       {
+   *         "from": { // what causes this?
+   *           "type": // can be found under this table
+   *           "name": // unique name identifier
+   *         }
+   *         "condition": // explanation of required condition to be true
+   *         "value": // modifying value
+   *         "note": // any user provided info about it
+   *       }
+   *     ],
+   *     "bound": [ // if value does not stack (such as eye color), only length - 1 index will be value
+   *       {
+   *         "from": {
+   *           "type":
+   *           "name":
+   *         }
+   *         "value":
+   *         "note":
+   *       }
+   *     ]
+   *   }
+   * }
+   */
   getNewPlayer() {
     return Promise.resolve({
       "player name": null,
-      "name": null,
-      "class": null,
+      "name": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "class": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
       "level": 1,
       "level up from": 0,
       "experience": 0,
-      "race": null,
-      "size": null,
-      "action points": 0,
-      "eye color": null,
-      "hair color": null,
-      "skin color": null,
-      "height (in)": null,
-      "weight (lbs)": null,
-      "age": null,
+      "race": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "size": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "action points": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "eye color": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "hair color": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "skin color": {
+        "value": null,
+        "stackingValue": false,
+        "history": {
+          "experience": null
+        }
+      },
+      "height (in)": {
+        "value": null, // null because if 0, it would set to the new character screen to 0 when we change race
+        "stackingValue": true,
+        "history": {
+          "experience": null
+        }
+      },
+      "weight (lbs)": {
+        "value": null, // null because if 0, it would set to the new character screen to 0 when we change race
+        "stackingValue": true,
+        "history": {
+          "experience": null
+        }
+      },
+      "age": {
+        "value": null, // null because if 0, it would set to the new character screen to 0 when we change race
+        "stackingValue": true,
+        "history": {
+          "experience": null
+        }
+      },
       "attributes": {
-        "STR": 0,
-        "DEX": 0,
-        "INF": 0,
-        "WIS": 0
+        "STR": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "DEX": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "INF": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "WIS": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
       },
       "core skills": {
-        "Athletics": 0,
-        "Intimidation": 0,
-        "Willpower": 0,
-        "Balance": 0,
-        "Stealth": 0,
-        "Sleight of hand": 0,
-        "Persuasion": 0,
-        "Deception": 0,
-        "Arcana": 0,
-        "Nature": 0,
-        "Perception": 0,
-        "Inspection": 0,
-        "Insight": 0,
-        "Lore": 0,
-        "Survival": 0
+        "Athletics": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Intimidation": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Willpower": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Balance": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Stealth": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Sleight of hand": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Persuasion": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Deception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Arcana": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Nature": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Perception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Inspection": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Insight": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Lore": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Survival": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
       },
+      "wise choice points": 0,
       "special skills": [null], // ngFor needs an extra, even if it is null
-      "max health": null,
-      "armor": null,
-      "dodge": null,
-      "magic resist": null,
+      "max health": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "armor": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "dodge": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "magic resist": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
       "weaknesses": [null], // ngFor needs an extra, even if it is null
       "resistances": [null], // ngFor needs an extra, even if it is null
       "immunities": [null], // ngFor needs an extra, even if it is null
-      "STR AR": null,
-      "DEX AR": null,
-      "Spell AR": null,
+      "STR AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "DEX AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
       "languages": [null], // ngFor needs an extra, even if it is null
       "background": null,
       "character ideals": [null],
@@ -169,8 +685,20 @@ export class PlayerEntriesService {
       "armor proficiencies": [null], // ngFor needs an extra, even if it is null
       "spells": [null],
       "abilities": [null], // ngFor needs an extra, even if it is null
-      "gold": null,
-      "allowed weight": null,
+      "gold": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "allowed weight": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
       "total weight": null,
       "equipped": {
         "main": null,
@@ -196,7 +724,8 @@ export class PlayerEntriesService {
         "ability": {},
         "spell": {},
         "weapon proficiency": {},
-        "armor proficiency": {}
+        "armor proficiency": {},
+        "skill points": {}
       }
     });
   }
@@ -290,10 +819,202 @@ export class PlayerEntriesService {
     }
   }
 
+  getPlayerSkillList(attribute) {
+    if (attribute === 'STR') {
+      return [
+        {
+          "type": "skill",
+          "name": "Athletics",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Intimidation",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Willpower",
+          "value": 1
+        }
+      ];
+    }
+    else if (attribute === 'DEX') {
+      return [
+        {
+          "type": "skill",
+          "name": "Balance",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Stealth",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Sleight of hand",
+          "value": 1
+        }
+      ];
+    }
+    else if (attribute === 'INF') {
+      return [
+        {
+          "type": "skill",
+          "name": "Persuasion",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Deception",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Arcana",
+          "value": 1
+        }
+      ];
+    }
+    else if (attribute === 'WIS') {
+      return [
+        {
+          "type": "skill",
+          "name": "Nature",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Perception",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Inspection",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Insight",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Lore",
+          "value": 1
+        },
+        {
+          "type": "skill",
+          "name": "Survival",
+          "value": 1
+        }
+      ];
+    }
+    else {
+      console.error("PlayerEntriesService.getPlayerSkillList: invalid statModifier.name for attribute: " + attribute);
+      return null;
+    }
+  }
+
+  modifyPlayerAttributes(statModifier, isAdd) {
+    var player = this.players.selectedPlayer,
+        skillList;
+
+    player['attributes'][statModifier.name].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
+    this.updateStatByHistory(player['attributes'][statModifier.name]);
+
+    if (isAdd && !player.temp['skill points'][statModifier.name]) {
+      skillList = this.getPlayerSkillList(statModifier.name);
+      player.temp['skill points'][statModifier.name] = [
+        {
+          "isSkillPoints": true,
+          "level": player['level'], // has to be within leveling block
+          "pick lists": [{
+            "allowed": 0,
+            "list": skillList
+          }]
+        }
+      ];
+    }
+
+    // NOTE: instead, players have to get the stat above 0 before adding skill points
+    // if its added, but the value is negative, ignore adding skills
+    // if (isAdd && statModifier.value < 0) {
+    //   statModifier.value = 0;
+    // }
+    // +2 to that skill point
+    player.temp['skill points'][statModifier.name][0]["pick lists"][0].allowed += isAdd ? 2 * statModifier.value : -2 * statModifier.value;
+
+    if (statModifier.name === "WIS") {
+      player['wise choice points'] += isAdd ? 2 * statModifier.value : -2 * statModifier.value;
+    }
+    // determine carriable weight
+    if (statModifier.name === "STR") {
+      this.updateCarriableWeight(player);
+    }
+  }
+
+
+  /**
+   * If own weight >= 100, then carriable weight is own weight + 25*STR modifier.
+   * Otherwise, if own weight >= 25, then carriable weight is own weight + 10*STR modifier.
+   * Otherwise, (if own weight < 25) carriable weight is own weight + 5*STR modifier.
+   */  
+  updateCarriableWeight(player) {
+    var magicNumber;
+
+    if (!player["weight (lbs)"] || !player["weight (lbs)"].value) {
+      console.error("PlayerEntriesService.updateCarriableWeight: player's weight is not set");
+      return;
+    }
+    if (player["weight (lbs)"].value >= 100) {
+      magicNumber = 25;
+    }
+    else if (player["weight (lbs)"].value >= 25) {
+      magicNumber = 10;
+    }
+    else {
+      magicNumber = 5;
+    }
+    player["allowed weight"].history.experience = player["weight (lbs)"].value + magicNumber * player["attributes"]["STR"].value;
+    this.updateStatByHistory(player["allowed weight"]);
+
+    // for all the people playing microscopic beings...
+    if (player["allowed weight"].value < 0) {
+      player["allowed weight"].value = 0;
+    }
+  }
+
+  updateStatByHistory(stat) {
+    var i;
+
+    // get the base value
+    stat.value = stat.history.experience;
+
+    ////
+    // check bound forms of history, since they effect the overall value 
+    // starting with bound
+    if (stat.stackingValue) {
+      if (stat.history.bound) {
+        for (i = 0; i < stat.history.bound.length; i++) {
+          stat.value += stat.history.bound[i].value;
+        }
+      }
+    }
+    // non-stacking stat, such as eye-color
+    else {
+      if (stat.history.bound && stat.history.bound.length) {
+        stat.value = stat.history.bound[stat.history.bound.length - 1];
+      }
+    }
+    // ignore conditional forms of history since they will be shown in parathesis next to the stat.value
+  }
+
   /**
    * Expects: {type: 
    * @param {[type]} statModifier {
-   *   type: REQUIRED <'attribute' | 'skill' | 'ability' | 'spell' | 'weapon proficiency' | 'armor proficiency'>,
+   *   type: REQUIRED <'action points' | 'attribute' | 'skill' | 'ability' | 'spell' | 'weapon proficiency' | 'armor proficiency'>,
    *   name: REQUIRED,
    *   value: OPTIONAL
    * }
@@ -307,14 +1028,15 @@ export class PlayerEntriesService {
     player = this.players.selectedPlayer;
     // add attributes
     if (statModifier.type === 'attribute') {
-      player['attributes'][statModifier.name] += isAdd ? statModifier.value : -1 * statModifier.value;
+      this.modifyPlayerAttributes(statModifier, isAdd);
     }
     // add skills
     else if (statModifier.type === 'skill') { 
       coreSkills = { "Athletics": true, "Intimidation": true, "Willpower": true, "Balance": true, "Stealth": true, "Sleight of hand": true, "Persuasion": true, "Deception": true, "Arcana": true, "Nature": true, "Perception": true, "Inspection": true, "Insight": true}; 
       // core skills
       if (coreSkills[statModifier.name]) {
-        player['core skills'][statModifier.name] += isAdd ? statModifier.value : -1 * statModifier.value;
+        player['core skills'][statModifier.name].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
+        this.updateStatByHistory(player['core skills'][statModifier.name]);
       }
       else {
         this.modifySpecialSkill(statModifier, isAdd);
@@ -322,19 +1044,19 @@ export class PlayerEntriesService {
     }
     // add weapon proficiencies
     else if (statModifier.type === 'weapon proficiency') {
-    this.addProficiency(statModifier.type, statModifier, isAdd);
+      this.addProficiency(statModifier.type, statModifier, isAdd);
     }
     // add armor proficiencies
     else if (statModifier.type === 'armor proficiency') {
-    this.addProficiency(statModifier.type, statModifier, isAdd);
+      this.addProficiency(statModifier.type, statModifier, isAdd);
     }
     // add abilities
     else if (statModifier.type === 'ability') {
-    this.addAbilitySpell(statModifier.type, statModifier, isAdd);
+      this.addAbilitySpell(statModifier.type, statModifier, isAdd);
     }
     // add spells
     else if (statModifier.type === 'spell') {
-    this.addAbilitySpell(statModifier.type, statModifier, isAdd);
+      this.addAbilitySpell(statModifier.type, statModifier, isAdd);
     }
     // add action points
     else if (statModifier.type === 'action points') {
@@ -346,7 +1068,8 @@ export class PlayerEntriesService {
   }
 
   addActionPoints(statModifier) {
-    this.players.selectedPlayer["action points"] = statModifier.value;
+    this.players.selectedPlayer["action points"].history.experience = statModifier.value;
+    this.updateStatByHistory(this.players.selectedPlayer["action points"]);
   }
 
   modifyPlayerStatsMapping(type, name, isAdd) {
@@ -448,7 +1171,8 @@ export class PlayerEntriesService {
     else {
       for (i = 0; i < player['special skills'].length; i++) {
         if (player['special skills'][i].name === statModifier.name) {
-          player['special skills'][i].value += isAdd ? statModifier.value : -1 * statModifier.value;
+          player['special skills'][i].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
+          this.updateStatByHistory(player['special skills'][i]);
           isNewSkill = false;
           break;
         }
@@ -457,7 +1181,11 @@ export class PlayerEntriesService {
     if (isNewSkill) {
       player['special skills'].push({
         "name": statModifier.name,
-        "value": isAdd ? statModifier.value : -1 * statModifier.value
+        "value": isAdd ? statModifier.value : -1 * statModifier.value,
+        "stackingValue": true,
+        "history": {
+          "experience": isAdd ? statModifier.value : -1 * statModifier.value
+        }
       });
     }
   }
@@ -559,6 +1287,9 @@ export class PlayerEntriesService {
   }
 
   savePlayer() {
+    // remove temp object from player
+    delete this.players.selectedPlayer.temp;
+
     // save this.players.selectedPlayer to db
     return Promise.resolve("Test save successful.");
   }

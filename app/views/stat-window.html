@@ -1,0 +1,59 @@
+<section class="stat-window" *ngIf="config && config.show" [ngStyle]="{'top': config.y, 'left': config.x}">
+	<section class="stat-window-title">
+		<header>
+			<h2>{{config.type}}:</h2>
+			{{config.content.value}}
+		</header>
+		<button class="hide-input" tabindex="-1" (click)="hideWindow()"></button>
+	</section>
+	<section class="stat-history">
+		<section>
+			<h3>Default:</h3>
+			<p>{{config.content.history.experience}}
+		</section>
+		<section *ngIf="config.content.conditional && config.content.conditional.length">
+			<h3>Conditional:</h3>
+			<table *ngFor="#single of config.content.conditional">
+				<tr>
+					<td>Value:</td>
+					<td>{{single.value}}</td>
+				</tr>
+				<tr>
+					<td>From:</td>
+					<td>
+						<div *ngIf="single.from.type">{{single.from.type}}</div>
+						<div [class.item]="single.from.type">{{single.from.name}}</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Condition:</td>
+					<td>{{single.condition}}</td>
+				</tr>
+				<tr *ngIf="single.note">
+					<td>Note:</td>
+					<td>{{single.note}}</td>
+				</tr>
+			</table>
+		</section>
+		<section *ngIf="config.content.bound && config.content.bound.length">
+			<h3>Bound:</h3>
+			<table *ngFor="#single of config.content.bound">
+				<tr>
+					<td>Value:</td>
+					<td>{{single.value}}</td>
+				</tr>
+				<tr>
+					<td>From:</td>
+					<td>
+						<div *ngIf="single.from.type">{{single.from.type}}</div>
+						<div [class.item]="single.from.type">{{single.from.name}}</div>
+					</td>
+				</tr>
+				<tr *ngIf="single.note">
+					<td>Note:</td>
+					<td>{{single.note}}</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+</section>

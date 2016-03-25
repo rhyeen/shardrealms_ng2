@@ -1,0 +1,13 @@
+<span class="stat" *ngIf="player && key && config" (click)="statClick($event)">
+  <span class="stat-title" *ngIf="!config.hideTitle && config.titleFirst && !config.altTitle && !innerKey">{{key}}:</span>
+  <span class="stat-title" *ngIf="!config.hideTitle && config.titleFirst && !config.altTitle && innerKey">{{innerKey}}:</span>
+  <span class="stat-title" *ngIf="!config.hideTitle && config.titleFirst && config.altTitle">{{config.altTitle}}</span>
+
+  <span class="stat-value" *ngIf="(player[key].value || player[key].value === 0) && !innerKey">{{player[key].value}}</span>
+  <span class="stat-value" *ngIf="innerKey">{{player[key][innerKey].value}}</span>
+  <span class="stat-value" *ngIf="player[key] === 0 || (!player[key].value && player[key].value !== 0) && !innerKey">{{player[key]}}</span>
+
+  <span class="stat-title" *ngIf="!config.hideTitle && !config.titleFirst && !config.altTitle && !innerKey">{{key}}</span>
+  <span class="stat-title" *ngIf="!config.hideTitle && !config.titleFirst && !config.altTitle && innerKey">{{innerKey}}</span>
+  <span class="stat-title" *ngIf="!config.hideTitle && !config.titleFirst && config.altTitle">{{config.altTitle}}</span>
+</span>

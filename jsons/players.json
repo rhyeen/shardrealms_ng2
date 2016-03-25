@@ -5,7 +5,13 @@
   },
   "entries": [
     {
-      "name": "Test fighter",
+      "name": {
+        "value": "Test fighter",
+        "stackingValue": false,
+        "history": {
+          "experience": "Test player 2"
+        }
+      },
       "player name": "Ryan",
       "class": "Fighter",
       "level": 1,
@@ -43,6 +49,7 @@
         "Lore": 0,
         "Survival": 0
       },
+      "wise choice points": 2,
       "special skills": [
         {
           "name": "Smithing",
@@ -136,6 +143,318 @@
         }
       ],
       "image-links": []
+    },
+    {
+      "player name": "Ryan",
+      "name": {
+        "value": "Taaz, the Destroyer of Worlds",
+        "stackingValue": false,
+        "history": {
+          "experience": "Taaz, the Destroyer of Worlds"
+        }
+      },
+      "class": {
+        "value": "Barbarian",
+        "stackingValue": false,
+        "history": {
+          "experience": "Barbarian"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "race": {
+        "value": "Drow",
+        "stackingValue": false,
+        "history": {
+          "experience": "Drow"
+        }
+      },
+      "size": {
+        "value": "medium",
+        "stackingValue": false,
+        "history": {
+          "experience": "medium"
+        }
+      },
+      "action points": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "eye color": {
+        "value": "blue",
+        "stackingValue": false,
+        "history": {
+          "experience": "blue"
+        }
+      },
+      "hair color": {
+        "value": "blonde",
+        "stackingValue": false,
+        "history": {
+          "experience": "blonde"
+        }
+      },
+      "skin color": {
+        "value": "tan",
+        "stackingValue": false,
+        "history": {
+          "experience": "tan"
+        }
+      },
+      "height (in)": {
+        "value": 150,
+        "stackingValue": true,
+        "history": {
+          "experience": 150
+        }
+      },
+      "weight (lbs)": {
+        "value": 90,
+        "stackingValue": true,
+        "history": {
+          "experience": 90
+        }
+      },
+      "age": {
+        "value": 240,
+        "stackingValue": true,
+        "history": {
+          "experience": 240
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": 10,
+          "stackingValue": true,
+          "history": {
+            "experience": 10
+          }
+        },
+        "DEX": {
+          "value": 3,
+          "stackingValue": true,
+          "history": {
+            "experience": 3
+          }
+        },
+        "INF": {
+          "value": -5,
+          "stackingValue": true,
+          "history": {
+            "experience": -5
+          }
+        },
+        "WIS": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 19,
+          "stackingValue": true,
+          "history": {
+            "experience": 19
+          }
+        },
+        "Intimidation": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Willpower": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Balance": {
+          "value": -3,
+          "stackingValue": true,
+          "history": {
+            "experience": -3
+          }
+        },
+        "Stealth": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        },
+        "Sleight of hand": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Persuasion": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Deception": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Arcana": {
+          "value": -10,
+          "stackingValue": true,
+          "history": {
+            "experience": -10
+          }
+        },
+        "Nature": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Perception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Inspection": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Insight": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Lore": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Survival": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        }
+      },
+      "wise choice points": 2,
+      "special skills": [null],
+      "max health": {
+        "value": 18,
+        "stackingValue": true,
+        "history": {
+          "experience": 18
+        }
+      },
+      "armor": {
+        "value": 15,
+        "stackingValue": true,
+        "history": {
+          "experience": 15
+        }
+      },
+      "dodge": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "magic resist": {
+        "value": -5,
+        "stackingValue": true,
+        "history": {
+          "experience": -5
+        }
+      },
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": [null],
+      "STR AR": {
+        "value": 10,
+        "stackingValue": true,
+        "history": {
+          "experience": 10
+        }
+      },
+      "DEX AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell AR": {
+        "value": -5,
+        "stackingValue": true,
+        "history": {
+          "experience": -5
+        }
+      },
+      "languages": ["Common", "Elven", "Dwarvish"],
+      "background": "You are the vanguard of your faith. Perhaps you are a pilgrim for a good deity in an unholy land, or the secret enforcer of a sect that operates in the shadows of the world. You are accustomed to working alone and with little guidance from the superiors of your church, trusting your own moral judgment to act on behalf of your god. This certainty acts as a defense against the magic of other, \"lesser\" deities. You gain access to the Disdainful Defender faith trait.",
+      "character ideals": ["Likes hugs", "The world should be made up of little puppies that have one eye and a gimpy leg.  Then everyone will love me for who I am, and not just my wheelbarrow."],
+      "character flaws": [null],
+      "character previous accomplishments": ["Read a book once"],
+      "weapon proficiencies": ["light melee", "melee", "two-handed melee"],
+      "armor proficiencies": ["cloth", "light", "medium"],
+      "spells": [null],
+      "abilities": [null],
+      "gold": 20000,
+      "allowed weight": {
+        "value": 250,
+        "stackingValue": true,
+        "history": {
+          "experience": 250
+        }
+      },
+      "total weight": 123,
+      "equipped": {
+        "main": null,
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": null,
+              "off hand": null
+          },
+          "secondary": {
+              "dominant hand": null,
+              "off hand": null
+          }
+      },
+      "unwielded": [null],
+      "items on person": [null],
+      "items off person": [null],
+      "shards": ["soul shard"],
+      "notes": [null]
     }
   ]
 }
