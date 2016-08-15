@@ -43,7 +43,7 @@
       </div>
     </section>
     <section class="stat-number">
-      <h5>Skills</h5>
+      <h5>Core Skills</h5>
       <div>
         <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Athletics'" [config]="{titleFirst: false}"></sr-stat>
       </div>
@@ -89,6 +89,15 @@
       <div>
         <sr-stat [player]="player" [key]="'core skills'" [innerKey]="'Survival'" [config]="{titleFirst: false}"></sr-stat>
       </div>
+    <section>
+      <sr-player-arr-stat [player]="player" [key]="'special skills'" [config]="{header: 'Special skills'}"></sr-player-arr-stat>
+    </section>
+    </section>
+    <section class="stat-number">
+      <h5>Proficiencies</h5>
+      <sr-player-arr-stat [player]="player" [key]="'weapon proficiencies'" [config]="{header: 'Weapon Proficiencies'}"></sr-player-arr-stat>
+      <sr-player-arr-stat [player]="player" [key]="'armor proficiencies'" [config]="{header: 'Armor Proficiencies'}"></sr-player-arr-stat>
+    </section>
     </section>
     <section class="stat-number">
       <h5>Defense</h5>
@@ -110,11 +119,23 @@
       <div>  
         <sr-stat [player]="player" [key]="'STR AR'" [config]="{titleFirst: false}"></sr-stat>
       </div>
+      <div>  
+        <sr-stat [player]="player" [key]="'STR DMG'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
       <div>
-        <sr-stat [player]="player" [key]="'STR AR'" [config]="{titleFirst: false}"></sr-stat>
+        <sr-stat [player]="player" [key]="'DEX AR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>  
+        <sr-stat [player]="player" [key]="'DEX DMG'" [config]="{titleFirst: false}"></sr-stat>
       </div>
       <div>
         <sr-stat [player]="player" [key]="'Spell AR'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'Spell DMG'" [config]="{titleFirst: false}"></sr-stat>
+      </div>
+      <div>
+        <sr-stat [player]="player" [key]="'Spell ST'" [config]="{titleFirst: false}"></sr-stat>
       </div>
     </section>
     <section>
@@ -145,6 +166,7 @@
       <h5>Personality</h5>
       <div>
         <sr-stat class="player-view-small-font" [player]="player" [key]="'background'" [config]="{titleFirst: true}"></sr-stat>
+        <sr-player-arr-stat [player]="player" [key]="'languages'" [config]="{header: 'Languages'}"></sr-player-arr-stat>
       </div>
     </section>
     <section>
@@ -160,10 +182,19 @@
       </div>
     </section>
     <section>
+      <h5>Conditions</h5>
+      <sr-player-arr-stat [player]="player" [key]="'weaknesses'" [config]="{header: 'Weaknesses'}"></sr-player-arr-stat>
+      <sr-player-arr-stat [player]="player" [key]="'resistances'" [config]="{header: 'Resistances'}"></sr-player-arr-stat>
+      <sr-player-arr-stat [player]="player" [key]="'immunities'" [config]="{header: 'Immunities'}"></sr-player-arr-stat>
+      <sr-player-arr-stat [player]="player" [key]="'conditions'" [config]="{header: 'Conditions'}"></sr-player-arr-stat>
+    </section>
+    <section>
       <h5>Actions</h5>
       <div>
         <sr-stat [player]="player" [key]="'action points'" [config]="{titleFirst: false}"></sr-stat>
       </div>
+      <sr-player-arr-stat [player]="player" [key]="'abilities'" [config]="{header: 'Abilities'}"></sr-player-arr-stat>
+      <sr-player-arr-stat [player]="player" [key]="'spells'" [config]="{header: 'Spells'}"></sr-player-arr-stat>
     </section>
   </section>
 </section>

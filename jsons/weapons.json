@@ -133,8 +133,9 @@
       "damage": "5",
       "damage type": ["piercing", "slashing"],
       "damage - Quick attack": "3",
+      "damage type - Reach attack": "slashing",
       "description": "Martial dagger-like longsword.",
-      "image-links": ["/images/items/scimitar.jpg"]
+      "image-links": ["/images/items/scimitar.jpg", "/images/items/scimitar2.jpg"]
     },
     {
       "name": "Longsword",
@@ -528,7 +529,7 @@
       "damage type": "bludgeoning",
       "damage - Throw": "2",
       "damage type - Throw": "bludgeoning",
-      "properties": "Returns to wielder after being thrown.",
+      "properties": "At the beginning of your next turn, it will returns to the same location it was thrown from. A creature standing in that location and proficient with Light melee weapons may grab it freely as it returns.",
       "description": "Curved wooden blade meant for throwing.",
       "image-links": ["/images/items/boomerang.jpg"]
     },

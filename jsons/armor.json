@@ -141,6 +141,19 @@
       "image-links": ["/images/items/studded_leather.jpg"]
     },
     {
+      "name": "Chitin piecemeal",
+      "weight (lbs)": 7,
+      "value (gold)": 75,
+      "rarity": "uncommon",
+      "type of armor": "light",
+      "armor modifier": 2,
+      "dodge modifier": 0,
+      "magic resist modifier": 1,
+      "other modifiers": ["-1 spell AR"],
+      "description": "Made from several parts of invertebrates' exoskeleton.",
+      "image-links": ["/images/items/chitin_piecemeal.png", "/images/items/chitin_piecemeal2.png", "/images/items/chitin_piecemeal3.jpg", "/images/items/chitin_piecemeal4.png"]
+    },
+    {
       "name": "Elven leather",
       "weight (lbs)": 5,
       "value (gold)": 300,
@@ -272,7 +285,7 @@
       "magic resist modifier": 2,
       "other modifiers": ["-4 spell AR"],
       "description": "Made from flexible parts of large invertebrates' exoskeleton.",
-      "image-links": ["/images/items/chitin_hide.jpg"]
+      "image-links": ["/images/items/chitin_hide.jpg", "/images/items/chitin_hide2.jpg"]
     },
     {
       "name": "Full chain mail",
@@ -328,7 +341,7 @@
       "other modifiers": ["Disadvantage on Stealth checks", "-10 spell AR"],
       "properties": "Requires 3 STR",
       "description": "Made from large invertebrates' exoskeleton.",
-      "image-links": ["/images/items/chitin_shell.jpg", "/images/items/chitin_shell2.jpg", "/images/items/chitin_shell3.jpg"]
+      "image-links": ["/images/items/chitin_shell.jpg", "/images/items/chitin_shell2.jpg", "/images/items/chitin_shell3.jpg", "/images/items/chitin_shell4.jpg", "/images/items/chitin_shell5.jpg"]
     },
     {
       "name": "Buckler",
@@ -360,7 +373,7 @@
     {
       "name": "Scutum",
       "weight (lbs)": 15,
-      "value (gold)": 50,
+      "value (gold)": 120,
       "rarity": "common",
       "type of armor": "shield",
       "armor modifier": 2,

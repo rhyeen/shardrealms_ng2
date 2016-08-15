@@ -28,7 +28,7 @@
       "name": "Willpower",
       "type of skill": "core",
       "attribute": "STR",
-      "properties": "Ability to withstand physical pain, resist poison, or endure acts of excertion."
+      "properties": "Ability to withstand physical pain, resist poison, or endure acts of excertion.  Points in Willpower modify quality of sleep checks."
     },
     {
       "name": "Balance",
@@ -40,7 +40,7 @@
       "name": "Stealth",
       "type of skill": "core",
       "attribute": "DEX",
-      "properties": "Ability to move unnoticed and to perceive surrounding for stealth possibilities. A stealth check is contested against the Perception of those in immediate view. Stealth is broken at the end of your turn if you fail the stealth check.<br>A stealth attack causes the target to be Surprised.<br>A stealth check can be made everytime one is completely out of view, but the check cannot be rerolled until going in and out of viewable area of anyone other than allies.<br>You may only move at [Half move] while stealthed.<br>Modifiers to stealth check:<ul><li>-5 in bright light</li><li>-5 if moving within line of sight of anyone other than allies.</li><li>-5 if moving fater than [Half move]</li><li>-2 if within 10 ft of target making a perception check</li><li>-5 if within 5 ft of target making a perception check</li><li>-5 if anyone other than allies is alerted to danger</li><li>-10 if anyone is looking for you specifically</li></ul>"
+      "properties": "Ability to move unnoticed and to perceive surrounding for stealth possibilities. A stealth check is contested against the Perception of those in immediate view. Stealth is broken at the end of your turn if you fail the stealth check.<br>A stealth attack causes the target to be Surprised.<br>A stealth check can be made everytime one is completely out of view, but the check cannot be rerolled until going in and out of viewable area of anyone other than allies.<br>You may only move at <span class=\"item\"><span>ability</span>Half move</span> while stealthed.<br>Modifiers to stealth check:<ul><li>-5 in bright light</li><li>-5 if moving within line of sight of anyone other than allies.</li><li>-5 if moving fater than <span class=\"item\"><span>ability</span>Half move</span></li><li>-2 if within 10 ft of target making a perception check</li><li>-5 if within 5 ft of target making a perception check</li><li>-5 if anyone other than allies is alerted to danger</li><li>-10 if anyone is looking for you specifically</li></ul>"
     },
     {
       "name": "Sleight of hand",

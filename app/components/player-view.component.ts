@@ -2,11 +2,13 @@ import {Component, OnInit} from 'angular2/core';
 // import {PlayerEntriesService} from '../services/player-entries.service';
 // import {GlobalService} from '../services/global.service';
 import {StatComponent} from './stat.component';
+import {PlayerArrStat} from './player-arr-stat.component';
+
 
 @Component({
 	selector: 'sr-player-view',
 	templateUrl: './app/views/player-view.html',
-	directives: [StatComponent],
+	directives: [StatComponent, PlayerArrStat],
 	inputs: ['player']
 })
 export class PlayerViewComponent implements OnInit {

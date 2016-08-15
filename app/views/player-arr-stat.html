@@ -1,0 +1,20 @@
+<section>
+  <div class="stat-arr-header">
+    <h4>{{config.header}}</h4>
+    <div class="stat-arr-options">
+      <button class="stat-arr-add">+</button>
+    </div>
+  </div>
+  <table class="stat-arr" *ngIf="player[key] && player[key].length && player[key][0] !== null">
+    <tr class="stat-element" *ngFor="#element of player[key]; #i = index">
+      <td>
+        <sr-stat [player]="player" [key]="key" [innerKey]="i" [config]="{named: true}"></sr-stat>
+      </td>
+      <td>
+        <div class="stat-element-options">
+          <button class="stat-element-remove">x</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</section>

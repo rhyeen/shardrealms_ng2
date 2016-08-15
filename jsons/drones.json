@@ -1,0 +1,306 @@
+    {
+      "player name": "Ashtyn",
+      "name": {
+        "value": "",
+        "stackingValue": false,
+        "history": {
+          "experience": ""
+        }
+      },
+      "class": {
+        "value": "Mecha drone",
+        "stackingValue": false,
+        "history": {
+          "experience": "Mecha drone"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "size": {
+        "value": "small",
+        "stackingValue": false,
+        "history": {
+          "experience": "small"
+        }
+      },
+      "height (in)": {
+        "value": 36,
+        "stackingValue": true,
+        "history": {
+          "experience": 36
+        }
+      },
+      "weight (lbs)": {
+        "value": 60,
+        "stackingValue": true,
+        "history": {
+          "experience": 60
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "DEX": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "INF": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "WIS": {
+          "value": -5,
+          "stackingValue": true,
+          "history": {
+            "experience": -5
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Intimidation": {
+          "value": -10,
+          "stackingValue": true,
+          "history": {
+            "experience": -10
+          }
+        },
+        "Willpower": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        },
+        "Balance": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Stealth": {
+          "value": -2,
+          "stackingValue": true,
+          "history": {
+            "experience": -2
+          }
+        },
+        "Sleight of hand": {
+          "value": -5,
+          "stackingValue": true,
+          "history": {
+            "experience": -5
+          }
+        },
+        "Persuasion": {
+          "value": -10,
+          "stackingValue": true,
+          "history": {
+            "experience": -10
+          }
+        },
+        "Deception": {
+          "value": -10,
+          "stackingValue": true,
+          "history": {
+            "experience": -10
+          }
+        },
+        "Arcana": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Nature": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Perception": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Inspection": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Insight": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Lore": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        },
+        "Survival": {
+          "value": null,
+          "stackingValue": true,
+          "history": {
+            "experience": null
+          }
+        }
+      },
+      "special skills": [null],
+      "max health": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "armor": {
+        "value": 12,
+        "stackingValue": true,
+        "history": {
+          "experience": 12
+        }
+      },
+      "dodge": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "magic resist": {
+        "value": 8,
+        "stackingValue": true,
+        "history": {
+          "experience": 8
+        }
+      },
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": ["poison", "psychic"],
+      "STR AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "STR DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "DEX AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "DEX DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell ST": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "spells": [null],
+      "abilities": [
+        { "name": "Move" },
+        { "name": "Run" },
+        { "name": "Jump" },
+        { "name": "Climb" },
+        { "name": "Dodge" },
+        { "name": "Use cover" },
+        { "name": "Disengage" },
+        { "name": "Hide" },
+        { "name": "Delay" },
+        { "name": "Ready" },
+        { "name": "Opportunity attack" },
+        { "name": "Search" },
+        { "name": "Improvise" },
+        { "name": "Remote senses" },
+        { "name": "Metal carapace" },
+        { "name": "Follow summoner" },
+        { "name": "Mechanized arm" },
+        { "name": "Calculated attack" },
+        { "name": "Propulsive wallop" }
+      ],
+      "allowed weight": {
+        "value": 100,
+        "stackingValue": true,
+        "history": {
+          "experience": 100
+        }
+      },
+      "total weight": 0,
+      "equipped": {
+        "main": null,
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": null
+          },
+          "secondary": {
+              "dominant hand": null
+          }
+      },
+      "unwielded": [null],
+      "items on person": [null],
+      "items off person": [null],
+      "notes": [null]
+    }

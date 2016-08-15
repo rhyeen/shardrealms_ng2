@@ -1118,12 +1118,12 @@
             {
               "type": "attribute",
               "name": "STR",
-              "value": 1
+              "value": -1
             },
             {
               "type": "attribute",
               "name": "DEX",
-              "value": -1
+              "value": 1
             },
             {
               "type": "attribute",
@@ -1146,6 +1146,10 @@
             {
               "type": "ability",
               "name": "Water yin and air yang"
+            },
+            {
+              "type": "ability",
+              "name": "Form of feet and fin"
             }
           ]
         }
@@ -1153,7 +1157,7 @@
       "cultural tendencies": null,
       "background": null,
       "associations": null,
-      "image-links": ["images/races/merfolk.jpg", "images/races/merfolk2.jpg", "images/races/merfolk3.png", "images/races/merfolk4.jpg", "images/races/merfolk5.jpg", "images/races/merfolk6.jpg", "images/races/merfolk7.jpg", "images/races/merfolk8.jpg"]
+      "image-links": ["images/races/merfolk.jpg", "images/races/merfolk2.jpg", "images/races/merfolk3.png", "images/races/merfolk4.jpg", "images/races/merfolk5.jpg", "images/races/merfolk6.jpg", "images/races/merfolk7.jpg", "images/races/merfolk8.jpg", "images/races/merfolk9.jpg", "images/races/merfolk10.jpg", "images/races/merfolk11.jpg", "images/races/merfolk12.jpg", "images/races/merfolk13.jpg", "images/races/merfolk14.jpg", "images/races/merfolk15.jpg", "images/races/merfolk16.jpg", "images/races/merfolk17.jpg", "images/races/merfolk18.png", "images/races/merfolk19.jpg", "images/races/merfolk20.jpg", "images/races/merfolk21.jpg", "images/races/merfolk22.jpg", "images/races/merfolk23.png", "images/races/merfolk24.png", "images/races/merfolk25.jpg"]
     },
     {
       "name": "Tatsu",

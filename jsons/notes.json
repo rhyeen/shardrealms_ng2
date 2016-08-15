@@ -1,0 +1,382 @@
+Bard
+
+Any spell, item, or ability that is modified by INF may be modified by WIS instead.
+
+
+--------------
+--------------
+ARTIFICER
+
+Link to Sentium drone
+Construct mecha drone
+Construct drone swarm
+
+
+
+--------------
+--------------
+MECHA DRONE
+
+
+
+
+Move
+Run
+Jump
+Climb
+Metal carapace
+
+Dodge
+Use cover
+Disengage
+Hide
+Delay
+Ready
+Opportunity attack
+Search
+Remote senses
+
+Improvise
+
+
+Mechanized arm
+
+// Replaced with the notion that attacks with normal weapons are at disadvantage because there is no proficency.
+Caclulated attack
+{
+  "name": "Calculated attack",
+  "type of ability": "passive",
+  "target": "self",
+  "properties": "STR AR, DEX AR, and Spell AR are always +2.<br>STR DMG, DEX DMG, and Spell DMG are always 0. Certain abilities may be modified by the attribute's score, but using conventional weapons or spells provides no modifications beyond that designated here."
+},
+
+
+Propulsive wallop
+Electric prod
+
+--------------
+--------------
+BATTLEMAGE
+
+Violent death (explode if below 10 HP):
+
+Warden's chains (snare a target):
+
+Force push:
+
+Force pull:
+
+Shocking grasp:
+
+Flame augmentation:
+
+Ice augmentation:
+
+Lightning augmentation:
+
+Poison tipped:
+
+Summon weapon:
+
+Barrier:
+
+Blink
+Phase
+Thunderwave
+Burning hands
+Jump
+Grease
+Thaumaturgy
+
+Smoke form
+Magic resistant
+Restoring blood
+Adrenaline rush
+Duel weapons
+Shield adept
+Quick attack
+Heavy attack
+Reach attack
+Armored mage
+Armored BATTLEMAGE
+Parry
+Counter attack
+
+Phase weapon (make it temporarily disapear so that hand spells can be used)
+
+Unlimited attunment of weapon
+
+
+-------------
+-------------
+ELEMENTALIST
+
+Magic resistant
+Magicborn
+Magic immune
+
+Earth tracer
+Earth weaver
+Earth master
+
+Hurl rock
+
+Earth skin:
+
+Pebble barrage:
+
+Wall of stone:
+
+Stone columns:
+
+Tremor:
+
+Earthquake:
+
+Earth elemental:
+
+Tremorsense
+Dig
+Fast dig
+
+--
+
+Fire tracer:
+
+Fire weaver:
+
+Fire master:
+
+Fireball:
+
+Dragon's breath (burning hands):
+
+Spontanous Combustion:
+
+Fire storm:
+
+Resist heat:
+
+Fire immune:
+
+Light:
+
+Ignite: (fire over time)
+
+Searing pain: (STR ST or unable to take actions)
+
+Kindle flame: (increases the stats of the next fire DMG spell)
+
+Heat metal:
+
+Control file:
+
+Summon spark dancers (summons X many spark dancer, which is a small fire demon):
+
+Heated barrier (any target within 5 ft takes fire DMG):
+
+Flame daggers:
+
+Flame whip:
+
+Fire walk:
+
+Fire elemental:
+
+--
+
+Water tracer
+Water weaver
+Water master
+
+Ice bolt
+
+Water whip
+
+Hold breath
+Breathe water
+
+Give breathe water:
+
+Natural swimmer
+Water walk
+Control water
+
+Tidal shove
+
+Sweat tomb (encloses a target in a layer of water):
+
+Exploding bubbles:
+
+Ice sheet:
+
+Chilling gaze
+
+Whirlpool:
+
+Glacier:
+
+Water elemental:
+
+--
+
+Air tracer:
+
+Air weaver:
+
+Air master:
+
+Forceful winds:
+
+Flying weapons:
+
+Thunderwave
+Gust of wind
+Thunderburst
+
+Cyclone trap:
+
+Zone of silence:
+
+Hold person:
+
+Dive bomb:
+
+Sufficate:
+
+Air elemental:
+
+Extra move (for air)
+Extra move II (for air)
+Hover
+Fly
+
+Lightning storm
+Smoke form
+Fog cloud
+
+Moving dodge
+Nimble
+
+
+
+-----------------
+-----------------
+THEIF AND ASSASSIN
+Double move
+Fast run
+Double run
+Natural climber
+Mimicry
+Camouflage
+Feign inanimated
+Cautious retreat
+Quick dodge
+Extra move
+Extra move II
+Standing leap
+Honed critical
+Melee weapon specialist
+Ranged weapon specialist
+Melee weapon master
+Ranged weapon master
+Mastered critical
+Reactive movement
+Disarming strike
+Trip attack
+Duel weapons
+Quick attack
+Rapid attack
+Nimble
+Rogue Nimble
+Side step
+Moving dodge
+Counter attack
+
+Sneak attack:
++X DMG on Surprise attacks.
+
+Sneak attack II (III, IV, etc):
++X DMG on surprise attacks.
+
+Thieves cant:
+Read and write a secret code known by thieves to guide members to secret hideouts, or inform about precautions in the specific city.
+
+Trap sweeper:
++X to Investigation rolls regarding traps or hidden objects.
+
+Hiding in plain sight:
+A Stealth check only requires 1 action point.
+
+Swift as shadows:
+As long as you are not moving and are not detected by anyone other than allies, you may perform a Stealth check as a reaction.
+
+Firewalker:
+If a successful ST is made against an AoE spell, take no DMG.
+
+Soundsense:
+30 ft radius
+Can pinpoint location of any object or creature producing audible sound.  If a creature is Stealthed, a Perception check is required to perceive its presense and pinpoint its location.
+
+Stroke of luck:
+May reroll a failed AR, ST, or ability check.
+
+Pickpocket:
+If you have a free hand, may make a Sleight of hand check as an AR.  If hit, you may take one item from the target that he is not holding and is immediately accessable.<br>If the item is bound to the target, or worn by the target, -5 to the AR.
+
+Surprise performance:
+If you enter combat with a Surprise attack, initiative begins with you at the top of the round.
+
++4 to Perform.
+
+Deadly surprise:
++5 to AR on Surprise attacks. If hit, the attack is a critical hit.
+
+Opportunist:
+Any attack against a target that hasn't taken a turn in combat yet is a Surprise attack.
+
+Assassinate:
+If an attack is a critical hit, roll a d20.<br>If the result is a 19, +50 DMG to the attack.<br>If the result is a 20, +300 DMG to the attack.
+
+Imposter:
++5 to Deception checks when attempting to act or behave as someone else.
+
+Serial killer:
+If your attack kills a target, regain all lost action points for this turn.  Can only be activated once per turn.
+
+Poison tipped:
+Recharge: shard.
+First hit weapon attack deals +1d6 poison DMG.
+
+Prey vision:
+Recharge: shard.
+Duration: 10 minutes.
+Radius: 500 ft
+Mark a target within your vision.  As long as the target stays within radius, you know the location of the target.<br>You may also make a single guess to the target's max health and challenge rating.  The GM will say if the guesses are too high, too low, or correct.
+
+Trap maker:
+Prepare up to a trap ahead of time.<br>Each trap takes 30 minutes to prepare.
+
+Trap maker II:
+Prepare up to 2 traps ahead of time.<br>Each trap takes 15 minutes to prepare.<br>You prepare a trap in such a way that you may choose to prevent yourself from triggering the trap.
+
+Trap maker III:
+Prepare up to 3 traps ahead of time.<br>Each trap takes 10 minutes to prepare.<br>You prepare a trap in such a way that you may choose to prevent yourself from triggering the trap.<br>You may also choose to be unaffected by a trap's activated ability, even if you trigger the trap.
+
+Place traps:
+"target": "target",
+"range (ft)": 30,
+"number of targets": 1,
+"action points": 2,
+Set a prepared trap on the ground or on a wall.  Traps cannot be placed at the spot a creature is already standing.  The trap will become active at the end of your next turn.  The trap is triggered when a creature moves onto the traps activation zone.  A trap has an activation of a 5 foot square centered on the trap, unless otherwise specified.  Once activated, the target that triggered the trap is affected by the trap, as well as any target within the trap's ability radius.  Once a trap is triggered, it cannot be reused.
+
+Snare trap:
+Target is Snared until a STR check of 16 is made against the trap.
+
+Exploding trap:
+Radius 10 ft
+d10*2 fire DMG
+
+Prey trap:
+Activates Prey vision on the target that triggered the trap.
+

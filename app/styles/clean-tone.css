@@ -129,22 +129,6 @@ button:hover {
 }
 /* end defaults */
 
-.stat {
-  font-size: 0; /* this effectively removes the space after .stat span's elements */
-  padding: 0;
-  cursor: pointer;
-}
-
-.stat span {
-  /*  font-size: 14px; declare instead on individual components to preserve h1, h2, div, etc. sizes */  
-  margin-right: 5px;
-}
-
-.stat:hover span,
-.stat:hover {
-  text-decoration: underline;
-}
-
 .item {
   cursor: pointer;
 }
@@ -435,6 +419,24 @@ sr-dynamic-list .delete-input {
   transform: rotate(45deg);
 }
 
+
+.stat {
+  font-size: 0; /* this effectively removes the space after .stat span's elements */
+  padding: 0;
+  cursor: pointer;
+}
+
+.stat span {
+  /*  font-size: 14px; declare instead on individual components to preserve h1, h2, div, etc. sizes */ 
+  /* see '.player-view h1 .stat span' as an example */ 
+  margin-right: 5px;
+}
+
+.stat:hover span,
+.stat:hover {
+  text-decoration: underline;
+}
+
 .player-view h1 span,
 .player-view h2 span,
 .player-view h3 span,
@@ -458,6 +460,10 @@ sr-dynamic-list .delete-input {
 
 .player-view h5 .stat span {
   font-size: 16px;
+}
+
+.player-view td .stat span {
+  font-size: 14px;
 }
 
 .player-view div .stat span {
@@ -511,6 +517,58 @@ sr-dynamic-list .delete-input {
 .player-view section div {
   margin-bottom: 5px;
 }
+
+.player-view h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding:0;
+  font-weight: 700;
+  font-family: 'Cuprum', sans-serif;
+  color: #AAA;
+  line-height: 20px;
+}
+
+.player-view .player-details .stat-arr-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 30px;
+}
+
+.player-view .player-details .stat-arr-options {
+  width: auto;
+  margin-left: 40px;
+}
+
+.player-view .stat-arr-add,
+.player-view .stat-element-remove {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.player-view .stat-element-remove {
+  font-size: 14px;
+}
+
+.player-view .stat-arr {
+  width: 290px;
+  margin-left: 0px;
+  border-left: 3px solid #ccc;
+}
+
+.player-view .stat-arr tr {
+  height: 30px;
+  line-height: 30px;
+}
+
+.player-view .stat-arr tr td:first-child {
+  padding-left: 5px;
+}
+
 
 .item-window {
   position: absolute;

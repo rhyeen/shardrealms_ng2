@@ -63,17 +63,19 @@
       "weaknesses": [],
       "resistances": [],
       "immunities": [],
+      "conditions": [],
       "STR AR": 5,
       "DEX AR": 3,
       "Spell AR": -3,
-      "languages": ["Common"],
+      "languages": [{"name": "Common"}],
       "background": null,
       "character ideals": null,
       "character flaws": null,
       "character previous accomplishments": null,
-      "weapon proficiencies": ["light melee", "melee", "two-handed melee", "one-handed ranged", "ranged"],
-      "armor proficiencies": ["cloth", "light", "medium"],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "melee"}, {"name:": "two-handed melee"}, {"name": "one-handed ranged"}, {"name": "ranged"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}],
       "spells": null,
+      "mana": 0,
       "abilities": [
         {
           "name": "Nightvision",
@@ -135,7 +137,13 @@
       "unwielded": [],
       "items on person": [],
       "items off person": [],
-      "shards": ["soul shard"],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
       "notes": [
         {
           "title": "This is a note",
@@ -143,6 +151,1100 @@
         }
       ],
       "image-links": []
+    },
+    {
+      "player name": "Austin",
+      "name": {
+        "value": "Austin's character",
+        "stackingValue": false,
+        "history": {
+          "experience": "Austin's character"
+        }
+      },
+      "class": {
+        "value": "Elementalist",
+        "stackingValue": false,
+        "history": {
+          "experience": "Elementalist"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "race": {
+        "value": "Merfolk",
+        "stackingValue": false,
+        "history": {
+          "experience": "Merfolk"
+        }
+      },
+      "size": {
+        "value": "medium",
+        "stackingValue": false,
+        "history": {
+          "experience": "medium"
+        }
+      },
+      "action points": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "eye color": {
+        "value": "Gray",
+        "stackingValue": false,
+        "history": {
+          "experience": "Gray"
+        }
+      },
+      "hair color": {
+        "value": "White",
+        "stackingValue": false,
+        "history": {
+          "experience": "White"
+        }
+      },
+      "skin color": {
+        "value": "Turquoise",
+        "stackingValue": false,
+        "history": {
+          "experience": "Turquoise"
+        }
+      },
+      "height (in)": {
+        "value": 67,
+        "stackingValue": true,
+        "history": {
+          "experience": 67
+        }
+      },
+      "weight (lbs)": {
+        "value": 130,
+        "stackingValue": true,
+        "history": {
+          "experience": 130
+        }
+      },
+      "age": {
+        "value": 30,
+        "stackingValue": true,
+        "history": {
+          "experience": 30
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": -1,
+          "stackingValue": true,
+          "history": {
+            "experience": -1
+          }
+        },
+        "DEX": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "INF": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        },
+        "WIS": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Intimidation": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Willpower": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Balance": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Stealth": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Sleight of hand": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Persuasion": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Deception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Arcana": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Nature": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Perception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Inspection": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Insight": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Lore": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Survival": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "wise choice points": 2,
+      "special skills": [null],
+      "max health": {
+        "value": 4,
+        "stackingValue": true,
+        "history": {
+          "experience": 4
+        }
+      },
+      "armor": {
+        "value": 12,
+        "stackingValue": true,
+        "history": {
+          "experience": 10,
+          "equipped": 2
+        }
+      },
+      "dodge": {
+        "value": 1,
+        "stackingValue": true,
+        "history": {
+          "experience": 1
+        }
+      },
+      "magic resist": {
+        "value": 6,
+        "stackingValue": true,
+        "history": {
+          "experience": 6
+        }
+      },
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": [null],
+      "conditions": [null],
+      "STR AR": {
+        "value": -1,
+        "stackingValue": true,
+        "history": {
+          "experience": -1
+        }
+      },
+      "STR DMG": {
+        "value": -1,
+        "stackingValue": true,
+        "history": {
+          "experience": -1
+        }
+      },
+      "DEX AR": {
+        "value": 1,
+        "stackingValue": true,
+        "history": {
+          "experience": 1
+        }
+      },
+      "DEX DMG": {
+        "value": 1,
+        "stackingValue": true,
+        "history": {
+          "experience": 1
+        }
+      },
+      "Spell AR": {
+        "value": 4,
+        "stackingValue": true,
+        "history": {
+          "experience": 4
+        }
+      },
+      "Spell DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell ST": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "languages": [{"name": "Common"}, {"name": "Aquan"}],
+      "background": "Test background",
+      "character ideals": [null],
+      "character flaws": [null],
+      "character previous accomplishments": [null],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "one-handed ranged"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}],
+      "spells": [
+        {"name": "Water tracer"},
+        {"name": "Ice bolt"},
+        {"name": "Water whip"}
+      ],
+      "mana": 5,
+      "abilities": [
+        {"name": "Magic resistant"},
+        {"name": "Natural swimmer"},
+        {"name": "Breathe water"},
+        {"name": "Water yin and air yang"},
+        {"name": "Form of feet and fin"},
+        {"name": "Attuned influence"}
+      ],
+      "gold": 0,
+      "allowed weight": {
+        "value": 100,
+        "stackingValue": true,
+        "history": {
+          "experience": 100
+        }
+      },
+      "total weight": 8,
+      "equipped": {
+        "main": {"type": "armor", "Chitin piecemeal"},
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": {"type": "weapon", "name": "Dagger"},
+              "off hand": null
+          },
+          "secondary": {
+              "dominant hand": null,
+              "off hand": null
+          }
+      },
+      "unwielded": [null],
+      "items on person": [null],
+      "items off person": [null],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
+      "notes": [null]
+    },
+    {
+      "player name": "Jake",
+      "name": {
+        "value": "Jake's character",
+        "stackingValue": false,
+        "history": {
+          "experience": "Jake's character"
+        }
+      },
+      "class": {
+        "value": "Fighter",
+        "stackingValue": false,
+        "history": {
+          "experience": "Fighter"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "race": {
+        "value": "Free Orc",
+        "stackingValue": false,
+        "history": {
+          "experience": "Free Orc"
+        }
+      },
+      "size": {
+        "value": "medium",
+        "stackingValue": false,
+        "history": {
+          "experience": "medium"
+        }
+      },
+      "action points": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "eye color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "hair color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "skin color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "height (in)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "weight (lbs)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "age": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        },
+        "DEX": {
+          "value": 3,
+          "stackingValue": true,
+          "history": {
+            "experience": 3
+          }
+        },
+        "INF": {
+          "value": -3,
+          "stackingValue": true,
+          "history": {
+            "experience": -3
+          }
+        },
+        "WIS": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 3,
+          "stackingValue": true,
+          "history": {
+            "experience": 3
+          }
+        },
+        "Intimidation": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        },
+        "Willpower": {
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        "Balance": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Stealth": {
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        "Sleight of hand": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Persuasion": {
+          "value": -2,
+          "stackingValue": true,
+          "history": {
+            "experience": -2
+          }
+        },
+        "Deception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Arcana": {
+          "value": -4,
+          "stackingValue": true,
+          "history": {
+            "experience": -4
+          }
+        },
+        "Nature": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Perception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Inspection": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Insight": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Lore": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Survival": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "wise choice points": 2,
+      "special skills": [null],
+      "max health": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "armor": {
+        "value": 12,
+        "stackingValue": true,
+        "history": {
+          "experience": 10,
+          "equipped": 2
+        }
+      },
+      "dodge": {
+        "value": 3,
+        "stackingValue": true,
+        "history": {
+          "experience": 3
+        }
+      },
+      "magic resist": {
+        "value": -3,
+        "stackingValue": true,
+        "history": {
+          "experience": -3,
+          "equipped": -2
+        }
+      },
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": [null],
+      "conditions": [null],
+      "STR AR": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "STR DMG": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "DEX AR": {
+        "value": 3,
+        "stackingValue": true,
+        "history": {
+          "experience": 3
+        }
+      },
+      "DEX DMG": {
+        "value": 3,
+        "stackingValue": true,
+        "history": {
+          "experience": 3
+        }
+      },
+      "Spell AR": {
+        "value": -3,
+        "stackingValue": true,
+        "history": {
+          "experience": -3
+        }
+      },
+      "Spell DMG": {
+        "value": -3,
+        "stackingValue": true,
+        "history": {
+          "experience": -3
+        }
+      },
+      "Spell ST": {
+        "value": -3,
+        "stackingValue": true,
+        "history": {
+          "experience": -3
+        }
+      },
+      "languages": [{"name": "Common"}, {"name": "Scron"}],
+      "background": "",
+      "character ideals": [null],
+      "character flaws": [null],
+      "character previous accomplishments": [null],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "melee"}, {"name": "two-handed melee"}, {"name": "one-handed ranged"}, {"name": "ranged"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}, {"name": "shield"}],
+      "spells": [null],
+      "mana": 0,
+      "abilities": [
+        {"name": "Dimvision"},
+        {"name": "Quick attack"},
+        {"name": "Heavy attack"},
+        {"name": "Shield adept"},
+        {"name": "Block"},
+        {"name": "Shield slam"},
+        {"name": "Attuned strength"}
+      ],
+      "gold": 0,
+      "allowed weight": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "total weight": 0,
+      "equipped": {
+        "main": {"type": "armor", "Leather"},
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": {"type": "weapon", "name": "Scimitar"},
+              "off hand": {"type": "armor", "name": "Buckler"}
+          },
+          "secondary": {
+              "dominant hand": {"type": "weapon", "name": "Spear"},
+              "off hand": null
+          }
+      },
+      "unwielded": [
+        {"type": "weapon", "name": "Javelin", "quantity": 3, "where": "back"}
+      ],
+      "items on person": [
+        {"type": "gear", "name": "Backpack", "where": "back"},
+        {"type": "gear", "name": "Bedroll", "where": "Backpack"},
+        {"type": "gear", "name": "Ration", "quantity": 2, "where": "Backpack"},
+        {"type": "gear", "name": "Flint and steel", "where": "Pouch"},
+        {"type": "gear", "name": "Pouch", "where": "waist"},
+        {"type": "gear", "name": "Waterskin", "where": "waist"},
+        {"type": "gear", "name": "Whetstone", "where": "Backpack"}
+      ],
+      "items off person": [null],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
+      "notes": [null]
+    },
+    {
+      "player name": "Ashtyn",
+      "name": {
+        "value": "",
+        "stackingValue": false,
+        "history": {
+          "experience": ""
+        }
+      },
+      "class": {
+        "value": "Artificer",
+        "stackingValue": false,
+        "history": {
+          "experience": "Artificer"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "race": {
+        "value": "Terran",
+        "stackingValue": false,
+        "history": {
+          "experience": "Terran"
+        }
+      },
+      "size": {
+        "value": "medium",
+        "stackingValue": false,
+        "history": {
+          "experience": "medium"
+        }
+      },
+      "action points": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "eye color": {
+        "value": "",
+        "stackingValue": false,
+        "history": {
+          "experience": ""
+        }
+      },
+      "hair color": {
+        "value": "",
+        "stackingValue": false,
+        "history": {
+          "experience": ""
+        }
+      },
+      "skin color": {
+        "value": "",
+        "stackingValue": false,
+        "history": {
+          "experience": ""
+        }
+      },
+      "height (in)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "weight (lbs)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "age": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "DEX": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "INF": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "WIS": {
+          "value": 3,
+          "stackingValue": true,
+          "history": {
+            "experience": 3
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Intimidation": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Willpower": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Balance": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Stealth": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Sleight of hand": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Persuasion": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Deception": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Arcana": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Nature": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Perception": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Inspection": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Insight": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Lore": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Survival": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "wise choice points": 0,
+      "special skills": [
+        {
+          "name": "Mechanic",
+          "value": 3,
+          "stackingValue": true,
+          "history": {
+            "experience": 3
+          }
+        }
+      ],
+      "max health": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "armor": {
+        "value": 12,
+        "stackingValue": true,
+        "history": {
+          "experience": 10,
+          "equipped": 2
+        }
+      },
+      "dodge": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "magic resist": {
+        "value": 3,
+        "stackingValue": true,
+        "history": {
+          "experience": 3
+        }
+      },
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": [null],
+      "conditions": [null],
+      "STR AR": {
+        "value": 1,
+        "stackingValue": true,
+        "history": {
+          "experience": 1
+        }
+      },
+      "STR DMG": {
+        "value": 1,
+        "stackingValue": true,
+        "history": {
+          "experience": 1
+        }
+      },
+      "DEX AR": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "DEX DMG": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "Spell AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell ST": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "languages": [{"name": "Common"}, {"name": "Ancient"}],
+      "background": "",
+      "character ideals": [null],
+      "character flaws": [null],
+      "character previous accomplishments": [null],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "one-handed ranged"}, {"name": "ranged"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}],
+      "spells": [null],
+      "mana": 0,
+      "abilities": [
+        {"name": "Link to Sentium drone"},
+        {"name": "Construct mecha drone"}
+      ],
+      "gold": 100,
+      "allowed weight": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "total weight": 0,
+      "equipped": {
+        "main": {"type": "armor", "name": "Leather"},
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": {"type": "weapon", "name": "Whip"},
+              "off hand": null
+          },
+          "secondary": {
+              "dominant hand": {"type": "weapon", "name": "Crossbow"},
+              "off hand": null
+          }
+      },
+      "unwielded": [
+        {"type": "weapon", "name": "Dagger"}
+      ],
+      "items on person": [
+        {"type": "gear", "name": "Quiver for bolts"},
+        {"type": "gear", "name": "Backpack"}
+      ],
+      "items off person": [null],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
+      "notes": [null]
     },
     {
       "player name": "Ryan",
@@ -396,6 +1498,7 @@
       "weaknesses": [null],
       "resistances": [null],
       "immunities": [null],
+      "conditions": [null],
       "STR AR": {
         "value": 10,
         "stackingValue": true,
@@ -403,7 +1506,21 @@
           "experience": 10
         }
       },
+      "STR DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
       "DEX AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "DEX DMG": {
         "value": 0,
         "stackingValue": true,
         "history": {
@@ -417,15 +1534,30 @@
           "experience": -5
         }
       },
-      "languages": ["Common", "Elven", "Dwarvish"],
+      "Spell DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell ST": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "languages": [{"name": "Common"}, {"name": "Elven"}, {"name": "Dwarvish"}],
       "background": "You are the vanguard of your faith. Perhaps you are a pilgrim for a good deity in an unholy land, or the secret enforcer of a sect that operates in the shadows of the world. You are accustomed to working alone and with little guidance from the superiors of your church, trusting your own moral judgment to act on behalf of your god. This certainty acts as a defense against the magic of other, \"lesser\" deities. You gain access to the Disdainful Defender faith trait.",
       "character ideals": ["Likes hugs", "The world should be made up of little puppies that have one eye and a gimpy leg.  Then everyone will love me for who I am, and not just my wheelbarrow."],
       "character flaws": [null],
       "character previous accomplishments": ["Read a book once"],
-      "weapon proficiencies": ["light melee", "melee", "two-handed melee"],
-      "armor proficiencies": ["cloth", "light", "medium"],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "melee"}, {"name:": "two-handed melee"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}],
       "spells": [null],
-      "abilities": [null],
+      "abilities": [{"name": "Dimvision"}, {"name": "Dimvision"}, {"name": "Dimvision"}],
+      "mana": 0,
       "gold": 20000,
       "allowed weight": {
         "value": 250,
@@ -453,7 +1585,13 @@
       "unwielded": [null],
       "items on person": [null],
       "items off person": [null],
-      "shards": ["soul shard"],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
       "notes": [null]
     }
   ]

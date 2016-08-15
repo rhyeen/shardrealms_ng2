@@ -374,10 +374,11 @@ export class PlayerEntriesService {
    *
    * Expect each stat to resemble:
    * "name of stat": {
+   *   "name": // if an array of stats
    *   "value": // final calculated value, will be the string: experience + bound[i].value  + " (" + conditional[x1] + ", " + conditional[x2] + ")"
    *   "stackingValue": true | false // is value a number or a string?
    *   "history": {
-   *     "experience": // value given from class/race leveling
+   *     "experience": // value given from class/race leveling. Or if stat has no value (e.g. ability/spell), either true if it comes from an ability, or false
    *     "conditional": [ // such as unequiped items or in certain circumstances
    *       {
    *         "from": { // what causes this?
@@ -385,7 +386,7 @@ export class PlayerEntriesService {
    *           "name": // unique name identifier
    *         }
    *         "condition": // explanation of required condition to be true
-   *         "value": // modifying value
+   *         "value": // modifying value, not required for stats in arrays (e.g. abilities, spells)
    *         "note": // any user provided info about it
    *       }
    *     ],
@@ -395,7 +396,7 @@ export class PlayerEntriesService {
    *           "type":
    *           "name":
    *         }
-   *         "value":
+   *         "value": // not required for stats in arrays (e.g. abilities, spells)
    *         "note":
    *       }
    *     ]
@@ -403,7 +404,7 @@ export class PlayerEntriesService {
    * }
    */
   getNewPlayer() {
-    return Promise.resolve({
+    var newPlayer = {
       "player name": null,
       "name": {
         "value": null,
@@ -706,28 +707,39 @@ export class PlayerEntriesService {
       },
       "unequipped": [null], // ngFor needs an extra, even if it is null
       "weilded": {
-          "primary": {
-              "dominant hand": null,
-              "off hand": null
-          },
-          "secondary": {
-              "dominant hand": null,
-              "off hand": null
-          }
+        "primary": {
+          "dominant hand": null,
+          "off hand": null
+        },
+        "secondary": {
+          "dominant hand": null,
+          "off hand": null
+        }
       },
       "unwielded": [null], // ngFor needs an extra, even if it is null
       "items on person": [null], // ngFor needs an extra, even if it is null
       "items off person": [null], // ngFor needs an extra, even if it is null
       "shards": ["soul shard"],
-      "notes": [null], // ngFor needs an extra, even if it is null
-      "temp": { // do not save this information, only used in view
-        "ability": {},
-        "spell": {},
-        "weapon proficiency": {},
-        "armor proficiency": {},
-        "skill points": {}
-      }
-    });
+      "notes": [null] // ngFor needs an extra, even if it is null
+    };
+
+    this.addTempProperty(newPlayer);
+
+    return Promise.resolve(newPlayer);
+  }
+
+  /**
+   * Adds typical temporary properties that the view uses universally, but only temporarily.
+   * This information should not be saved to the db
+   */
+  addTempProperty(player) {
+    player.temp = { // do not save this information, only used in view
+      "ability": {},
+      "spell": {},
+      "weapon proficiency": {},
+      "armor proficiency": {},
+      "skill points": {}
+    };
   }
 
   getExperience(level) {
@@ -924,6 +936,11 @@ export class PlayerEntriesService {
     player['attributes'][statModifier.name].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
     this.updateStatByHistory(player['attributes'][statModifier.name]);
 
+    // add back in the temp, if it's been removed because of a save
+    if (!player.temp) {
+      this.addTempProperty(player);
+    }
+
     if (isAdd && !player.temp['skill points'][statModifier.name]) {
       skillList = this.getPlayerSkillList(statModifier.name);
       player.temp['skill points'][statModifier.name] = [
@@ -1020,7 +1037,7 @@ export class PlayerEntriesService {
    * }
    */
   modifyPlayerStats(statModifier, isAdd) {
-    var player, coreSkills, i, isNewSkill;
+    var player, coreSkills;
     if (!statModifier || !statModifier.type || (!statModifier.name && statModifier.type !== 'action points')) {
       console.error("PlayerEntriesService.modifyPlayerStats: invalid param");
       return;
@@ -1092,7 +1109,7 @@ export class PlayerEntriesService {
     // add to/remove from mapping, as needed
     this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
 
-    // remove the special no special condition where it's [null]
+    // remove the special no element condition where it's [null]
     if (isAdd && stat.length === 1 && stat[0] === null) {
       stat.splice(0, 1);
     }
@@ -1100,15 +1117,23 @@ export class PlayerEntriesService {
       // check if already in array
       for (i = 0; i < stat.length; i++) {
         if (stat[i].name === statModifier.name) {
+          // remove from array
           if (!isAdd) {
             stat.splice(i, 1);
           }
+          // if adding, it's already been added, so we're done
           return;
         }
       }
     }
     if (isAdd) {
-      stat.push({ "name": statModifier.name });
+      stat.push({ 
+        "name": statModifier.name,
+        "stackingValue": false,
+        "history": {
+          "experience": true
+        }
+      });
     }
     else {
       console.error("PlayerEntriesService.addAbilitySpell: should not be able to remove an item not in the array");
@@ -1132,14 +1157,14 @@ export class PlayerEntriesService {
     // add to/remove from mapping, as needed
     this.modifyPlayerStatsMapping(type, statModifier.name, isAdd);
 
-    // remove the special no special condition where it's [null]
+    // remove the special no element condition where it's [null]
     if (isAdd && stat.length === 1 && stat[0] === null) {
       stat.splice(0, 1);
     }
     else {
       // check if already in array
       for (i = 0; i < stat.length; i++) {
-        if (stat[i] === statModifier.name) {
+        if (stat[i].name === statModifier.name) {
           if (!isAdd) {
             stat.splice(i, 1);
           }
@@ -1148,7 +1173,13 @@ export class PlayerEntriesService {
       }
     }
     if (isAdd) {
-      stat.push(statModifier.name);
+      stat.push({
+        "name": statModifier.name,
+        "stackingValue": false,
+        "history": {
+          "experience": true
+        }
+      });
     }
     else {
       console.error("PlayerEntriesService.addProficiency: should not be able to remove an item not in the array");
@@ -1156,38 +1187,44 @@ export class PlayerEntriesService {
   }
 
   modifySpecialSkill(statModifier, isAdd) {
-    var player, coreSkills, i, isNewSkill;
+    var stat, coreSkills, i;
     if (!statModifier || !statModifier.type || !statModifier.name || statModifier.type !== 'skill') {
       console.error("PlayerEntriesService.modifySpecialSkill: invalid param");
       return;
     }
-    player = this.players.selectedPlayer;
-    isNewSkill = true;
+    stat = this.players.selectedPlayer['special skills'];
 
-    // remove the special no special skills condition where it's [null]
-    if (isAdd && player['special skills'].length === 1 && player['special skills'][0] === null) {
-      player['special skills'].splice(0, 1);
+    // remove the special no element skills condition where it's [null]
+    if (isAdd && stat.length === 1 && stat[0] === null) {
+      stat.splice(0, 1);
     }
     else {
-      for (i = 0; i < player['special skills'].length; i++) {
-        if (player['special skills'][i].name === statModifier.name) {
-          player['special skills'][i].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
-          this.updateStatByHistory(player['special skills'][i]);
-          isNewSkill = false;
-          break;
+      for (i = 0; i < stat.length; i++) {
+        if (stat[i].name === statModifier.name) {
+          stat[i].history.experience += isAdd ? statModifier.value : -1 * statModifier.value;
+          this.updateStatByHistory(stat[i]);
+          //// NOTE: not that simple.  What if the effects sum to 0, for example: your lvl gives you +1, but a cursed item gives you -1
+          // remove it from the array if it's total value is 0
+          // if (stat[i].value <= 0 && (!stat[i].conditional || !stat[i].conditional.length)) {
+          //  stat.splice(i, 1);
+          // }
+          // The correct way to handle it would be to check if there is no stat[i].bound or stat[i].conditional and stat[i].value === 0 
+          if ((!stat[i].bound || !stat[i].bound.length) && (!stat[i].conditional || !stat[i].conditional.length) && !stat[i].value) {
+            stat.splice(i, 1);
+          }
+          return;
         }
       }
     }
-    if (isNewSkill) {
-      player['special skills'].push({
-        "name": statModifier.name,
-        "value": isAdd ? statModifier.value : -1 * statModifier.value,
-        "stackingValue": true,
-        "history": {
-          "experience": isAdd ? statModifier.value : -1 * statModifier.value
-        }
-      });
-    }
+    // if we reach this point, we assume it's a new skill being added to the list
+    stat.push({
+      "name": statModifier.name,
+      "value": isAdd ? statModifier.value : -1 * statModifier.value,
+      "stackingValue": true,
+      "history": {
+        "experience": isAdd ? statModifier.value : -1 * statModifier.value
+      }
+    });
   }
 
   getNewPlayerConfig() {
