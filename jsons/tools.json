@@ -227,7 +227,7 @@
       "required skills": ["Perform"],
       "properties": "Can be played as a musical instrument",
       "description": "A wind pipe carved with holes along the shaft that is blown into.",
-      "image-links": ["/images/items/war_drum.jpg"]
+      "image-links": ["/images/items/flute.jpg"]
     },
     {
       "name": "Lute",

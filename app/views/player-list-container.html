@@ -4,7 +4,7 @@
       <button (click)="createNewPlayer()">New Player</button>
     </section>
     <h1>Players</h1>
-    <div *ngFor="#singlePlayer of playerList" (click)="selectPlayer(singlePlayer.id)">
+    <div *ngFor="let singlePlayer of playerList" (click)="selectPlayer(singlePlayer.id)">
     	<a>{{singlePlayer.name.value}}</a>
     </div>
   </section>

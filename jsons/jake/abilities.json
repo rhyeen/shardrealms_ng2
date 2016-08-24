@@ -1,0 +1,75 @@
+{
+  "class": "ability",
+  "possibles": {
+    "name": null,
+    "type of ability": [
+      "action", "reaction", "passive"
+    ],
+    "target": [
+      "aoe", "self", "target", "touch"
+    ],
+    "number of targets": 0,
+    "range (ft)": 0,
+    "radius (ft)": 0,
+    "radius type": [
+      "beam", "cone", "cylinder", "sphere"
+    ],
+    "duration type": [
+      "instant", "turns", "encounter", "minutes", "hours", "days", "years"
+    ],
+    "duration time": 0,
+    "damage": "d0",
+    "damage type": [
+      "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+    ],
+    "action points": 0,
+    "saving throw": null,
+    "feat": false,
+    "recharge": [
+      "day", "shard", "encounter"
+    ],
+    "requires": [],
+    "replaces": [],
+    "properties": null,
+    "description": null
+  },
+  "entries": [
+    {
+      "name": "Dimvision",
+      "type of ability": "passive",
+      "target": "self",
+      "radius type": "sphere",
+      "properties": "See into dim light as if it were day."
+    },
+    {
+      "name": "Quick attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 2,
+      "properties": "Attack at a target with a melee weapon. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Heavy attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Attack at a target with a melee weapon. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Shield adept",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+1 to dodge given by <span class=\"item\"><span>ability</span>Block</span>."
+    },
+    {
+      "name": "Attuned strength",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when STR >= 5<br>The melee attack DMG modifier due to STR does not exceed 5, excluding a <span class=\"item\"><span>ability</span>Heavy attack</span>. <span class=\"item\"><span>ability</span>Heavy attack</span> only consumes 4 action points."
+    }
+  ]
+}

@@ -619,7 +619,7 @@
     },
     {
       "name": "Crossbow",
-      "weight (lbs)": 3,
+      "weight (lbs)": 8,
       "value (gold)": 30,
       "rarity": "common",
       "type of weapon": "ranged",

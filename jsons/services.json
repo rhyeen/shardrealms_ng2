@@ -188,14 +188,21 @@
       "value (gold)": "1/2 price of original item",
       "rarity": "common",
       "components": null,
-      "properties": "Creates a crude weapon: -2 DMG. Cannot make an already forged weapon crude."
+      "properties": "Creates a crude weapon: -2 DMG."
     },
     {
       "name": "Make crude ammunition",
       "value (gold)": "0",
       "rarity": "common",
       "components": null,
-      "properties": "Creates a single crude ammunition that adds -2 DMG when fired. Cannot make already created ammunition crude."
+      "properties": "Creates a single crude ammunition that adds -2 DMG when fired."
+    },
+    {
+      "name": "Make crude armor",
+      "value (gold)": "300 + 5x price of original item",
+      "rarity": "uncommon",
+      "components": null,
+      "properties": "Creates a superior armor: -1 armor modifier, -1 magic resist modifier."
     },
     {
       "name": "Make true strike weapon",

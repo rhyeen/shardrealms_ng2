@@ -30,7 +30,7 @@
       "rarity": "common",
       "properties": "+3 to a quality of sleep check.<br>+2 to a cold resist check.",
       "description": "A wool blanket wrapped and tied with leather straps.",
-      "image-links": ["/images/items/bedroll.png"]
+      "image-links": ["/images/items/bedroll.jpg"]
     },
     {
       "name": "Quality bedroll",
@@ -39,7 +39,7 @@
       "rarity": "common",
       "properties": "+10 to a quality of sleep check.<br>+8 to a cold resist check.",
       "description": "A hide sleeping bag and stuffed fur pillow wrapped and tied in a leather bag.",
-      "image-links": ["/images/items/quality_bedroll.png"]
+      "image-links": ["/images/items/quality_bedroll.jpg"]
     },
     {
       "name": "Blanket",
@@ -48,7 +48,7 @@
       "rarity": "common",
       "properties": "+2 to a quality of sleep check.<br>+2 to a cold resist check.",
       "description": "A wool blanket.",
-      "image-links": ["/images/items/blanket.png"]
+      "image-links": ["/images/items/blanket.jpg"]
     },
     {
       "name": "Quality blanket",

@@ -1,13 +1,13 @@
 <section class="level-modifier" *ngIf="dependentModifiers">
-  <section *ngFor="#levelGroup of dependentModifiers">
+  <section *ngFor="let levelGroup of dependentModifiers">
     <h4 *ngIf="!levelGroup.isSkillPoints">Level {{levelGroup.level}}</h4>
     <section class="passive-list-section" *ngIf="levelGroup['passive list']">
       <h5>Passively gained</h5>
-      <sr-level-modifier-item *ngFor="#item of levelGroup['passive list']" [item]="item" [player]="player"></sr-level-modifier-item> 
+      <sr-level-modifier-item *ngFor="let item of levelGroup['passive list']" [item]="item" [player]="player"></sr-level-modifier-item> 
     </section>
-    <section *ngFor="#pickList of levelGroup['pick lists']; trackBy:trackByIndex">
+    <section *ngFor="let pickList of levelGroup['pick lists']; trackBy:trackByIndex">
       <h5>Picked <span class="level-modifier-pick-available">{{pickList.chosen}}/{{pickList.allowed}}</span></h5>
-      <sr-level-modifier-item *ngFor="#item of pickList['list']" [item]="item" [pickList]="pickList" [player]="player"></sr-level-modifier-item>
+      <sr-level-modifier-item *ngFor="let item of pickList['list']" [item]="item" [pickList]="pickList" [player]="player"></sr-level-modifier-item>
     </section>
     <!-- wisdom points? A: probably on another screen once leveling is complete since they can be managed at any time -->
   </section>

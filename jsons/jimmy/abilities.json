@@ -35,6 +35,26 @@
   },
   "entries": [
     {
+      "name": "Attuned wisdom",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when WIS >= 5<br>Add 3 skill points among any skills."
+    },
+    {
+      "name": "Half run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 20 feet on level ground and 10 feet on difficult terrain."
+    },
+    {
+      "name": "Dimvision",
+      "type of ability": "passive",
+      "target": "self",
+      "radius type": "sphere",
+      "properties": "See into dim light as if it were day."
+    },
+    {
       "name": "Song of the weave",
       "type of ability": "action",
       "target": "self",
@@ -64,6 +84,16 @@
       "action points": 0,
       "requires": ["Song of the weave"],
       "properties": "Can only be activated during the last beat of the measure.  If activated, the next measure will be the last measure of the song, and the song will end properly."
+    },
+    {
+      "name": "Capriccio",
+      "type of ability": "passive",
+      "type": "Motif",
+      "target": "self",
+      "radius (ft)": 80,
+      "radius type": "sphere",
+      "requires": ["Song of the weave"],
+      "properties": "A quick, improvisational, spirited composition.<br>All allies within the song's range gain <span class=\"item\"><span>ability</span>Extra move</span>. Any ally that already has <span class=\"item\"><span>ability</span>Extra move</span> gains <span class=\"item\"><span>ability</span>Extra move II</span> instead.  All allies also gain +2 to <span class=\"item\"><span>skill</span>Athletic</span> checks."
     },
     {
       "name": "Accompaniment",
@@ -110,26 +140,6 @@
       "damage type": "healing",
       "requires": ["Song of the weave"],
       "properties": "+3 healing if the 3rd beat in the measure."
-    },
-    {
-      "name": "Attuned wisdom",
-      "type of ability": "passive",
-      "target": "self",
-      "properties": "Automatically gained when WIS >= 5<br>Add 3 skill points among any skills."
-    },
-    {
-      "name": "Half run",
-      "type of ability": "action",
-      "target": "self",
-      "action points": 3,
-      "properties": "May move 20 feet on level ground and 10 feet on difficult terrain."
-    },
-    {
-      "name": "Dimvision",
-      "type of ability": "passive",
-      "target": "self",
-      "radius type": "sphere",
-      "properties": "See into dim light as if it were day."
     }
   ]
 }

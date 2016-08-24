@@ -5,160 +5,12 @@
   },
   "entries": [
     {
-      "name": {
-        "value": "Test fighter",
-        "stackingValue": false,
-        "history": {
-          "experience": "Test player 2"
-        }
-      },
-      "player name": "Ryan",
-      "class": "Fighter",
-      "level": 1,
-      "level up from": 1,
-      "experience": 0,
-      "race": "Terran",
-      "size": "medium",
-      "action points": 5,
-      "eye color": "blue",
-      "hair color": "blonde",
-      "skin color": "tan",
-      "height (in)": 69,
-      "weight (lbs)": 150,
-      "age": 25,
-      "attributes": {
-        "STR": 5,
-        "DEX": 3,
-        "INF": 0,
-        "WIS": 1
-      },
-      "core skills": {
-        "Athletics": 4,
-        "Intimidation": 4,
-        "Willpower": 2,
-        "Balance": 3,
-        "Stealth": 2,
-        "Sleight of hand": 1,
-        "Persuasion": 0,
-        "Deception": 0,
-        "Arcana": 0,
-        "Nature": 0,
-        "Perception": -1,
-        "Inspection": 0,
-        "Insight": 0,
-        "Lore": 0,
-        "Survival": 0
-      },
-      "wise choice points": 2,
-      "special skills": [
-        {
-          "name": "Smithing",
-          "value": 2
-        }
-      ],
-      "max health": 10,
-      "armor": 13,
-      "dodge": 1,
-      "magic resist": 1,
-      "weaknesses": [],
-      "resistances": [],
-      "immunities": [],
-      "conditions": [],
-      "STR AR": 5,
-      "DEX AR": 3,
-      "Spell AR": -3,
-      "languages": [{"name": "Common"}],
-      "background": null,
-      "character ideals": null,
-      "character flaws": null,
-      "character previous accomplishments": null,
-      "weapon proficiencies": [{"name": "light melee"}, {"name": "melee"}, {"name:": "two-handed melee"}, {"name": "one-handed ranged"}, {"name": "ranged"}],
-      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}],
-      "spells": null,
-      "mana": 0,
-      "abilities": [
-        {
-          "name": "Nightvision",
-          "note": "It instead has a 200 ft radius"
-        }
-      ],
-      "gold": 110,
-      "allowed weight": 200,
-      "total weight": 123,
-      "equipped": {
-        "main": "Leather",
-        "other": [
-          "Half helm"
-        ]
-      },
-      "unequipped": [],
-      "weilded": {
-        "primary": {
-          "dominant hand": {
-            "name": "Longsword",
-            "Melee attack": {
-              "damage": "10",
-              "damage type": ["piercing", "slashing"],
-              "action points": 3
-            },
-            "Heavy attack": {
-              "damage": "13",
-              "damage type": ["slashing"],
-              "action points": 5
-            },
-            "Reach attack": {
-              "damage": "8",
-              "damage type": ["piercing"],
-              "action points": 3
-            }
-          },
-          "off hand": {
-            "name": "Buckler",
-            "other": "+1 dodge to Block"
-          }
-        },
-        "secondary": {
-          "dominant hand": {
-            "name": "Longbow",
-            "Fire": {
-              "damage": "9",
-              "damage type": ["piercing"],
-              "range": 120,
-              "properties": "Can fire within 30 ft or to 240 ft with -5 to AR.",
-              "action points": 3
-            },
-            "Reload": {
-              "action points": 2
-            }
-          },
-          "off hand": null
-        }
-      },
-      "unwielded": [],
-      "items on person": [],
-      "items off person": [],
-      "shards": {
-        "Soul shard": 1,
-        "Greater soul shard": 0,
-        "Superior soul shard": 0,
-        "Flawless soul shard": 0,
-        "Radient soul shard": 0
-      },
-      "notes": [
-        {
-          "title": "This is a note",
-          "text": "test."
-        }
-      ],
-      "image-links": []
-    },
-    {
       "player name": "Austin",
       "name": {
-        "value": "Austin's character",
+        "value": "Avaris",
         "stackingValue": false,
         "history": {
-          "experience": "Austin's character"
+          "experience": "Avaris"
         }
       },
       "class": {
@@ -374,10 +226,10 @@
       "wise choice points": 2,
       "special skills": [null],
       "max health": {
-        "value": 4,
+        "value": 10,
         "stackingValue": true,
         "history": {
-          "experience": 4
+          "experience": 10
         }
       },
       "armor": {
@@ -486,7 +338,7 @@
       },
       "total weight": 8,
       "equipped": {
-        "main": {"type": "armor", "Chitin piecemeal"},
+        "main": {"type": "armor", "name": "Chitin piecemeal"},
         "other": [null]
       },
       "unequipped": [null],
@@ -515,10 +367,10 @@
     {
       "player name": "Jake",
       "name": {
-        "value": "Jake's character",
+        "value": "Grok Burning Skull",
         "stackingValue": false,
         "history": {
-          "experience": "Jake's character"
+          "experience": "Grok Burning Skull"
         }
       },
       "class": {
@@ -734,10 +586,10 @@
       "wise choice points": 2,
       "special skills": [null],
       "max health": {
-        "value": 5,
+        "value": 15,
         "stackingValue": true,
         "history": {
-          "experience": 5
+          "experience": 15
         }
       },
       "armor": {
@@ -844,7 +696,7 @@
       },
       "total weight": 0,
       "equipped": {
-        "main": {"type": "armor", "Leather"},
+        "main": {"type": "armor", "name": "Leather"},
         "other": [null]
       },
       "unequipped": [null],
@@ -881,12 +733,420 @@
       "notes": [null]
     },
     {
-      "player name": "Ashtyn",
+      "player name": "Jimmy",
       "name": {
-        "value": "",
+        "value": "Bose Rockenroll",
         "stackingValue": false,
         "history": {
-          "experience": ""
+          "experience": "Bose Rockenroll"
+        }
+      },
+      "class": {
+        "value": "Bard",
+        "stackingValue": false,
+        "history": {
+          "experience": "Bard"
+        }
+      },
+      "level": 1,
+      "level up from": 0,
+      "experience": 0,
+      "race": {
+        "value": "Mountain Dwarf",
+        "stackingValue": false,
+        "history": {
+          "experience": "Mountain Dwarf"
+        }
+      },
+      "size": {
+        "value": "medium",
+        "stackingValue": false,
+        "history": {
+          "experience": "medium"
+        }
+      },
+      "action points": {
+        "value": 5,
+        "stackingValue": true,
+        "history": {
+          "experience": 5
+        }
+      },
+      "eye color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "hair color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "skin color": {
+        "value": "UNKNOWN",
+        "stackingValue": false,
+        "history": {
+          "experience": "UNKNOWN"
+        }
+      },
+      "height (in)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "weight (lbs)": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "age": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "attributes": {
+        "STR": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "DEX": {
+          "value": -2,
+          "stackingValue": true,
+          "history": {
+            "experience": -2
+          }
+        },
+        "INF": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "WIS": {
+          "value": 5,
+          "stackingValue": true,
+          "history": {
+            "experience": 5
+          }
+        }
+      },
+      "core skills": {
+        "Athletics": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Intimidation": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Willpower": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Balance": {
+          "value": -2,
+          "stackingValue": true,
+          "history": {
+            "experience": -2
+          }
+        },
+        "Stealth": {
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        "Sleight of hand": {
+          "value": -2,
+          "stackingValue": true,
+          "history": {
+            "experience": -2
+          }
+        },
+        "Persuasion": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Deception": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Arcana": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Nature": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Perception": {
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        "Inspection": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        },
+        "Insight": {
+          "value": 2,
+          "stackingValue": true,
+          "history": {
+            "experience": 2
+          }
+        },
+        "Lore": {
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        "Survival": {
+          "value": 0,
+          "stackingValue": true,
+          "history": {
+            "experience": 0
+          }
+        }
+      },
+      "wise choice points": 10,
+      "special skills": [
+        {
+          "name": "Appraise",
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        },
+        {
+          "name": "Identify",
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        {
+          "name": "Perform",
+          "value": 4,
+          "stackingValue": true,
+          "history": {
+            "experience": 4
+          }
+        },
+        {
+          "name": "Alchemy",
+          "value": 1,
+          "stackingValue": true,
+          "history": {
+            "experience": 1
+          }
+        }
+      ],
+      "max health": {
+        "value": 12,
+        "stackingValue": true,
+        "history": {
+          "experience": 12
+        }
+      },
+      "armor": {
+        "value": 13,
+        "stackingValue": true,
+        "history": {
+          "experience": 10,
+          "equipped": 3
+        }
+      },
+      "dodge": {
+        "value": -5,
+        "stackingValue": true,
+        "history": {
+          "experience": -2,
+          "equipped": -3
+        }
+      },
+      "magic resist": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "weaknesses": [null],
+      "resistances": ["Cold resist"],
+      "immunities": [null],
+      "conditions": [null],
+      "STR AR": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "STR DMG": {
+        "value": 2,
+        "stackingValue": true,
+        "history": {
+          "experience": 2
+        }
+      },
+      "DEX AR": {
+        "value": -2,
+        "stackingValue": true,
+        "history": {
+          "experience": -2
+        }
+      },
+      "DEX DMG": {
+        "value": -2,
+        "stackingValue": true,
+        "history": {
+          "experience": -2
+        }
+      },
+      "Spell AR": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell DMG": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "Spell ST": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "languages": [{"name": "Common"}, {"name": "Dwarven"}],
+      "background": "",
+      "character ideals": [null],
+      "character flaws": [null],
+      "character previous accomplishments": [null],
+      "weapon proficiencies": [{"name": "light melee"}, {"name": "melee"}, {"name": "one-handed ranged"}, {"name": "ranged"}],
+      "armor proficiencies": [{"name": "cloth"}, {"name": "light"}, {"name": "medium"}],
+      "spells": [null],
+      "mana": 4,
+      "abilities": [
+        {"name": "Dimvision"},
+        {"name": "Half run"},
+        {"name": "Attuned wisdom"},
+        {"name": "Song of the weave"},
+        {"name": "Time signature"},
+        {"name": "Temperament"},
+        {"name": "Outro"},
+        {"name": "Soundwave"},
+        {"name": "Healing words"},
+        {"name": "Grazioso"},
+        {"name": "Accompaniment"}
+      ],
+      "gold": 2,
+      "allowed weight": {
+        "value": 0,
+        "stackingValue": true,
+        "history": {
+          "experience": 0
+        }
+      },
+      "total weight": 0,
+      "equipped": {
+        "main": {"type": "armor", "name": "Hide"},
+        "other": [null]
+      },
+      "unequipped": [null],
+      "weilded": {
+          "primary": {
+              "dominant hand": {"type": "tool", "name": "Lute"},
+              "off hand": null
+          },
+          "secondary": {
+              "dominant hand": {"type": "weapon", "name": "Handaxe"},
+              "off hand": null
+          }
+      },
+      "unwielded": [
+        {"type": "weapon", "name": "Crossbow", "where": "back"}
+      ],
+      "items on person": [
+        {"type": "gear", "name": "Backpack", "where": "back"},
+        {"type": "gear", "name": "Bedroll", "where": "Backpack"},
+        {"type": "gear", "name": "Ration", "quantity": 3, "where": "Backpack"},
+        {"type": "gear", "name": "Bolt", "where": "Quiver for bolts"},
+        {"type": "gear", "name": "Quiver for bolts", "where": "back"},
+        {"type": "gear", "name": "Pouch", "where": "waist"},
+        {"type": "gear", "name": "Component pouch", "where": "waist"},
+        {"type": "gear", "name": "Cooking pot", "where": "Backpack"},
+        {"type": "gear", "name": "Mess kit", "where": "Backpack"},
+        {"type": "gear", "name": "Waterskin", "where": "waist"}
+      ],
+      "items off person": [null],
+      "shards": {
+        "Soul shard": 1,
+        "Greater soul shard": 0,
+        "Superior soul shard": 0,
+        "Flawless soul shard": 0,
+        "Radient soul shard": 0
+      },
+      "notes": [null]
+    },
+    {
+      "player name": "Ashtyn",
+      "name": {
+        "value": "Ashtyn's character",
+        "stackingValue": false,
+        "history": {
+          "experience": "Ashtyn's character"
         }
       },
       "class": {
@@ -1111,10 +1371,10 @@
         }
       ],
       "max health": {
-        "value": 5,
+        "value": 12,
         "stackingValue": true,
         "history": {
-          "experience": 5
+          "experience": 12
         }
       },
       "armor": {

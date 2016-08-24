@@ -1,4 +1,4 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {TableContainerComponent} from './table-container.component';
 import {GlobalService} from '../services/global.service';
 import {PlayerEntriesService} from '../services/player-entries.service';

@@ -702,5 +702,45 @@ sr-dynamic-list .delete-input {
   margin: 0 10px;
 }
 
+.table-entry {
+  margin-bottom: 20px;
+}
 
+@media print {
+  button {
+    display: none;
+  }
+
+  .selected-table h1 {
+    display: none;
+  }
+
+  .table-entry table {
+    width: 250px;
+  }
+
+  .table-entry table td {
+    line-height: 18px !important;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .table-entry table tr {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .table-entry h4 {
+    font-size: 14px;
+  }
+
+  .table-entry .row-value ul {
+    padding: 0px;
+    margin: 0px;
+    line-height: 14px;
+  }
+
+  .table-entry:nth-child(6) {
+    
+  }
+}
 

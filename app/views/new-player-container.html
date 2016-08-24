@@ -11,13 +11,13 @@
     <label>
       <span>Race</span>
       <select [ngModel]="players.selectedPlayer['race'].history.experience" (ngModelChange)="playerRaceChange($event)">
-        <option *ngFor="#race of newPlayerConfig.races" [value]="race.name">{{race.name}}</option>
+        <option *ngFor="let race of newPlayerConfig.races" [value]="race.name">{{race.name}}</option>
       </select>
     </label>
     <label>
       <span>Class</span>
       <select [ngModel]="players.selectedPlayer['class'].history.experience" (ngModelChange)="playerClassChange($event)">
-        <option *ngFor="#class of newPlayerConfig.classes" [value]="class.name">{{class.name}}</option>
+        <option *ngFor="let class of newPlayerConfig.classes" [value]="class.name">{{class.name}}</option>
       </select>
     </label>
     <label>
@@ -33,7 +33,7 @@
     <label>
       <span>Size</span>
       <select [(ngModel)]="players.selectedPlayer['size'].history.experience" (blur)="playerSizeBlur()">
-        <option *ngFor="#size of newPlayerConfig.sizes" [value]="size">{{size}}</option>
+        <option *ngFor="let size of newPlayerConfig.sizes" [value]="size">{{size}}</option>
       </select>
     </label>
     <!-- using players.selectedPlayer['size'] since players.selectedPlayer['race'] does not seem to update the [disabled].  Size always changes when race changes. -->

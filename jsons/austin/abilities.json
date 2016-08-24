@@ -1,0 +1,74 @@
+{
+  "class": "ability",
+  "possibles": {
+    "name": null,
+    "type of ability": [
+      "action", "reaction", "passive"
+    ],
+    "target": [
+      "aoe", "self", "target", "touch"
+    ],
+    "number of targets": 0,
+    "range (ft)": 0,
+    "radius (ft)": 0,
+    "radius type": [
+      "beam", "cone", "cylinder", "sphere"
+    ],
+    "duration type": [
+      "instant", "turns", "encounter", "minutes", "hours", "days", "years"
+    ],
+    "duration time": 0,
+    "damage": "d0",
+    "damage type": [
+      "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+    ],
+    "action points": 0,
+    "saving throw": null,
+    "feat": false,
+    "recharge": [
+      "day", "shard", "encounter"
+    ],
+    "requires": [],
+    "replaces": [],
+    "properties": null,
+    "description": null
+  },
+  "entries": [
+    {
+      "name": "Magic resistant",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 magic resist."
+    },
+    {
+      "name": "Natural swimmer",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Submerged condition does not apply."
+    },
+    {
+      "name": "Breathe water",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Breathes underwater as if it were open air."
+    },
+    {
+      "name": "Water yin and air yang",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Must be submerged in water (entire body, excluding head) for at least 8 hours a week or you will permanently transform into a <span class=\"item\"><span>race</span>Terran</span>.<br>Must be entirely out of water for at least 8 hours a week or you will permanently transform into a <span class=\"item\"><span>race</span>Tatsu</span>.<br>In either case, all racial bonuses are replaced with the permanent race's."
+    },
+    {
+      "name": "Form of feet and fin",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "After one turn of being submerged in water, legs are replaced by a tail-like fin.<br>After one turn of being entirely out of water, the tail-like fin is replaced with legs.<br>During either of these transformations, you are considered prone and unable to move.<br>Transformation does not occur if you are wearing any leg-wear or feet-wear."
+    },
+    {
+      "name": "Attuned influence",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when INF >= 5<br>Spells that cost >= 5 mana cost 1 less mana.<br>Spell ST +2"
+    }
+  ]
+}

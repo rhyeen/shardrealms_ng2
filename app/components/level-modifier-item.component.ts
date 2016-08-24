@@ -1,4 +1,4 @@
-import {Component, OnInit} from 'angular2/core';
+import {Component, OnInit} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {TableEntriesService} from '../services/table-entries.service';
 

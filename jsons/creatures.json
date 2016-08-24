@@ -1084,6 +1084,150 @@
       "image-links": ["/images/creatures/giant_wasp.jpg"]
     },
     {
+      "name": "Gnoll, Common",
+      "size": {
+        "value": "medium",
+        "description": "5 to 6 ft tall, weighing 110 lbs."
+      },
+      "level": 0,
+      "hit points": 8,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": -1,
+        "DEX": 2,
+        "INF": -1,
+        "WIS": 1
+      },
+      "action points": 4,
+      "possible weapons": ["Crude Dagger", "Crude Handaxe", "Crude Spear", "Sling", "Club", "Crude Quarterstaff"],
+      "possible armor": ["Crude Hide", "Crude Leather", "Crude Heavy clothes"],
+      "possible items": ["Bullet", "Clothes (rags)", "Obsidian", "Gold bracelet", "Locket", "Gold ring", "Silver necklace"],
+      "abilities": ["Nightvision", "Extra move", "Fast run", {"name": "Bite", "damage": 2}, {"name": "Claw", "damage": 0}],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 3
+        },
+        {
+          "name": "Stealth",
+          "value": 2
+        },
+        {
+          "name": "Perception",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 1
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "plains", "forests", "mountains", "underground", "dungeons"],
+      "languages": "Gnollish",
+      "combat": "[NATURE 14] The Gnoll hunt in packs, and will raid travelers on the road.<br>[LORE 15] Gnolls usually don't attack travelers for kill, but rather to take from them.  A hungry enough Gnoll pack though may kill to eat the most unfortunate traveler, or a Gnoll pack may kill travelers that defend their goods.<br>[NATURE 15] Gnolls will use the cover of darkness, rocks, trees, or thick bush to attack from unseen angles and catch their victims off-guard.",
+      "background": "[NATURE 16] The Common Gnoll does not willfully attack and relies on the Gnoll Footpads or Thrasher to handle combat.  Common Gnolls build the dens, scavenge for herbal supplements, care for the young, and clean the nests.<br>[LORE 18] Gnolls are said to be hyenas and dogs taken by the demons back into the demon plane. There they evolved into the Gnoll: wild, resilient, and intelligent.",
+      "value (gold)": 8,
+      "image-links": ["/images/creatures/gnoll_common.jpg"]
+    },
+    {
+      "name": "Gnoll Footpad",
+      "size": {
+        "value": "medium",
+        "description": "5 to 6 ft tall, weighing 130 lbs."
+      },
+      "level": 0,
+      "hit points": 12,
+      "raw armor": 12,
+      "raw dodge": 2,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 0,
+        "DEX": 3,
+        "INF": -1,
+        "WIS": 2
+      },
+      "action points": 5,
+      "possible weapons": ["Crude Dagger", "Crude Handaxe", "Crude Spear", "Sling", "Club", "Crude Quarterstaff", "Crude Shortsword", "Crude Flail"],
+      "possible armor": ["Crude Hide", "Crude Leather", "Crude Heavy clothes", "Crude Studded leather", "Crude Breastplate"],
+      "possible items": ["Clothes (rags)"],
+      "abilities": ["Nightvision", "Pack tactics", "Extra move", "Fast run", {"name": "Bite", "damage": 3}, {"name": "Claw", "damage": 2}, "Moving dodge", "Quick attack", "Reactive movement"],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 5
+        },
+        {
+          "name": "Stealth",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "plains", "forests", "mountains", "underground", "dungeons"],
+      "languages": "Gnollish",
+      "combat": "[NATURE 14] The Gnoll hunt in packs, and will raid travelers on the road.<br>[LORE 15] Gnolls usually don't attack travelers for kill, but rather to take from them.  A hungry enough Gnoll pack though may kill to eat the most unfortunate traveler, or a Gnoll pack may kill travelers that defend their goods.<br>[NATURE 15] Gnolls will use the cover of darkness, rocks, trees, or thick bush to attack from unseen angles and catch their victims off-guard.",
+      "background": "[NATURE 16] The Gnoll Footpad is the primary line of warriors in a Gnoll pack.  They are cunning and sneaky, waiting to ambush unsuspecting victims.<br>[LORE 18] Gnolls are said to be hyenas and dogs taken by the demons back into the demon plane. There they evolved into the Gnoll: wild, resilient, and intelligent.",
+      "value (gold)": 10,
+      "image-links": ["/images/creatures/gnoll_footpad.jpg", "/images/creatures/gnoll_footpad2.jpg"]
+    },
+    {
+      "name": "Gnoll Thrasher",
+      "size": {
+        "value": "medium",
+        "description": "5 to 6 ft tall, weighing 150 lbs."
+      },
+      "level": 0,
+      "hit points": 15,
+      "raw armor": 13,
+      "raw dodge": 0,
+      "raw magic resist": 10,
+      "attributes": {
+        "STR": 2,
+        "DEX": 3,
+        "INF": -1,
+        "WIS": 1
+      },
+      "action points": 5,
+      "possible weapons": ["Crude Dagger", "Crude Handaxe", "Club", "Heavy club", "Crude Shortsword", "Crude Longsword", "Crude Battleaxe", "Crude Flail"],
+      "possible armor": ["Crude Hide", "Crude Leather", "Crude Heavy clothes", "Crude Studded leather", "Crude Breastplate"],
+      "possible items": ["Clothes (rags)"],
+      "abilities": ["Nightvision", "Pack tactics", "Extra move", "Fast run", {"name": "Bite", "damage": 1}, {"name": "Claw", "damage": 2}, "Rage", "Raging fury", "Raging guard", "Heavy attack"],
+      "skills": [
+        {
+          "name": "Balance",
+          "value": 2
+        },
+        {
+          "name": "Stealth",
+          "value": 1
+        },
+        {
+          "name": "Perception",
+          "value": 2
+        },
+        {
+          "name": "Survival",
+          "value": 2
+        }
+      ],
+      "rarity": "common",
+      "locality": ["deserts", "plains", "forests", "mountains", "underground", "dungeons"],
+      "languages": "Gnollish",
+      "combat": "[NATURE 14] The Gnoll hunt in packs, and will raid travelers on the road.<br>[LORE 15] Gnolls usually don't attack travelers for kill, but rather to take from them.  A hungry enough Gnoll pack though may kill to eat the most unfortunate traveler, or a Gnoll pack may kill travelers that defend their goods.<br>[NATURE 15] Gnolls will use the cover of darkness, rocks, trees, or thick bush to attack from unseen angles and catch their victims off-guard.",
+      "background": "[NATURE 16] The Gnoll Thrasher is rabid and dangerous.  They will attack almost anything on sight, and they attack in a raged whirlwind.<br>[LORE 18] Gnolls are said to be hyenas and dogs taken by the demons back into the demon plane. There they evolved into the Gnoll: wild, resilient, and intelligent.",
+      "value (gold)": 10,
+      "image-links": ["/images/creatures/gnoll_thrasher.jpg", "/images/creatures/gnoll_thrasher2.jpg"]
+    },
+    {
       "name": "Goat",
       "size": {
         "value": "medium",

@@ -88,6 +88,14 @@
       "image-links": ["/images/items/chest.jpg"]
     },
     {
+      "name": "Clothes (rags)",
+      "weight (lbs)": 2,
+      "value (gold)": 0,
+      "rarity": "common",
+      "description": "Cloth and hemp full-body clothing with rips and tears.",
+      "image-links": []
+    }, 
+    {
       "name": "Clothes (common)",
       "weight (lbs)": 3,
       "value (gold)": 1,

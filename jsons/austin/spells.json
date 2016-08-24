@@ -1,0 +1,81 @@
+{
+  "class": "spell",
+  "possibles": {
+    "name": null,
+    "level": 0,
+    "mana cost": 0,
+    "shard points": 0,
+    "cast type": [
+      "action", "ritual", "reaction"
+    ],
+    "cast time": 0,
+    "components": null,
+    "duration type": [
+      "instant", "turns", "encounter", "minutes", "hours", "days", "years"
+    ],
+    "duration time": 0,
+    "target": [
+      "aoe", "self", "target", "touch"
+    ],
+    "number of targets": 0,
+    "requires AR": false,
+    "range (ft)": 0,
+    "radius (ft)": 0,
+    "radius type": [
+      "beam", "cone", "cylinder", "sphere", "square"
+    ],
+    "damage": "d0",
+    "damage type": [
+      "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+    ],
+    "saving throw": null,
+    "requires": [],
+    "properties": null,
+    "hidden properties": null,
+    "description": null
+  },
+  "entries": [
+    {
+      "name": "Water tracer",
+      "level": 0,
+      "mana cost": 0,
+      "cast type": "action",
+      "cast time": 3,
+      "range (ft)": 30,
+      "properties": "Spells that require Water tracer cannot be cast if there is no humidity in the air.<br>Caster can manipulate small amounts of water in a way that would cause no negative effects to typical creatures.<br>As some limitations and examples:<br><ul><li>May create a cup of water in the caster's hands after concentrating for 30 seconds.</li><li>May cause water to ripple or small waves to lap across the shore.</li><li>May change the course of a stream or cause water to flow unnaturally across the ground.</li><li>May freeze or thaw a small amount of water.</li><li>May cause a small amount of water to float in the air freely.</li></ul>",
+      "description": "Casters gestures the movement of water with a free hand."
+    },
+    {
+      "name": "Ice bolt",
+      "level": 0,
+      "mana cost": 0,
+      "cast type": "action",
+      "cast time": 4,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 50,
+      "damage": "1+(1/2)*INF",
+      "damage type": "piercing",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "requires AR": true,
+      "properties": "<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +4 DMG"
+    },
+    {
+      "name": "Water whip",
+      "level": 1,
+      "mana cost": 1,
+      "cast type": "action",
+      "cast time": 4,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 15,
+      "damage": "3+(1/2)*INF",
+      "damage type": "force",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "requires AR": true,
+      "properties": "Once cast, and as long as concentration is kept, the Water whip remains active and can be used for 3 action points.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +4 DMG."
+    }
+  ]
+}

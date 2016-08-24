@@ -1,4 +1,4 @@
-import {Component, OnInit, OnChanges} from 'angular2/core';
+import {Component, OnInit, OnChanges} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {LevelModifierItemComponent} from '../components/level-modifier-item.component';
 

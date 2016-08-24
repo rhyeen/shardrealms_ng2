@@ -1,75 +1,77 @@
 <h1>{{table}}</h1>
 <section class="table-entries">
-	<section class="table-entry" *ngIf="entry" *ngFor="#entry of entries">
-    <h4>{{entry.name}}</h4>
-    <table>
-      <tr *ngFor="#entryDetail of entry.details">
-        <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key !== 'properties'">
-          <td class="row-key" >{{entryDetail.key}}:</td>
-          <td class="row-value" [innerHTML]="entryDetail.value"></td>
-        </section>
-        <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key === 'properties'">
-          <td rowspan="2" class="row-value row-value-properties" [innerHTML]="entryDetail.value"></td>
-        </section>
-        <section *ngIf="entryDetail.isObject && !entryDetail.isArray">
-          <!-- if it's a skill table -->
-          <td class="row-key" *ngIf="entryDetail.value.STR">{{entryDetail.key}}:</td>
-          <td class="row-value skill-entries">
-            <div>STR: {{entryDetail.value.STR}}</div>
-            <div>DEX: {{entryDetail.value.DEX}}</div>
-            <div>INF: {{entryDetail.value.INF}}</div>
-            <div>WIS: {{entryDetail.value.WIS}}</div>
-          </td>
-        </section>
-        <section *ngIf="entryDetail.isArray && !entryDetail.isArrayOfObjects">
-          <td class="row-key">{{entryDetail.key}}:</td>
-          <td class="row-value">
-            <span *ngFor="#detailArray of entryDetail.value; #lastElement = last">
-              <a href="{{detailArray}}" target="_blank" *ngIf="entryDetail.key === 'image-links'">{{detailArray}}</a>
-              <span *ngIf="entryDetail.key !== 'image-links'">{{detailArray}}</span>
-              <span *ngIf="!lastElement">, </span></span>
-          </td>
-        </section>
-        <!-- skills or spells -->
-        <section *ngIf="entryDetail.isArrayOfObjects">
-          <td class="row-key">{{entryDetail.key}}:</td>
-          <td class="row-value" *ngIf="entryDetail.key !== 'level modifiers'">
-            <div [class.array-objects-entry]="!lastElement" *ngFor="#detailArray of entryDetail.value; #lastElement = last">
-              <div *ngIf="detailArray.value">{{detailArray.name}} {{detailArray.value}}</div>
-              <div *ngIf="detailArray.recharge">
-                <div>{{detailArray.name}}</div>
-                <div class="entry-note">recharge time: {{detailArray.recharge}}</div>
+	<section class="table-entry" *ngFor="let entry of entries">
+    <section *ngIf="entry">
+      <h4>{{entry.name}}</h4>
+      <table>
+        <tr *ngFor="let entryDetail of entry.details">
+          <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key !== 'properties'">
+            <td class="row-key" >{{entryDetail.key}}:</td>
+            <td class="row-value" [innerHTML]="entryDetail.value"></td>
+          </section>
+          <section *ngIf="!entryDetail.isObject && !entryDetail.isArray && entryDetail.key === 'properties'">
+            <td rowspan="2" class="row-value row-value-properties" [innerHTML]="entryDetail.value"></td>
+          </section>
+          <section *ngIf="entryDetail.isObject && !entryDetail.isArray">
+            <!-- if it's a skill table -->
+            <td class="row-key" *ngIf="entryDetail.value.STR">{{entryDetail.key}}:</td>
+            <td class="row-value skill-entries">
+              <div>STR: {{entryDetail.value.STR}}</div>
+              <div>DEX: {{entryDetail.value.DEX}}</div>
+              <div>INF: {{entryDetail.value.INF}}</div>
+              <div>WIS: {{entryDetail.value.WIS}}</div>
+            </td>
+          </section>
+          <section *ngIf="entryDetail.isArray && !entryDetail.isArrayOfObjects">
+            <td class="row-key">{{entryDetail.key}}:</td>
+            <td class="row-value">
+              <span *ngFor="let detailArray of entryDetail.value; let lastElement = last">
+                <a href="{{detailArray}}" target="_blank" *ngIf="entryDetail.key === 'image-links'">{{detailArray}}</a>
+                <span *ngIf="entryDetail.key !== 'image-links'">{{detailArray}}</span>
+                <span *ngIf="!lastElement">, </span></span>
+            </td>
+          </section>
+          <!-- skills or spells -->
+          <section *ngIf="entryDetail.isArrayOfObjects">
+            <td class="row-key">{{entryDetail.key}}:</td>
+            <td class="row-value" *ngIf="entryDetail.key !== 'level modifiers'">
+              <div [class.array-objects-entry]="!lastElement" *ngFor="let detailArray of entryDetail.value; let lastElement = last">
+                <div *ngIf="detailArray.value">{{detailArray.name}} {{detailArray.value}}</div>
+                <div *ngIf="detailArray.recharge">
+                  <div>{{detailArray.name}}</div>
+                  <div class="entry-note">recharge time: {{detailArray.recharge}}</div>
+                </div>
               </div>
-            </div>
-          </td>
-          <td class="row-value" *ngIf="entryDetail.key === 'level modifiers'">
-            <div [class.array-objects-entry]="!lastElement" *ngFor="#detailArray of entryDetail.value; #lastElement = last">
-              <div class="entry-level-mod-title">Gained at level {{detailArray.level}}</div>
-              <table class="entry-level-mod-table">
-                <tr>
-                  <td>Gain all:</td>
-                  <td>
-                    <div class="entry-level-mod-list-item" *ngFor="#gainItem of detailArray['passive list']">
-                      <div class="entry-note">{{gainItem.type}}:</div>
-                      <div>{{gainItem.name}} <span *ngIf="gainItem.value">( {{gainItem.value}} )</span></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr *ngFor="#pickList of detailArray['pick lists']">
-                  <td>Pick {{pickList.allowed}}:</td>
-                  <td>
-                    <div class="entry-level-mod-list-item" *ngFor="#chooseItem of pickList.list">
-                      <div class="entry-note">{{chooseItem.type}}:</div>
-                      <div>{{chooseItem.name}} <span *ngIf="chooseItem.value">( {{chooseItem.value}} )</span></div>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </section>
-      </tr>
-    </table>
-    <p *ngIf="entry.description">{{entry.description}}</p>
+            </td>
+            <td class="row-value" *ngIf="entryDetail.key === 'level modifiers'">
+              <div [class.array-objects-entry]="!lastElement" *ngFor="let detailArray of entryDetail.value; let lastElement = last">
+                <div class="entry-level-mod-title">Gained at level {{detailArray.level}}</div>
+                <table class="entry-level-mod-table">
+                  <tr>
+                    <td>Gain all:</td>
+                    <td>
+                      <div class="entry-level-mod-list-item" *ngFor="let gainItem of detailArray['passive list']">
+                        <div class="entry-note">{{gainItem.type}}:</div>
+                        <div>{{gainItem.name}} <span *ngIf="gainItem.value">( {{gainItem.value}} )</span></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr *ngFor="let pickList of detailArray['pick lists']">
+                    <td>Pick {{pickList.allowed}}:</td>
+                    <td>
+                      <div class="entry-level-mod-list-item" *ngFor="let chooseItem of pickList.list">
+                        <div class="entry-note">{{chooseItem.type}}:</div>
+                        <div>{{chooseItem.name}} <span *ngIf="chooseItem.value">( {{chooseItem.value}} )</span></div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </section>
+        </tr>
+      </table>
+      <p *ngIf="entry.description">{{entry.description}}</p>
+    </section>
   </section>
 </section>

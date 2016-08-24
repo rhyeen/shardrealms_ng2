@@ -13,7 +13,7 @@
 		</section>
 		<section *ngIf="config.content.conditional && config.content.conditional.length">
 			<h3>Conditional:</h3>
-			<table *ngFor="#single of config.content.conditional">
+			<table *ngFor="let single of config.content.conditional">
 				<tr>
 					<td>Value:</td>
 					<td>{{single.value}}</td>
@@ -37,7 +37,7 @@
 		</section>
 		<section *ngIf="config.content.bound && config.content.bound.length">
 			<h3>Bound:</h3>
-			<table *ngFor="#single of config.content.bound">
+			<table *ngFor="let single of config.content.bound">
 				<tr>
 					<td>Value:</td>
 					<td>{{single.value}}</td>

@@ -457,10 +457,6 @@
                 {
                   "type": "armor proficiency",
                   "name": "medium"
-                },
-                {
-                  "type": "armor proficiency",
-                  "name": "heavy"
                 }
               ]
             }
@@ -539,10 +535,6 @@
                 {
                   "type": "armor proficiency",
                   "name": "medium"
-                },
-                {
-                  "type": "armor proficiency",
-                  "name": "heavy"
                 }
               ]
             }
