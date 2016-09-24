@@ -3,18 +3,23 @@
 BARD
 
 Song of the weave
-
+Time signature
+Temperament
+Outro
+Soundwave
+Healing words
+Capriccio
+Grazioso
 
 
 Any spell, item, or ability that is modified by INF may be modified by WIS instead.
 
 Motif:
-DONE: Capriccio - A quick, improvisational, spirited piece of music.
+*Capriccio - A quick, improvisational, spirited piece of music.
 Elegy - An instrumental lament with praise for the dead.
 Grandioso - Word to indicate that the movement or entire composition is to be played grandly.
 Grave - Word to indicate the movement or entire composition is to be played very slow and serious.
-Grazioso - Word to indicate the movement or entire composition is to be played gracefully.
-Legato - Word to indicate that the movement or entire composition is to be played smoothly.
+*Grazioso - Word to indicate the movement or entire composition is to be played gracefully.
 Major - One of the two modes of the tonal system. Music written in major keys have a positive affirming character.
 March - A form of music written for marching in two-step time. Originally the march was used for military processions.
 Minor - One of the two modes of the tonal system. The minor mode can be identified by the dark, melancholic mood.
@@ -29,6 +34,8 @@ Forte - A symbol indicating to play loud.
 Tremolo - Quick repetition of the same note or the rapid alternation between two notes.
 Portamento - A mild glissando between two notes for an expressive effect.
 Monotone - Repetition of a single tone.
+*Legato - Word to indicate that the movement or entire composition is to be played smoothly.
+*Staccato - Word to indicate that the movement or entire composition is to be played sharply.
 
 Beat modifiers:
 Glissando - Sliding between two notes.
@@ -45,7 +52,7 @@ Flat - A symbol indicating that the note is to be diminished by one semitone.
 Natural - Not flat or sharp
 
 Composition dynamics:
-Cadence - A sequence of chords that brings an end to a phrase, either in the middle or the end of a composition.
+@Cadence - A sequence of chords that brings an end to a phrase, either in the middle or the end of a composition.
 Cadenza - Initially an improvised cadence by a soloist; later becoming an elaborate and written out passage in an aria or concerto, featuring the skills of an instrumentalist or vocalist.
 Deceptive cadence - A chord progression that seems to lead to resolving itself on the final chord; but does not.
 Cavatina - A short and simple melody performed by a soloist that is part of a larger piece.
@@ -278,38 +285,33 @@ Fire elemental:
 
 --
 
-Water tracer
-Water weaver
-Water master
+*Water tracer (0)
+*Water weaver (0)
+*Water master (0)
+*Ice bolt (0)
 
-Ice bolt
-
-Water whip
-
-Hold breath
-Breathe water
-
-Give breathe water:
-
-Natural swimmer
-Water walk
-Control water
-
-Tidal shove
-
-Sweat tomb (encloses a target in a layer of water):
-
-Exploding bubbles:
-
-Ice sheet:
-
-Chilling gaze
-
-Whirlpool:
-
-Glacier:
-
-Water elemental:
+*Water whip (1)
+*Tidal shove (1)
+*Blizzard spray (1)
+*Chilling gaze (1)
+*Exploding bubbles (2)
+*Ice sheet (2)
+*Water jet (2)
+*Brain freeze (2)
+*Water walk (3)
+*Wall of ice (3)
+Frozen foottrap (3)
+Water spirit (3)
+*Control water (4)
+Sweat tomb (encloses a target in a layer of water) (4)
+Whirlpool (4)
+Give breathe water (4)
+Tidal wave (5) [Tidal shove]
+Gyser (5)
+Acid rain (6)
+Glacier (6) [Wall of ice]
+Water elemental (7) [Water spirit]
+Blood burst (7)
 
 --
 
@@ -323,9 +325,9 @@ Forceful winds:
 
 Flying weapons:
 
-Thunderwave
-Gust of wind
-Thunderburst
+*Thunderwave
+*Gust of wind
+*Thunderburst
 
 Cyclone trap:
 

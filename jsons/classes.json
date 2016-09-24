@@ -2423,6 +2423,10 @@
                 {
                   "type": "spell",
                   "name": "Chilling gaze"
+                },
+                {
+                  "type": "spell",
+                  "name": "Blizzard spray"
                 }
               ]
             }
@@ -2432,8 +2436,8 @@
           "level": 2,
           "passive list": [
             {
-              "type": "ability",
-              "name": "Restoring blood"
+              "type": "mana",
+              "value": 7
             }
           ],
           "pick lists": [
@@ -2441,20 +2445,57 @@
               "allowed": 1,
               "list": [
                 {
-                  "type": "armor proficiency",
-                  "name": "shield"
+                  "type": "spell",
+                  "name": "Water whip"
                 },
                 {
-                  "type": "ability",
-                  "name": "Magic resistant"
+                  "type": "spell",
+                  "name": "Tidal shove"
                 },
                 {
-                  "type": "ability",
-                  "name": "Charge attack"
+                  "type": "spell",
+                  "name": "Chilling gaze"
                 },
                 {
-                  "type": "ability",
-                  "name": "Duel weapons"
+                  "type": "spell",
+                  "name": "Blizzard spray"
+                }
+              ]
+            },
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "spell",
+                  "name": "Water whip"
+                },
+                {
+                  "type": "spell",
+                  "name": "Tidal shove"
+                },
+                {
+                  "type": "spell",
+                  "name": "Chilling gaze"
+                },
+                {
+                  "type": "spell",
+                  "name": "Blizzard spray"
+                },
+                {
+                  "type": "spell",
+                  "name": "Exploding bubbles"
+                },
+                {
+                  "type": "spell",
+                  "name": "Ice sheet"
+                },
+                {
+                  "type": "spell",
+                  "name": "Water jet"
+                },
+                {
+                  "type": "spell",
+                  "name": "Brain freeze"
                 }
               ]
             }
@@ -2894,7 +2935,7 @@
     },
     {
       "name": "Mecha drone",
-      "starting health": 5,
+      "starting health": 10,
       "health per level": 5,
       "description": null,
       "image-links": [],
@@ -2929,6 +2970,10 @@
             {
               "type": "ability",
               "name": "Disengage"
+            },
+            {
+              "type": "ability",
+              "name": "Equip item"
             },
             {
               "type": "ability",
@@ -3001,11 +3046,6 @@
             },
             {
               "type": "skill",
-              "name": "Intimidation",
-              "value": -10
-            },
-            {
-              "type": "skill",
               "name": "Willpower",
               "value": 5
             },
@@ -3057,10 +3097,6 @@
             {
               "type": "ability",
               "name": "Mechanized arm"
-            },
-            {
-              "type": "ability",
-              "name": "Calculated attack"
             }
           ],
           "pick lists": [
@@ -3637,30 +3673,19 @@
           "passive list": [
             {
               "type": "ability",
-              "name": "Restoring blood"
-            }
-          ],
-          "pick lists": [
+              "name": "Hymn of the shield"
+            },
             {
-              "allowed": 1,
-              "list": [
-                {
-                  "type": "armor proficiency",
-                  "name": "shield"
-                },
-                {
-                  "type": "ability",
-                  "name": "Magic resistant"
-                },
-                {
-                  "type": "ability",
-                  "name": "Charge attack"
-                },
-                {
-                  "type": "ability",
-                  "name": "Duel weapons"
-                }
-              ]
+              "type": "ability",
+              "name": "Hymn of the sword"
+            },
+            {
+              "type": "ability",
+              "name": "Legato"
+            },
+            {
+              "type": "ability",
+              "name": "Staccato"
             }
           ]
         },

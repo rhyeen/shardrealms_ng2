@@ -1,3 +1,9 @@
+<section class="table-search">
+  <label>
+    <div>Search</div>
+    <input [ngModel]="searchQuery" (ngModelChange)="search($event)">
+  </label>
+</section>
 <h1>{{table}}</h1>
 <section class="table-entries">
 	<section class="table-entry" *ngFor="let entry of entries">

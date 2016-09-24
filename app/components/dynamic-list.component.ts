@@ -4,7 +4,8 @@ import {PlayerEntriesService} from '../services/player-entries.service';
 @Component({
 	selector: 'sr-dynamic-list',
 	templateUrl: './app/views/dynamic-list.html',
-	inputs: ["value", "list", "config", "disabled"]
+	inputs: ["value", "list", "config", "disabled"],
+	providers: [PlayerEntriesService]
 })
 export class DynamicListComponent implements OnInit {
 	public value;

@@ -35,6 +35,25 @@
   },
   "entries": [
     {
+      "name": "Intimidating attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 1,
+      "recharge": "shard",
+      "saving throw": "T: Willpower ST >= A: Intimidation check",
+      "properties": "After a successful melee attack, target is feared."
+    },
+    {
+      "name": "Restoring blood",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "recharge": "shard",
+      "properties": "Restore 5 + <span class=\"item\"><span>skill</span>Willpower</span> modifier HP."
+    },
+    {
       "name": "Dimvision",
       "type of ability": "passive",
       "target": "self",
@@ -70,6 +89,210 @@
       "type of ability": "passive",
       "target": "self",
       "properties": "Automatically gained when STR >= 5<br>The melee attack DMG modifier due to STR does not exceed 5, excluding a <span class=\"item\"><span>ability</span>Heavy attack</span>. <span class=\"item\"><span>ability</span>Heavy attack</span> only consumes 4 action points."
+    },
+    {
+      "name": "Unarmed attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 3,
+      "damage": "STR/2",
+      "damage type": ["bludgeoning"],
+      "properties": "AR -5"
+    },
+    {
+      "name": "Throw",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 2,
+      "properties": "Typical attack to throw a throwable weapon at a target. AR is DEX modified.  See weapon for range and damage."
+    },
+    {
+      "name": "Fire",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 2,
+      "properties": "Typical attack to fire a ranged weapon. AR is DEX modified. See weapon for range and damage."
+    },
+    {
+      "name": "Reload",
+      "type of ability": "action",
+      "target": "self",
+      "action points": null,
+      "properties": "Reload a ranged weapon. See weapon for action points needed to reload."
+    },
+    {
+      "name": "Equip item",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Equip an item per free hand from your side or back.<br>For example, if you carry several javalins and you throw one, another must be equipped before use."
+    },
+    {
+      "name": "Melee attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "properties": "Typical attack at a target with any melee weapon.  See weapon for damage."
+    },
+    {
+      "name": "Dodge",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 2,
+      "properties": "Add dodge to armor and magic resist during AD."
+    },
+    {
+      "name": "Move",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May move 5 feet on level ground.  Difficult terrain takes 2 action points."
+    },
+    {
+      "name": "Run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 30 feet on level ground and 15 feet on difficult terrain."
+    },
+    {
+      "name": "Climb",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "With a successful <span class=\"item\"><span>skill</span>Athletics</span> check, may climb 5 feet on reasonably climbable surfaces such as trees or cliffs."
+    },
+        {
+      "name": "Jump",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Jump forward 5 ft or upward 3 ft while standing still; jump forward 8 ft or upward 4 ft while running.<br>This is for a medium creature. For every creature size large, double amount. For every creature size smaller, half amount."
+    },
+    {
+      "name": "Shout command",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May shout up to four words as a command. Make a <span class=\"item\"><span>skill</span>Persuasion</span> check as needed.<br>Response is only possible on target's turn."
+    },
+    {
+      "name": "Ask question",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 5,
+      "properties": "May make a one sentence inquiry to a nearby target and they may respond in one sentence. Make any check as needed."
+    },
+    {
+      "name": "Use cover",
+      "type of ability": "action",
+      "target": "self",
+      "range (ft)": 5,
+      "action points": 1,
+      "properties": "Requires you to be in range to full or half cover.<br>If maneuvering while under cover is needed to attack (e.g. going from a crouch to a stand, or spinning around a column), 1 action point is needed to get out of cover, and one to get back in cover."
+    },
+    {
+      "name": "Drink",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Can drink or administer (to a willing target) a vial of liquid.<br>If target is unconscious, requires a <span class=\"item\"><span>skill</span>Sleight of hand</span> check > 13, otherwise the liquid is not swallowed."
+    },
+    {
+      "name": "Stabilize",
+      "type of ability": "action",
+      "target": "touch",
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Provides one death save to an unconscious target."
+    },
+    {
+      "name": "Improvise",
+      "properties": "Explain to the DM what you want to do, and allow him to decide how and if it can be done.  Expect checks and actions to be required."
+    },
+    {
+      "name": "Disengage",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move without enabling an <span class=\"item\"><span>ability</span>Opportunity attack</span>.<br>No attack action can be made on the same turn."
+    },
+    {
+      "name": "Hide",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "Must be out of the line of sight of all opponents.<br>Allows a <span class=\"item\"><span>skill</span>Stealth</span> check to be made. See <span class=\"item\"><span>skill</span>Stealth</span> for more information."
+    },
+    {
+      "name": "Search",
+      "type of ability": "action",
+      "target": "touch",
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Requires you to be in range to the space being searched.<br>Search a space for one of the following:<ul><li>General items of interest.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for a hidden items.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for specified clues.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for hidden traps.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for hidden compartments or doors.</li></ul>"
+    },
+    {
+      "name": "Ready",
+      "type of ability": "passive",
+      "target": "self",
+      "action points": 3,
+      "properties": "You may make an action, costing <= 3 action points, on any other character's turn.  You may make the action in between actions of a character, but must declare you are doing so before the character begins the action.<br>If you perform a reaction, you lose your chance to make this special action."
+    },
+    {
+      "name": "Opportunity attack",
+      "type of ability": "reaction",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "properties": "If an enemy that was once within reach, performs a move action to be out of reach, you may make a free melee attack against that enemy, costing <= half (round up) of your action points (at least 3)."
+    },
+    {
+      "name": "Grapple",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit, you may move the target as if slowed, and the target cannot attack.<br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is.<br>If humanoid, you cannot perform any action that requires your hands while grappling."
+    },
+    {
+      "name": "Shove",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit, you move the target 5 ft away.<br>If your STR check >= target's STR ST + 5, you move the target 10 ft away and the target is knocked prone.<br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is."
+    },
+    {
+      "name": "Delay",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "For the encounter, moves your turn after the next character's turn.<br>This may be repeated until you reach the bottom of the initiative order"
+    },
+    {
+      "name": "Hilt butt",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "properties": "Gained when a hilted weapon is equipped.<br>Hit target with butt end of hilt for 2 bludgeoning damage."
+    },
+    {
+      "name": "Block",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 2,
+      "properties": "Gained if armor indicates <span class=\"item\"><span>ability</span>Block</span> is possible. If dodge is negative, before adding the block's dodge modifier, set the dodge to 0.  Add dodge to armor and magic resist during AD."
     }
   ]
 }

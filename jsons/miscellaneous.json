@@ -60,6 +60,105 @@
       "image-links": ["/images/items/book.jpg"]
     },
     {
+      "name": "Book - Abridged Book of Gyvth",
+      "weight (lbs)": 1,
+      "value (gold)": 3,
+      "rarity": "common",
+      "hidden properties": "[LORE 12] A condensed version of the Book of Gyvth with the basic history and most of the core doctrine. It is fairly common, and usually given freely by traveling templars to those who can read, write, and have political or governing power.<br>[ARCANA 15] The book is almost always scribed using sigil mimicry (essentially a magic-based printing press).",
+      "description": "Simple leather book of about 150 pages.",
+      "image-links": []
+    },
+    {
+      "name": "Book - A History of the Progressive World",
+      "weight (lbs)": 3,
+      "value (gold)": 2,
+      "rarity": "common",
+      "hidden properties": "[LORE 12] A brief history of the reign of kings, dominion, and wars of Furistia. It is given as part of any official opening of an inn, town hall, or community center.  It is arguably the most common book.<br>[LORE 19] Scholars speculate to the legitimacy of the books claims.  It is obviously warped to alter history for Furistia's benefit, but some facts, even to the existence or outcomes of wars, are highly disputed.<br>[ARCANA 15] The book is almost always scribed using sigil mimicry (essentially a magic-based printing press).",
+      "description": "Simple leather book of about 600 pages.",
+      "image-links": []
+    },
+    {
+      "name": "Book - The Art of Calligraphy",
+      "weight (lbs)": 3,
+      "value (gold)": 25,
+      "hidden properties": "If (40 - WIS check) hours are devoted to reading the book, +1 to the next Calligraphy point. This cannot be repeated.",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Book - The Smithing Apprentice",
+      "weight (lbs)": 3,
+      "value (gold)": 25,
+      "hidden properties": "If (40 - WIS check) hours are devoted to reading the book, +1 to the first Smithing point.",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Book - Journal of a Lone Woodsman",
+      "weight (lbs)": 3,
+      "value (gold)": 25,
+      "hidden properties": "If (40 - WIS check) hours are devoted to reading the book, +1 to the next Woodworking point. This cannot be repeated.",
+      "rarity": "uncommon"
+    },
+    {
+      "name": "Book - Dictionary of the Common Tongue",
+      "weight (lbs)": 4,
+      "value (gold)": 8,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Encyclopedia of the Furistian Kingdom",
+      "weight (lbs)": 6,
+      "value (gold)": 10,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Where the Moss Grows on the Tree",
+      "weight (lbs)": 3,
+      "value (gold)": 5,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Lord Galeman's Psalms",
+      "weight (lbs)": 3,
+      "value (gold)": 5,
+      "description": "\"If you know not the path to choose, choose the path that chooses you.\" -pg. 142",
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Common Alements and Practical Cures",
+      "weight (lbs)": 3,
+      "value (gold)": 4,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Charms and Curses for the Commonfolk",
+      "weight (lbs)": 2,
+      "value (gold)": 3,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - Tricks and Cantrips for the Commonfolk",
+      "weight (lbs)": 2,
+      "value (gold)": 3,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - The Life of a Fungi.  The Non-Abridged Version.  Volume 1",
+      "weight (lbs)": 2,
+      "value (gold)": 4
+    },
+    {
+      "name": "Book - The Life of a Fungi.  The Non-Abridged Version.  Volume 2",
+      "weight (lbs)": 2,
+      "value (gold)": 5,
+      "rarity": "common"
+    },
+    {
+      "name": "Book - The Life of a Fungi.  The Non-Abridged Version.  Volume 3",
+      "weight (lbs)": 2,
+      "value (gold)": 5,
+      "rarity": "common"
+    },
+    {
       "name": "Broom",
       "weight (lbs)": 2,
       "value (gold)": 1,

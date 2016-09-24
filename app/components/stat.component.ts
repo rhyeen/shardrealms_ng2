@@ -5,7 +5,8 @@ import {PlayerEntriesService} from '../services/player-entries.service';
 @Component({
 	selector: 'sr-stat',
 	templateUrl: './app/views/stat.html',
-	inputs: ['player', 'key', 'config', 'innerKey']
+	inputs: ['player', 'key', 'config', 'innerKey'],
+	providers: [PlayerEntriesService]
 })
 export class StatComponent implements OnInit {
 	public player;

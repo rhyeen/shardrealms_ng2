@@ -419,8 +419,21 @@
       "armor modifier": 0,
       "dodge modifier": -1,
       "magic resist modifier": 0,
-      "other modifiers": ["-3 Perception", "+1 Persuasion", "+2 Deception"],
+      "other modifiers": ["-3 Perception, if hooded", "+1 Persuasion, if hooded", "+2 Deception, if hooded"],
       "description": "Dark cloth hood for concealment.",
+      "image-links": ["/images/items/hood.png"]
+    },
+    {
+      "name": "Hooded Cloak",
+      "weight (lbs)": 2,
+      "value (gold)": 8,
+      "rarity": "common",
+      "type of armor": "other",
+      "armor modifier": 0,
+      "dodge modifier": -1,
+      "magic resist modifier": 0,
+      "other modifiers": ["-3 Perception, if hooded", "+1 Persuasion, if hooded", "+2 Deception, if hooded", "+2 Stealth, if hooded"],
+      "description": "Dark cloth hooded cloak for concealment.",
       "image-links": ["/images/items/hood.png"]
     },
     {

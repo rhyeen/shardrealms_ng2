@@ -65,7 +65,7 @@
       "value (gold)": 1,
       "rarity": "common",
       "saving throw": "Willpower ST >= 8 + (number of pints drank in 12 hours): not drunk.",
-      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a pint, unless ST (knows what ST is).",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a pint, unless ST (knows ST properties).",
       "type of consumable": "potion",
       "description": "Common barely-based alcoholic beverage found in almost every tavern.",
       "image-links": ["/images/items/ale.jpg"]
@@ -76,6 +76,7 @@
       "value (gold)": 50,
       "rarity": "uncommon",
       "hidden properties": "[NATURE 12] Rarely unfertilized, if the egg is cared for and kept warm, it will hatch within 2 weeks. [APPRAISE 10] The right person could pay upwards of 500 gold for a ready-to-hatch egg; axe beak hatchlings are worthless if already hatched.",
+      "type of consumable": "ingredient",
       "description": "A large white egg with a thick shell.",
       "image-links": ["/images/items/axe_beak_egg.jpg"]
     },
@@ -85,7 +86,7 @@
       "value (gold)": 1,
       "rarity": "common",
       "saving throw": "Willpower ST >= 6 + (number of glasses drank in 12 hours): not drunk.",
-      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows what ST is).",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows ST properties).",
       "type of consumable": "potion",
       "description": "Common grape-based alcoholic beverage found in nicer taverns.",
       "image-links": ["/images/items/wine.jpg"]
@@ -96,7 +97,7 @@
       "value (gold)": 1,
       "rarity": "uncommon",
       "saving throw": "Willpower ST >= 8 + (number of glasses drank in 12 hours): not drunk.",
-      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows what ST is).",
+      "hidden properties": "[LORE 8] Can cause drunk condition.<br>[WILLPOWER P5] Drunk after drinking a glass, unless ST (knows ST properties).",
       "type of consumable": "potion",
       "description": "A delicate alcoholic beverage.",
       "image-links": ["/images/items/fine_wine.jpg"]
@@ -118,6 +119,28 @@
       "properties": "Can feed one large herbivore animal for one day. Lasts one month.",
       "description": "A large hemp sack full of grains.",
       "image-links": ["/images/items/feed.jpg"]
+    },
+    {
+      "name": "Tarleaf",
+      "weight (lbs)": 0,
+      "value (gold)": 3,
+      "rarity": "common",
+      "locality": "Forest, Mountain, Coast",
+      "hidden properties": "[INSPECTION 13] Very bitter and numbs the mouth.<br>[NATURE 13 | ALCHEMY P1 | LORE 13] Leaves are usually dried and brewed into a tea. Helps calm hysteria and clears an unsettled mind. +4 in a check to break Fear or Confusion",
+      "type of consumable": "ingredient",
+      "description": "Dark sticky leaf of a berry bush.  Berries of the plant are poisonous.",
+      "image-links": []
+    },
+    {
+      "name": "Winter Crest",
+      "weight (lbs)": 0,
+      "value (gold)": 1,
+      "locality": "Forest, Mountain; Only found in consistent snow cover.",
+      "rarity": "common",
+      "hidden properties": "If consumed, requires 14 Willpower ST, or Sick for 4 hours.[NATURE 13 | ALCHEMY P1] Slightly poisonous, if consumed.<br>[LORE 12] Wreaths of the plant are typically hung over doorways during The Sister's Embrace by devote followers of the Order of Kin and Shey. The token is called a <b>Mnemonic Wreath</b>, and is meant to be a sign of remembrance so that the Sisters do not forget the bearer during the dead of winter.<br>[LORE 16] If not dried properly, the roots of the wreath may attempt to bind to the door. Some folks suspect this to be good luck, but it is rather difficult to remove and can deteriorate the wood.<br>[NATURE 18] It's actually a fungus, and tends to feed on decaying frozen animals or plants.",
+      "type of consumable": "ingredient",
+      "description": "A shaggy bushy tangle of roots that spread through the snow instead of dirt. It sprouts unusual small bead-like leaves.",
+      "image-links": []
     }
   ]
 }

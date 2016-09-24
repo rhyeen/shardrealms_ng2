@@ -1,11 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {TableEntriesService} from '../services/table-entries.service';
-import {TableSelectionComponent} from './table-selection.component';
 
 @Component({
   selector: 'sr-table-container',
   templateUrl: './app/views/table-container.html',
-  directives: [TableSelectionComponent]
+  providers: [TableEntriesService]
 })
 export class TableContainerComponent implements OnInit {
   public tables = [];

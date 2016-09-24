@@ -76,6 +76,38 @@
       "description": "Casters gestures the movement of rock with a free hand."
     },
     {
+      "name": "Hurl rock",
+      "level": 0,
+      "mana cost": 0,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 45,
+      "damage": "3+(1/2)*INF",
+      "damage type": "bludgeoning",
+      "requires": [{"Any": ["Earth tracer", "Earth weaver", "Earth master"]}],
+      "requires AR": true,
+      "properties": "<br>If caster has <span class=\"item\"><span>spell</span>Earth weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Earth master</span>: +5 DMG"
+    },
+    {
+      "name": "Ice bolt",
+      "level": 0,
+      "mana cost": 0,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 50,
+      "damage": "1+(1/2)*INF",
+      "damage type": "piercing",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "requires AR": true,
+      "properties": "<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +4 DMG"
+    },
+    {
       "name": "Mending",
       "level": 0,
       "mana cost": 0,
@@ -113,7 +145,7 @@
       "cast type": "action",
       "cast time": 3,
       "range (ft)": 45,
-      "properties": "Spells that require Water weaver cannot be cast if in exceptionally dry or hot areas.<br>Caster can manipulate water in a way that would cause little harm to typical creatures.<br><br>As some limitations and examples:<br><ul><li>May cause a spring of water to flow freely from the caster's hands.</li><li>May cause waves to sweep over a shore.</li><li>May cause a stream of water to flow unnaturally across the ground or lift into the air.</li><li>May freeze a pool of water or thaw a medium-sized ice chunk.</li></ul>",
+      "properties": "Gain resistence to cold.<br>Gain <span class=\"item\"><span>ability</span>Hold breath</span>.<br>Spells that require Water weaver cannot be cast if in exceptionally dry or hot areas.<br>Caster can manipulate water in a way that would cause little harm to typical creatures.<br><br>As some limitations and examples:<br><ul><li>May cause a spring of water to flow freely from the caster's hands.</li><li>May cause waves to sweep over a shore.</li><li>May cause a stream of water to flow unnaturally across the ground or lift into the air.</li><li>May freeze a pool of water or thaw a medium-sized ice chunk.</li></ul>",
       "description": "Casters gestures the movement of rock with a free hand."
     },
     {
@@ -123,7 +155,7 @@
       "cast type": "action",
       "cast time": 3,
       "range (ft)": 60,
-      "properties": "Spells that require Water master can be cast in any circumstance.<br>Caster can manipulate water in phenomenal ways.<br><br>As some limitations and examples:<br><ul><li>May create a gush of water eminating from the caster.</li><li>May cause large waves to sweep over a shore, or bend the current of a river.</li><li>May cause a gushes of water to flow unnaturally across the ground or lift into the air.</li><li>May freeze a pond of water or thaw an iceberg.</li></ul>",
+      "properties": "Gain <span class=\"item\"><span>ability</span>Breathe water</span>.<br>Spells that require Water master can be cast in any circumstance.<br>Caster can manipulate water in phenomenal ways.<br><br>As some limitations and examples:<br><ul><li>May create a gush of water eminating from the caster.</li><li>May cause large waves to sweep over a shore, or bend the current of a river.</li><li>May cause a gushes of water to flow unnaturally across the ground or lift into the air.</li><li>May freeze a pond of water or thaw an iceberg.</li></ul>",
       "description": "Casters gestures the movement of rock with a free hand."
     },
     {
@@ -161,12 +193,12 @@
       "level": 1,
       "mana cost": 1,
       "cast type": "action",
-      "cast time": 3,
+      "cast time": 2,
       "duration type": "instant",
       "target": "target",
       "number of targets": 1,
       "range (ft)": 40,
-      "requires AR": true,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
       "properties": "Target is slowed for a turn.<span class=\"item\"><span>spell</span>Water weaver</span>: Target is slowed for 2 turns.<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: Target is slowed for 3 turns.",
       "description": "Caster stares with an icy gaze towards a target."
     },
@@ -249,36 +281,38 @@
       "properties": "Target regains 4+(1/2 INF) HP.<br>Target must be a living creature."
     },
     {
-      "name": "Hurl rock",
-      "level": 0,
-      "mana cost": 0,
+      "name": "Blackice bolt",
+      "level": 1,
+      "mana cost": 1,
       "cast type": "action",
       "cast time": 3,
       "duration type": "instant",
       "target": "target",
       "number of targets": 1,
-      "range (ft)": 45,
-      "damage": "3+(1/2)*INF",
-      "damage type": "bludgeoning",
-      "requires": [{"Any": ["Earth tracer", "Earth weaver", "Earth master"]}],
+      "range (ft)": 50,
+      "damage": "6+(1/2)*INF",
+      "damage type": "piercing",
+      "requires": [{"Any": ["Water weaver", "Water master"]}, {"All": ["Ice bolt"]}],
       "requires AR": true,
-      "properties": "<br>If caster has <span class=\"item\"><span>spell</span>Earth weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Earth master</span>: +5 DMG"
+      "properties": "If caster has <span class=\"item\"><span>spell</span>Water master</span>: +6 DMG"
     },
     {
-      "name": "Ice bolt",
-      "level": 0,
-      "mana cost": 0,
+      "name": "Blizzard spray",
+      "level": 1,
+      "mana cost": 2,
       "cast type": "action",
-      "cast time": 4,
+      "cast time": 3,
       "duration type": "instant",
-      "target": "target",
-      "number of targets": 1,
-      "range (ft)": 50,
-      "damage": "1+(1/2)*INF",
-      "damage type": "piercing",
+      "target": "aoe",
+      "range (ft)": 0,
+      "radius (ft)": 15,
+      "radius type": "cone",
+      "damage": "2d8",
+      "damage type": "cold",
+      "saving throw": "Willpower 13 ST: target not dazed.",
       "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
-      "requires AR": true,
-      "properties": "<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +4 DMG"
+      "properties": "All targets are dazed for 1 turn.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +1 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +2 DMG and all targets are dazed for 2 turns.",
+      "description": "A spray of snow and ice shoots from the caster's palms."
     },
     {
       "name": "Jump",
@@ -307,7 +341,6 @@
       "damage": "2d10",
       "damage type": "force",
       "saving throw": "DEX 14 ST: target not pushed away.",
-      "requires AR": true,
       "properties": "Causes all objects weighing < 200 lbs to be flung away 15 feet.",
       "description": "A force wave shoots from the caster's palms."
     },
@@ -326,7 +359,7 @@
       "damage": "5",
       "damage type": "force",
       "saving throw": "STR 12 ST: target not pushed away.",
-      "requires AR": true,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
       "properties": "Causes all objects weighing < 200 lbs to be pushed back 10 feet.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG and +1 to ST requirement<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +5 DMG and +3 to ST requirement",
       "description": "A wave of water shoots from the caster."
     },
@@ -388,6 +421,21 @@
       "description": "Quickly shifts from one space to another."
     },
     {
+      "name": "Brain freeze",
+      "level": 2,
+      "mana cost": 2,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 40,
+      "saving throw": "Willpower 10+(Caster INF) ST: target unaffected.",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "properties": "Target is dazed for 2 turns.<span class=\"item\"><span>spell</span>Water weaver</span>: Target is dazed for 3 turns.<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: Target is dazed for 4 turns.",
+      "description": ""
+    },
+    {
       "name": "Cleanse (Cure wounds)",
       "level": 2,
       "mana cost": 2,
@@ -398,6 +446,25 @@
       "number of targets": 1,
       "requires AR": false,
       "properties": "End a temporary disease or temporary condition afflicting the target."
+    },
+    {
+      "name": "Exploding bubbles",
+      "level": 2,
+      "mana cost": 3,
+      "cast type": "action",
+      "cast time": 4,
+      "duration type": "turns",
+      "duration time": 5,
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 25,
+      "radius (ft)": 5,
+      "radius type": "beam",
+      "damage": "1d6 * (turns active)",
+      "damage type": "force",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "properties": "Spell begins in an adjacent space from the Caster. At the start of each of the caster's turns, the spell will move away from the caster in a line at 5 ft. per turn.<br>The spell cannot be canceled once cast.<br>If the spell reaches the end of the duration, it explodes.<br>If the spell travels into the space of another object, it explodes.<br>When the spell explodes, it deals DMG to all within a 10 ft. sphere.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +1 DMG * (turns active)<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +2 DMG * (turns active)",
+      "description": "A cluster of magic-filled bubbles move from the Casters hands outward.  They explode in a violent burst of magical energy."
     },
     {
       "name": "Gust of wind",
@@ -414,9 +481,25 @@
       "damage": "0",
       "damage type": "force",
       "saving throw": "STR 12 ST: not pushed away.",
-      "requires AR": true,
       "properties": "Causes all objects and creatures weighing < 500 lbs to be pushed 15 feet away from caster. Does not block ranged attacks.<br>Creature being pushed can make a 12 STR check to move forward 10 ft.<br>Caster can use an action point to rotate the beam 15 degrees.",
       "description": "A great current of wind shoots continually from the caster."
+    },
+    {
+      "name": "Ice sheet",
+      "level": 2,
+      "mana cost": 2,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "encounter",
+      "duration time": 1,
+      "target": "aoe",
+      "range (ft)": 40,
+      "radius (ft)": 20,
+      "radius type": "square",
+      "saving throw": "DEX 16 ST: target not knocked prone.",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "properties": "Any creature moving more than 5 ft per turn across the spell's area is knocked prone.<br>If a creature does not see the spell cast, he must make a Perception check >= 15 to spot it.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: Caster can move on Ice sheet without being knocked prone.<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: Caster can move on Ice sheet at double speed.",
+      "description": "A slippery sheet of ice forms quickly across the ground."
     },
     {
       "name": "Liquid body",
@@ -480,6 +563,24 @@
       "damage type": "piercing",
       "requires AR": false,
       "properties": "Damage is dealt for each 5 ft an enemy moves through the area.<br>A perception check of 14 is needed to detect the affected area if it hasn't been walked over yet."
+    },
+    {
+      "name": "Water jet",
+      "level": 2,
+      "mana cost": 2,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 50,
+      "damage": "INF",
+      "damage type": "force",
+      "requires AR": true,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "saving throw": "STR 14 ST or Balance 14 ST: not pushed. Half DMG",
+      "requires AR": true,
+      "properties": "Push target 10 ft in any direction in a cone away from caster."
     },
     {
       "name": "Dispel magic",
@@ -561,6 +662,21 @@
       "description": "With a snap of a finger and a targeted stare, a sudden pulse of great energy bursts from a point to a sphere of wind; dissipating in an instant."
     },
     {
+      "name": "Wall of ice",
+      "level": 3,
+      "mana cost": 5,
+      "cast type": "action",
+      "cast time": 5,
+      "duration type": "turns",
+      "target": "aoe",
+      "range (ft)": 40,
+      "duration time": 4,
+      "requires AR": false,
+      "requires": [{"Any": ["Water weaver", "Water master"]}],
+      "properties": "Caster causes a wall of ice to shoot up from the ground.  It is 5 ft thick at the base and 10 ft tall: the wall is sloped and pointed dully at the top.  The wall is a line up to 30 ft long.<br>Any target occupying a space in which the wall is created may choose to be shoved to either side of the wall. If the target makes no conscious choice, it is grappled by the wall and cannot break free until the spell ends.",
+      "description": "Caster firmly plants his feet and presses his palms upward, shooting great sheets of ice up from the ground."
+    },
+    {
       "name": "Water walk",
       "level": 3,
       "mana cost": 3,
@@ -571,6 +687,7 @@
       "duration time": 10,
       "target": "self",
       "requires AR": false,
+      "requires": [{"Any": ["Water weaver", "Water master"]}],
       "properties": "Spell grants the ability to move across any liquid surface as if it were normal terrain.<br>If the liquid is harmful, the feet will be inflicted with DMG determined by the DM.<br>The caster may hold onto targets, allowing them to water walk with him.<br>If the caster is submerged in liquid, it will draw him to the surface 60 ft per turn.",
       "description": "Casters feet emit an aura that resonates when touching liquid."
     },
@@ -587,6 +704,7 @@
       "radius (ft)": 10,
       "radius type": "cylinder",
       "requires AR": false,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
       "properties": "Caster bends the flow of water in area as he pleases. The water can move at a rate that by itself would cause no harm to typical creatures.<br>The caster may move the area 10 ft per turn.<br>As some limitations and examples:<br><ul><li>May create a vortex or hole in the water 60 ft deep.</li><li>May pull water straight up 20 ft, if sufficient enough water.</li><li>May avert the flow of a 10 ft long river.</li><li>May cause a 10 ft wave to wash over an area.</li></ul>",
       "description": "Casters focuses intently on an area of water, which bends willingly in his favor."
     },

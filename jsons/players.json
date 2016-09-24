@@ -1363,10 +1363,10 @@
       "special skills": [
         {
           "name": "Mechanic",
-          "value": 3,
+          "value": 4,
           "stackingValue": true,
           "history": {
-            "experience": 3
+            "experience": 4
           }
         }
       ],

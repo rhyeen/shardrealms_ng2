@@ -7,7 +7,8 @@ import {TableEntriesService} from '../services/table-entries.service';
 	selector: 'sr-level-modifier-item',
 	templateUrl: './app/views/level-modifier-item.html',
 	// directives: [],
-	inputs: ['item', 'pickList', 'player']
+	inputs: ['item', 'pickList', 'player'],
+	providers: [PlayerEntriesService, TableEntriesService]
 })
 export class LevelModifierItemComponent implements OnInit {
 

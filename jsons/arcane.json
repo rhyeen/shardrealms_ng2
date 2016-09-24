@@ -140,6 +140,16 @@
       "properties": "Can hold 1/4 liter of liquid.",
       "description": "A rounded glass container with a cork.",
       "image-links": ["images/items/potion_bottle.jpg"]
+    },
+    {
+      "name": "Deadheat shard",
+      "classification": "gem",
+      "weight (lbs)": 1,
+      "value (gold)": 2,
+      "rarity": "uncommon",
+      "hidden properties": "[NATURE 14 | LORE 16] The shard emits deadheat (radiation).  Anything exposed to the shard for long periods of time may become sick, delusional, mutated, and eventually die.<br>[NATURE 18 | LORE 20] Shardbound are unaffected by the radiation.",
+      "description": "A dull blue stone that is emits warmth.",
+      "image-links": []
     }
   ]
 }

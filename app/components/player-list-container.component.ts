@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {GlobalService} from '../services/global.service';
-import {PlayerSelectionComponent} from './player-selection.component';
-import {NewPlayerContainerComponent} from './new-player-container.component';
-
 
 @Component({
 	selector: 'sr-player-list-container',
 	templateUrl: './app/views/player-list-container.html',
-	directives: [PlayerSelectionComponent, NewPlayerContainerComponent]
+	providers: [PlayerEntriesService, GlobalService]
 })
 export class PlayerListContainerComponent implements OnInit {
 	public playerList = [];

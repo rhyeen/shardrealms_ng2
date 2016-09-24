@@ -1,16 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {TableContainerComponent} from './table-container.component';
 import {GlobalService} from '../services/global.service';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {TableEntriesService} from '../services/table-entries.service';
-import {PlayerListContainerComponent} from './player-list-container.component';
-import {ItemWindowComponent} from './item-window.component';
-import {StatWindowComponent} from './stat-window.component';
 
 @Component({
   selector: 'sr-root-container',
   templateUrl: './app/views/root-container.html',
-  directives: [TableContainerComponent, PlayerListContainerComponent, ItemWindowComponent, StatWindowComponent],
   providers: [GlobalService, PlayerEntriesService, TableEntriesService]
 })
 export class RootContainerComponent implements OnInit {

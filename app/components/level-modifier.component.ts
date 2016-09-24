@@ -1,13 +1,14 @@
 import {Component, OnInit, OnChanges} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
-import {LevelModifierItemComponent} from '../components/level-modifier-item.component';
 
 
 @Component({
 	selector: 'sr-level-modifier',
 	templateUrl: './app/views/level-modifier.html',
-	directives: [LevelModifierItemComponent],
-	inputs: ['modifiers', 'player']
+	inputs: ['modifiers', 'player'],
+	providers: [
+		PlayerEntriesService
+	]
 })
 export class LevelModifierComponent implements OnInit, OnChanges {
 

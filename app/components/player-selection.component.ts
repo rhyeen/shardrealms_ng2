@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {GlobalService} from '../services/global.service';
-import {LevelContainerComponent} from './level-container.component';
-import {SkillContainerComponent} from './skill-container.component';
-import {PlayerViewComponent} from './player-view.component';
 
 @Component({
 	selector: 'sr-player-selection',
 	templateUrl: './app/views/player-selection.html',
-	directives: [LevelContainerComponent, SkillContainerComponent, PlayerViewComponent],
+	providers: [PlayerEntriesService, GlobalService]
 })
 export class PlayerSelectionComponent implements OnInit {
 	public players;

@@ -3,7 +3,8 @@ import {TableEntriesService} from '../services/table-entries.service';
 
 @Component({
   selector: 'sr-item-window',
-  templateUrl: './app/views/item-window.html'
+  templateUrl: './app/views/item-window.html',
+  providers: [TableEntriesService]
 })
 export class ItemWindowComponent implements OnInit {
   public config;

@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {GlobalService} from '../services/global.service';
-import {DynamicListComponent} from './dynamic-list.component';
-import {LevelContainerComponent} from './level-container.component';
-
 
 @Component({
 	selector: 'sr-new-player-container',
 	templateUrl: './app/views/new-player-container.html',
-	directives: [DynamicListComponent, LevelContainerComponent]
+	providers: [PlayerEntriesService, GlobalService]
 })
 export class NewPlayerContainerComponent implements OnInit {
 	public players;

@@ -76,6 +76,55 @@
       "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
       "requires AR": true,
       "properties": "Once cast, and as long as concentration is kept, the Water whip remains active and can be used for 3 action points.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: +2 DMG<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: +4 DMG."
+    },
+    {
+      "name": "Chilling gaze",
+      "level": 1,
+      "mana cost": 1,
+      "cast type": "action",
+      "cast time": 2,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 40,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "properties": "Target is slowed for a turn.<span class=\"item\"><span>spell</span>Water weaver</span>: Target is slowed for 2 turns.<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: Target is slowed for 3 turns.",
+      "description": "Caster stares with an icy gaze towards a target."
+    },
+    {
+      "name": "Ice sheet",
+      "level": 2,
+      "mana cost": 2,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "encounter",
+      "duration time": 1,
+      "target": "aoe",
+      "range (ft)": 40,
+      "radius (ft)": 20,
+      "radius type": "square",
+      "saving throw": "DEX 16 ST: target not knocked prone.",
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "properties": "Any creature moving more than 5 ft per turn across the spell's area is knocked prone.<br>If a creature does not see the spell cast, he must make a Perception check >= 15 to spot it.<br>If caster has <span class=\"item\"><span>spell</span>Water weaver</span>: Caster can move on Ice sheet without being knocked prone.<br>If caster has <span class=\"item\"><span>spell</span>Water master</span>: Caster can move on Ice sheet at double speed.",
+      "description": "A slippery sheet of ice forms quickly across the ground."
+    },
+    {
+      "name": "Water jet",
+      "level": 2,
+      "mana cost": 2,
+      "cast type": "action",
+      "cast time": 3,
+      "duration type": "instant",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 50,
+      "damage": "INF",
+      "damage type": "force",
+      "requires AR": true,
+      "requires": [{"Any": ["Water tracer", "Water weaver", "Water master"]}],
+      "saving throw": "STR 14 ST or Balance 14 ST: not pushed. Half DMG",
+      "requires AR": true,
+      "properties": "Push target 10 ft in any direction in a cone away from caster."
     }
   ]
 }

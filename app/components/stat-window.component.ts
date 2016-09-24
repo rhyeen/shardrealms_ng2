@@ -3,7 +3,8 @@ import {PlayerEntriesService} from '../services/player-entries.service';
 
 @Component({
   selector: 'sr-stat-window',
-  templateUrl: './app/views/stat-window.html'
+  templateUrl: './app/views/stat-window.html',
+  providers: [PlayerEntriesService]
 })
 export class StatWindowComponent implements OnInit {
   public config;
