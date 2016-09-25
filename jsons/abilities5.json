@@ -1,0 +1,1440 @@
+{
+  "class": "ability",
+  "possibles": {
+    "name": null,
+    "type of ability": [
+      "action", "reaction", "passive"
+    ],
+    "target": [
+      "aoe", "self", "target", "touch"
+    ],
+    "number of targets": 0,
+    "range (ft)": 0,
+    "radius (ft)": 0,
+    "radius type": [
+      "beam", "cone", "cylinder", "sphere"
+    ],
+    "duration type": [
+      "instant", "turns", "encounter", "minutes", "hours", "days", "years"
+    ],
+    "duration time": 0,
+    "damage": "d0",
+    "damage type": [
+      "acid", "bludgeoning", "cold", "fire", "force", "lightning", "piercing", "poison", "psychic", "slashing"
+    ],
+    "action points": 0,
+    "saving throw": null,
+    "feat": false,
+    "recharge": [
+      "day", "shard", "encounter"
+    ],
+    "requires": [],
+    "replaces": [],
+    "properties": null,
+    "description": null
+  },
+  "entries": [
+    {
+      "name": "Unarmed attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 3,
+      "damage": "STR/2",
+      "damage type": ["bludgeoning"],
+      "properties": "AR -5"
+    },
+    {
+      "name": "Throw",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 2,
+      "properties": "Typical attack to throw a throwable weapon at a target. AR is DEX modified.  See weapon for range and damage."
+    },
+    {
+      "name": "Fire",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 2,
+      "properties": "Typical attack to fire a ranged weapon. AR is DEX modified. See weapon for range and damage."
+    },
+    {
+      "name": "Reload",
+      "type of ability": "action",
+      "target": "self",
+      "action points": null,
+      "properties": "Reload a ranged weapon. See weapon for action points needed to reload."
+    },
+    {
+      "name": "Equip item",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Equip an item per free hand from your side or back.<br>For example, if you carry several javalins and you throw one, another must be equipped before use."
+    },
+    {
+      "name": "Melee attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "properties": "Typical attack at a target with any melee weapon.  See weapon for damage."
+    },
+    {
+      "name": "Dodge",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 2,
+      "properties": "Add dodge to armor and magic resist during AD."
+    },
+    {
+      "name": "Move",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May move 5 feet on level ground.  Difficult terrain takes 2 action points."
+    },
+    {
+      "name": "Run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 30 feet on level ground and 15 feet on difficult terrain."
+    },
+    {
+      "name": "Climb",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "With a successful <span class=\"item\"><span>skill</span>Athletics</span> check, may climb 5 feet on reasonably climbable surfaces such as trees or cliffs."
+    },
+        {
+      "name": "Jump",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Jump forward 5 ft or upward 3 ft while standing still; jump forward 8 ft or upward 4 ft while running.<br>This is for a medium creature. For every creature size large, double amount. For every creature size smaller, half amount."
+    },
+    {
+      "name": "Shout command",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May shout up to four words as a command. Make a <span class=\"item\"><span>skill</span>Persuasion</span> check as needed.<br>Response is only possible on target's turn."
+    },
+    {
+      "name": "Ask question",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 5,
+      "properties": "May make a one sentence inquiry to a nearby target and they may respond in one sentence. Make any check as needed."
+    },
+    {
+      "name": "Use cover",
+      "type of ability": "action",
+      "target": "self",
+      "range (ft)": 5,
+      "action points": 1,
+      "properties": "Requires you to be in range to full or half cover.<br>If maneuvering while under cover is needed to attack (e.g. going from a crouch to a stand, or spinning around a column), 1 action point is needed to get out of cover, and one to get back in cover."
+    },
+    {
+      "name": "Drink",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Can drink or administer (to a willing target) a vial of liquid.<br>If target is unconscious, requires a <span class=\"item\"><span>skill</span>Sleight of hand</span> check > 13, otherwise the liquid is not swallowed."
+    },
+    {
+      "name": "Stabilize",
+      "type of ability": "action",
+      "target": "touch",
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Provides one death save to an unconscious target."
+    },
+    {
+      "name": "Improvise",
+      "properties": "Explain to the DM what you want to do, and allow him to decide how and if it can be done.  Expect checks and actions to be required."
+    },
+    {
+      "name": "Disengage",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move without enabling an <span class=\"item\"><span>ability</span>Opportunity attack</span>.<br>No attack action can be made on the same turn."
+    },
+    {
+      "name": "Hide",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "Must be out of the line of sight of all opponents.<br>Allows a <span class=\"item\"><span>skill</span>Stealth</span> check to be made. See <span class=\"item\"><span>skill</span>Stealth</span> for more information."
+    },
+    {
+      "name": "Search",
+      "type of ability": "action",
+      "target": "touch",
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Requires you to be in range to the space being searched.<br>Search a space for one of the following:<ul><li>General items of interest.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for a hidden items.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for specified clues.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for hidden traps.</li><li>Make an <span class=\"item\"><span>skill</span>Inspection</span> check to search for hidden compartments or doors.</li></ul>"
+    },
+    {
+      "name": "Ready",
+      "type of ability": "passive",
+      "target": "self",
+      "action points": 3,
+      "properties": "You may make an action, costing <= 3 action points, on any other character's turn.  You may make the action in between actions of a character, but must declare you are doing so before the character begins the action.<br>If you perform a reaction, you lose your chance to make this special action."
+    },
+    {
+      "name": "Opportunity attack",
+      "type of ability": "reaction",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "properties": "If an enemy that was once within reach, performs a move action to be out of reach, you may make a free melee attack against that enemy, costing <= half (round up) of your action points (at least 3)."
+    },
+    {
+      "name": "Grapple",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit, you may move the target as if slowed, and the target cannot attack.<br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is.<br>If humanoid, you cannot perform any action that requires your hands while grappling."
+    },
+    {
+      "name": "Shove",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit, you move the target 5 ft away.<br>If your STR check >= target's STR ST + 5, you move the target 10 ft away and the target is knocked prone.<br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is."
+    },
+    {
+      "name": "Delay",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "For the encounter, moves your turn after the next character's turn.<br>This may be repeated until you reach the bottom of the initiative order"
+    },
+    {
+      "name": "Hilt butt",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "properties": "Gained when a hilted weapon is equipped.<br>Hit target with butt end of hilt for 2 bludgeoning damage."
+    },
+    {
+      "name": "Block",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 2,
+      "properties": "Gained if armor indicates <span class=\"item\"><span>ability</span>Block</span> is possible. If dodge is negative, before adding the block's dodge modifier, set the dodge to 0.  Add dodge to armor and magic resist during AD."
+    }, 
+    {
+      "name": "Shield slam",
+      "type of ability": "action",
+      "target": "target",
+      "action points": 3,
+      "saving throw": "T: Willpower ST >= A: 5 + STR check: not dazed.",
+      "properties": "Gained if armor indicates <span class=\"item\"><span>ability</span>Shield slam</span> is possible. <br>On hit, inflict dazed."
+    },
+    {
+      "name": "Attuned strength",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when STR >= 5<br>The melee attack DMG modifier due to STR does not exceed 5, excluding a <span class=\"item\"><span>ability</span>Heavy attack</span>. <span class=\"item\"><span>ability</span>Heavy attack</span> only consumes 4 action points."
+    },
+    {
+      "name": "Maximum strength",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Attuned strength"],
+      "properties": "Automatically gained when STR = 10. You cannot gain more STR through leveling.<br><span class=\"item\"><span>ability</span>Heavy attack</span> only consumes 3 action points."
+    },
+    {
+      "name": "Attuned dexterity",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when DEX >= 5<br>The melee and ranged attack DMG modifier due to DEX does not exceed 5. <span class=\"item\"><span>ability</span>Reload</span> consumes 1 less action point."
+    },
+    {
+      "name": "Maximum dexterity",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Attuned dexterity"],
+      "properties": "Automatically gained when DEX = 10. You cannot gain more DEX through leveling.<br><span class=\"item\"><span>ability</span>Reload</span> consumes 2 less action points."
+    },
+    {
+      "name": "Attuned influence",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when INF >= 5<br>Spells that cost >= 5 mana cost 1 less mana.<br>Spell ST +2"
+    },
+    {
+      "name": "Maximum influence",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Attuned influence"],
+      "properties": "Automatically gained when INF = 10. You cannot gain more INF through leveling.<br>Spells that cost >= 5 mana cost 2 less mana.<br>Spell ST +4"
+    },
+    {
+      "name": "Attuned wisdom",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Automatically gained when WIS >= 5<br>Add 3 skill points among any skills."
+    },
+    {
+      "name": "Maximum wisdom",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Attuned wisdom"],
+      "properties": "Automatically gained when WIS = 10. You cannot gain more WIS through leveling.<br>Add 10 skill points among any skills."
+    },
+    {
+      "name": "Nightvision",
+      "type of ability": "passive",
+      "target": "self",
+      "radius (ft)": 60,
+      "radius type": "sphere",
+      "properties": "See into darkness colorblind, but brightness is as if it were day."
+    },
+    {
+      "name": "Dimvision",
+      "type of ability": "passive",
+      "target": "self",
+      "radius type": "sphere",
+      "properties": "See into dim light as if it were day."
+    },
+    {
+      "name": "Blinding light",
+      "type of ability": "passive",
+      "target": "self",
+      "radius type": "sphere",
+      "properties": "Disadvantage on any <span class=\"item\"><span>skill</span>Perception</span> check and AR in bright light."
+    },
+    {
+      "name": "Blind",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Cannot see, and fails all vision-based <span class=\"item\"><span>skill</span>Perception</span> checks."
+    },
+    {
+      "name": "Deaf",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Cannot hear, and fails all vision-based <span class=\"item\"><span>skill</span>Perception</span> checks."
+    },
+    {
+      "name": "Tremorsense",
+      "type of ability": "passive",
+      "target": "aoe",
+      "radius (ft)": 50,
+      "radius type": "sphere",
+      "properties": "Can pinpoint any movement on the ground, and vaguely perceive size and shape."
+    },
+    {
+      "name": "Thin skin",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+8 armor."
+    },
+    {
+      "name": "Half move",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "May move 5 feet on level ground.  Difficult terrain takes 4 action points."
+    },
+    {
+      "name": "Double move",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May move 10 feet on level ground or 5 feet on difficult terrian."
+    },
+    {
+      "name": "Half run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 20 feet on level ground and 10 feet on difficult terrain."
+    },
+    {
+      "name": "Fast run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 40 feet on level ground and 20 feet on difficult terrain."
+    },
+    {
+      "name": "Double run",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "May move 60 feet on level ground and 30 feet on difficult terrain."
+    },
+    {
+      "name": "Natural climber",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May climb 5 feet on reasonably climbable surfaces such as trees or cliffs. Otherwise, +4 <span class=\"item\"><span>skill</span>Athletics</span> when climbing.<br>If creature has <span class=\"item\"><span>ability</span>Half move</span> instead of <span class=\"item\"><span>ability</span>Move</span>, 2 action points are required."
+    },
+    {
+      "name": "Spider climb",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May climb 5 feet on almost any non-slick surface, even ceilings."
+    },
+    {
+      "name": "Web walker",
+      "type of ability": "action",
+      "target": "self",
+      "properties": "May ignore any movement restrictions caused by webbing and can sense the location of any other creature in contact with the web."
+    },
+    {
+      "name": "Swim",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May swim through water with submerged condition."
+    },
+    {
+      "name": "Fly",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "May fly 10-15 feet through unobstructed air. Must fly each turn to avoid falling."
+    },
+    {
+      "name": "Hover",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "May fly 5 feet through unobstructed air.<br>Cannot move more than 30 feet above ground."
+    },
+    {
+      "name": "Dig",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 5,
+      "properties": "May dig 5 feet through soft ground."
+    },
+    {
+      "name": "Fast dig",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "May dig 5 feet through soft ground. Hard ground takes 4 action points."
+    },
+    {
+      "name": "Breathe water",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Breathes underwater as if it were open air."
+    },
+    {
+      "name": "Hold breath",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Can hold breath for 20 minutes without penalty."
+    },
+    {
+      "name": "Sufficating air",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Cannot breathe open air (same effect as if creature was holding breath underwater)."
+    },
+    {
+      "name": "Natural swimmer",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Submerged condition does not apply."
+    },
+    {
+      "name": "Bite",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "piercing",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0."
+    },
+    {
+      "name": "Infect with death",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 0,
+      "damage type": "piercing",
+      "action points": 3,
+      "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
+      "properties": "Transfers disease. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\"><span>spell</span>Remove disease</span> or <span class=\"item\"><span>spell</span>Remove curse</span>."
+    },
+    {
+      "name": "Bite of death",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "piercing",
+      "action points": 3,
+      "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\"><span>spell</span>Remove disease</span> or <span class=\"item\"><span>spell</span>Remove curse</span>."
+    },
+    {
+      "name": "Scratch of death",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "piercing",
+      "action points": 3,
+      "saving throw": "Willpower 12 ST: disease does not transmit or if disease has been transmitted, it does not reduce HP maximum this day.",
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0.<br>Transfers disease on bite. At dawn of each day, the target reduces his HP maximum by 5. If his HP maximum drops to 0 or below, the target becomes a zombie. The disease can be cured with <span class=\"item\"><span>spell</span>Remove disease</span> or <span class=\"item\"><span>spell</span>Remove curse</span>."
+    },
+    {
+      "name": "Kick",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "bludgeoning",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0."
+    },
+    {
+      "name": "Punch",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "bludgeoning",
+      "action points": 2,
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0."
+    },
+    {
+      "name": "Pounce",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "force",
+      "action points": 3,
+      "properties": "On hit, target is knocked prone and is grappled."
+    },
+    {
+      "name": "Slam",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "bludgeoning",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0."
+    },
+    {
+      "name": "Double slam",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 2,
+      "range (ft)": 5,
+      "damage type": "bludgeoning",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0. StAttack two seperate targets each for DMG."
+    },
+    {
+      "name": "Triple slam",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "bludgeoning",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 0. Attack three seperate targets each for DMG."
+    },
+    {
+      "name": "Sting",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "piercing",
+      "damage type 2": "poison",
+      "action points": 3,
+      "saving throw": "Willpower 12 ST: remove poison DMG.",
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0 piercing DMG and 1 poison DMG."
+    },
+    {
+      "name": "Venomous strike",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "piercing",
+      "damage type 2": "poison",
+      "action points": 3,
+      "saving throw": "Willpower 14 ST: remove poison DMG.",
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 0 piercing DMG and 3 poison DMG."
+    },
+    {
+      "name": "Claw",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage type": "slashing",
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 1."
+    },
+    {
+      "name": "Spit",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 15,
+      "action points": 3,
+      "properties": "On hit, target is blinded until 10 <span class=\"item\"><span>skill</span>Willpower</span> check."
+    },
+    {
+      "name": "Gore",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "properties": "A melee unarmed attack. DMG is modified by STR, and the base DMG varies. If no DMG is given, default is 3."
+    },
+    {
+      "name": "Bull rush",
+      "type of ability": "passive",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "properties": "Must continously move at least 15 feet straight towards target. Deals an extra +3 DMG added to any piercing or bludgeoning DMG."
+    },
+    {
+      "name": "Trample",
+      "type of ability": "action",
+      "target": "aoe",
+      "range (ft)": 5,
+      "action points": 5,
+      "saving throw": "DEX 15 ST: half DMG and not knocked prone.",
+      "properties": "A melee unarmed attack which allows movement up to 20 feet without enabling an <span class=\"item\"><span>ability</span>Opportunity attack</span> and knocking all targets prone. DMG is modified by STR or DEX (whichever is higher), and the base DMG varies. If no DMG is given, default is 3."
+    },
+    {
+      "name": "Mimicry",
+      "type of ability": "passive",
+      "target": "self",
+      "saving throw": "Perception 13 ST: Realize it is mimicry.<br>If mimicry is detected, target can perform an additional <span class=\"item\"><span>skill</span>Nature</span> or <span class=\"item\"><span>skill</span>Arcana</span> check to determine actual source of sound.",
+      "properties": "Can mimic simple sounds."
+    },
+    {
+      "name": "Long reach",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Increases the reach of specified abilities to 15 ft."
+    },
+    {
+      "name": "Camouflage",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "While not performing any action, requires +7 to a normal <span class=\"item\"><span>skill</span>Perception</span> check to be noticed."
+    },
+    {
+      "name": "Feign inanimated",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "While not performing any action, requires +7 to a normal <span class=\"item\"><span>skill</span>Perception</span> check to detect that creature is not dead or not inanimate."
+    },
+    {
+      "name": "Pack tactics",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "While an alert ally is within 10 ft, have advantage on AR."
+    },
+    {
+      "name": "Flying grapple",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit, you can move the target while flying.<br>You can only grapple a target < half your weight."
+    },
+    {
+      "name": "Locked grapple",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 4,
+      "saving throw": "T: STR ST >= A: STR check + 3",
+      "properties": "On hit, you may move the target as if slowed, and the target cannot attack.<br>Every turn in grapple, target takes 2*(turns in grapple) force DMG.<br><br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is.<br>If humanoid, you cannot perform any action that requires your hands while grappling."
+    },
+    {
+      "name": "Swallow (small)",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 4,
+      "properties": "On hit, small target is swallowed.  Only one target can be swallowed at a time.<br>Target is blinded and snared, but has full cover from outside attacks and effects.<br>Target takes acid DMG at the start of his turn while swallowed. If no DMG is given, default is 5.<br>When the swallower is dead, target can escape by expending 3 action points, and exits the corpse prone."
+    },
+    {
+      "name": "Swift retreat",
+      "target": "self",
+      "properties": "Can move without provoking an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
+    },
+    {
+      "name": "Cautious retreat",
+      "target": "self",
+      "action points": 1,
+      "properties": "<span class=\"item\"><span>ability</span>Disengage</span> from a single foe, allowing movement without provoking an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
+    },
+    {
+      "name": "Two-headed",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Each head has seperate action points: only one head controls the body."
+    },
+    {
+      "name": "Winged fall",
+      "type of ability": "passive",
+      "target": "self",
+      "duration type": "turns",
+      "duration time": 2,
+      "recharge": "day",
+      "properties": "After falling >= 20 ft, gain <span class=\"item\"><span>ability</span>Fly</span>.",
+      "description": "Ghost-like angelic wings sprout from your back."
+    },
+    {
+      "name": "Mark of the pure",
+      "type of ability": "action",
+      "target": "self",
+      "duration type": "encounter",
+      "duration time": 1,
+      "action points": 3,
+      "recharge": "day",
+      "properties": "Area within 10 ft is bright light, area within 20 ft is dim light.<br>Gain +1 DMG to any melee physical attack.",
+      "description": "The tatoo-like marks across your body shine with bright light as your eyes glow. Fury and power surge your body."
+    },
+    {
+      "name": "Smoke form",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 2,
+      "recharge": "day",
+      "properties": "Become uneffected by DMG until the start of your turn.<br>An exception is that force DMG against you is tripled until the start of your turn.",
+      "description": "Temporarily fade into animated smoke."
+    },
+    {
+      "name": "Undying luck",
+      "type of ability": "passive",
+      "target": "self",
+      "recharge": "day",
+      "properties": "If DMG would reduce your HP to <= 0, ignore that DMG and any other DMG until the start of your next turn."
+    },
+    {
+      "name": "Water yin and air yang",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Must be submerged in water (entire body, excluding head) for at least 8 hours a week or you will permanently transform into a <span class=\"item\"><span>race</span>Terran</span>.<br>Must be entirely out of water for at least 8 hours a week or you will permanently transform into a <span class=\"item\"><span>race</span>Tatsu</span>.<br>In either case, all racial bonuses are replaced with the permanent race's."
+    },
+    {
+      "name": "Form of feet and fin",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "After one turn of being submerged in water, legs are replaced by a tail-like fin.<br>After one turn of being entirely out of water, the tail-like fin is replaced with legs.<br>During either of these transformations, you are considered prone and unable to move.<br>Transformation does not occur if you are wearing any leg-wear or feet-wear."
+    },
+    {
+      "name": "Enraged swing",
+      "type of ability": "passive",
+      "target": "target",
+      "number of targets": 3,
+      "range (ft)": 5,
+      "requires": ["Heavy attack"],
+      "properties": "While performing a <span class=\"item\"><span>ability</span>Heavy attack</span>, make attack against up to 3 targets all within 5 ft of you and 5 ft of eachother."
+    },
+    {
+      "name": "Whirlwind swing",
+      "type of ability": "passive",
+      "target": "aoe",
+      "range (ft)": 5,
+      "recharge": "shard",
+      "requires": ["Heavy attack"],
+      "properties": "While performing a <span class=\"item\"><span>ability</span>Heavy attack</span>, make attack against all creatures within 5 ft of you."
+    },
+    {
+      "name": "Hard skin",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Thick skin"],
+      "properties": "+14 armor."
+    },
+    {
+      "name": "Magicborn",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+5 magic resist."
+    },
+    {
+      "name": "Magic immune",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Magic resistant"],
+      "properties": "+10 magic resist."
+    },
+    {
+      "name": "Quick dodge",
+      "type of ability": "reaction",
+      "target": "self",
+      "action points": 1,
+      "properties": "Add dodge to armor and magic resist during AD."
+    },
+    {
+      "name": "Extra move",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Have one extra action point each turn that can only be expended on movement."
+    },
+    {
+      "name": "Extra move II",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Extra move"],
+      "properties": "Have two extra action points each turn that can only be expended on movement."
+    },
+    {
+      "name": "Standing leap",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "properties": "Jump forward 20 ft or upward 10 ft while standing still or running."
+    },
+    {
+      "name": "Hard shove",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "recharge": "shard",
+      "saving throw": "T: STR ST >= A: STR check.",
+      "properties": "On hit, you move the target 15 ft away.<br>If your STR check >= target's STR ST + 5, you move the target 20 ft away and the target is knocked prone.<br>+5 STR check for each size smaller the target is; -5 STR check for each size larger the target is."
+    },
+    {
+      "name": "Rage",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "recharge": "encounter",
+      "duration type": "encounter",
+      "properties": "Couple with any single acquired rage mood: <span class=\"item\"><span>ability</span>Raging fury</span>, <span class=\"item\"><span>ability</span>Raging guard</span>, or <span class=\"item\"><span>ability</span>Raging haste</span>.<br>Cannot change rage mood once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+    },
+    {
+      "name": "Double rage",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "recharge": "encounter",
+      "duration type": "encounter",
+      "replaces": ["Rage"],
+      "properties": "Couple with any two acquired rage moods: <span class=\"item\"><span>ability</span>Raging fury</span>, <span class=\"item\"><span>ability</span>Raging guard</span>, or <span class=\"item\"><span>ability</span>Raging haste</span>.<br>Cannot change rage moods once selected.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+    },
+    {
+      "name": "Triple rage",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "recharge": "encounter",
+      "duration type": "encounter",
+      "replaces": ["Double rage"],
+      "properties": "Couple with all three rage moods: <span class=\"item\"><span>ability</span>Raging fury</span>, <span class=\"item\"><span>ability</span>Raging guard</span>, or <span class=\"item\"><span>ability</span>Raging haste</span>.<br>Can activate only after initiative is rolled or at the DM's discretion in an enraging situation."
+    },
+    {
+      "name": "Raging fury",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "-2 AR, +2 DMG."
+    },
+    {
+      "name": "Raging guard",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Resistance to bludgeoning, slashing, and piercing DMG."
+    },
+    {
+      "name": "Raging haste",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+3 dodge, <span class=\"item\"><span>ability</span>Opportunity attack</span> against you are have disadvantage. Have one extra action point each turn that can only be expended on movement."
+    },
+    {
+      "name": "Blood boil",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Depending on the rage mood, gain a blood token if:<br><ul><li><span class=\"item\"><span>ability</span>Raging fury</span>: you deal DMG with an attack</li><li><span class=\"item\"><span>ability</span>Raging guard</span>: you take DMG</li><li><span class=\"item\"><span>ability</span>Raging haste</span>: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and <span class=\"item\"><span>ability</span>Rage</span> ends."
+    },
+    {
+      "name": "Heated blood boil",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Blood boil"],
+      "properties": "When <span class=\"item\"><span>ability</span>Rage</span> is activated, gain 3 blood tokens.<br>Depending on the rage mood, gain a blood token if:<br><ul><li><span class=\"item\"><span>ability</span>Raging fury</span>: you deal DMG with an attack</li><li><span class=\"item\"><span>ability</span>Raging guard</span>: you take DMG</li><li><span class=\"item\"><span>ability</span>Raging haste</span>: an attack against you misses</li></ul><br>+1 DMG per blood token.<br>If you gain > 10 blood tokens, remove them all and <span class=\"item\"><span>ability</span>Rage</span> ends."
+    },
+    {
+      "name": "Unstoppable fever",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "You are immune to all DMG types and automatically succeed any ST.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and <span class=\"item\"><span>ability</span>Rage</span> ends.<br>Lasts for 2 turns if 8 blood tokens were consumed, 3 turns if 9 blood tokens were consumed, 4 turns if 10 blood tokens were consumed."
+    },
+    {
+      "name": "Murderous fever",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 3,
+      "properties": "Your next successful attack will deal extra DMG to a single target.<br>Can only be activated by consuming >= 8 blood tokens.<br>Once activated, remove all blood tokens and <span class=\"item\"><span>ability</span>Rage</span> ends.<br>Deal +40 DMG if 8 blood tokens were consumed, deal +60 DMG if 8 blood tokens were consumed, deal +80 DMG if 8 blood tokens were consumed."
+    },
+    {
+      "name": "Beserker fever",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "properties": "Once activated, at the end of each turn remove a blood token.<br>You cannot gain additional blood tokens during this time.<br>Once all blood tokens are removed, <span class=\"item\"><span>ability</span>Rage</span> ends."
+    },
+    {
+      "name": "Restoring blood",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 1,
+      "recharge": "shard",
+      "properties": "Restore 5 + <span class=\"item\"><span>skill</span>Willpower</span> modifier HP."
+    },
+    {
+      "name": "Stubborn blood",
+      "type of ability": "passive",
+      "target": "self",
+      "recharge": "shard",
+      "properties": "Reroll a failed ST."
+    },
+    {
+      "name": "Guided attack",
+      "type of ability": "passive",
+      "target": "self",
+      "recharge": "shard",
+      "properties": "Add 1d20 to an AR before rolling the AR."
+    },
+    {
+      "name": "Perfect attack",
+      "type of ability": "passive",
+      "target": "self",
+      "recharge": "shard",
+      "replaces": ["Guided attack"],
+      "properties": "Add 20 to an AR before rolling the AR."
+    },
+    {
+      "name": "Honed critical",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Critical hit on the d20 roll of 19 or 20 for the AR."
+    },
+    {
+      "name": "Melee weapon specialist",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 DMG with melee weapons"
+    },
+    {
+      "name": "Ranged weapon specialist",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 DMG with ranged weapons"
+    },
+    {
+      "name": "Melee weapon master",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+5 DMG with melee weapons"
+    },
+    {
+      "name": "Ranged weapon master",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+5 DMG with ranged weapons"
+    },
+    {
+      "name": "Mastered critical",
+      "type of ability": "passive",
+      "target": "self",
+      "requires": ["Honed critical"],
+      "properties": "Critical hit on the d20 roll of 18-20 for the AR."
+    },
+    {
+      "name": "Advance lunge",
+      "type of ability": "passive",
+      "target": "self",
+      "requires": ["Quick attack"],
+      "properties": "While performing a movement action into reach of a target, may perform a <span class=\"item\"><span>ability</span>Quick attack</span> without using action points.<br>Cannot perform with a <span class=\"item\"><span>ability</span>Charge attack</span> action."
+    },
+    {
+      "name": "Reactive movement",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Can perform a single movement action as a reaction per round."
+    },
+    {
+      "name": "Oportunist",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Add 2 action points to the free melee attack action enabled by an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
+    },
+    {
+      "name": "Adrenaline rush",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 0,
+      "recharge": "shard",
+      "properties": "Gain 5 action points this turn."
+    },
+    {
+      "name": "Hold rank",
+      "type of ability": "passive",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "saving throw": "T: Athletics ST >= A: STR check",
+      "properties": "When you could perform an <span class=\"item\"><span>ability</span>Opportunity attack</span>, instead prevent the enemy from being able to move past you.<br>Enemy's move action would still expend his action points."
+    },
+    {
+      "name": "Intimidating attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 1,
+      "recharge": "shard",
+      "saving throw": "T: Willpower ST >= A: Intimidation check",
+      "properties": "After a successful melee attack, target is feared."
+    },
+    {
+      "name": "Disarming strike",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 3,
+      "recharge": "shard",
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "On hit with a melee weapon equipped, the target drops his dominant hand weapon at his feet.<br>If your STR check >= target's STR ST + 5, the target drops his dominant hand weapon 10 ft away in a random direction."
+    },
+    {
+      "name": "Trip attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 1,
+      "recharge": "shard",
+      "saving throw": "T: STR ST >= A: STR check",
+      "properties": "After a successful melee attack, target is knocked prone."
+    },
+    {
+      "name": "Provoke attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 2,
+      "saving throw": "T: Willpower ST >= A: Intimidation check",
+      "properties": "After a successful melee attack, provoke the target to attack you during its next turn."
+    },
+    {
+      "name": "Provoke cluster",
+      "type of ability": "action",
+      "target": "aoe",
+      "radius (ft)": 30,
+      "radius type": "sphere",
+      "action points": 3,
+      "recharge": "shard",
+      "saving throw": "T: Willpower ST >= A: Intimidation check",
+      "properties": "Provoke all non-friendly creatures in area to attack you during their next 1d4 turns."
+    },
+    {
+      "name": "Chronoshift",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 120,
+      "action points": 0,
+      "recharge": "day",
+      "properties": "Give the remaining action points of your turn to a willing target, you may not perform any reactions this round.  The target must immediately use those action points.<br>No reaction can be made against the target's attacks.<br>Any DEX based ST made against that target's attacks automatically fail.",
+      "description": "Your body stiffens as it temporarily freezes in time.  An ally is given that time as he strikes with infinite speed." 
+    },
+    {
+      "name": "Natural drunk",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "If completely sober (6 hours without drinking alcohol), -2 to DEX and INF and all DEX and INF skills. If drunk, instead: -2 to WIS and all WIS skills for 1d6 hours. Otherwise (i.e. tipsy), +1 to DEX and all DEX skills."
+    },
+    {
+      "name": "Gunsmith",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Able to create gun <span class=\"item\"><span>ammunition</span>Cartridge</span>s and modify firearms with attachments. If checks are needed, perform as DEX check."
+    },
+    {
+      "name": "Duel weapons",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Able to add DMG provided from the offhand weapon with a <span class=\"item\"><span>ability</span>Melee attack</span> or <span class=\"item\"><span>ability</span>Quick attack</span> of the dominant hand weapon.<br>Offhand weapon must be able to perform a <span class=\"item\"><span>ability</span>Quick attack</span>."
+    },
+    {
+      "name": "Sharpshooter",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 to AR of any ranged weapon."
+    },
+    {
+      "name": "Shield adept",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+1 to dodge given by <span class=\"item\"><span>ability</span>Block</span>."
+    },
+    {
+      "name": "Quick attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 2,
+      "properties": "Attack at a target with a melee weapon. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Rapid attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 1,
+      "requires": ["Quick attack"],
+      "properties": "Attack at a target with a melee weapon. All other attacks within this turn must be made on same target. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Heavy attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "action points": 5,
+      "properties": "Attack at a target with a melee weapon. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Reach attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 10,
+      "action points": 4,
+      "properties": "Attack at a target with a two-handed melee weapon. Weapon must indicate such an attack is possible. See weapon for damage."
+    },
+    {
+      "name": "Charge attack",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "action points": 1,
+      "properties": "Attack at a target with a piercing melee or two-handed melee weapon. Must continously move at least 15 feet straight towards target. If no DMG is given, deals an extra +3 damage added to the weapon's typical melee damage."
+    },
+    {
+      "name": "Skin",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Thin skin"],
+      "properties": "+10 armor."
+    },
+    {
+      "name": "Thick skin",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Skin"],
+      "properties": "+12 armor."
+    },
+    {
+      "name": "Nimble",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 dodge."
+    },
+    {
+      "name": "Rogue nimble",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Nimble"],
+      "properties": "+5 dodge."
+    },
+    {
+      "name": "Armored mage",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Remove 2 from an armor-based spell AR penalty."
+    },
+    {
+      "name": "Armored battlemage",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": ["Armored mage"],
+      "properties": "Remove 4 from an armor-based spell AR penalty."
+    },
+    {
+      "name": "Magic resistant",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+2 magic resist."
+    },
+    {
+      "name": "Side step",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "When dodging results in a miss, may move 5 ft without cost to action points and without enabling an <span class=\"item\"><span>ability</span>Opportunity attack</span> from that attacker."
+    },
+    {
+      "name": "Moving dodge",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+5 dodge against an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
+    },
+    {
+      "name": "Parry",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "When a melee weapon is equipped, dodge +2."
+    },
+    {
+      "name": "Counter attack",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "When dodging, if attacker's AR+5 would miss, no action points lost for the dodge. Additionally, gain a counter attack point.  On your next turn, you may expend a counter attack point to have advantage on that attack."
+    },
+    {
+      "name": "Link to Sentium drone",
+      "type of ability": "passive",
+      "target": "target",
+      "range (ft)": 500,
+      "properties": "You gain a mental link to a Sentium drone that you can call into existence from the Sentium plane.<br>The drone is powered by the essence of your <span class=\"item\"><span>arcane</span>Soul shard</span>, and you are known as its summoner. The drone will regain hit-points, mana, and abilities when your shard is drained. If the drone is destroyed, it requires 8 hours of focus to recall it from the Sentium plane. When recalled, it loses all items and conditions it was carrying, but is otherwise fully rejuvenate.<br>The drone is controlled by expending your action points.  A drone will do nothing unless it is controlled; however, it will try to remain in a stable position and it will make ST as needed.<br>When controlling the drone, you gain insight through the drone's senses, without limiting your own perception.  The drone's senses include: sight, sound, and touch.  Drones cannot communicate verbally, but can, in circumstances determined by the GM, feel and express emotion.<br>When the drone extends out of range, the link is lost and you are unable to control or sense the drone.  The drone will fade into the Sentium plane within 8 hours, but you may begin the recall at any time after you lose the link. You may recall a drone, even if it is not destroyed or out of range.  In this case, the drone unlinks and the process works just as if the drone extended out of range."
+    },
+    {
+      "name": "Construct mecha drone",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Your Sentium drone is a <span class=\"item\"><span>class</span>Mecha drone</span>. When you level, the drone will level with you and you may pick its attributes."
+    },
+    {
+      "name": "Construct drone swarm",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Your Sentium drone is a <span class=\"item\"><span>class</span>Drone swarm</span>. When you level, the drone will level with you and you may pick its attributes."
+    },
+    {
+      "name": "Follow summoner",
+      "type of ability": "action",
+      "target": "self",
+      "action points": null,
+      "properties": "Expend an entire turn's action points.  You move 30 feet each turn towards your summoner in the most direct path of least danger.  You continue to move until you are within 10 feet of your summoner, or if your summoner moves more than 10 feet away from you.<br>This ability does not consume any additional action points until it is canceled or a different action is taken."
+    },
+    {
+      "name": "Metal carapace",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "+12 armor, +8 magic resist."
+    },
+    {
+      "name": "Remote senses",
+      "type of ability": "passive",
+      "target": "self",
+      "properties": "Use the summoner's skill points when making an:<ul><li><span>skill</span>Arcana</span> check</li><li><span class=\"item\"><span>skill</span>Perception</span> check</li><li><span class=\"item\"><span>skill</span>Inspection</span> check</li><li><span class=\"item\"><span>skill</span>Insight</span> check</li><li><span class=\"item\"><span>skill</span>Lore</span> check</li><li><span class=\"item\"><span>skill</span>Nature</span> check</li><li><span class=\"item\"><span>skill</span>Survival</span> check</li></ul>"
+    },
+    {
+      "name": "Mechanized arm",
+      "type of ability": "passive",
+      "target": "self",
+      "action points": 3,
+      "properties": "Gain a mechanical arm with a simple claw-like hand. Can be used to perform simple tasks, such as:<ul><li>Picking up an object, weighing < 50 lbs.</li><li>Throwing a small object up to 25 feet</li><li>Shoving an object with 50 lbs of force.</li><li>Clenching an object with 10 lbs of force.</li></ul>"
+    },
+    {
+      "name": "Propulsive wallop",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 5,
+      "damage": "1 + 8:STR",
+      "damage type": "bludgeoning",
+      "action points": 3,
+      "requires": ["Mechanized arm"],
+      "properties": "A melee attack from a mechanized arm."
+    },
+    {
+      "name": "Electric prod",
+      "type of ability": "action",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 10,
+      "damage": "5",
+      "damage type": "lightning",
+      "action points": 3,
+      "requires": ["Mechanized arm"],
+      "properties": "An attack from a mechanized arm."
+    },
+    {
+      "name": "Song of the weave",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 5,
+      "properties": "At the start of the next turn, you begin a song. A song can last for as long as it is played or sung.  The song can be accompanied with a <b>Motif</b> and is set to a <span class=\"item\"><span>ability</span>Time signature</span>.<br>The song is played with one beat equaling one turn.  A beat is an ability that can only be performed during a song.  Beats have one of four types: <ul><li>Sharp</li><li>Flat</li><li>Natural</li><li>Rest</li></ul>Beats are played in a <b>Measure</b>, depending on the <span class=\"item\"><span>ability</span>Time signature</span>.  Certain beats can only be played if they follow a particular beat type, or fall at a particular point in the measure.<br>A measure is a pattern of a particular number of beats, determined by the chosen <span class=\"item\"><span>ability</span>Time signature</span> for the song.  For example, if a 4/4 measure is chosen, every four beats the measure starts over. The song needs to be carefully considered to ensure it maintains proper rhythm and theme.  Playing the right beats in sequence can provide bonuses.  If a beat is not played on a turn, the turn is considered a <b>Rest</b>.  If two rests are played in sequence, the song is ended early.<br>If a song is ended early, you must use <span class=\"item\"><span>ability</span>Temperament</span> to begin the next song.  Certain <b>Composition dynamics</b> like <span class=\"item\"><span>ability</span>Outro</span> can end a song properly instead of early.  If a song is ended properly, the next song can begin by using this ability."
+    },
+    {
+      "name": "Time signature",
+      "type of ability": "passive",
+      "target": "self",
+      "requires": ["Song of the weave"],
+      "properties": "The time signature determines how many beats are in a measure. A measure starts over after the last beat in the measure. Certain time signatures are gained at certain levels:<ul><li>At level 1 gain the 4/4 measure: 4 beats per measure</li><li>At level 1 gain the 4/4 measure: 4 beats per measure</li><li>At level 4 gain the 3/4 measure: 3 beats per measure</li><li>At level 10 gain the 2/4 measure: 2 beats per measure</li><li>At level 14 gain the 6/8 measure: 6 beats per measure</li></ul>Once a time signature is chosen for the song, it cannot be changed. A single <b>Measure modifier</b> can be played per measure at the start of the measure."
+    },
+    {
+      "name": "Temperament",
+      "type of ability": "action",
+      "target": "self",
+      "action points": null,
+      "requires": ["Song of the weave"],
+      "properties": "Take two whole turns preparing for the next song by retuning your instrument or relaxing your vocal chords.  After Temperament, <span class=\"item\"><span>ability</span>Song of the weave</span> can be performed again.  Temperament is only performed when required (see <span class=\"item\"><span>ability</span>Song of the weave</span> for more details)."
+    },
+    {
+      "name": "Outro",
+      "type of ability": "action",
+      "type": "Composition dynamic",
+      "target": "self",
+      "action points": 0,
+      "requires": ["Song of the weave"],
+      "properties": "Can only be activated during the last beat of the measure.  If activated, the next measure will be the last measure of the song, and the song will end properly."
+    },
+    {
+      "name": "Capriccio",
+      "type of ability": "passive",
+      "type": "Motif",
+      "target": "self",
+      "radius (ft)": 80,
+      "radius type": "sphere",
+      "requires": ["Song of the weave"],
+      "properties": "A quick, improvisational, spirited composition.<br>All allies within the song's range gain <span class=\"item\"><span>ability</span>Extra move</span>. Any ally that already has <span class=\"item\"><span>ability</span>Extra move</span> gains <span class=\"item\"><span>ability</span>Extra move II</span> instead.  All allies also gain +2 to <span class=\"item\"><span>skill</span>Athletic</span> checks."
+    },
+    {
+      "name": "Grazioso",
+      "type of ability": "passive",
+      "type": "Motif",
+      "target": "self",
+      "radius (ft)": 80,
+      "radius type": "sphere",
+      "requires": ["Song of the weave"],
+      "properties": "A gracefully composition.<br>All allies within the song's range gain +1 AR.  All allies also gain +2 to <span class=\"item\"><span>skill</span>Balance</span> checks."
+    },
+    {
+      "name": "Accompaniment",
+      "type of ability": "passive",
+      "target": "self",
+      "radius type": "sphere",
+      "requires": ["Song of the weave"],
+      "properties": "+2 to DMG or healing to beats if playing a two-handed instrument during a song."
+    },
+    {
+      "name": "Soundwave",
+      "type of ability": "action",
+      "type": "Beat - Sharp",
+      "target": "target",
+      "number of targets": 1,
+      "radius (ft)": 30,
+      "action points": 3,
+      "damage": "2",
+      "damage type": "force",
+      "requires AR": true,
+      "requires": ["Song of the weave"],
+      "properties": "+1 AR for every preceding beat in the measure.<br>+2 DMG if following a <b>Rest</b>."
+    },
+    {
+      "name": "Healing words",
+      "type of ability": "action",
+      "type": "Beat - Rest",
+      "mana cost": 2,
+      "target": "target",
+      "number of targets": 1,
+      "radius (ft)": 40,
+      "action points": 3,
+      "damage": "1d4",
+      "damage type": "healing",
+      "requires": ["Song of the weave"],
+      "properties": "+3 healing if the 3rd beat in the measure."
+    },
+    {
+      "name": "Hymn of the shield",
+      "type of ability": "action",
+      "type": "Beat - Flat",
+      "mana cost": 2,
+      "recharge": "encounter",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 80,
+      "action points": 3,
+      "requires": ["Song of the weave"],
+      "properties": "Target gains +1 armor and +1 magic resist until the end of the measure."
+    },
+    {
+      "name": "Hymn of the sword",
+      "type of ability": "action",
+      "type": "Beat - Flat",
+      "mana cost": 2,
+      "recharge": "encounter",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 80,
+      "action points": 3,
+      "requires": ["Song of the weave"],
+      "properties": "Target gains +1 DMG to all attacks until the end of the measure."
+    },
+    {
+      "name": "Legato",
+      "type of ability": "action",
+      "type": "Measure modifier",
+      "mana cost": 1,
+      "recharge": "encounter",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 80,
+      "action points": 2,
+      "requires": ["Song of the weave"],
+      "properties": "At the start of the measure, +1 to all beat effects that are numerical and that positively affect the target.<br>This effect lasts until the end of the measure."
+    },
+    {
+      "name": "Staccato",
+      "type of ability": "action",
+      "type": "Measure modifier",
+      "mana cost": 1,
+      "recharge": "encounter",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 80,
+      "action points": 2,
+      "requires": ["Song of the weave"],
+      "properties": "At the start of the measure, +1 to all beat effects that are numerical and that negatively affect the target.<br>This effect lasts until the end of the measure."
+    }
+  ]
+}
