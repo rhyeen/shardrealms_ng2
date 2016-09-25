@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component';
+
+import { routing,
+         appRoutingProviders }  from './app.routing';
+
 import {RootContainerComponent} from './components/root-container.component';
 import {LevelContainerComponent} from './components/level-container.component';
 import {LevelModifierComponent} from './components/level-modifier.component';
@@ -24,7 +28,8 @@ import {TableSelectionComponent} from './components/table-selection.component';
 @NgModule({
   imports:      [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   declarations: [
   	AppComponent,
@@ -44,6 +49,9 @@ import {TableSelectionComponent} from './components/table-selection.component';
   	NewPlayerContainerComponent,
   	TableContainerComponent,
   	TableSelectionComponent
+  ],
+  providers: [
+  	appRoutingProviders
   ],
   bootstrap:    [ AppComponent ]
 })

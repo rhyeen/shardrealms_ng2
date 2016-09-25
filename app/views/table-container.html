@@ -1,3 +1,6 @@
+<section>
+  <button (click)="goToRoot()">Main menu</button>
+</section>
 <section class="table-container">
   <section class="table-list" *ngIf="!selectedTable">
     <h1>Tables</h1>
@@ -16,3 +19,4 @@
     <sr-table-selection [table]="selectedTable"></sr-table-selection>
   </section>
 </section>
+<router-outlet></router-outlet>

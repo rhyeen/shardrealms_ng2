@@ -1,13 +1,5 @@
-<section *ngIf="mainView.view === 'main'">
+<section>
   <button (click)="goToPlayers()">Players</button>
   <button (click)="goToTables()">Tables</button>
 </section>
-<section *ngIf="mainView.view !== 'main'">
-  <button (click)="goToRoot()">Main menu</button>
-  <sr-player-list-container *ngIf="mainView.view === 'players'"></sr-player-list-container>
-  <sr-table-container *ngIf="mainView.view === 'tables'"></sr-table-container>
-</section>
-<section>
-  <sr-item-window></sr-item-window>
-  <sr-stat-window></sr-stat-window>
-</section>
+<router-outlet></router-outlet>

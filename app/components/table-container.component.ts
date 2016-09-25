@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
 import {TableEntriesService} from '../services/table-entries.service';
 
 @Component({
@@ -11,7 +13,11 @@ export class TableContainerComponent implements OnInit {
   public selectedTable = null;
   
   // get the service
-  constructor(private _tableEntriesService: TableEntriesService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private _tableEntriesService: TableEntriesService
+  ) { }
   
   getTables() {
     this._tableEntriesService.getTables().then(tables => this.tables = tables);
@@ -20,13 +26,25 @@ export class TableContainerComponent implements OnInit {
   // on app load, do this:
   ngOnInit() {
     this.getTables();
+    this.route.params.forEach((params: Params) => {
+      let id = params['id'];
+      if (id) {
+        this.selectedTable = id;
+      }
+    });
+  }
+
+  goToRoot() {
+    this.router.navigate(['/']);
   }
 
   selectTable(table: string) {
+    this.router.navigate(['/table', table]);
     this.selectedTable = table;
   }
 
   backToSelection(){
+    this.router.navigate(['/table']);
     this.selectedTable = null;
   }
 }

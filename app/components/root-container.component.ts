@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
 import {GlobalService} from '../services/global.service';
 import {PlayerEntriesService} from '../services/player-entries.service';
 import {TableEntriesService} from '../services/table-entries.service';
@@ -12,10 +14,13 @@ export class RootContainerComponent implements OnInit {
   public mainView;
   //public selectedView = 'players';
 
-  constructor(private _globalService: GlobalService) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private _globalService: GlobalService
+  ) {
 
   }
-
 
   // on app load, do this:
   ngOnInit() {
@@ -23,14 +28,14 @@ export class RootContainerComponent implements OnInit {
   }
 
   goToPlayers() {
-    this._globalService.gotoPlayerList();
+    this.router.navigate(['/player']);
   }
 
   goToTables() {
-    this._globalService.gotoTableList();
+    this.router.navigate(['/table']);
   }
 
   goToRoot() {
-    this._globalService.gotoMainMenu();
+    this.router.navigate(['/']);
   }
 }

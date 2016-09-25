@@ -1,3 +1,6 @@
+<section>
+  <button (click)="goToRoot()">Main menu</button>
+</section>
 <section class="player-list-container">
   <section class="player-list" *ngIf="!mainView.subView">
     <section class="new-player">
@@ -17,3 +20,4 @@
     <sr-new-player-container></sr-new-player-container>
   </section>
 </section>
+<router-outlet></router-outlet>
