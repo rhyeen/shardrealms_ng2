@@ -1,0 +1,221 @@
+{
+  "class": "lootset",
+  "entries": [
+    {
+      "location": "Woods thou holey",
+      "container": "Maven Holahd's pouch",
+      "container type": "NPC",
+      "skill required": "Sleight of hand: 14",
+      "items": [
+        {
+          "name": "Gold",
+          "quantity": 5
+        },
+        {
+          "name": "Maven's key chain"
+        },
+        {
+          "name": "Maven's request for supplies"
+        }
+      ]
+    },
+    {
+      "location": "Woods thou holey",
+      "container": "Maven Holahd's bedchamber",
+      "container type": "Room",
+      "skill required": "Lockpicking: 13",
+      "items": [
+        {
+          "name": "Gold",
+          "quantity": 3
+        },
+        {
+          "name": "Pen and ink"
+        },
+        {
+          "name": "Canvas (paper)",
+          "quantity": 10
+        },
+        {
+          "name": "Book - Abridged Book of Gyvth",
+          "description": "Thoroughly read, it is well worn, and has several tear streaked pages."
+        },
+        {
+          "name": "Book - A History of the Progressive World"
+        },
+        {
+          "name": "Book - Journal of a Lone Woodsman"
+        },
+        {
+          "name": "Book - Lord Galeman's Psalms"
+        },
+        {
+          "name": "Book - Common Alements and Practical Cures"
+        },
+        {
+          "name": "Flask",
+          "contains": "Wine"
+        },
+        {
+          "name": "Rations (1 day)"
+        },
+        {
+          "name": "Candles (5)"
+        },
+        {
+          "name": "Blanket"
+        },
+        {
+          "name": "Clothes (common)",
+          "quantity": 5
+        },
+        {
+          "name": "Key to bedchamber chest",
+          "skill required": "Investigation: 16",
+          "description": "Hidden under a squeaky floorboard."
+        }
+      ]
+    },
+    {
+      "location": "Woods thou holey",
+      "container": "Maven Holahd's bedchamber's chest",
+      "container type": "Chest",
+      "skill required": "Lockpicking: 15",
+      "items": [
+        {
+          "name": "Gold",
+          "quantity": 20
+        },
+        {
+          "name": "Clothes (common)"
+        },
+        {
+          "name": "Hooded Cloak"
+        }
+      ]
+    },
+    {
+      "location": "Firmwether home",
+      "container": "Living room",
+      "container type": "Room",
+      "items": [
+        {
+          "name": "Gold",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "location": "Firmwether home",
+      "container": "Tool storage shed",
+      "container type": "Room",
+      "skill required": "Lockpicking: 11",
+      "items": [
+        {
+          "name": "Pickaxe",
+          "quantity": 3
+        },
+        {
+          "name": "Shovel",
+          "quantity": 2
+        },
+        {
+          "name": "Wheelbarrow"
+        },
+        {
+          "name": "Sledgehammer"
+        },
+        {
+          "name": "Sledgehammer"
+        },
+        {
+          "name": "Hematite",
+          "quantity": 5,
+          "description": "unrefined"
+        },
+        {
+          "name": "Agate",
+          "description": "unrefined"
+        },
+        {
+          "name": "Quartz",
+          "description": "unrefined"
+        }
+      ]
+    },
+    {
+      "location": "Firmwether home",
+      "container": "Living room",
+      "container type": "Room",
+      "items": [
+        {
+          "name": "Gold",
+          "quantity": 1
+        },
+        {
+          "name": "Flask",
+          "contains": "Ale",
+          "quantity": 2
+        },
+        {
+          "name": "Rations (1 day)",
+          "quantity": 3
+        },
+        {
+          "name": "Candles (5)"
+        },
+        {
+          "name": "Deadheat shard",
+          "quantity": 4,
+          "description": "In the fireplace, still slightly warm."
+        },
+        {
+          "name": "Plate",
+          "quantity": 4
+        },
+        {
+          "name": "Bowl",
+          "quantity": 3
+        },
+        {
+          "name": "Cup",
+          "quantity": 4
+        },
+        {
+          "name": "Silverware",
+          "quantity": 10
+        },
+        {
+          "name": "Broom"
+        },
+        {
+          "name": "Dagger",
+          "description": "Is coated in a sheet of blood."
+        },
+        {
+          "name": "Handaxe",
+          "description": "Head of the axe has broken off, and the handle is snapped."
+        }
+      ]
+    },
+    {
+      "location": "Firmwether home",
+      "container": "Bedroom",
+      "container type": "Room",
+      "items": [
+        {
+          "name": "Candles (5)"
+        },
+        {
+          "name": "Blanket"
+        },
+        {
+          "name": "Clothes (common)",
+          "quantity": 5
+        }
+      ]
+    }
+  ]
+}
+
+

@@ -1,0 +1,23 @@
+{
+  "class": "custom items",
+  "entries": [
+    {
+      "name": "Maven's key chain",
+      "weight (lbs)": 0,
+      "value (gold)": 0,
+      "rarity": "common",
+      "properties": "(1) key opens his own bed chambers.<b>(2) opens the guest bedroom.<br>(3) key opens the wine cellar.",
+      "description": "",
+      "image-links": []
+    },
+    {
+      "name": "Maven's request for supplies",
+      "weight (lbs)": 0,
+      "value (gold)": 0,
+      "rarity": "common",
+      "properties": "The note reads in common:<br>100 lbs cornmeal, 2 axes sharpened, 5 lbs saltlick, 5 lbs sugar cubes, standard medicinal supplies, 0.5 lbs Tarleaf!",
+      "description": "Scratched note on a crumpled piece of paper.",
+      "image-links": []
+    }
+  ]
+}

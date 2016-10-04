@@ -1,0 +1,73 @@
+{
+  "class": "magic item",
+  "entries": [
+    {
+      "name": "Everfrost pickaxe",
+      "weight (lbs)": 5,
+      "value (gold)": 1200,
+      "rarity": "rare",
+      "type of weapon": "melee",
+      "damage": "3, 2 + 5:STR",
+      "damage type": "piercing, cold",
+      "damage - Heavy attack": "5, 2 + 4:STR",
+      "damage type - Heavy attack": "piercing, cold",
+      "recharge": "day",
+      "hidden properties": "[IDENTIFY 13] On hit, activate to cause target to be frozen in ice.  Target is grappled against the ice and must beat a 30 STR check to break free. Each STR check accumulates over multiple turns.<br>Each turn, the target takes 2 cold DMG.<br>If DMG is dealt against the target, it is instead dealt against the ice reduces the STR check needed respectively.<br>The ice is immune to cold DMG, and weak to fire DMG.<br>[INSPECTION 15 | IDENTIFY 13] If you listen closely, you can hear the constant whispering scream of a tortured portion of a soul: trapped in the everfrost.",
+      "description": "Wooden handled iron pickaxe. The head is frosted steel that is cold to the touch.",
+      "image-links": []
+    },
+    {
+      "name": "Nolgre'eel's Iron fist (left)",
+      "weight (lbs)": 3,
+      "value (gold)": 1000,
+      "rarity": "rare",
+      "type of armor": "other",
+      "cursed": true,
+      "hidden properties": "[IDENTIFY 12] Item is cursed.<br>[EQUIPPED] +1 STR<br>[IDENTIFY 15]Whenever wearer deals DMG with a weapon, wearer is inflicted with 1 true DMG.",
+      "properties": "Herein lies the Iron Fists of Nolgre’eel, the Battlemage King. We welcome any who find them to wear them. We warned any who wear them to heed them: The left give strength to wield his sword, the right gives magic to spell his word. The left asks penance to chastise, the right makes fools of the wise.",
+      "description": "",
+      "image-links": []
+    },
+    {
+      "name": "Nolgre'eel's Iron fist (right)",
+      "weight (lbs)": 3,
+      "value (gold)": 1000,
+      "rarity": "rare",
+      "type of armor": "other",
+      "cursed": true,
+      "hidden properties": "[IDENTIFY 12] Item is cursed.<br>[EQUIPPED] +3 Mana<br>-1 INF",
+      "properties": "Herein lies the Iron Fists of Nolgre’eel, the Battlemage King. We welcome any who find them to wear them. We warned any who wear them to heed them: The left give strength to wield his sword, the right gives magic to spell his word. The left asks penance to chastise, the right makes fools of the wise.",
+      "description": "",
+      "image-links": []
+    },
+    {
+      "name": "Nolgre'eel's Iron circlet",
+      "weight (lbs)": 3,
+      "value (gold)": 1500,
+      "rarity": "rare",
+      "type of armor": "other",
+      "cursed": true,
+      "recharge": "day",
+      "hidden properties": "[IDENTIFY 12] Item is cursed.<br>[EQUIPPED] -2 armor<br>[IDENTIFY 15] The first three ARs against the wearer fail.",
+      "description": "",
+      "image-links": []
+    },
+    {
+      "name": "Nolgre'eel's Frozen Flame",
+      "weight (lbs)": 3,
+      "value (gold)": 1800,
+      "rarity": "rare",
+      "type of weapon": "melee",
+      "cursed": true,
+      "damage": "5 + 5:STR",
+      "damage type": ["piercing", "slashing"],
+      "damage - Heavy attack": "8 + 5:STR",
+      "damage type - Heavy attack": "slashing",
+      "damage - Reach attack": "3 + 5:STR",
+      "damage type - Reach attack": "piercing",
+      "hidden properties": "[IDENTIFY 12] Item is cursed.<br>[IDENTIFY 14] Whenever the sword deals DMG, roll a d4: if 1, +1 cold DMG; if 2, +2 fire DMG; if 3, +1 cold DMG and +2 fire DMG; if 4, sword recharges by consuming your next 5 action points.",
+      "description": "",
+      "image-links": []
+    }
+  ]
+}

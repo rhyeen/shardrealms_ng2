@@ -1,0 +1,71 @@
+{
+  "class": "npc",
+  "entries": [
+    {
+      "name": "Jessef Firmwether",
+      "type": "human",
+      "race": "terran",
+      "age": "52",
+      "hit points": 45,
+      "raw armor": 10,
+      "raw dodge": 0,
+      "raw magic resist": 8,
+      "attributes": {
+        "STR": 1,
+        "DEX": 4,
+        "INF": 8,
+        "WIS": 3
+      },
+      "action points": 6,
+      "weapons": ["Everfrost pickaxe"],
+      "armor": null,
+      "items": "Clothes (rags)",
+      "gold": 2,
+      "abilities": [],
+      "skills": [
+        {
+          "name": "Willpower",
+          "value": 4
+        },
+        {
+          "name": "Perception",
+          "value": -2
+        },
+        {
+          "name": "Arcana",
+          "value": 10
+        }
+      ],
+      "spells": [
+        {
+          "name": "Ice bolt",
+          "recharge": 0
+        },
+        {
+          "name": "Blackice bolt",
+          "recharge": 1
+        },
+        {
+          "name": "Wall of ice",
+          "recharge": 4
+        },
+        {
+          "name": "Chilling gaze",
+          "recharge": 3
+        },
+        {
+          "name": "Blizzard spray",
+          "recharge": 2
+        }
+      ],
+      "weaknesses": [null],
+      "resistances": [null],
+      "immunities": [null],
+      "locality": "In the woods near Stedwell",
+      "languages": "Common",
+      "background": "",
+      "associations": "",
+      "image-links": [null]
+    }
+  ]
+}
