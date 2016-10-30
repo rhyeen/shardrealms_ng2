@@ -1214,7 +1214,7 @@
       "name": "Moving dodge",
       "type of ability": "passive",
       "target": "self",
-      "properties": "+5 dodge against an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
+      "properties": "+5 armor/magic resist against an <span class=\"item\"><span>ability</span>Opportunity attack</span>."
     },
     {
       "name": "Parry",
