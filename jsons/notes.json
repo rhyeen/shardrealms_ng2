@@ -107,9 +107,8 @@ Virtuoso - A person with notable technical skill in the performance of music.
 --------------
 ARTIFICER
 
-Link to Sentium drone
-Construct mecha drone
 Construct drone swarm
+
 
 
 
@@ -118,41 +117,6 @@ Construct drone swarm
 MECHA DRONE
 
 
-
-
-Move
-Run
-Jump
-Climb
-Metal carapace
-
-Dodge
-Use cover
-Disengage
-Hide
-Delay
-Ready
-Opportunity attack
-Search
-Remote senses
-
-Improvise
-
-
-Mechanized arm
-
-// Replaced with the notion that attacks with normal weapons are at disadvantage because there is no proficency.
-Caclulated attack
-{
-  "name": "Calculated attack",
-  "type of ability": "passive",
-  "target": "self",
-  "properties": "STR AR, DEX AR, and Spell AR are always +2.<br>STR DMG, DEX DMG, and Spell DMG are always 0. Certain abilities may be modified by the attribute's score, but using conventional weapons or spells provides no modifications beyond that designated here."
-},
-
-
-Propulsive wallop
-Electric prod
 
 --------------
 --------------

@@ -528,10 +528,9 @@
       "type of ability": "action",
       "target": "target",
       "number of targets": 1,
-      "range (ft)": 5,
-      "damage type": "force",
+      "range (ft)": 10,
       "action points": 3,
-      "properties": "On hit, target is knocked prone and is grappled."
+      "properties": "On hit, target is knocked prone and is grappled.<br>Cannot use if within 5 ft of target."
     },
     {
       "name": "Slam",
@@ -1258,7 +1257,37 @@
       "name": "Metal carapace",
       "type of ability": "passive",
       "target": "self",
-      "properties": "+12 armor, +8 magic resist."
+      "properties": "+12 armor, +10 magic resist."
+    },
+    {
+      "name": "Hardened Metal carapace",
+      "type of ability": "passive",
+      "target": "self",
+      "replaces": "Metal carapace",
+      "properties": "+14 armor, +12 magic resist."
+    },
+    {
+      "name": "Head lamp",
+      "type of ability": "action",
+      "target": "self",
+      "action points": 2,
+      "range (ft)": 0,
+      "radius (ft)": 30,
+      "radius type": "cone",
+      "properties": "Produces bright light that fades to dim light at 15 ft and no light at radius edge.<br>While activated, disadvantage on AR and <span class=\"item\"><span>skill</span>Perception</span> checks.<br>Requires 2 actions points to deactivate."
+    },
+    {
+      "name": "Shrapnel cannon",
+      "type of ability": "action",
+      "target": "aoe",
+      "number of targets": 1,
+      "range (ft)": 40,
+      "radius (ft)": 5,
+      "radius type": "beam",
+      "damage": "1d12 + 3:DEX",
+      "damage type": "piercing",
+      "action points": 3,
+      "properties": "Spell stops at first creature hit.<br>Recharges when DMG is taken.<br>Cannot use if an enemy is within 5 ft."
     },
     {
       "name": "Remote senses",
@@ -1409,6 +1438,75 @@
       "action points": 3,
       "requires": ["Song of the weave"],
       "properties": "Target gains +1 DMG to all attacks until the end of the measure."
+    },
+    {
+      "name": "Serenade",
+      "type of ability": "action",
+      "type": "Beat - Natural",
+      "mana cost": 2,
+      "duration type": "turns",
+      "duration time": "1d4",
+      "target": "target",
+      "number of targets": 1,
+      "range (ft)": 50,
+      "requires AR": false,
+      "action points": 3,
+      "saving throw": "WIS 12 ST: spell has no effect.",
+      "properties": "Charm a non-ally human or intelligent creature.  While charmed, the creature uses its turn to safely move towards you.<br>Once the charm ends, the human knows it's been charmed.<br>A creature cannot be targeted by this spell more than once each day.<br>+2 to ST requirement if following a <b>Flat</b>"
+    },
+    {
+      "name": "Dance off",
+      "type of ability": "action",
+      "mana cost": 1,
+      "type": "Beat - Natural",
+      "target": "aoe",
+      "range (ft)": 0,
+      "radius (ft)": 20,
+      "radius type": "sphere",
+      "action points": 5,
+      "damage type": "true",
+      "properties": "All creatures in the area roll a <span class=\"item\"><span>skill</span>Performance</span> check.  If an ally has the highest roll, damaged is dealt to the enemies in the area.  If an enemy has the highest roll, damage is dealt to the allies in the area.<br>Damage is equal to half of the highest roll, rounded down.<br>Can only be played on the last beat of a measure."
+    },
+    {
+      "name": "Warp sound",
+      "type of ability": "action",
+      "mana cost": 2,
+      "target": "aoe",
+      "range (ft)": 0,
+      "radius (ft)": 10,
+      "radius type": "sphere",
+      "duration type": "turns",
+      "duration time": 3,
+      "action points": 3,
+      "recharge": "shard",
+      "properties": "Alter, create, or remove sound in an area. If sound is removed.  This cannot prevent spells being cast, and the sounds cannot harm a typical creature."
+    },
+    {
+      "name": "Manaflow",
+      "mana cost": 1,
+      "type of ability": "action",
+      "target": "self",
+      "action points": 5,
+      "properties": "Restore 1d4 - X mana, where X is the current beat number in the measure."
+    },
+    {
+      "name": "Thunderburst",
+      "level": 3,
+      "mana cost": 4,
+      "cast type": "action",
+      "cast time": 5,
+      "duration type": "instant",
+      "target": "aoe",
+      "range (ft)": 80,
+      "radius (ft)": 15,
+      "radius type": "sphere",
+      "damage": "3d10",
+      "damage type": "force",
+      "requires AR": true,
+      "saving throw": "DEX 16 ST: target not pushed away.",
+      "requires": ["Thunderwave"],
+      "properties": "Causes all objects weighing < 400 lbs to be flung outward 15 feet.",
+      "description": "With a snap of a finger and a targeted stare, a sudden pulse of great energy bursts from a point to a sphere of wind; dissipating in an instant."
     },
     {
       "name": "Legato",

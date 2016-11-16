@@ -2505,8 +2505,84 @@
           "level": 3,
           "passive list": [
             {
-              "type": "ability",
-              "name": "Blood boil"
+              "type": "mana",
+              "value": 8
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "spell",
+                  "name": "Water tracer"
+                },
+                {
+                  "type": "spell",
+                  "name": "Earth tracer"
+                },
+                {
+                  "type": "spell",
+                  "name": "Fire tracer"
+                },
+                {
+                  "type": "spell",
+                  "name": "Air tracer"
+                },
+                {
+                  "type": "spell",
+                  "name": "Water weaver"
+                },
+                {
+                  "type": "spell",
+                  "name": "Earth weaver"
+                },
+                {
+                  "type": "spell",
+                  "name": "Fire weaver"
+                },
+                {
+                  "type": "spell",
+                  "name": "Air weaver"
+                }
+              ]
+            },
+            {
+              "allowed": 1,
+              "list": [
+                {
+                  "type": "spell",
+                  "name": "Water whip"
+                },
+                {
+                  "type": "spell",
+                  "name": "Tidal shove"
+                },
+                {
+                  "type": "spell",
+                  "name": "Chilling gaze"
+                },
+                {
+                  "type": "spell",
+                  "name": "Blizzard spray"
+                },
+                {
+                  "type": "spell",
+                  "name": "Exploding bubbles"
+                },
+                {
+                  "type": "spell",
+                  "name": "Ice sheet"
+                },
+                {
+                  "type": "spell",
+                  "name": "Water jet"
+                },
+                {
+                  "type": "spell",
+                  "name": "Brain freeze"
+                }
+              ]
             }
           ]
         },
@@ -3117,31 +3193,42 @@
         },
         {
           "level": 2,
-          "passive list": [
-            {
-              "type": "ability",
-              "name": "Restoring blood"
-            }
-          ],
           "pick lists": [
             {
               "allowed": 1,
               "list": [
                 {
-                  "type": "armor proficiency",
-                  "name": "shield"
+                  "type": "attribute",
+                  "name": "STR",
+                  "value": 1
+                },
+                {
+                  "type": "attribute",
+                  "name": "DEX",
+                  "value": 1
+                }
+              ]
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Hardened Metal carapace"
                 },
                 {
                   "type": "ability",
-                  "name": "Magic resistant"
+                  "name": "Head lamp"
                 },
                 {
                   "type": "ability",
-                  "name": "Charge attack"
+                  "name": "Pounce"
                 },
                 {
                   "type": "ability",
-                  "name": "Duel weapons"
+                  "name": "Shrapnel cannon"
                 }
               ]
             }
@@ -3693,8 +3780,31 @@
           "level": 3,
           "passive list": [
             {
-              "type": "ability",
-              "name": "Blood boil"
+              "type": "mana",
+              "value": 5
+            }
+          ],
+          "pick lists": [
+            {
+              "allowed": 2,
+              "list": [
+                {
+                  "type": "ability",
+                  "name": "Serenade"
+                },
+                {
+                  "type": "ability",
+                  "name": "Dance off"
+                },
+                {
+                  "type": "ability",
+                  "name": "Warp sound"
+                },
+                {
+                  "type": "ability",
+                  "name": "Manaflow"
+                }
+              ]
             }
           ]
         },
